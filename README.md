@@ -1,27 +1,32 @@
-# Universidad Peruana de Ciencias Aplicadas
-## Carrera de Ingenieria de Software
-### 1ACC0238 - Aplicaciones para Dispositivos Moviles
+<div align="center">
 
-**NRC:** [Colocar NRC aqui]  
-**Docente:** Mayta Guillermo, Jorge Luis  
-**Informe de Trabajo Final - Entrega AV1**  
+<img src="assets/images/UPC_logo_transparente.png" alt="Logo-UPC" width="150"/>
+
+**Universidad Peruana de Ciencias Aplicadas**<br>
+**Carrera de Ingeniería de Software**
+
+**NRC:** [13975]  
+**Docente:** David Gerardo Quevedo Velasco 
+**Informe de Trabajo  - Entrega AV1**  
 **Nombre del Equipo:** [Colocar nombre del equipo / startup]  
-**Proyecto:** FlowAlert  
+**Proyecto:** Vantage PMO  
 
 ---
 
 ### Integrantes (en orden alfabetico por apellido)
 
-| Codigo | Apellidos y Nombres |
-| :--- | :--- |
-| [Codigo] | Fuentes Alvarez, Angiela Stephany |
-| [Codigo] | Guillen Giraldo, Mike Dylan |
-| [Codigo] | Mendoza Machoa, Lionel Snayder |
-| [Codigo] | Pacheco Lavado, Rafael Agustin |
-| [Codigo] | Quiliano Motta, Kirk Douglas |
+| Codigo       | Apellidos y Nombres |
+|:-------------| :--- |
+| [Codigo]     | Fuentes Alvarez, Angiela Stephany |
+| [Codigo]     | Guillen Giraldo, Mike Dylan |
+| [u202417433] | Mendoza Machoa, Lionel Snayder |
+| [Codigo]     | Pacheco Lavado, Rafael Agustin |
+| [Codigo]     | Quiliano Motta, Kirk Douglas |
 
-**Periodo Academico:** 2026-20  
-**Fecha:** [Mes y Ano]  
+**Periodo Academico:** 2026-20
+**Fecha:** [Setiembre 2026]  
+</div>
+
 
 ---
 
