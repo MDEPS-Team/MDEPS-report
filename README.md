@@ -16,7 +16,7 @@
 | :--- | :--- |
 | [Codigo] | Fuentes Alvarez, Angiela Stephany |
 | [Codigo] | Guillen Giraldo, Mike Dylan |
-| [Codigo] | Mendoza Machoa, Lionel Snayder |
+| [u202417433] | Mendoza Machoa, Lionel Snayder |
 | [Codigo] | Pacheco Lavado, Rafael Agustin |
 | [Codigo] | Quiliano Motta, Kirk Douglas |
 
