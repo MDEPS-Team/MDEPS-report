@@ -1,27 +1,35 @@
-# Universidad Peruana de Ciencias Aplicadas
-## Carrera de Ingenieria de Software
-### 1ACC0238 - Aplicaciones para Dispositivos Moviles
+<div align="center">
 
-**NRC:** [132767]  
-**Docente:** Mayta Guillermo, Jorge Luis  
-**Informe de Trabajo Final - Entrega AV1**  
-**Nombre del Equipo:** [Colocar nombre del equipo / startup]  
-**Proyecto:** FlowAlert  
+<img src="assets/images/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
 
----
+**Universidad Peruana de Ciencias Aplicadas**<br>
+**Carrera de Ingeniería de Software**
 
-### Integrantes (en orden alfabetico por apellido)
+**1ACC0238**<br>
+**Aplicaciones para Dispositivos Móviles**<br>
+NRC<br>
+**13975**<br>
+**Informe del Trabajo Final**<br>
+Docente<br>
+**David Gerardo Quevedo Velasco**<br>
+Equipo<br>
+**MDEPS**
 
-| Codigo | Apellidos y Nombres |
-| :--- | :--- |
-| [Codigo] | Fuentes Alvarez, Angiela Stephany |
-| [Codigo] | Guillen Giraldo, Mike Dylan |
-| [Codigo] | Mendoza Machoa, Lionel Snayder |
-| [Codigo] | Pacheco Lavado, Rafael Agustin |
-| [Codigo] | Quiliano Motta, Kirk Douglas |
+Proyecto<br>
+**Vantage PMO**
 
-**Periodo Academico:** 2026-20  
-**Fecha:** [Mes y Ano]  
+
+| Codigo       | Apellidos y Nombres |
+|:-------------| :--- |
+| [Codigo]     | Fuentes Alvarez, Angiela Stephany |
+| [Codigo]     | Guillen Giraldo, Mike Dylan |
+| [u202417433] | Mendoza Machoa, Lionel Snayder |
+| [Codigo]     | Pacheco Lavado, Rafael Agustin |
+| [Codigo]     | Quiliano Motta, Kirk Douglas |
+
+**Periodo Academico:** 2026-20
+**Fecha:** [Setiembre  2026]
+</div>
 
 ---
 
