@@ -40,14 +40,26 @@ Para cumplir con este propósito, hemos desarrollado el proyecto **Vantage PMO**
 ## 1.2. Solution Profile
 
 ### 1.2.1. Antecedentes y problematica
-[Describir antecedentes del problema y aplicar la tecnica 5W y 2H]:
-- **Who:** [Quien tiene el problema]
-- **What:** [Cual es el problema]
-- **Where:** [Donde ocurre]
-- **When:** [Cuando ocurre]
-- **Why:** [Por que ocurre]
-- **How:** [Como se manifiesta]
-- **How Much:** [Impacto cuantificable o costos asociados]
+#### What / ¿QUÉ?
+Se presenta una fragmentación de la información y falta de visibilidad en la ejecución de proyectos, lo que impide un control centralizado y eficiente de los recursos organizacionales.
+
+#### When / ¿CUÁNDO?
+El problema se manifiesta críticamente durante las reuniones de seguimiento, en la entrega de reportes mensuales de desempeño y al momento de asignar recursos a nuevos hitos del proyecto.
+
+#### Where / ¿DÓNDE?
+Se observa principalmente en los departamentos de gestión de proyectos (PMO) y áreas operativas de empresas medianas y grandes que manejan múltiples portafolios de forma simultánea.
+
+#### Who / ¿QUIÉN?
+Afecta a los Project Managers y Stakeholders encargados de la toma de decisiones, cuya gestión se ve limitada por el uso de herramientas aisladas. Por ejemplo, hojas de cálculo o software no integrado, etc.
+
+#### Why / ¿POR QUÉ?
+Sucede debido a la ausencia de un estándar tecnológico que unifique los datos, lo que genera silos de información, procesos manuales propensos al error y falta de comunicación en tiempo real.
+
+#### How / ¿CÓMO?
+A diferencia del estado óptimo, donde la información fluye automáticamente, el problema se presenta como un patrón de retrasos constantes y desalineación entre los objetivos estratégicos y los resultados operativos.
+
+#### How Much / ¿CUÁNTO?
+Las organizaciones pierden entre un 20% y 30% de su productividad semanal en tareas de recopilación manual de datos, lo que se traduce en sobrecostos operativos y posibles multas por incumplimiento de plazos.
 
 **Objetivos del Proyecto:**
 - [Objetivo 1]
