@@ -7,13 +7,13 @@ Somos una startup peruana denominada **MDEPS** (Managements Development Engineer
 
 Nuestra misión es lograr que ninguna empresa gestione sus proyectos sin un control centralizado, estandarizado y basado en información confiable, reduciendo así problemas como retrasos, falta de visibilidad, mala comunicación y toma de decisiones ineficientes.
 
-Para cumplir con este propósito, hemos desarrollado el proyecto **Vantage PMO** (Project Management Office), una plataforma movil que permite a las organizaciones gestionar, monitorear y controlar todos sus proyectos de manera centralizada, brindando visibilidad en tiempo real, estandarización de procesos y herramientas inteligentes para la toma de decisiones.
+Para cumplir con este propósito, hemos desarrollado el proyecto **MDEPS** (Project Management Office), una plataforma movil que permite a las organizaciones gestionar, monitorear y controlar todos sus proyectos de manera centralizada, brindando visibilidad en tiempo real, estandarización de procesos y herramientas inteligentes para la toma de decisiones.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 - **Fuentes Alvarez, Angiela Stephany**  
   [Foto]  
-  *Codigo:* [Codigo] | *Carrera:* Ingenieria de Software  
-  *Resumen:* [Habilidades tecnicas y aportes al equipo].
+  *Codigo:*   | *Carrera:* Ingenieria de Software  
+  *Resumen:* [].
 
 - **Guillen Giraldo, Mike Dylan**  
   [Foto]  
@@ -31,9 +31,10 @@ Para cumplir con este propósito, hemos desarrollado el proyecto **Vantage PMO**
   *Resumen:* [Habilidades tecnicas y aportes al equipo].
 
 - **Quiliano Motta, Kirk Douglas**  
-  [Foto]  
-  *Codigo:* [Codigo] | *Carrera:* Ingenieria de Software  
-  *Resumen:* [Habilidades tecnicas y aportes al equipo].
+  ![Foto-Kirk](assets/images/Kirk.png)    
+  *Codigo:* [u202411378 ] | *Carrera:* Ingenieria de Software  
+  *Resumen:* [Estudiante de la carrera de Ing. Software cursando el 6to ciclo y entusiasmado por aprender lo mas que pueda con conocimientos en lenguajes como python,
+  c++, javascript, html, css, etc.].
 
 ---
 
@@ -62,81 +63,55 @@ A diferencia del estado óptimo, donde la información fluye automáticamente, e
 Las organizaciones pierden entre un 20% y 30% de su productividad semanal en tareas de recopilación manual de datos, lo que se traduce en sobrecostos operativos y posibles multas por incumplimiento de plazos.
 
 **Objetivos del Proyecto:**
-- [Objetivo 1]
-- [Objetivo 2]
+- Desarrollar un producto de software consistente en una aplicacion movil y plataforma de soporte (MDEPS) que centralice la gestion de portafolios y reduzca el tiempo de consolidacion de reportes mensuales en un 25%.
+- Integrar un servicio RESTful de desarrollo interno y consumir servicios externos para garantizar la sincronizacion de datos en tiempo real entre los equipos operativos y la gerencia, facilitando la toma de decisiones.
 
 **Restricciones:**
-- [Restricciones tecnicas o de alcance]
+- El desarrollo completo de la solucion de software esta estrictamente limitado al periodo academico de 15 semanas, debiendo cumplir con las entregas programadas (AV1, TB1, AV2, TB2).
+- La arquitectura y el control de versiones deben aplicar obligatoriamente las practicas exigidas: uso de GitFlow, Conventional Commits, Semantic Versioning y Domain-Driven Design (DDD).
+- El alcance del Producto Minimo Viable (MVP) se centrara unicamente en las funcionalidades core de monitoreo, asignacion de recursos y reportes, excluyendo integraciones complejas con sistemas ERP heredados (como SAP u Oracle) debido a limitaciones de tiempo.
 
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
-El estado actual de la gestión de proyectos en organizaciones medianas y grandes ha dependido principalmente de procesos manuales y herramientas fragmentadas como hojas de cálculo, correos electrónicos y software no integrado. Estos métodos generan silos de información, falta de visibilidad en tiempo real y una pérdida de productividad de hasta el 30% debido a la recopilación manual de datos.
+El estado actual de la gestion de proyectos en organizaciones medianas y grandes se ha enfocado principalmente en procesos manuales, hojas de calculo aisladas y comunicacion fragmentada, lo que resulta en una perdida de productividad de hasta el 30%.
 
-Lo que los productos actuales no resuelven eficientemente es la necesidad de una plataforma centralizada y estandarizada que permita a los Project Managers y Stakeholders alinear los objetivos estratégicos con los resultados operativos sin una curva de aprendizaje técnica excesiva.
+Lo que los productos o servicios existentes no logran abordar es la necesidad de una plataforma centralizada y estandarizada que permita a los Project Managers y Stakeholders alinear los objetivos estrategicos con los resultados operativos sin una curva de aprendizaje tecnica excesiva.
 
-Vantage PMO abordará esta brecha mediante una plataforma web que digitaliza el monitoreo de proyectos, automatiza la generación de reportes y centraliza la comunicación entre los equipos operativos y la gerencia.
+Nuestro producto o servicio abordara esta brecha mediante una plataforma web y movil (MDEPS) que automatice el control de hitos, proporcione visibilidad en tiempo real y unifique los datos para la toma de decisiones.
 
-Nuestro enfoque inicial estará dirigido a Project Managers, PMO Leads y Stakeholders en empresas que manejan múltiples portafolios. Sabremos que hemos tenido éxito cuando veamos una reducción en los sobrecostos operativos, una mejora en el cumplimiento de los hitos y una adopción recurrente de la plataforma para la toma de decisiones estratégicas.
+Nuestro enfoque inicial seran los Project Managers, PMO Leads y Stakeholders de empresas medianas y grandes.
+
+Sabremos que tenemos exito cuando veamos una reduccion del 25% en el tiempo de elaboracion de reportes, una disminucion en los sobrecostos por retrasos y un incremento en la productividad semanal de los Project Managers.
 #### 1.2.2.2. Lean UX Assumptions
-- **Business Assumptions:**
-1. **Creemos que nuestros clientes necesitan:** Centralizar la visibilidad de sus proyectos y estandarizar la toma de decisiones basada en datos reales.
+**Business Assumptions (Creencias del Negocio)**
+1. Creemos que las organizaciones necesitan centralizar la visibilidad de sus proyectos y estandarizar la toma de decisiones basada en datos reales.
+2. Creemos que estas necesidades se resuelven con una plataforma SaaS que integre gestion, monitoreo y control en una unica interfaz.
+3. Creemos que nuestros primeros clientes seran empresas medianas y grandes con departamentos de PMO que sufren de desorden informativo.
+4. Creemos que el modelo de ingresos sera una suscripcion B2B escalonada segun el volumen de proyectos o el numero de usuarios.
+5. Creemos que nuestra ventaja competitiva sera la estandarizacion de procesos bajo metodologia PMO sin la friccion de herramientas genericas.
 
-2. **Estas necesidades se resuelven con:** Una plataforma SaaS (Vantage PMO) que integre gestión, monitoreo y control en una única interfaz.
+**Business Outcome Assumptions (Resultados del Negocio)**
+1. Creemos que lograremos una reduccion del 25% en el tiempo de entrega de reportes operativos en los primeros 3 meses.
+2. Creemos que obtendremos un incremento del 20% en la productividad semanal de los Project Managers al automatizar tareas de control.
+3. Creemos que alcanzaremos 50 proyectos activos gestionados en la plataforma durante el primer ano.
+4. Creemos que mantendremos una retencion de clientes superior al 90% tras los primeros 6 meses de uso.
 
-3. **Nuestros primeros clientes serán:** Empresas medianas y grandes con departamentos de PMO que sufren de desorden informativo.
+**User Assumptions (Creencias sobre el Usuario)**
+1. Creemos que nuestros usuarios principales son los Project Managers que ejecutan los proyectos y los Stakeholders que toman decisiones.
+2. Creemos que la plataforma se utilizara en el seguimiento diario de hitos y en las reuniones semanales o mensuales de revision de desempeno.
+3. Creemos que los usuarios buscan resolver la dispersion de la informacion que genera falta de control y decisiones tardias.
 
-4. **Valor #1 esperado:** Control centralizado y visibilidad 360° del portafolio en tiempo real.
+**User Outcome and Benefit Assumptions (Resultados y Beneficios para el Usuario)**
+1. Creemos que los usuarios lograran visibilidad inmediata del estado de salud de todos los proyectos a traves de indicadores claros y semaforos de estado.
+2. Creemos que los usuarios eliminaran la carga de trabajo estresante asociada a la recopilacion manual de datos para reportes.
+3. Creemos que los usuarios lograran una asignacion optima de recursos humanos y financieros, reduciendo la desalineacion operativa.
 
-5. **Beneficios adicionales:** Reducción de errores humanos, ahorro de tiempo en reporteo y alineación estratégica.
-
-6. **Adquisición:** Marketing de contenidos especializado en gestión de proyectos y alianzas estratégicas con consultoras de procesos organizacionales.
-
-7. **Ingresos:** Suscripción B2B escalonada según el volumen de proyectos o número de usuarios.
-
-8. **Competencia principal:** Microsoft Project, Jira, Monday.com (pero con enfoque en la complejidad de PMOs tradicionales).
-
-9. **Ventaja competitiva:** Estandarización de procesos bajo metodología PMO sin la fricción de herramientas genéricas.
-
-10. **Mayor riesgo de producto:** Resistencia al cambio por parte de equipos acostumbrados a Excel.
-
-11. **Mitigación:** Onboarding simplificado, plantillas de proyectos precargadas y visualización inmediata de beneficios.
-
-- **Business Outcome Assumptions:**
-**- ¿Quién es el usuario?** Project Managers que ejecutan y Stakeholders que deciden.
-
-**- ¿Dónde encaja el producto?** En el seguimiento diario de hitos y en las reuniones semanales/mensuales de revisión de desempeño.
-
-**- Problema a resolver:** Dispersión de la información → falta de control y decisiones tardías.
-
-**- Uso típico:** Actualizar el progreso de tareas, revisar dashboards de salud del proyecto y exportar reportes ejecutivos.
-
-**- Características importantes:** Dashboard en tiempo real, alertas de desviaciones (costo/tiempo), gestión de recursos y repositorio central de documentos.
-
-**- Look & feel:** Interfaz corporativa, limpia, con gráficos analíticos claros y navegación intuitiva por módulos.
-- **User Assumptions:**
-- Visibilidad inmediata del estado de salud de todos los proyectos (Semáforos de estado).
-
-- Eliminación de la recopilación manual de datos para reportes mensuales.
-
-- Reducción de la desalineación entre las áreas operativas y los objetivos de la empresa.
-
-- Optimización en la asignación de recursos humanos y financieros.
-- **User Outcome and Benefit Assumptions:**
-- Reducción del 25% en el tiempo de entrega de reportes operativos en los primeros 3 meses.
-
-- Incremento del 20% en la productividad semanal de los Project Managers al automatizar tareas de control.
-
-- Lograr 50 proyectos activos gestionados en la plataforma durante el primer año (2026).
-
-- Retención de clientes superior al 90% tras los primeros 6 meses de uso.
-
-- **Feature Assumptions:**
-1. **Dashboard Centralizado:** Creemos que una vista unificada reducirá la desinformación en las reuniones de seguimiento.
-
-2. **Generador de Reportes Automático:** Creemos que automatizar los KPIs mensuales eliminará el 30% de la carga administrativa.
-
-3. **Sistema de Alertas Tempranas:** Creemos que notificar desviaciones en hitos evitará multas por incumplimiento de plazos.
+**Feature Assumptions (Creencias sobre las Caracteristicas)**
+1. Creemos que un **Dashboard Centralizado** reducira la desinformacion en las reuniones de seguimiento.
+2. Creemos que un **Generador de Reportes Automatico** eliminara el 30% de la carga administrativa mensual.
+3. Creemos que un **Sistema de Alertas Tempranas** notificara desviaciones para evitar el incumplimiento de plazos.
+4. Creemos que un **Modulo de Gestion de Recursos** permitira la asignacion inteligente de personal y el seguimiento de tareas criticas.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 ##### Visualización y Control Centralizado
@@ -154,25 +129,24 @@ Nuestro enfoque inicial estará dirigido a Project Managers, PMO Leads y Stakeho
 #### 1.2.2.4. Lean UX Canvas
 
 | **Business Problem** | **Solutions** | **Business Outcomes** |
-| :------------------- | :------------ | :------------------- |
-| El estado actual de la gestión de proyectos en organizaciones peruanas se caracteriza por una alta dependencia de procesos manuales, hojas de cálculo aisladas y comunicación fragmentada, lo que resulta en una pérdida de productividad de hasta el 30%, sobrecostos operativos y falta de alineación estratégica. Los productos existentes a menudo son demasiado complejos o costosos para las PMO que buscan una estandarización rápida sin una curva de aprendizaje técnica elevada. Vantage PMO busca cerrar esta brecha mediante una plataforma web centralizada que automatice el control de hitos, proporcione visibilidad en tiempo real y unifique los datos para la toma de decisiones. Nuestro enfoque inicial será satisfacer las necesidades de los Project Managers y Stakeholders de empresas medianas y grandes. Sabremos que hemos tenido éxito cuando reduzcamos los tiempos de reporteo, disminuyamos los retrasos en hitos y aumentemos la confiabilidad de la información para la gerencia. | **- Dashboard de control centralizado:** Visualización 360° de la salud de todos los portafolios de proyectos en tiempo real. <br> **- Generación automática de reportes:** Módulo que consolida KPIs de desempeño y los exporta de forma instantánea, eliminando la carga manual. <br> **- Sistema de alertas tempranas:** Notificaciones automáticas ante desviaciones de cronograma (hitos) o presupuesto. <br> **- Módulo de gestión de recursos:** Herramientas para la asignación inteligente de personal y seguimiento de tareas críticas. | - Reducción del 25% en el tiempo dedicado a la elaboración de reportes mensuales. <br> - Disminución del 15% en los sobrecostos por retrasos no detectados a tiempo. <br> - Incremento del 20% en la productividad semanal de los Project Managers. <br> - Alcanzar 50 proyectos activos gestionados íntegramente en la plataforma en el primer año. <br> - Retención de clientes B2B superior al 90% tras el primer semestre de implementación. |
+| :--- | :--- | :--- |
+| El estado actual de la gestion de proyectos en organizaciones peruanas se caracteriza por una alta dependencia de procesos manuales, hojas de calculo aisladas y comunicacion fragmentada, lo que resulta en una perdida de productividad de hasta el 30%, sobrecostos operativos y falta de alineacion estrategica. Los productos existentes a menudo son demasiado complejos o costosos para las PMO que buscan una estandarizacion rapida sin una curva de aprendizaje tecnica elevada. **MDEPS** busca cerrar esta brecha mediante una plataforma web centralizada que automatice el control de hitos, proporcione visibilidad en tiempo real y unifique los datos para la toma de decisiones. Nuestro enfoque inicial sera satisfacer las necesidades de los Project Managers y Stakeholders de empresas medianas y grandes. Sabremos que hemos tenido exito cuando reduzcamos los tiempos de reporteo, disminuyamos los retrasos en hitos y aumentemos la confiabilidad de la informacion para la gerencia. | **- Dashboard de control centralizado:** Visualizacion 360 grados de la salud de todos los portafolios de proyectos en tiempo real.<br><br>**- Generacion automatica de reportes:** Modulo que consolida KPIs de desempeno y los exporta de forma instantanea, eliminando la carga manual.<br><br>**- Sistema de alertas tempranas:** Notificaciones automaticas ante desviaciones de cronograma (hitos) o presupuesto.<br><br>**- Modulo de gestion de recursos:** Herramientas para la asignacion inteligente de personal y seguimiento de tareas criticas. | - Reduccion del 25% en el tiempo dedicado a la elaboracion de reportes mensuales.<br><br>- Disminucion del 15% en los sobrecostos por retrasos no detectados a tiempo.<br><br>- Incremento del 20% en la productividad semanal de los Project Managers.<br><br>- Alcanzar 50 proyectos activos gestionados integramente en la plataforma en el primer ano.<br><br>- Retencion de clientes B2B superior al 90% tras el primer semestre de implementacion. |
 
 | **Users** | **User Outcomes & Benefits** |
-| :-------- | :-------------------------- |
-| **- Project Managers:** “Nuestro objetivo es dejar de perder tiempo en Excel y asegurar que el equipo cumpla con los plazos establecidos.” <br> **- PMO Leads / Jefes de Proyecto:** “Nuestro objetivo es estandarizar la metodología de trabajo en toda la empresa para que la información sea comparable y confiable.” <br> **- Stakeholders / Ejecutivos:** “Nuestro objetivo es tener visibilidad clara del ROI y el avance de los proyectos estratégicos para tomar decisiones informadas sin esperar a la reunión mensual.” | **- Project Managers:** Optimización de su tiempo operativo, eliminación de tareas administrativas repetitivas y mayor control sobre sus equipos. Beneficios: Menos estrés por reporteo, alertas proactivas y mayor cumplimiento de cronogramas. Indicadores: Horas ahorradas por semana y reducción de correos de seguimiento. <br> **- Project Managers:** Optimización de su tiempo operativo, eliminación de tareas administrativas repetitivas y mayor control sobre sus equipos. Beneficios: Menos estrés por reporteo, alertas proactivas y mayor cumplimiento de cronogramas. Indicadores: Horas ahorradas por semana y reducción de correos de seguimiento. <br> **- PMO Leads:** Información estandarizada y centralizada de todos los portafolios, facilitando la auditoría y mejora de procesos. Beneficios: Trazabilidad total de la operación y reducción de silos de información. Indicadores: Mayor precisión en las proyecciones de cierre de proyecto. <br> **- Stakeholders:** Acceso a dashboards ejecutivos que permiten ver el "semáforo" de la empresa en segundos. Beneficios: Tranquilidad estratégica y capacidad de intervención temprana en proyectos críticos. Indicadores: Mejora en el margen operativo y alineación de resultados con objetivos anuales. |
+| :--- | :--- |
+| **- Project Managers:** "Nuestro objetivo es dejar de perder tiempo en Excel y asegurar que el equipo cumpla con los plazos establecidos."<br><br>**- PMO Leads / Jefes de Proyecto:** "Nuestro objetivo es estandarizar la metodologia de trabajo en toda la empresa para que la informacion sea comparable y confiable."<br><br>**- Stakeholders / Ejecutivos:** "Nuestro objetivo es tener visibilidad clara del ROI y el avance de los proyectos estrategicos para tomar decisiones informadas sin esperar a la reunion mensual." | **- Project Managers:** Optimizacion de su tiempo operativo, eliminacion de tareas administrativas repetitivas y mayor control sobre sus equipos. **Beneficios:** Menos estres por reporteo, alertas proactivas y mayor cumplimiento de cronogramas. **Indicadores:** Horas ahorradas por semana y reduccion de correos de seguimiento.<br><br>**- PMO Leads:** Informacion estandarizada y centralizada de todos los portafolios, facilitando la auditoria y mejora de procesos. **Beneficios:** Trazabilidad total de la operacion y reduccion de silos de informacion. **Indicadores:** Mayor precision en las proyecciones de cierre de proyecto.<br><br>**- Stakeholders:** Acceso a dashboards ejecutivos que permiten ver el "semaforo" de la empresa en segundos. **Beneficios:** Tranquilidad estrategica y capacidad de intervencion temprana en proyectos criticos. **Indicadores:** Mejora en el margen operativo y alineacion de resultados con objetivos anuales. |
 
-| **Hypotheses** | **What’s the most important thing we need to learn first?** | **What’s the least amount of work we need to do to learn the next most important thing?** |
-| :------------- | :------------------------ | :----------------------- |
-| **- Creemos que** reduciremos el tiempo de reporteo en un 25% si los Project Managers utilizan el generador automático de reportes de Vantage PMO en lugar de consolidar datos manualmente en Excel. <br> **- Creemos que** disminuiremos los sobrecostos operativos en un 15% si los PMO Leads reciben alertas tempranas de desviaciones presupuestarias a través de nuestro sistema de monitoreo en tiempo real. <br> **- Creemos que** aumentaremos la satisfacción de los Stakeholders en un 40% si obtienen acceso directo a tableros de control ejecutivos que muestren el avance estratégico del portafolio. <br> **- Creemos que** aumentaremos la satisfacción de los Stakeholders en un 40% si obtienen acceso directo a tableros de control ejecutivos que muestren el avance estratégico del portafolio. <br> **- Creemos que** alcanzaremos una adopción de 50 proyectos activos en un año si ofrecemos una interfaz intuitiva con onboarding guiado que no requiera capacitación técnica externa. <br> - **Creemos que** mejoraremos la eficiencia del equipo en un 20% si los recursos se asignan de manera centralizada evitando la sobrecarga de trabajo y los cuellos de botella. | - ¿Es la recopilación manual de datos el problema más doloroso para los Project Managers, o existe otra fricción mayor en su día a día? <br> - ¿Están los ejecutivos dispuestos a basar sus decisiones financieras en un dashboard digital en lugar de esperar los reportes tradicionales firmados? <br> - ¿La estandarización de procesos es percibida como una ayuda o como una restricción burocrática por los equipos de ingeniería? <br> - ¿Es la integración con herramientas actuales (como Excel) una funcionalidad crítica para que acepten migrar a nuestra plataforma? <br> - ¿Cuál es el KPI específico que más valoran los Stakeholders para considerar que un proyecto está "bajo control"? | - Realizar entrevistas a profundidad con 5 líderes de PMO y Project Managers para validar sus "pain points" prioritarios. <br> - Crear un prototipo navegable de alta fidelidad (Figma) que simule el dashboard y el generador de reportes para realizar pruebas de concepto con usuarios reales. <br> - Crear un prototipo navegable de alta fidelidad (Figma) que simule el dashboard y el generador de reportes para realizar pruebas de concepto con usuarios reales. <br> - Realizar una prueba piloto con una oficina de proyectos pequeña (3-5 proyectos) cargando datos históricos para comparar la precisión de Vantage PMO vs su gestión manual previa. <br> - Encuesta a Stakeholders para priorizar los 3 KPIs más importantes que necesitan ver en un panel ejecutivo. |
-
+| **Hypotheses** | **What's the most important thing we need to learn first?** | **What's the least amount of work we need to do to learn the next most important thing?** |
+| :--- | :--- | :--- |
+| **- Creemos que** reduciremos el tiempo de reporteo en un 25% si los Project Managers utilizan el generador automatico de reportes de **MDEPS** en lugar de consolidar datos manualmente en Excel.<br><br>**- Creemos que** disminuiremos los sobrecostos operativos en un 15% si los PMO Leads reciben alertas tempranas de desviaciones presupuestarias a traves de nuestro sistema de monitoreo en tiempo real.<br><br>**- Creemos que** aumentaremos la satisfaccion de los Stakeholders en un 40% si obtienen acceso directo a tableros de control ejecutivos que muestren el avance estrategico del portafolio.<br><br>**- Creemos que** alcanzaremos una adopcion de 50 proyectos activos en un ano si ofrecemos una interfaz intuitiva con onboarding guiado que no requiera capacitacion tecnica externa.<br><br>**- Creemos que** mejoraremos la eficiencia del equipo en un 20% si los recursos se asignan de manera centralizada evitando la sobrecarga de trabajo y los cuellos de botella. | - ¿Es la recopilacion manual de datos el problema mas doloroso para los Project Managers, o existe otra friccion mayor en su dia a dia?<br><br>- ¿Estan los ejecutivos dispuestos a basar sus decisiones financieras en un dashboard digital en lugar de esperar los reportes tradicionales firmados?<br><br>- ¿La estandarizacion de procesos es percibida como una ayuda o como una restriccion burocratica por los equipos de ingenieria?<br><br>- ¿Es la integracion con herramientas actuales (como Excel) una funcionalidad critica para que acepten migrar a nuestra plataforma?<br><br>- ¿Cual es el KPI especifico que mas valoran los Stakeholders para considerar que un proyecto esta "bajo control"? | - Realizar entrevistas a profundidad con 5 lideres de PMO y Project Managers para validar sus "pain points" prioritarios.<br><br>- Crear un prototipo navegable de alta fidelidad (Figma) que simule el dashboard y el generador de reportes para realizar pruebas de concepto con usuarios reales.<br><br>- Realizar una prueba piloto con una oficina de proyectos pequena (3-5 proyectos) cargando datos historicos para comparar la precision de **MDEPS** vs su gestion manual previa.<br><br>- Encuesta a Stakeholders para priorizar los 3 KPIs mas importantes que necesitan ver en un panel ejecutivo. |
 
 ---
 
 ## 1.3. Segmentos objetivo
 ### Segmento 1: Líderes y Jefes de Gestión de Proyectos
 
-Corresponde a los usuarios directos y principales adoptantes de la plataforma. Está conformado por profesionales de entre 30 y 50 años, con formación sólida en Ingeniería o Administración y, frecuentemente, con certificaciones internacionales como el PMP o especializaciones en metodologías ágiles. Su día a día se ve afectado por la frustración de realizar un seguimiento reactivo basado en datos fragmentados y canales informales como WhatsApp o correos electrónicos. Psicográficamente, estos líderes valoran la precisión informativa y buscan herramientas que les permitan predecir desviaciones de presupuesto o cronograma antes de que ocurran. Estadísticamente, se estima que un jefe de proyectos en el Perú invierte hasta un 30% de su jornada semanal únicamente en la consolidación manual de informes, una carga administrativa se busca erradicar para permitirles enfocarse en la estrategia y la eficiencia del equipo.
+Corresponde a los usuarios directos y principales adoptantes de la plataforma. Esta conformado por profesionales de entre 30 y 50 anos, con formacion solida en Ingenieria o Administracion y, frecuentemente, con certificaciones internacionales como el PMP o especializaciones en metodologias agiles. Su dia a dia se ve afectado por la frustracion de realizar un seguimiento reactivo basado en datos fragmentados y canales informales como WhatsApp o correos electronicos. Psicograficamente, estos lideres valoran la precision informativa y buscan herramientas que les permitan predecir desviaciones de presupuesto o cronograma antes de que ocurran. Estadisticamente, se estima que un jefe de proyectos en el Peru invierte hasta un 30% de su jornada semanal unicamente en la consolidacion manual de informes, una carga administrativa que se busca erradicar para permitirles enfocarse en la estrategia y la eficiencia del equipo.
 
 ### Segmento 2: Empresas Medianas y Grandes con Múltiples Portafolios
 
-Define a nivel corporativo como el mercado B2B donde la solución genera un impacto económico directo. Estas organizaciones, pertenecientes a sectores de alta complejidad como Construcción, Minería, Consultoría de TI e Ingeniería, gestionan simultáneamente entre 5 y 20 proyectos con recursos y presupuestos compartidos. Son empresas que han superado su capacidad de control mediante herramientas básicas como hojas de cálculo y sufren de una "ceguera operativa" que impide a la alta gerencia conocer el estado real de sus inversiones en tiempo real. En el mercado local, esta falta de visibilidad se traduce en sobrecostos que oscilan entre el 10% y el 15% del presupuesto total de cada proyecto. Para estas organizaciones, la adopción de una solución centralizada no es solo una mejora tecnológica, sino una necesidad crítica para mantener la rentabilidad, asegurar la gobernanza de datos y evitar penalidades por incumplimiento de plazos contractuales.
+Define a nivel corporativo el mercado B2B donde la solucion genera un impacto economico directo. Estas organizaciones, pertenecientes a sectores de alta complejidad como Construccion, Mineria, Consultoria de TI e Ingenieria, gestionan simultaneamente entre 5 y 20 proyectos con recursos y presupuestos compartidos. Son empresas que han superado su capacidad de control mediante herramientas basicas como hojas de calculo y sufren de una "ceguera operativa" que impide a la alta gerencia conocer el estado real de sus inversiones en tiempo real. En el mercado local, esta falta de visibilidad se traduce en sobrecostos que oscilan entre el 10% y el 15% del presupuesto total de cada proyecto. Para estas organizaciones, la adopcion de una solucion centralizada no es solo una mejora tecnologica, sino una necesidad critica para mantener la rentabilidad, asegurar la gobernanza de datos y evitar penalidades por incumplimiento de plazos contractuales.

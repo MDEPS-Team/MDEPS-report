@@ -1,5 +1,3 @@
-<div align="center">
-
 <img src="assets/images/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
 
 **Universidad Peruana de Ciencias Aplicadas**<br>
@@ -25,7 +23,7 @@ Proyecto<br>
 | [Codigo]     | Guillen Giraldo, Mike Dylan |
 | [u202417433] | Mendoza Machoa, Lionel Snayder |
 | [Codigo]     | Pacheco Lavado, Rafael Agustin |
-| [Codigo]     | Quiliano Motta, Kirk Douglas |
+| [u202411378] | Quiliano Motta, Kirk Douglas |
 
 **Periodo Academico:** 2026-20
 **Fecha:** [Setiembre  2026]
@@ -37,18 +35,19 @@ Proyecto<br>
 
 | Version | Fecha | Autor | Descripcion de Modificacion |
 | :--- | :--- | :--- | :--- |
-| 0.1 | [DD/MM/AAAA] | Todos | Estructuracion inicial y division de secciones para AV1 |
-| 1.0 | [DD/MM/AAAA] | Todos | Finalizacion del informe para la entrega AV1 (Semana 4) |
+| 0.1 | [28/08/2026] | Todos | Estructuracion inicial y division de secciones para AV1 |
+| 1.0 | [05/09/2026] | Quiliano Motta, Kirk Douglas | Elaboracion de Caratula, Capitulo I (Startup Profile, Solution Profile, Lean UX, Segmentos), Collaboration Insights y Student Outcome para la entrega AV1. |
+| 1.0 | [--/09/2026] | Todos | Finalizacion del informe para la entrega AV1 (Semana 4) |
 
 ---
 
 ## Project Report Collaboration Insights
 
-**Link del Repositorio de la Organizacion:** [Pegar URL]  
-**Link del Repositorio del Reporte:** [Pegar URL]  
+**Link del Repositorio de la Organizacion:** [Organización](https://github.com/MDEPS-Team) 
+**Link del Repositorio del Reporte:** [Reporte](https://github.com/MDEPS-Team/MDEPS-report/tree/develop)
 
 ### Reporte de Colaboracion - Entrega AV1
-[Describir de forma general como trabajo el equipo durante el periodo previo a la Semana 4].
+Durante esta primera entrega, el equipo establecio la estructura base del repositorio utilizando el flujo de trabajo GitFlow. Las tareas se dividieron de forma equitativa, permitiendo que la redaccion del modelo de negocio, el analisis de la competencia y el diseno de la arquitectura se trabajaran en ramas independientes (feature/...) antes de integrarse a la rama develop. El equipo mantuvo sincronizacion constante para alinear los hallazgos del Lean UX con los requerimientos del producto.
 
 #### Contributors
 [Insertar captura de pantalla de GitHub Insights > Contributors del repositorio del informe]
@@ -86,8 +85,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio Especifico | Acciones Realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>[Acciones realizadas en AV1]<br><br>**Guillen Giraldo, Mike Dylan:**<br>[Acciones realizadas en AV1]<br><br>**Mendoza Machoa, Lionel Snayder:**<br>[Acciones realizadas en AV1]<br><br>**Pacheco Lavado, Rafael Agustin:**<br>[Acciones realizadas en AV1]<br><br>**Quiliano Motta, Kirk Douglas:**<br>[Acciones realizadas en AV1] | **AV1:** [Redactar conclusion grupal sobre la actualizacion de conocimientos en esta primera entrega] |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeno profesional y el desarrollo de proyectos en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>[Acciones realizadas en AV1]<br><br>**Guillen Giraldo, Mike Dylan:**<br>[Acciones realizadas en AV1]<br><br>**Mendoza Machoa, Lionel Snayder:**<br>[Acciones realizadas en AV1]<br><br>**Pacheco Lavado, Rafael Agustin:**<br>[Acciones realizadas en AV1]<br><br>**Quiliano Motta, Kirk Douglas:**<br>[Acciones realizadas en AV1] | **AV1:** [Redactar conclusion grupal sobre la importancia del aprendizaje continuo] |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>[Acciones realizadas en AV1]<br><br>**Guillen Giraldo, Mike Dylan:**<br>[Acciones realizadas en AV1]<br><br>**Mendoza Machoa, Lionel Snayder:**<br>[Acciones realizadas en AV1]<br><br>**Pacheco Lavado, Rafael Agustin:**<br>[Acciones realizadas en AV1]<br><br>**Quiliano Motta, Kirk Douglas:**<br>Investigue y aplique metodologias agiles de diseno de producto (Lean UX) y tecnicas de analisis de problemas (5W2H) para definir el alcance del proyecto Vantage PMO, actualizando mis conocimientos en gestion de portafolios y redaccion tecnica estructurada. | **AV1:** [Redactar conclusion grupal sobre la actualizacion de conocimientos en esta primera entrega] |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeno profesional y el desarrollo de proyectos en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>[Acciones realizadas en AV1]<br><br>**Guillen Giraldo, Mike Dylan:**<br>[Acciones realizadas en AV1]<br><br>**Mendoza Machoa, Lionel Snayder:**<br>[Acciones realizadas en AV1]<br><br>**Pacheco Lavado, Rafael Agustin:**<br>[Acciones realizadas en AV1]<br><br>**Quiliano Motta, Kirk Douglas:**<br>Reconoci que para modelar una solucion B2B efectiva, necesitaba aprender sobre los puntos de dolor reales de los Project Managers y el uso estandarizado de repositorios colaborativos (GitHub/GitFlow), lo cual es fundamental para el desarrollo profesional en la industria del software. | **AV1:** [Redactar conclusion grupal sobre la importancia del aprendizaje continuo] |
 
 ---
 
@@ -110,5 +109,5 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 - **Objetivo 2:** [Redactar objetivo SMART profesional post-graduacion]
 
 ### Quiliano Motta, Kirk Douglas
-- **Objetivo 1:** [Redactar objetivo SMART profesional post-graduacion]
-- **Objetivo 2:** [Redactar objetivo SMART profesional post-graduacion]
+- **Objetivo 1:** Obtener una certificacion en marcos de trabajo agiles (como Scrum Master o SAFe) dentro de los primeros 6 meses posteriores a la graduacion, dedicando 4 horas semanales de estudio, para mejorar mi perfil en la gestion y desarrollo de proyectos de software B2B.
+- **Objetivo 2:** Dominar el desarrollo de arquitecturas en la nube (AWS o Azure) logrando una certificacion basica en el transcurso de un ano tras graduarme, mediante la realizacion de 3 proyectos practicos, para potenciar mi capacidad de disenar soluciones de software escalables.
