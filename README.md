@@ -2,7 +2,7 @@
 ## Carrera de Ingenieria de Software
 ### 1ACC0238 - Aplicaciones para Dispositivos Moviles
 
-**NRC:** [Colocar NRC aqui]  
+**NRC:** [132767]  
 **Docente:** Mayta Guillermo, Jorge Luis  
 **Informe de Trabajo Final - Entrega AV1**  
 **Nombre del Equipo:** [Colocar nombre del equipo / startup]  
