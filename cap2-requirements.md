@@ -267,16 +267,16 @@ En este diagrama se puede observar cómo las peticiones ingresan a través de lo
 
 | Campo | Tipo | Nulo | Default | Comentario / Descripción |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único del registro, generalmente una clave primaria[cite: 2]. |
-| **created_at** | datetime | NULL | default | Fecha y hora en que se creó el registro[cite: 2]. |
-| **updated_at** | datetime | NULL | default | Fecha y hora de la última actualización del registro[cite: 2]. |
-| **company_name** | varchar | NULL | default | Nombre de la empresa asociada al usuario o entidad[cite: 2]. |
-| **email** | varchar | N-N | default | Dirección de correo electrónico del usuario[cite: 2]. |
-| **first_name** | varchar | N-N | default | Primer nombre del usuario[cite: 2]. |
-| **last_name** | varchar | N-N | default | Apellido del usuario[cite: 2]. |
-| **password** | varchar | N-N | default | Contraseña del usuario (almacenada de forma segura, usualmente encriptada)[cite: 2]. |
-| **trial** | bit | NULL | default | Indica si el usuario está en un período de prueba (true/false)[cite: 2]. |
-| **username** | varchar | N-N | default | Nombre de usuario único utilizado para iniciar sesión[cite: 2]. |
+| **id** | bigint | N-N | default | Identificador único del registro, generalmente una clave primaria. |
+| **created_at** | datetime | NULL | default | Fecha y hora en que se creó el registro. |
+| **updated_at** | datetime | NULL | default | Fecha y hora de la última actualización del registro. |
+| **company_name** | varchar | NULL | default | Nombre de la empresa asociada al usuario o entidad. |
+| **email** | varchar | N-N | default | Dirección de correo electrónico del usuario. |
+| **first_name** | varchar | N-N | default | Primer nombre del usuario. |
+| **last_name** | varchar | N-N | default | Apellido del usuario. |
+| **password** | varchar | N-N | default | Contraseña del usuario (almacenada de forma segura, usualmente encriptada). |
+| **trial** | bit | NULL | default | Indica si el usuario está en un período de prueba (true/false)[. |
+| **username** | varchar | N-N | default | Nombre de usuario único utilizado para iniciar sesión. |
 
 **Tabla: USER_AUDITS**
 
