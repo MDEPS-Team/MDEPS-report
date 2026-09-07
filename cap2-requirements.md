@@ -261,6 +261,9 @@ En este diagrama se puede observar cómo las peticiones ingresan a través de lo
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 <img width="203" height="385" alt="diagrama 3" src="https://github.com/user-attachments/assets/bf894c88-6d08-4a9e-9985-13a1c0a7f514" />
+
+
+
 **Tabla: USERS**
 
 | Campo | Tipo | Nulo | Default | Comentario / Descripción |
