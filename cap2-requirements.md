@@ -256,7 +256,8 @@ En este diagrama se puede observar cómo las peticiones ingresan a través de lo
 
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
-[Diagrama UML de clases del dominio].
+<img width="1969" height="952" alt="diagrama2" src="https://github.com/user-attachments/assets/97bb35b1-aff3-4f8b-8316-c8d20974e7c2" />
+
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 [Diagrama de base de datos relacional y diccionario de tablas].
