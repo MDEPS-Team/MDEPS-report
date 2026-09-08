@@ -1,9 +1,32 @@
 # Capitulo II: Requirements Development and Software Solution Design
+La recolección y análisis de requisitos es una etapa fundamental en el desarrollo de Vantage PMO, ya que permite identificar y comprender las necesidades de los stakeholders involucrados en la gestión de proyectos. Para ello, se emplean técnicas como el análisis de la competencia y las entrevistas a usuarios pertenecientes a los segmentos objetivo.
 
+A través de este análisis se busca identificar problemáticas relacionadas con la falta de visibilidad, la fragmentación de la información, las dificultades en el seguimiento de proyectos y la ausencia de estandarización en los procesos. Los resultados obtenidos permitirán definir las necesidades y requerimientos más relevantes de los usuarios, estableciendo una base para el diseño de una solución que facilite la gestión de proyectos y contribuya a una toma de decisiones más oportuna.
 ## 2.1. Competidores
+En esta sección se analizan las principales soluciones existentes en el mercado relacionadas con la gestión de proyectos y portafolios. El objetivo es identificar sus principales características, ventajas y limitaciones para determinar oportunidades de diferenciación para Vantage PMO.
+
+Los competidores seleccionados son Jira, monday.com y Planview Portfolios, debido a que ofrecen funcionalidades relacionadas con la planificación, seguimiento, visualización, gestión de recursos y toma de decisiones en proyectos.
+
+Jira
+
+Jira es una plataforma de gestión del trabajo ampliamente utilizada, especialmente en equipos de desarrollo de software. Permite planificar y asignar actividades, realizar seguimiento mediante tableros y cronogramas, automatizar flujos de trabajo y generar reportes y dashboards. También permite visualizar métricas y el estado de los proyectos para facilitar la toma de decisiones.
+
+Su principal ventaja es su alto nivel de personalización y la gran cantidad de funcionalidades e integraciones disponibles. Sin embargo, su enfoque está fuertemente relacionado con la gestión del trabajo y el desarrollo de software, por lo que Vantage PMO puede diferenciarse mediante una experiencia más enfocada en la supervisión integral de portafolios y procesos de PMO.
+
+monday.com
+
+monday.com es una plataforma visual de gestión de proyectos y trabajo que permite organizar actividades, responsables, cronogramas y recursos. Cuenta con diagramas de Gantt, dashboards, gestión de carga de trabajo, hitos y automatizaciones. Sus dashboards permiten centralizar información de diferentes proyectos para facilitar el seguimiento y la toma de decisiones.
+
+Su principal fortaleza es la facilidad de personalización y la experiencia visual. Sin embargo, al ser una plataforma generalista, Vantage PMO puede diferenciarse mediante funcionalidades diseñadas específicamente para las necesidades de una PMO, como estandarización de procesos, seguimiento de portafolios y generación de información ejecutiva.
+
+Planview Portfolios
+
+Planview Portfolios es una solución orientada directamente a la gestión de portafolios de proyectos. Permite conectar la estrategia empresarial con proyectos, gestionar recursos y capacidad, priorizar iniciativas, controlar aspectos financieros y generar dashboards y reportes para la toma de decisiones.
+
+Su principal ventaja es su orientación hacia la gestión estratégica de portafolios y organizaciones de gran escala. Como oportunidad para Vantage PMO, se puede plantear una experiencia más sencilla y accesible para organizaciones que necesitan centralizar el seguimiento de proyectos sin enfrentarse a la complejidad de una plataforma empresarial de gran escala.
 
 ### 2.1.1. Analisis competitivo
-| ¿Por que llevar a cabo este analisis? | [Explicar el proposito del analisis competitivo] | | | |
+| ¿Por que llevar a cabo este analisis? | Evaluar el posicionamiento de Vantage PMO frente a soluciones existentes en el mercado, identificando fortalezas, debilidades y oportunidades de diferenciación relacionadas con la gestión de proyectos, recursos, información y toma de decisiones. | | | |
 | :--- | :--- | :--- | :--- | :--- |
 | **Startups** | **FlowAlert (Propuesta)** | **Competidor 1** | **Competidor 2** | **Competidor 3** |
 | **Overview** | [Descripcion] | [Descripcion] | [Descripcion] | [Descripcion] |
@@ -19,15 +42,126 @@
 | **Amenazas (SWOT)** | [Amenazas] | [Amenazas] | [Amenazas] | [Amenazas] |
 
 ### 2.1.2. Estrategias y tacticas frente a competidores
-[Detallar estrategias y tacticas para aprovechar brechas de la competencia].
+Para diferenciar Vantage PMO frente a las soluciones existentes, se plantean las siguientes estrategias y tácticas:
+
+1. Especialización en gestión de PMO
+
+Estrategia:
+Diferenciar Vantage PMO mediante funcionalidades orientadas específicamente a la gestión y supervisión de portafolios de proyectos.
+
+Táctica:
+Desarrollar dashboards ejecutivos, seguimiento de hitos, indicadores y herramientas de control que permitan visualizar el estado de múltiples proyectos desde una misma plataforma.
+
+2. Simplificación de la experiencia de usuario
+
+Estrategia:
+Ofrecer una experiencia sencilla que reduzca la complejidad de las herramientas empresariales de gestión de proyectos.
+
+Táctica:
+Diseñar una interfaz intuitiva, con navegación clara, información priorizada y dashboards visuales que permitan consultar rápidamente el estado de los proyectos.
+
+3. Centralización de la información
+
+Estrategia:
+Reducir la dispersión de información entre diferentes herramientas y canales de comunicación.
+
+Táctica:
+Centralizar información relacionada con proyectos, responsables, recursos, avances, hitos y reportes dentro de una misma plataforma.
+
+4. Soporte para la toma de decisiones
+
+Estrategia:
+Convertir la información de los proyectos en indicadores útiles para los responsables de la organización.
+
+Táctica:
+Implementar dashboards, indicadores clave de desempeño (KPIs), alertas y reportes que permitan detectar desviaciones y tomar decisiones oportunamente.
+
+5. Automatización de procesos
+
+Estrategia:
+Reducir el tiempo dedicado a actividades administrativas y recopilación manual de información.
+
+Táctica:
+Automatizar la generación de reportes, actualización de información y alertas relacionadas con hitos, fechas límite y posibles desviaciones.
+
+6. Compatibilidad con herramientas existentes
+
+Estrategia:
+Disminuir la resistencia al cambio y facilitar la incorporación de Vantage PMO en organizaciones que ya utilizan otras herramientas.
+
+Táctica:
+Considerar mecanismos de importación y exportación de información y futuras integraciones con herramientas utilizadas habitualmente por los equipos de proyectos.
 
 ---
 
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseno de entrevistas
-[Colocar preguntas por cada segmento objetivo].
+Las entrevistas tienen como objetivo conocer las experiencias, necesidades, dificultades y expectativas de los usuarios relacionados con la gestión de múltiples proyectos. Las preguntas fueron diseñadas para obtener información sobre sus actividades actuales, herramientas utilizadas, problemas frecuentes, toma de decisiones y disposición para utilizar una solución centralizada como Vantage PMO.
 
+#### Preguntas de presentación
+
+- ¿Cuál es su nombre?
+- ¿Cuántos años tiene?
+- ¿En qué distrito reside?
+- ¿Cuál es su ocupación o cargo actual?
+- ¿Cuántos años de experiencia tiene en su área?
+
+### Segmento 1: Líderes o jefes de gestión de proyectos
+
+#### Preguntas principales
+
+1. ¿Cuál es su rol actual y qué responsabilidades tiene relacionadas con la gestión de proyectos?
+2. ¿Cuántos proyectos gestiona o supervisa actualmente de manera simultánea?
+3. ¿Qué tipo de proyectos suele gestionar y qué características tienen?
+4. ¿Cómo realiza actualmente el seguimiento del avance de sus proyectos?
+5. ¿Qué herramientas utiliza para organizar y supervisar los proyectos? ¿Cuál utiliza con mayor frecuencia?
+6. ¿Qué información considera indispensable para saber si un proyecto está avanzando correctamente?
+7. ¿Cómo identifica actualmente retrasos, riesgos o problemas en un proyecto?
+8. ¿Qué dificultades encuentra al gestionar varios proyectos al mismo tiempo?
+9. ¿Qué problemas ha experimentado debido a información dispersa, desactualizada o difícil de encontrar?
+10. ¿Cómo coordina actualmente con los miembros del equipo y otros stakeholders?
+11. ¿Qué actividades relacionadas con la gestión de proyectos le consumen más tiempo?
+12. ¿Cómo prepara o consolida los reportes de avance de los proyectos?
+13. ¿Qué tan importante es para usted contar con información actualizada para tomar decisiones?
+14. ¿Qué características debería tener una herramienta para que realmente le resulte útil en su trabajo?
+15. ¿Qué tan dispuesto estaría a utilizar una plataforma que centralice la información de sus proyectos? ¿Qué condiciones tendría que cumplir?
+
+#### Preguntas complementarias
+
+- ¿Con qué frecuencia revisa el estado de sus proyectos?
+- ¿Qué dispositivo utiliza con mayor frecuencia para consultar información de sus proyectos?
+- ¿Qué información le gustaría poder consultar rápidamente desde un dispositivo móvil?
+- ¿Qué cambiaría de las herramientas que utiliza actualmente?
+- ¿Ha tenido que utilizar hojas de cálculo, correo electrónico o aplicaciones de mensajería para complementar sus herramientas de gestión? ¿Por qué?
+
+### Segmento 2: Empresas medianas y grandes con múltiples proyectos
+
+#### Preguntas principales
+
+1. ¿A qué se dedica la empresa y cuál es su función dentro de ella?
+2. ¿Cuántos proyectos o iniciativas gestiona actualmente la empresa o su equipo?
+3. ¿Cuántas personas participan aproximadamente en la gestión de estos proyectos?
+4. ¿Cómo organizan actualmente los proyectos, tareas, responsables y fechas de entrega?
+5. ¿Qué herramientas utilizan para coordinar y realizar el seguimiento de los proyectos?
+6. ¿Cómo comparten la información relacionada con los proyectos entre los miembros del equipo?
+7. ¿Qué dificultades encuentran al gestionar varios proyectos simultáneamente?
+8. ¿Han experimentado retrasos, duplicidad de información o problemas de coordinación? ¿Qué los ocasionó?
+9. ¿Cómo identifican actualmente qué proyectos requieren mayor atención?
+10. ¿Qué información necesitan para evaluar el estado general de los proyectos?
+11. ¿Qué actividades de seguimiento o coordinación les generan mayor carga de trabajo?
+12. ¿Cómo realizan actualmente los reportes o consolidación de información?
+13. ¿Qué tan fácil es para los responsables acceder a información actualizada de los proyectos?
+14. ¿Qué características considerarían importantes en una herramienta centralizada de gestión?
+15. ¿Estarían dispuestos a adoptar una solución digital que centralice la información y facilite el seguimiento de varios proyectos? ¿Qué condiciones tendría que cumplir?
+
+#### Preguntas complementarias
+
+- ¿Qué herramienta utilizan con mayor frecuencia durante su jornada laboral?
+- ¿Utilizan principalmente computadora, tablet o teléfono móvil para realizar estas actividades?
+- ¿Qué información les gustaría consultar desde un dispositivo móvil?
+- ¿Qué problema de la gestión actual les gustaría solucionar primero?
+- ¿Qué factores podrían dificultar la adopción de una nueva herramienta dentro de la empresa?
 ### 2.2.2. Registro de entrevistas
 - **Entrevista 1:**
   - Nombres y Apellidos: [Datos]
