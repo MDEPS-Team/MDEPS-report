@@ -19,7 +19,7 @@ Proyecto<br>
 
 | Codigo       | Apellidos y Nombres |
 |:-------------| :--- |
-| [Codigo]     | Fuentes Alvarez, Angiela Stephany |
+| [U202520331] | Fuentes Alvarez, Angiela Stephany |
 | [Codigo]     | Guillen Giraldo, Mike Dylan |
 | [u202417433] | Mendoza Machoa, Lionel Snayder |
 | [Codigo]     | Pacheco Lavado, Rafael Agustin |
@@ -93,8 +93,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 ## Objetivos SMART
 
 ### Fuentes Alvarez, Angiela Stephany
-- **Objetivo 1:** [Redactar objetivo SMART profesional post-graduacion]
-- **Objetivo 2:** [Redactar objetivo SMART profesional post-graduacion]
+- **Objetivo 1:** Durante los dos primeros años después de graduarme de Ingeniería de Software, conseguir y mantener un puesto profesional como desarrolladora de software, fortaleciendo mis conocimientos en desarrollo backend, APIs y bases de datos mediante la participación en proyectos reales y la realización de al menos 2 cursos o certificaciones especializadas por año.
+- **Objetivo 2:** Desarrollar un perfil profesional sólido en Ingeniería de Software, participando en al menos 3 proyectos de software y construyendo un portafolio técnico en GitHub que evidencie mis competencias en programación, desarrollo de aplicaciones y trabajo colaborativo.
 
 ### Guillen Giraldo, Mike Dylan
 - **Objetivo 1:** [Redactar objetivo SMART profesional post-graduacion]
