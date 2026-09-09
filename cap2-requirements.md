@@ -25,21 +25,29 @@ Planview Portfolios es una solución orientada directamente a la gestión de por
 
 Su principal ventaja es su orientación hacia la gestión estratégica de portafolios y organizaciones de gran escala. Como oportunidad para Vantage PMO, se puede plantear una experiencia más sencilla y accesible para organizaciones que necesitan centralizar el seguimiento de proyectos sin enfrentarse a la complejidad de una plataforma empresarial de gran escala.
 
-### 2.1.1. Analisis competitivo
-| ¿Por que llevar a cabo este analisis? | Evaluar el posicionamiento de Vantage PMO frente a soluciones existentes en el mercado, identificando fortalezas, debilidades y oportunidades de diferenciación relacionadas con la gestión de proyectos, recursos, información y toma de decisiones. | | | |
-| :--- | :--- | :--- | :--- | :--- |
-| **Startups** | **FlowAlert (Propuesta)** | **Competidor 1** | **Competidor 2** | **Competidor 3** |
-| **Overview** | [Descripcion] | [Descripcion] | [Descripcion] | [Descripcion] |
-| **Ventaja Competitiva** | [Diferenciador] | [Diferenciador] | [Diferenciador] | [Diferenciador] |
-| **Mercado Objetivo** | [Target] | [Target] | [Target] | [Target] |
-| **Estrategias de Marketing**| [Estrategia] | [Estrategia] | [Estrategia] | [Estrategia] |
-| **Productos & Servicios** | [Servicios] | [Servicios] | [Servicios] | [Servicios] |
-| **Precios & Costos** | [Modelo de precio] | [Modelo de precio] | [Modelo de precio] | [Modelo de precio] |
-| **Canales de Distribucion** | [Canales] | [Canales] | [Canales] | [Canales] |
-| **Fortalezas (SWOT)** | [Fortalezas] | [Fortalezas] | [Fortalezas] | [Fortalezas] |
-| **Debilidades (SWOT)** | [Debilidades] | [Debilidades] | [Debilidades] | [Debilidades] |
-| **Oportunidades (SWOT)**| [Oportunidades] | [Oportunidades] | [Oportunidades] | [Oportunidades] |
-| **Amenazas (SWOT)** | [Amenazas] | [Amenazas] | [Amenazas] | [Amenazas] |
+### 2.1.1 Análisis competitivo
+<a id="2-1-1-analisis-competitivo"></a>
+
+| **¿Por qué llevar a cabo este análisis?** | Evaluar el posicionamiento de Vantage PMO frente a sus competidores para identificar oportunidades de diferenciación y definir estrategias competitivas. |
+| ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+
+| **Categoría** | **Vantage PMO (Startup)** | **Jira** | **Monday.com** | **Planview Portfolios** |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
+| **Perfil** | | | | |
+| **Overview** | Plataforma orientada a centralizar la gestión y supervisión de proyectos y portafolios, proporcionando dashboards, reportes y control de recursos. | Plataforma de gestión del trabajo y proyectos, especialmente utilizada en equipos de desarrollo de software. | Plataforma visual y personalizable para gestionar proyectos, tareas, recursos y flujos de trabajo. | Plataforma empresarial especializada en la gestión estratégica de portafolios y proyectos. |
+| **Ventaja competitiva (valor al cliente)** | Centralización de información, visibilidad de proyectos y enfoque específico en las necesidades de una PMO. | Alta personalización, automatización e integración con herramientas de desarrollo. | Facilidad de uso, flexibilidad y visualización de información. | Gestión integral de portafolios, recursos, planificación, análisis y alineación estratégica. |
+| **Perfil de Marketing** | | | | |
+| **Mercado objetivo** | Empresas medianas y grandes que gestionan múltiples proyectos y requieren mayor visibilidad y estandarización. | Equipos de desarrollo de software y organizaciones que gestionan diferentes tipos de trabajo. | Equipos y empresas que buscan organizar proyectos y procesos de manera flexible. | Empresas y organizaciones de gran escala con necesidades de gestión de portafolios y recursos. |
+| **Estrategias de marketing** | Enfoque en productividad, centralización de información y transformación digital de la gestión de proyectos. | Posicionamiento dentro del ecosistema tecnológico, integraciones y gestión del trabajo de desarrollo. | Comunicación centrada en facilidad de uso, personalización, colaboración y gestión visual. | Posicionamiento empresarial basado en gestión estratégica, optimización de recursos y toma de decisiones basada en datos. |
+| **Perfil de Producto** | | | | |
+| **Productos & Servicios** | Dashboards, seguimiento de proyectos, reportes, gestión de recursos y centralización de información. | Gestión de tareas, tableros, cronogramas, automatizaciones, reportes y dashboards. | Gestión de proyectos, tableros, Gantt, dashboards, automatizaciones y gestión de carga de trabajo. | Gestión de portafolios, planificación, recursos, proyectos, riesgos, reportes, dashboards y análisis. |
+| **Precios & Costos** | Modelo SaaS por definir de acuerdo con el alcance de la solución. | Cuenta con opciones gratuitas y planes de pago según funcionalidades y necesidades. | Modelo de suscripción con diferentes planes según las necesidades de los equipos y organizaciones. | Orientado principalmente al mercado empresarial; precios bajo cotización. |
+| **Canales de distribución** | Web / Móvil | Web / Móvil | Web / Móvil | Web / Plataformas empresariales |
+| **Análisis SWOT** | | | | |
+| **Fortalezas** | • Centralización de información. <br> • Enfoque específico en PMO. <br> • Interfaz orientada a facilitar la visualización de proyectos. | • Alta personalización. <br> • Amplio ecosistema de integraciones. <br> • Amplio reconocimiento en equipos tecnológicos. | • Interfaz visual. <br> • Flexible y personalizable. <br> • Facilidad para organizar diferentes tipos de trabajo. | • Especialización en gestión de portafolios. <br> • Gestión de recursos y capacidad. <br> • Dashboards y análisis avanzados. |
+| **Debilidades** | • Producto nuevo. <br> • Menor reconocimiento de marca. <br> • Menor cantidad de integraciones en comparación con plataformas consolidadas. | • Puede resultar complejo para usuarios no familiarizados con herramientas de gestión de desarrollo. <br> • Requiere configuración para adaptarse a diferentes necesidades. | • Menor especialización en gestión estratégica de PMO frente a plataformas PPM especializadas. | • Mayor complejidad. <br> • Orientación principalmente empresarial. <br> • Puede resultar menos accesible para organizaciones pequeñas o con necesidades más simples. |
+| **Oportunidades** | • Crecimiento de la digitalización empresarial. <br> • Empresas que aún dependen de herramientas dispersas. <br> • Mayor necesidad de visibilidad sobre múltiples proyectos. | • Expansión hacia diferentes áreas de gestión del trabajo. <br> • Nuevas integraciones y automatizaciones. | • Crecimiento del trabajo colaborativo y digital. <br> • Adopción en diferentes sectores empresariales. | • Creciente demanda de soluciones de Project Portfolio Management. <br> • Incorporación de inteligencia artificial y análisis avanzado. |
+| **Amenazas** | • Competidores consolidados. <br> • Nuevas startups de gestión de proyectos. <br> • Evolución rápida de las tecnologías de gestión. | • Competencia de plataformas de gestión de proyectos y trabajo colaborativo. <br> • Cambios rápidos en las necesidades de los equipos. | • Competidores especializados en diferentes industrias. <br> • Saturación del mercado de gestión de proyectos. | • Competencia de soluciones PPM y SPM. <br> • Evolución de plataformas más simples y accesibles. |
 
 ### 2.1.2. Estrategias y tacticas frente a competidores
 Para diferenciar Vantage PMO frente a las soluciones existentes, se plantean las siguientes estrategias y tácticas:
@@ -111,22 +119,25 @@ Las entrevistas tienen como objetivo conocer las experiencias, necesidades, difi
 
 #### Preguntas principales
 
-1. ¿Cuál es su rol actual y qué responsabilidades tiene relacionadas con la gestión de proyectos?
-2. ¿Cuántos proyectos gestiona o supervisa actualmente de manera simultánea?
-3. ¿Qué tipo de proyectos suele gestionar y qué características tienen?
-4. ¿Cómo realiza actualmente el seguimiento del avance de sus proyectos?
-5. ¿Qué herramientas utiliza para organizar y supervisar los proyectos? ¿Cuál utiliza con mayor frecuencia?
-6. ¿Qué información considera indispensable para saber si un proyecto está avanzando correctamente?
-7. ¿Cómo identifica actualmente retrasos, riesgos o problemas en un proyecto?
-8. ¿Qué dificultades encuentra al gestionar varios proyectos al mismo tiempo?
-9. ¿Qué problemas ha experimentado debido a información dispersa, desactualizada o difícil de encontrar?
-10. ¿Cómo coordina actualmente con los miembros del equipo y otros stakeholders?
-11. ¿Qué actividades relacionadas con la gestión de proyectos le consumen más tiempo?
-12. ¿Cómo prepara o consolida los reportes de avance de los proyectos?
-13. ¿Qué tan importante es para usted contar con información actualizada para tomar decisiones?
-14. ¿Qué características debería tener una herramienta para que realmente le resulte útil en su trabajo?
-15. ¿Qué tan dispuesto estaría a utilizar una plataforma que centralice la información de sus proyectos? ¿Qué condiciones tendría que cumplir?
+1. ¿Cuál es tu rol dentro de la organización y cuáles son tus principales responsabilidades en la gestión de proyectos?
 
+2. ¿Cuántos proyectos sueles gestionar o supervisar de manera simultánea?
+
+3. ¿Qué herramientas utilizas actualmente para organizar y hacer seguimiento de tus proyectos?
+
+4. ¿Cómo realizas actualmente el seguimiento del avance de los proyectos y con qué frecuencia lo haces?
+
+5. ¿Qué información consideras indispensable para conocer rápidamente el estado de un proyecto?
+
+6. ¿Cuál es la principal dificultad que encuentras al gestionar varios proyectos al mismo tiempo?
+
+7. ¿Has tenido problemas debido a que la información de los proyectos se encuentra dispersa, desactualizada o en diferentes herramientas? ¿Podrías contarnos algún ejemplo?
+
+8. ¿Qué actividades relacionadas con el seguimiento o elaboración de reportes consideras que te quitan más tiempo?
+
+9. Si tuvieras una plataforma centralizada para gestionar tus proyectos, ¿qué funcionalidades considerarías más útiles?
+
+10. ¿Estarías dispuesto(a) a utilizar una plataforma de este tipo? ¿Qué características tendría que tener para que realmente te resulte útil?
 #### Preguntas complementarias
 
 - ¿Con qué frecuencia revisa el estado de sus proyectos?
@@ -139,22 +150,25 @@ Las entrevistas tienen como objetivo conocer las experiencias, necesidades, difi
 
 #### Preguntas principales
 
-1. ¿A qué se dedica la empresa y cuál es su función dentro de ella?
-2. ¿Cuántos proyectos o iniciativas gestiona actualmente la empresa o su equipo?
-3. ¿Cuántas personas participan aproximadamente en la gestión de estos proyectos?
-4. ¿Cómo organizan actualmente los proyectos, tareas, responsables y fechas de entrega?
-5. ¿Qué herramientas utilizan para coordinar y realizar el seguimiento de los proyectos?
-6. ¿Cómo comparten la información relacionada con los proyectos entre los miembros del equipo?
-7. ¿Qué dificultades encuentran al gestionar varios proyectos simultáneamente?
-8. ¿Han experimentado retrasos, duplicidad de información o problemas de coordinación? ¿Qué los ocasionó?
-9. ¿Cómo identifican actualmente qué proyectos requieren mayor atención?
-10. ¿Qué información necesitan para evaluar el estado general de los proyectos?
-11. ¿Qué actividades de seguimiento o coordinación les generan mayor carga de trabajo?
-12. ¿Cómo realizan actualmente los reportes o consolidación de información?
-13. ¿Qué tan fácil es para los responsables acceder a información actualizada de los proyectos?
-14. ¿Qué características considerarían importantes en una herramienta centralizada de gestión?
-15. ¿Estarían dispuestos a adoptar una solución digital que centralice la información y facilite el seguimiento de varios proyectos? ¿Qué condiciones tendría que cumplir?
+1. ¿A qué se dedica la organización y cuál es tu función dentro de ella?
 
+2. ¿Cuántos proyectos o iniciativas suelen manejar simultáneamente?
+
+3. ¿Cómo organizan actualmente la información sobre proyectos, tareas, responsables y fechas?
+
+4. ¿Qué herramientas utilizan actualmente para gestionar o hacer seguimiento de sus proyectos?
+
+5. ¿Cómo se comparte la información sobre el avance de los proyectos entre las diferentes personas o áreas?
+
+6. ¿Cuál es la principal dificultad que tienen actualmente para coordinar varios proyectos?
+
+7. ¿Han tenido problemas con retrasos, falta de coordinación o pérdida de información? ¿Podrías contarnos algún ejemplo?
+
+8. ¿Qué información necesitarías consultar rápidamente para conocer el estado de todos los proyectos?
+
+9. ¿Qué funcionalidades considerarías importantes en una plataforma centralizada para gestionar los proyectos de la organización?
+
+10. ¿Qué condiciones tendría que cumplir una nueva plataforma para que la organización estuviera dispuesta a adoptarla?
 #### Preguntas complementarias
 
 - ¿Qué herramienta utilizan con mayor frecuencia durante su jornada laboral?
@@ -163,42 +177,549 @@ Las entrevistas tienen como objetivo conocer las experiencias, necesidades, difi
 - ¿Qué problema de la gestión actual les gustaría solucionar primero?
 - ¿Qué factores podrían dificultar la adopción de una nueva herramienta dentro de la empresa?
 ### 2.2.2. Registro de entrevistas
-- **Entrevista 1:**
-  - Nombres y Apellidos: [Datos]
-  - Edad / Ubicacion: [Datos]
-  - URL del Video: [Enlace OneDrive]
-  - Screenshot: [Imagen de video con timing visible]
-  - Resumen: [Resumen descriptivo con variables objetivas y subjetivas]
 
-### 2.2.3. Analisis de entrevistas
-[Tablas con sustento porcentual y caracteristicas mas comunes detectadas].
+En esta sección presentamos los registros de las entrevistas realizadas a personas pertenecientes a los segmentos objetivo de Vantage PMO. El objetivo de las entrevistas fue conocer sus experiencias, dificultades y necesidades relacionadas con la gestión y seguimiento de múltiples proyectos, así como identificar oportunidades de mejora mediante una plataforma centralizada.
+
+### Segmento 1: Líderes y Jefes de Gestión de Proyectos
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Gerson</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Escarate</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>30 años</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Surco</td>
+  </tr>
+  <tr>
+    <td>Ocupación</td>
+    <td>Project Manager</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Duración</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>
+      Gerson se desempeña como Project Manager en el sector tecnológico y cuenta con aproximadamente cinco años de experiencia en gestión de proyectos. Actualmente supervisa alrededor de seis proyectos de manera simultánea y utiliza herramientas como Jira, Microsoft Project y Excel para organizar y realizar el seguimiento de las actividades. Realiza un seguimiento frecuente del avance de los proyectos y considera importante contar con información actualizada sobre el progreso, responsables, fechas y recursos disponibles. Entre las principales dificultades que identifica se encuentra la consolidación de información proveniente de diferentes herramientas, especialmente al momento de preparar reportes. Considera que una plataforma centralizada con dashboards, alertas y seguimiento de indicadores podría reducir el trabajo administrativo y facilitar la toma de decisiones. También considera importante que la herramienta sea sencilla de utilizar y que pueda accederse desde dispositivos móviles.
+    </td>
+  </tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Lucy</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Linares</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>28 años</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Miraflores</td>
+  </tr>
+  <tr>
+    <td>Ocupación</td>
+    <td>Coordinadora de proyectos</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Duración</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>
+      Lucy trabaja como coordinadora de proyectos y participa en la supervisión de entre cuatro y siete proyectos simultáneamente. Para organizar la información utiliza principalmente Excel, documentos compartidos y Microsoft Teams. Realiza reuniones periódicas para conocer el avance de las actividades, aunque señala que uno de los problemas es mantener actualizada la información cuando participan diferentes responsables. También identifica la elaboración y actualización de reportes como una actividad que consume tiempo. Considera que una herramienta centralizada con dashboards y alertas permitiría visualizar rápidamente el estado de los proyectos y detectar posibles retrasos. Para adoptar una nueva solución considera importante que sea intuitiva y que no requiera un proceso de aprendizaje complejo.
+    </td>
+  </tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Christopher</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Osorio</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>38 años</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Borja</td>
+  </tr>
+  <tr>
+    <td>Ocupación</td>
+    <td>Jefe de proyectos</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Duración</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>
+      Christopher se desempeña como jefe de proyectos y tiene bajo su responsabilidad aproximadamente ocho proyectos de manera simultánea. Para realizar el seguimiento utiliza Microsoft Project, Excel y sistemas internos de la organización. Considera necesario disponer de una visión general que le permita identificar rápidamente el avance de cada proyecto, sus fechas importantes y posibles desviaciones. Una de las actividades que considera más demandantes es la preparación y consolidación de información para reportes. Entre las funcionalidades que considera útiles en una plataforma centralizada menciona dashboards, filtros, indicadores y alertas. También considera que la facilidad de uso es un factor importante para que los integrantes del equipo puedan adoptar una nueva herramienta.
+    </td>
+  </tr>
+</tbody>
+</table>
+
+
+### Segmento 2: Empresas medianas y grandes con múltiples proyectos
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Katherine</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Herrera Cotrina</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>37 años</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Ancón</td>
+  </tr>
+  <tr>
+    <td>Ocupación</td>
+    <td>Coordinadora de operaciones</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Duración</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>
+      Katherine se desempeña como coordinadora de operaciones en una organización donde participa en la gestión de diferentes proyectos e iniciativas. Para organizar las actividades utiliza principalmente Excel, Google Drive y WhatsApp, y ocasionalmente otras herramientas de gestión. Identifica como una de sus principales dificultades la dispersión de información entre diferentes herramientas y canales de comunicación. El seguimiento de fechas, tareas y responsables puede complicarse cuando existen varios proyectos simultáneos. Considera que una plataforma centralizada con alertas y recordatorios facilitaría el control de las actividades y reduciría los problemas de coordinación. Para adoptar una nueva solución considera fundamental que sea fácil de utilizar y que requiera poca capacitación.
+    </td>
+  </tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>James</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Jara</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>34 años</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>San Miguel</td>
+  </tr>
+  <tr>
+    <td>Ocupación</td>
+    <td>Administrador de empresa</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Duración</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>
+      James trabaja en la administración de una empresa que desarrolla diferentes iniciativas de manera simultánea. Actualmente utiliza Excel, correo electrónico y documentos compartidos para organizar la información. Señala que uno de los principales inconvenientes es la existencia de diferentes versiones de los documentos y la posibilidad de trabajar con información desactualizada. Para realizar el seguimiento considera importante conocer las fechas, responsables y estado de las tareas. Considera que una plataforma centralizada permitiría mejorar la organización y reducir la duplicidad de información. Entre las funcionalidades que considera más útiles se encuentran los recordatorios y una vista general de los proyectos. Para adoptar una nueva herramienta considera importante que sea sencilla y práctica para los usuarios.
+    </td>
+  </tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+  <tr>
+    <th colspan="2">Entrevista #3</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Nombre</td>
+    <td>Alessandro</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td>Nieto</td>
+  </tr>
+  <tr>
+    <td>Edad</td>
+    <td>29 años</td>
+  </tr>
+  <tr>
+    <td>Distrito</td>
+    <td>Los Olivos</td>
+  </tr>
+  <tr>
+    <td>Ocupación</td>
+    <td>Coordinador de proyectos</td>
+  </tr>
+  <tr>
+    <td>Evidencia</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Link</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Duración</td>
+    <td>Por agregar</td>
+  </tr>
+  <tr>
+    <td>Resumen</td>
+    <td>
+      Alessandro participa en la coordinación de diferentes proyectos y actividades de manera simultánea. Para organizar su trabajo utiliza principalmente WhatsApp, Excel y Trello. Considera que uno de los principales problemas es la dificultad para obtener una visión general de todos los proyectos, especialmente cuando la información se encuentra distribuida en diferentes herramientas. Para realizar un seguimiento adecuado considera necesario conocer las fechas, responsables y tareas pendientes. También considera útiles las notificaciones y recordatorios para evitar que se pasen fechas importantes. Estaría dispuesto a utilizar una plataforma centralizada si esta permite ahorrar tiempo, mejorar la organización y resulta sencilla de utilizar.
+    </td>
+  </tr>
+</tbody>
+</table>
+
+<a id="2-2-3-analisis-de-entrevistas"></a>
+
+## 2.2.3 Análisis de Entrevistas
+
+### Segmento 1: Líderes y Jefes de Gestión de Proyectos
+
+Se analizaron 3 entrevistas a personas que desempeñan funciones relacionadas con la gestión y coordinación de proyectos. La información recopilada permitió identificar características objetivas y subjetivas comunes relacionadas con la cantidad de proyectos gestionados, las herramientas utilizadas, las dificultades de seguimiento y las necesidades de información para la toma de decisiones. Estos resultados servirán como base para la construcción de los User Personas y la identificación de oportunidades para Vantage PMO.
+
+| Característica | Mención | % | Evidencia |
+| :--- | :---: | :---: | :--- |
+| **Gestión simultánea de múltiples proyectos** | 3/3 | 100% | Gerson, Lucy y Christopher mencionan que gestionan o supervisan varios proyectos de manera simultánea. |
+| **Uso de herramientas digitales para la gestión** | 3/3 | 100% | Los tres entrevistados utilizan herramientas como Jira, Microsoft Project, Excel, documentos compartidos o sistemas internos. |
+| **Seguimiento frecuente del avance de los proyectos** | 3/3 | 100% | Los entrevistados realizan un seguimiento frecuente para conocer el avance de las tareas y el estado de sus proyectos. |
+| **Importancia de contar con información actualizada** | 3/3 | 100% | Los tres consideran importante conocer información sobre avances, responsables, fechas y recursos para controlar los proyectos. |
+| **Dificultades para consolidar información** | 3/3 | 100% | Los entrevistados mencionan dificultades relacionadas con la información distribuida entre diferentes herramientas o responsables. |
+| **Elaboración de reportes como actividad que consume tiempo** | 2/3 | 66,6% | Gerson y Lucy identifican la elaboración o actualización de reportes como una actividad que demanda tiempo. |
+| **Necesidad de visualizar retrasos o desviaciones** | 3/3 | 100% | Los entrevistados consideran importante identificar oportunamente retrasos, avances y posibles desviaciones. |
+| **Interés en dashboards o información centralizada** | 3/3 | 100% | Gerson, Lucy y Christopher consideran útil contar con una vista centralizada del estado de los proyectos. |
+| **Importancia de alertas y recordatorios** | 2/3 | 66,6% | Gerson y Christopher mencionan las alertas o recordatorios como funcionalidades útiles para realizar seguimiento. |
+| **Importancia de la facilidad de uso** | 3/3 | 100% | Los tres entrevistados consideran importante que una nueva plataforma sea intuitiva y sencilla de utilizar. |
+
+### Insights Destacados
+
+* **La gestión simultánea de proyectos requiere un seguimiento constante:** El 100% de los entrevistados gestiona o supervisa múltiples proyectos, por lo que necesitan consultar frecuentemente el avance, las fechas y las responsabilidades asociadas a cada proyecto.
+
+* **La información dispersa dificulta el control de los proyectos:** El 100% de los entrevistados utiliza diferentes herramientas para organizar la información. Esta distribución puede dificultar la consolidación y consulta de los datos necesarios para conocer el estado general de los proyectos.
+
+* **La visibilidad del estado de los proyectos es una necesidad común:** El 100% considera importante disponer de información actualizada sobre avances, responsables y fechas. Esto evidencia una oportunidad para Vantage PMO mediante dashboards que permitan consultar la información de manera centralizada.
+
+* **Los reportes representan una oportunidad de optimización:** El 66,6% de los entrevistados identifica la elaboración o actualización de reportes como una actividad que consume tiempo. Esto respalda la incorporación de funcionalidades que faciliten la generación y consulta de reportes.
+
+* **La facilidad de uso es fundamental para la adopción:** El 100% de los entrevistados considera importante que una nueva herramienta sea sencilla e intuitiva. Por ello, Vantage PMO debe priorizar una experiencia de usuario clara y evitar una curva de aprendizaje innecesariamente elevada.
 
 ---
 
-## 2.3. Needfinding
+### Segmento 2: Empresas Medianas y Grandes con Múltiples Proyectos
 
-### 2.3.1. User Personas
-[Insertar fichas exportadas de UXPressia para cada segmento].
+Se analizaron 3 entrevistas a personas que participan en organizaciones o actividades donde se gestionan múltiples proyectos de manera simultánea. La información recopilada permitió identificar problemas relacionados con la organización de tareas, la dispersión de información, la coordinación entre responsables y la necesidad de contar con una herramienta que facilite el control de los proyectos.
 
-### 2.3.2. User Task Matrix
-| Tarea | Frecuencia (Persona 1) | Importancia (Persona 1) | Frecuencia (Persona 2) | Importancia (Persona 2) |
-| :--- | :--- | :--- | :--- | :--- |
-| [Tarea 1] | Alta / Media / Baja | Alta / Media / Baja | Alta / Media / Baja | Alta / Media / Baja |
+| Característica | Mención | % | Evidencia |
+| :--- | :---: | :---: | :--- |
+| **Gestión simultánea de múltiples proyectos o iniciativas** | 3/3 | 100% | Katherine, James y Alessandro mencionan que participan en la gestión de múltiples proyectos o actividades de manera simultánea. |
+| **Uso de herramientas no centralizadas** | 3/3 | 100% | Los tres utilizan diferentes herramientas como Excel, Google Drive, WhatsApp, correo electrónico o Trello. |
+| **Información dispersa entre diferentes herramientas** | 3/3 | 100% | Los entrevistados identifican dificultades relacionadas con tener información distribuida entre diferentes herramientas y canales de comunicación. |
+| **Dificultades para realizar seguimiento de tareas y fechas** | 3/3 | 100% | Katherine, James y Alessandro consideran necesario realizar un seguimiento de tareas, responsables y fechas para mantener el control. |
+| **Dependencia de herramientas de comunicación informal** | 2/3 | 66,6% | Katherine y Alessandro utilizan principalmente WhatsApp como parte de la coordinación de sus actividades. |
+| **Necesidad de centralizar la información** | 3/3 | 100% | Los tres entrevistados consideran útil contar con una plataforma que reúna la información de los proyectos en un solo lugar. |
+| **Importancia de alertas y recordatorios** | 2/3 | 66,6% | Katherine y Alessandro consideran útiles las alertas o recordatorios para evitar olvidos y controlar fechas importantes. |
+| **Importancia de la facilidad de uso** | 3/3 | 100% | Los tres entrevistados consideran que una nueva herramienta debe ser sencilla y práctica para facilitar su adopción. |
+| **Interés en acceder a la información desde dispositivos móviles** | 1/3 | 33,3% | Alessandro menciona el acceso móvil como una característica útil para consultar y gestionar información. |
+| **Problemas relacionados con información duplicada o desactualizada** | 2/3 | 66,6% | Katherine y James mencionan dificultades relacionadas con la duplicidad o actualización de información cuando se utilizan diferentes herramientas. |
 
-### 2.3.3. User Journey Mapping
-[Insertar diagramas As-Is elaborados en UXPressia].
+### Insights Destacados
 
-### 2.3.4. Empathy Mapping
-[Insertar mapas de empatia por segmento].
+* **La gestión de múltiples proyectos se apoya principalmente en herramientas independientes:** El 100% de los entrevistados utiliza diferentes herramientas para organizar y coordinar sus actividades. Esto evidencia la necesidad de contar con una solución que permita centralizar la información relacionada con proyectos, tareas, responsables y fechas.
 
-### 2.3.5. Big Picture EventStorming
-[Capturas de la sesion en Miro y explicacion del flujo temporal general de eventos de dominio].
+* **La falta de centralización dificulta el seguimiento:** El 100% de los entrevistados identifica problemas relacionados con la distribución de información. Cuando los datos se encuentran en diferentes herramientas, aumenta la dificultad para obtener una visión general y actualizada de los proyectos.
 
-### 2.3.6. Ubiquitous Language
-[Glosario de terminos en ingles con definicion en espanol]:
-- **Termino en ingles (Traduccion):** Definicion conceptual del dominio de negocio.
+* **La coordinación depende en gran medida de la comunicación:** El 66,6% utiliza WhatsApp como una herramienta importante para coordinar actividades. Esto demuestra que la comunicación es necesaria, pero también plantea una oportunidad para complementar los mensajes informales con información estructurada y trazable dentro de Vantage PMO.
+
+* **Las alertas y recordatorios pueden reducir problemas de seguimiento:** El 66,6% considera útiles las alertas o recordatorios. Esta funcionalidad podría ayudar a los usuarios a controlar fechas importantes, tareas pendientes y posibles retrasos.
+
+* **La facilidad de uso es una condición para la adopción:** El 100% de los entrevistados considera importante que la herramienta sea sencilla y práctica. Por ello, Vantage PMO debe buscar una experiencia intuitiva que permita incorporar la plataforma al flujo de trabajo sin requerir una capacitación extensa.
+
+* **Existe una oportunidad para el acceso móvil:** Aunque solo el 33,3% menciona explícitamente el acceso desde dispositivos móviles, esta característica puede resultar útil para usuarios que necesitan consultar información mientras se encuentran fuera de su espacio habitual de trabajo.
+## 2.3 Needfinding
+<a id="2-3-needfinding"></a>
+
+En esta sección se presentan los artefactos obtenidos a partir del análisis de las entrevistas realizadas a los segmentos objetivo de Vantage PMO. Estos artefactos permiten representar las necesidades, comportamientos, tareas, motivaciones y dificultades de los usuarios.
+
+Para la construcción de los User Personas se consideraron los principales patrones identificados durante las entrevistas, complementándolos con el análisis competitivo realizado previamente. A partir de estos perfiles se elaboraron el User Task Matrix, los User Journey Maps y los Empathy Maps, buscando representar la situación actual de los usuarios antes de utilizar Vantage PMO.
+
+### 2.3.1 User Personas
+<a id="2-3-1-user-personas"></a>
+
+Se elaboraron dos User Personas, uno por cada segmento objetivo identificado para Vantage PMO. Los perfiles representan los principales patrones encontrados durante el análisis de entrevistas y permiten comprender sus objetivos, necesidades, comportamientos y frustraciones.
+
+**Segmento 1**
+
+![User-Persona-1] 
+
+El User Persona del segmento 1 representa a un líder o jefe de gestión de proyectos que debe supervisar múltiples proyectos de manera simultánea. Su principal necesidad es mantener una visión actualizada del estado de los proyectos y contar con información confiable para tomar decisiones oportunas.
+
+El análisis de las entrevistas muestra que este perfil utiliza diferentes herramientas para realizar el seguimiento de sus proyectos y que una de sus principales dificultades está relacionada con la consolidación de información. Asimismo, requiere conocer el avance de las tareas, responsables, fechas y posibles desviaciones.
+
+Su principal motivación es mejorar el control de los proyectos y reducir el tiempo dedicado a actividades administrativas, especialmente aquellas relacionadas con la recopilación y elaboración de reportes. Valora las herramientas que presentan información de manera clara, permiten identificar problemas oportunamente y son sencillas de utilizar.
+
+**Segmento 2**
+
+![User-Persona-2]
+
+El User Persona del segmento 2 representa a una persona que participa en una organización con múltiples proyectos o iniciativas y que necesita coordinar tareas, responsables y fechas entre diferentes personas.
+
+Este perfil utiliza principalmente herramientas independientes como hojas de cálculo, servicios de almacenamiento y aplicaciones de comunicación. La información distribuida entre diferentes canales dificulta obtener una visión general del estado de los proyectos y mantener todos los datos actualizados.
+
+Su principal motivación es mejorar la organización y coordinación del trabajo, evitando olvidos, retrasos y duplicidad de información. Valora especialmente una solución centralizada que sea sencilla de utilizar, requiera poca capacitación y facilite el seguimiento de las actividades.
 
 ---
+
+### 2.3.2 User Task Matrix
+<a id="2-3-2-user-task-matrix"></a>
+
+El User Task Matrix permite identificar las principales tareas que realizan los User Personas para alcanzar sus objetivos, independientemente de la existencia de Vantage PMO. Para cada tarea se considera su frecuencia y nivel de importancia dentro de las actividades de cada segmento.
+
+| Task | Líder / Jefe de Gestión de Proyectos |  | Empresas Medianas y Grandes con Múltiples Proyectos |  |
+| :--- | :---: | :---: | :---: | :---: |
+| | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+| Revisar el estado de los proyectos | Diaria | Crítica | Diaria | Alta |
+| Actualizar información de proyectos | Diaria | Alta | Diaria | Alta |
+| Verificar tareas pendientes | Diaria | Alta | Diaria | Alta |
+| Revisar fechas y plazos | Diaria | Crítica | Diaria | Crítica |
+| Coordinar actividades con responsables | Diaria | Crítica | Diaria | Crítica |
+| Identificar retrasos o desviaciones | Semanal | Crítica | Semanal | Alta |
+| Consolidar información de diferentes fuentes | Semanal | Alta | Semanal | Alta |
+| Elaborar o actualizar reportes | Semanal | Alta | Mensual | Alta |
+| Revisar disponibilidad de recursos | Semanal | Alta | Semanal | Media |
+| Comunicar avances a otros responsables | Diaria | Alta | Diaria | Alta |
+
+El análisis de la matriz evidencia que ambos User Personas comparten tareas relacionadas con el seguimiento de proyectos, revisión de fechas, coordinación y actualización de información. Estas actividades presentan una frecuencia elevada debido a la necesidad de mantener el control sobre múltiples proyectos.
+
+En el caso del líder o jefe de gestión de proyectos, las tareas relacionadas con la revisión del estado, identificación de desviaciones y elaboración de reportes presentan una importancia especialmente alta, debido a su responsabilidad en la toma de decisiones.
+
+Por otro lado, el segundo User Persona presenta una mayor necesidad de coordinación y organización de tareas, debido al uso de diferentes herramientas y canales de comunicación. En ambos casos se identifica una oportunidad para centralizar información y facilitar el seguimiento de las actividades.
+
+---
+
+### 2.3.3 User Journey Mapping
+<a id="2-3-3-user-journey-mapping"></a>
+
+En esta sección se presentan los User Journey Maps en su estado actual (As-Is). Estos representan el recorrido que realizan los usuarios para gestionar y realizar el seguimiento de sus proyectos sin utilizar Vantage PMO.
+
+Los mapas permiten visualizar las principales etapas del proceso, las acciones realizadas, los puntos de contacto utilizados y las dificultades que experimentan los usuarios. De esta manera, se identifican oportunidades de mejora relacionadas principalmente con la dispersión de información, el seguimiento de tareas y la coordinación entre responsables.
+
+**Segmento 1**
+
+![User-Journey-Map-1](assets/images/chapter-2/Needfinding/Segment-1/User-Journey-Map-Gerson-Escarate.png)
+
+El recorrido del líder o jefe de gestión de proyectos inicia con la recopilación de información proveniente de diferentes responsables y herramientas. Posteriormente, revisa el avance de las tareas, verifica fechas y analiza posibles retrasos o desviaciones. Finalmente, consolida la información para comunicar el estado de los proyectos y elaborar reportes.
+
+Durante este proceso puede experimentar dificultades debido a la información distribuida entre diferentes herramientas, la necesidad de actualizar datos manualmente y el tiempo requerido para consolidar reportes.
+
+**Segmento 2**
+
+![User-Journey-Map-2](assets/images/chapter-2/Needfinding/Segment-2/User-Journey-Map-Katherine-Herrera.png)
+
+El recorrido del segundo User Persona comienza con la organización de las actividades y la asignación de tareas a los responsables. Posteriormente, realiza coordinaciones mediante diferentes canales de comunicación, verifica fechas y consulta el avance de las actividades.
+
+Finalmente, recopila la información necesaria para conocer el estado de los proyectos. Durante este proceso pueden presentarse problemas relacionados con información dispersa, duplicidad de datos, falta de actualización y dificultad para realizar un seguimiento centralizado.
+
+---
+
+### 2.3.4 Empathy Mapping
+<a id="2-3-4-empathy-mapping"></a>
+
+Se elaboraron los Empathy Maps correspondientes a cada User Persona con el objetivo de profundizar en sus necesidades, comportamientos, pensamientos, emociones, frustraciones y motivaciones.
+
+El análisis considera qué observa, escucha, dice y hace cada usuario, así como los principales Pains y Gains identificados a partir de las entrevistas. Esto permite comprender la experiencia actual de los usuarios y orientar las características de Vantage PMO hacia sus necesidades reales.
+
+**Segmento 1**
+
+![Empathy-Map-1](assets/images/chapter-2/Needfinding/Segment-1/Empathy-Map-Gerson-Escarate.png)
+
+El líder o jefe de gestión de proyectos busca mantener el control de múltiples proyectos y disponer de información actualizada para tomar decisiones. Está expuesto constantemente a reportes, reuniones, mensajes y diferentes fuentes de información.
+
+Entre sus principales Pains se encuentran la información dispersa, el tiempo dedicado a consolidar datos, la dificultad para identificar desviaciones y la necesidad de realizar seguimiento constante.
+
+Sus principales Gains están relacionados con disponer de una visión general de los proyectos, reducir actividades administrativas, identificar problemas oportunamente y contar con información clara para tomar decisiones.
+
+**Segmento 2**
+
+![Empathy-Map-2](assets/images/chapter-2/Needfinding/Segment-2/Empathy-Map-Katherine-Herrera.png)
+
+El segundo User Persona busca mantener organizadas las actividades de diferentes proyectos y coordinar correctamente a los responsables. Utiliza diferentes herramientas y canales para comunicarse y compartir información.
+
+Entre sus principales Pains se encuentran la dispersión de información, la posibilidad de utilizar datos desactualizados, la duplicidad de información, los olvidos y las dificultades para realizar seguimiento.
+
+Sus principales Gains están relacionados con centralizar la información, organizar las tareas y responsables, recibir recordatorios de actividades importantes y disponer de una herramienta sencilla que facilite la coordinación.
+
+---
+
+### 2.3.5 Big Picture EventStorming
+<a id="2-3-5-big-picture-eventstorming"></a>
+
+El Big Picture EventStorming permite representar de manera general los principales eventos que ocurren dentro del dominio de gestión de proyectos. A partir del análisis de los procesos actuales de los usuarios, se identificaron los eventos relacionados con el registro, planificación, seguimiento, coordinación y cierre de proyectos.
+
+El objetivo es obtener una visión general del dominio antes de definir los componentes específicos de la solución.
+
+**Eventos de dominio identificados:**
+
+* *Project Registered:* Se registra un nuevo proyecto y se define la información inicial necesaria para su gestión.
+
+* *Project Planned:* Se establecen las principales actividades, fechas y responsables asociados al proyecto.
+
+* *Task Assigned:* Se asignan tareas a los responsables correspondientes.
+
+* *Milestone Defined:* Se establecen hitos relevantes para controlar el avance del proyecto.
+
+* *Resource Allocated:* Se asignan los recursos necesarios para ejecutar las actividades planificadas.
+
+* *Project Progress Updated:* Se actualiza el avance de las actividades y del proyecto.
+
+* *Project Delay Detected:* Se identifica un retraso o desviación respecto a la planificación establecida.
+
+* *Information Consolidated:* Se recopila y consolida la información proveniente de los diferentes responsables.
+
+* *Performance Report Generated:* Se genera un reporte con información relevante sobre el desempeño del proyecto.
+
+* *Project Reviewed:* Los responsables revisan el estado general del proyecto y sus principales indicadores.
+
+* *Strategic Decision Made:* Los responsables toman decisiones a partir de la información disponible sobre el proyecto.
+
+---
+
+### 2.3.6 Ubiquitous Language
+<a id="2-3-6-ubiquitous-language"></a>
+
+El Ubiquitous Language establece un lenguaje común para los conceptos principales del dominio de gestión de proyectos. Su objetivo es evitar ambigüedades y facilitar la comunicación entre los miembros del equipo y los stakeholders.
+
+* *Project:* Iniciativa temporal organizada para alcanzar un objetivo específico mediante un conjunto de actividades y recursos.
+
+* *Project Manager:* Profesional responsable de planificar, coordinar y supervisar la ejecución de un proyecto.
+
+* *PMO (Project Management Office):* Área de la organización encargada de establecer y supervisar prácticas relacionadas con la gestión de proyectos.
+
+* *Stakeholder:* Persona o grupo interesado o afectado por los resultados de un proyecto.
+
+* *Portfolio:* Conjunto de proyectos y otras iniciativas gestionadas de manera conjunta para alcanzar objetivos estratégicos de la organización.
+
+* *Task:* Actividad específica que debe realizarse para contribuir al cumplimiento de los objetivos de un proyecto.
+
+* *Milestone:* Punto significativo dentro de un proyecto que representa el cumplimiento de un resultado o etapa importante.
+
+* *Project Progress:* Estado de avance de un proyecto respecto a las actividades y objetivos planificados.
+
+* *Resource:* Persona, presupuesto, material u otro elemento necesario para ejecutar las actividades de un proyecto.
+
+* *Project Delay:* Situación en la que una actividad, hito o proyecto presenta un avance inferior al planificado y puede afectar sus fechas establecidas.
+
+* *Performance Report:* Documento que presenta información relevante sobre el desempeño, avance y estado de un proyecto.
+
+* *Project Status:* Situación actual de un proyecto considerando su avance, tareas, fechas, recursos y posibles desviaciones.
+
+* *Information Silo:* Información aislada en diferentes fuentes o áreas que dificulta su acceso, actualización y utilización conjunta.
 
 ## 2.4. Requirements Specification
 
