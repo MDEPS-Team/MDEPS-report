@@ -556,7 +556,7 @@ Se elaboraron dos User Personas, uno por cada segmento objetivo identificado par
 
 **Segmento 1**
 
-![User-Persona-1] 
+![User Persona Gerson](assets/images/Gerson%20Escarate.png)
 
 El User Persona del segmento 1 representa a un líder o jefe de gestión de proyectos que debe supervisar múltiples proyectos de manera simultánea. Su principal necesidad es mantener una visión actualizada del estado de los proyectos y contar con información confiable para tomar decisiones oportunas.
 
@@ -566,7 +566,7 @@ Su principal motivación es mejorar el control de los proyectos y reducir el tie
 
 **Segmento 2**
 
-![User-Persona-2]
+![User Persona Alessandro](assets/images/Alessandro%20Nieto.png)
 
 El User Persona del segmento 2 representa a una persona que participa en una organización con múltiples proyectos o iniciativas y que necesita coordinar tareas, responsables y fechas entre diferentes personas.
 
