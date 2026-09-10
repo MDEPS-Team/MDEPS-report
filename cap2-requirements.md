@@ -612,7 +612,7 @@ Los mapas permiten visualizar las principales etapas del proceso, las acciones r
 
 **Segmento 1**
 
-![User-Journey-Map-1](assets/images/chapter-2/Needfinding/Segment-1/User-Journey-Map-Gerson-Escarate.png)
+![User Journey Map - Gerson Escarate](assets/images/User%20Journey%20Map%20-%20Gerson%20Escarate.png)
 
 El recorrido del líder o jefe de gestión de proyectos inicia con la recopilación de información proveniente de diferentes responsables y herramientas. Posteriormente, revisa el avance de las tareas, verifica fechas y analiza posibles retrasos o desviaciones. Finalmente, consolida la información para comunicar el estado de los proyectos y elaborar reportes.
 
@@ -620,7 +620,7 @@ Durante este proceso puede experimentar dificultades debido a la información di
 
 **Segmento 2**
 
-![User-Journey-Map-2](assets/images/chapter-2/Needfinding/Segment-2/User-Journey-Map-Katherine-Herrera.png)
+![User Journey Map - Alessandro Nieto](assets/images/User%20Journey%20Map%20-%20Alessandro%20Nieto.png)
 
 El recorrido del segundo User Persona comienza con la organización de las actividades y la asignación de tareas a los responsables. Posteriormente, realiza coordinaciones mediante diferentes canales de comunicación, verifica fechas y consulta el avance de las actividades.
 
