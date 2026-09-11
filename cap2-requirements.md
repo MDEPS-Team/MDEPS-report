@@ -579,11 +579,13 @@ Su principal motivación es mejorar la organización y coordinación del trabajo
 ### 2.3.2 User Task Matrix
 <a id="2-3-2-user-task-matrix"></a>
 
-El User Task Matrix permite identificar las principales tareas que realizan los User Personas para alcanzar sus objetivos, independientemente de la existencia de Vantage PMO. Para cada tarea se considera su frecuencia y nivel de importancia dentro de las actividades de cada segmento.
+El User Task Matrix permite identificar las principales tareas que realizan los User Personas para alcanzar sus objetivos, independientemente de la existencia de Vantage PMO. Para cada tarea se considera su frecuencia y nivel de importancia dentro de sus actividades.
 
-| Task | Líder / Jefe de Gestión de Proyectos |  | Empresas Medianas y Grandes con Múltiples Proyectos |  |
+Para el análisis se consideran los dos User Personas definidos previamente: **Gerson Escarate**, representante del segmento de líderes o jefes de gestión de proyectos, y **Alessandro Nieto**, representante del segmento de empresas medianas y grandes con múltiples proyectos.
+
+| Task | Gerson Escarate |  | Alessandro Nieto |  |
 | :--- | :---: | :---: | :---: | :---: |
-| | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
+|  | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
 | Revisar el estado de los proyectos | Diaria | Crítica | Diaria | Alta |
 | Actualizar información de proyectos | Diaria | Alta | Diaria | Alta |
 | Verificar tareas pendientes | Diaria | Alta | Diaria | Alta |
@@ -595,18 +597,18 @@ El User Task Matrix permite identificar las principales tareas que realizan los 
 | Revisar disponibilidad de recursos | Semanal | Alta | Semanal | Media |
 | Comunicar avances a otros responsables | Diaria | Alta | Diaria | Alta |
 
-El análisis de la matriz evidencia que ambos User Personas comparten tareas relacionadas con el seguimiento de proyectos, revisión de fechas, coordinación y actualización de información. Estas actividades presentan una frecuencia elevada debido a la necesidad de mantener el control sobre múltiples proyectos.
+El análisis de la matriz evidencia que ambos User Personas comparten tareas relacionadas con el seguimiento de proyectos, revisión de fechas, coordinación con responsables y actualización de información. Estas actividades presentan una frecuencia elevada debido a la necesidad de mantener el control sobre múltiples proyectos.
 
-En el caso del líder o jefe de gestión de proyectos, las tareas relacionadas con la revisión del estado, identificación de desviaciones y elaboración de reportes presentan una importancia especialmente alta, debido a su responsabilidad en la toma de decisiones.
+En el caso de **Gerson Escarate**, las tareas relacionadas con la revisión del estado de los proyectos, la identificación de retrasos o desviaciones y la consolidación de información presentan una importancia especialmente alta, debido a su responsabilidad en el seguimiento y la toma de decisiones.
 
-Por otro lado, el segundo User Persona presenta una mayor necesidad de coordinación y organización de tareas, debido al uso de diferentes herramientas y canales de comunicación. En ambos casos se identifica una oportunidad para centralizar información y facilitar el seguimiento de las actividades.
+Por otro lado, **Alessandro Nieto** presenta una mayor necesidad de organización y coordinación de tareas, responsables y fechas. En ambos casos se identifica la necesidad de centralizar la información y facilitar el seguimiento de las actividades.
 
 ---
 
 ### 2.3.3 User Journey Mapping
 <a id="2-3-3-user-journey-mapping"></a>
 
-En esta sección se presentan los User Journey Maps en su estado actual (As-Is). Estos representan el recorrido que realizan los usuarios para gestionar y realizar el seguimiento de sus proyectos sin utilizar Vantage PMO.
+En esta sección se presentan los User Journey Maps en su estado actual (As-Is). Estos representan el recorrido que realizan los User Personas para gestionar y realizar el seguimiento de sus proyectos sin utilizar Vantage PMO.
 
 Los mapas permiten visualizar las principales etapas del proceso, las acciones realizadas, los puntos de contacto utilizados y las dificultades que experimentan los usuarios. De esta manera, se identifican oportunidades de mejora relacionadas principalmente con la dispersión de información, el seguimiento de tareas y la coordinación entre responsables.
 
@@ -614,7 +616,7 @@ Los mapas permiten visualizar las principales etapas del proceso, las acciones r
 
 ![User Journey Map - Gerson Escarate](assets/images/User%20Journey%20Map%20-%20Gerson%20Escarate.png)
 
-El recorrido del líder o jefe de gestión de proyectos inicia con la recopilación de información proveniente de diferentes responsables y herramientas. Posteriormente, revisa el avance de las tareas, verifica fechas y analiza posibles retrasos o desviaciones. Finalmente, consolida la información para comunicar el estado de los proyectos y elaborar reportes.
+El recorrido de **Gerson Escarate** inicia con la recopilación de información proveniente de diferentes responsables y herramientas. Posteriormente, revisa el avance de las tareas, verifica fechas y analiza posibles retrasos o desviaciones. Finalmente, consolida la información para comunicar el estado de los proyectos y elaborar reportes.
 
 Durante este proceso puede experimentar dificultades debido a la información distribuida entre diferentes herramientas, la necesidad de actualizar datos manualmente y el tiempo requerido para consolidar reportes.
 
@@ -622,9 +624,9 @@ Durante este proceso puede experimentar dificultades debido a la información di
 
 ![User Journey Map - Alessandro Nieto](assets/images/User%20Journey%20Map%20-%20Alessandro%20Nieto.png)
 
-El recorrido del segundo User Persona comienza con la organización de las actividades y la asignación de tareas a los responsables. Posteriormente, realiza coordinaciones mediante diferentes canales de comunicación, verifica fechas y consulta el avance de las actividades.
+El recorrido de **Alessandro Nieto** comienza con la organización de las actividades y la coordinación de tareas con los responsables. Posteriormente, realiza seguimiento mediante diferentes canales de comunicación, verifica fechas y consulta el avance de las actividades.
 
-Finalmente, recopila la información necesaria para conocer el estado de los proyectos. Durante este proceso pueden presentarse problemas relacionados con información dispersa, duplicidad de datos, falta de actualización y dificultad para realizar un seguimiento centralizado.
+Finalmente, recopila la información necesaria para conocer el estado general de los proyectos. Durante este proceso pueden presentarse problemas relacionados con información dispersa, duplicidad de datos, falta de actualización y dificultad para realizar un seguimiento centralizado.
 
 ---
 
@@ -661,85 +663,388 @@ Sus principales Gains están relacionados con centralizar la información, organ
 ### 2.3.5 Big Picture EventStorming
 <a id="2-3-5-big-picture-eventstorming"></a>
 
-El Big Picture EventStorming permite representar de manera general los principales eventos que ocurren dentro del dominio de gestión de proyectos. A partir del análisis de los procesos actuales de los usuarios, se identificaron los eventos relacionados con el registro, planificación, seguimiento, coordinación y cierre de proyectos.
+En esta sección se presenta el Big Picture EventStorming desarrollado para Vantage PMO. Este artefacto permite obtener una visión general del dominio de gestión de proyectos mediante la identificación de los principales eventos, actores, acciones, reglas y fuentes de información involucradas en los procesos del negocio.
 
-El objetivo es obtener una visión general del dominio antes de definir los componentes específicos de la solución.
+El proceso fue desarrollado de manera colaborativa, partiendo de una exploración inicial de los eventos más relevantes del dominio. Posteriormente, estos eventos fueron organizados cronológicamente y enriquecidos mediante la identificación de pain points, pivotal points, commands, policies y read models. El resultado permite comprender las relaciones existentes entre los diferentes procesos y detectar problemas y oportunidades dentro del dominio.
 
-**Eventos de dominio identificados:**
+#### Unstructured Exploration
 
-* *Project Registered:* Se registra un nuevo proyecto y se define la información inicial necesaria para su gestión.
+La primera etapa consistió en una exploración no estructurada de los principales Domain Events del negocio. El equipo identificó hechos relevantes relacionados con la creación y planificación de proyectos, asignación y seguimiento de tareas, gestión de riesgos, asignación de recursos, administración de documentos, control de indicadores y generación de reportes.
 
-* *Project Planned:* Se establecen las principales actividades, fechas y responsables asociados al proyecto.
+En esta etapa, los eventos fueron registrados inicialmente sin establecer una secuencia definitiva, con el objetivo de obtener una visión amplia de los acontecimientos relevantes que pueden producirse dentro del dominio.
 
-* *Task Assigned:* Se asignan tareas a los responsables correspondientes.
+![Big-Picture-01-Unstructured-Exploration](assets/images/chapter-2/Needfinding/EventStorming/Big-Picture-01-Unstructured-Exploration.jpg)
 
-* *Milestone Defined:* Se establecen hitos relevantes para controlar el avance del proyecto.
+#### Chronology
 
-* *Resource Allocated:* Se asignan los recursos necesarios para ejecutar las actividades planificadas.
+Luego de identificar los principales Domain Events, estos fueron organizados de acuerdo con la secuencia en la que pueden ocurrir dentro de los diferentes procesos del negocio.
 
-* *Project Progress Updated:* Se actualiza el avance de las actividades y del proyecto.
+Esta organización permitió visualizar relaciones entre eventos como la creación de un proyecto, la inicialización de sus fases, la definición de hitos, la asignación de tareas y recursos, la actualización del estado de las actividades, la detección de riesgos y retrasos, y la generación de reportes.
 
-* *Project Delay Detected:* Se identifica un retraso o desviación respecto a la planificación establecida.
+![Big-Picture-02-Chronology](assets/images/chapter-2/Needfinding/EventStorming/Big-Picture-02-Chronology.jpg)
 
-* *Information Consolidated:* Se recopila y consolida la información proveniente de los diferentes responsables.
+#### Pain Points
 
-* *Performance Report Generated:* Se genera un reporte con información relevante sobre el desempeño del proyecto.
+En la siguiente etapa se identificaron los principales problemas que pueden presentarse durante la ejecución de los procesos del dominio. Los pain points fueron incorporados al EventStorming para señalar situaciones que pueden afectar negativamente la gestión de proyectos.
 
-* *Project Reviewed:* Los responsables revisan el estado general del proyecto y sus principales indicadores.
+Entre los principales problemas identificados se encuentran la existencia de proyectos sin hitos correctamente definidos, bloqueos en las tareas, sobrecarga en la capacidad de los recursos, detecciones incorrectas de riesgos y dificultades para identificar oportunamente desviaciones dentro de los proyectos.
 
-* *Strategic Decision Made:* Los responsables toman decisiones a partir de la información disponible sobre el proyecto.
+![Big-Picture-03-Pain-Points](assets/images/chapter-2/Needfinding/EventStorming/Big-Picture-03-Pain-Points.jpg)
+
+#### Pivotal Points
+
+A partir de los eventos y pain points identificados, se analizaron aquellos acontecimientos que representan cambios importantes dentro del flujo de negocio.
+
+Los Pivotal Points permiten reconocer situaciones en las que el estado o comportamiento del proceso puede cambiar significativamente, como la creación de un proyecto, la asignación de recursos, la detección o escalamiento de riesgos, el bloqueo de tareas, la superación de límites de capacidad y el incumplimiento de indicadores.
+
+![Big-Picture-04-Pivotal-Points](assets/images/chapter-2/Needfinding/EventStorming/Big-Picture-04-Pivotal-Points.jpg)
+
+#### Commands
+
+Posteriormente, se identificaron los Commands que representan las acciones realizadas por los actores o sistemas y que producen cambios dentro del dominio.
+
+Entre ellos se encuentran acciones como crear un proyecto, definir hitos, asignar tareas, actualizar el estado de una actividad, bloquear una tarea, evaluar un riesgo, asignar recursos, incorporar miembros al equipo, cargar documentos, generar reportes y exportar información.
+
+Cada Command se relaciona con uno o más Domain Events que representan el resultado de la acción ejecutada.
+
+![Big-Picture-05-Commands](assets/images/chapter-2/Needfinding/EventStorming/Big-Picture-05-Commands.jpg)
+
+#### Policies
+
+En esta etapa se incorporaron Policies que representan reglas reactivas del dominio. Estas reglas permiten expresar comportamientos que deben ejecutarse cuando ocurre un determinado evento o se cumple una condición específica.
+
+Las Policies permiten representar, por ejemplo, respuestas ante tareas bloqueadas, riesgos detectados, sobrecarga de recursos, incumplimiento de indicadores, validaciones de documentos o reglas relacionadas con el acceso y administración del sistema.
+
+![Big-Picture-06-Policies](assets/images/chapter-2/Needfinding/EventStorming/Big-Picture-06-Policies.jpg)
+
+#### Read Models
+
+Finalmente, se identificaron los Read Models necesarios para que los diferentes actores puedan consultar información y tomar decisiones dentro de los procesos del negocio.
+
+Estos modelos representan vistas o superficies de consulta como dashboards de proyectos, tableros de tareas, vistas de recursos, paneles administrativos, gestión de documentos y dashboards de indicadores y reportes.
+
+La incorporación de los Read Models permite relacionar las acciones y eventos del dominio con la información que posteriormente debe estar disponible para los usuarios.
+
+![Big-Picture-07-Read-Models](assets/images/chapter-2/Needfinding/EventStorming/Big-Picture-07-Read-Models.jpg)
+
+#### Big Picture EventStorming Final
+
+Como resultado del proceso, se obtuvo una representación integrada del dominio que reúne actores, Commands, Domain Events, Policies, Read Models y Pain Points.
+
+El Big Picture final permite observar de manera global cómo se relacionan los principales procesos de gestión de proyectos, tareas y colaboración, riesgos, recursos, documentos, usuarios, administración e indicadores. Asimismo, permite identificar dependencias entre distintas capacidades del negocio y puntos en los que la información debe intercambiarse entre procesos.
+
+![Big-Picture-EventStorming-Final](assets/images/chapter-2/Needfinding/EventStorming/Big-Picture-08-Final.jpg)
+
+A partir del Big Picture EventStorming se identifican como principales oportunidades la centralización de información, una mayor trazabilidad de las actividades, la detección oportuna de riesgos y desviaciones, una mejor gestión de la capacidad de los recursos y la disponibilidad de información actualizada para la generación de reportes y la toma de decisiones.
+
+El resultado obtenido también constituye un insumo para las etapas posteriores de Strategic-Level Domain-Driven Design, donde las capacidades identificadas en el dominio serán analizadas para descubrir los Candidate Bounded Contexts y establecer sus responsabilidades y relaciones.
 
 ---
 
 ### 2.3.6 Ubiquitous Language
 <a id="2-3-6-ubiquitous-language"></a>
 
-El Ubiquitous Language establece un lenguaje común para los conceptos principales del dominio de gestión de proyectos. Su objetivo es evitar ambigüedades y facilitar la comunicación entre los miembros del equipo y los stakeholders.
+El Ubiquitous Language establece un vocabulario común para los principales conceptos del dominio de gestión de proyectos en Vantage PMO. Su objetivo es evitar ambigüedades y asegurar que los miembros del equipo y los stakeholders utilicen los mismos términos y significados durante el análisis, diseño y desarrollo de la solución.
 
-* *Project:* Iniciativa temporal organizada para alcanzar un objetivo específico mediante un conjunto de actividades y recursos.
+- **Project (Proyecto):** Iniciativa temporal organizada para alcanzar un objetivo específico mediante un conjunto de actividades, responsables y recursos.
 
-* *Project Manager:* Profesional responsable de planificar, coordinar y supervisar la ejecución de un proyecto.
+- **Project Manager (Gerente de Proyecto):** Profesional responsable de planificar, coordinar, supervisar y controlar la ejecución de un proyecto.
 
-* *PMO (Project Management Office):* Área de la organización encargada de establecer y supervisar prácticas relacionadas con la gestión de proyectos.
+- **PMO - Project Management Office (Oficina de Gestión de Proyectos):** Área de la organización encargada de establecer, supervisar y mejorar las prácticas relacionadas con la gestión de proyectos.
 
-* *Stakeholder:* Persona o grupo interesado o afectado por los resultados de un proyecto.
+- **Stakeholder (Parte Interesada):** Persona, grupo u organización que puede afectar, ser afectada o tener interés en los resultados de un proyecto.
 
-* *Portfolio:* Conjunto de proyectos y otras iniciativas gestionadas de manera conjunta para alcanzar objetivos estratégicos de la organización.
+- **Portfolio (Portafolio):** Conjunto de proyectos e iniciativas gestionados de manera conjunta para contribuir al cumplimiento de objetivos estratégicos de la organización.
 
-* *Task:* Actividad específica que debe realizarse para contribuir al cumplimiento de los objetivos de un proyecto.
+- **Project Phase (Fase del Proyecto):** Etapa definida dentro del ciclo de vida de un proyecto que agrupa actividades relacionadas y culmina con un resultado determinado.
 
-* *Milestone:* Punto significativo dentro de un proyecto que representa el cumplimiento de un resultado o etapa importante.
+- **Task (Tarea):** Actividad específica asignada a un responsable y necesaria para contribuir al cumplimiento de los objetivos del proyecto.
 
-* *Project Progress:* Estado de avance de un proyecto respecto a las actividades y objetivos planificados.
+- **Milestone (Hito):** Punto significativo dentro del proyecto que representa el cumplimiento de una etapa, resultado o acontecimiento relevante.
 
-* *Resource:* Persona, presupuesto, material u otro elemento necesario para ejecutar las actividades de un proyecto.
+- **Resource (Recurso):** Persona, presupuesto, material, capacidad u otro elemento necesario para ejecutar las actividades de un proyecto.
 
-* *Project Delay:* Situación en la que una actividad, hito o proyecto presenta un avance inferior al planificado y puede afectar sus fechas establecidas.
+- **Project Progress (Avance del Proyecto):** Grado de cumplimiento de las actividades e hitos del proyecto en comparación con lo planificado.
 
-* *Performance Report:* Documento que presenta información relevante sobre el desempeño, avance y estado de un proyecto.
+- **Project Status (Estado del Proyecto):** Situación general del proyecto en un momento determinado, considerando su avance, fechas, tareas, recursos, riesgos y posibles desviaciones.
 
-* *Project Status:* Situación actual de un proyecto considerando su avance, tareas, fechas, recursos y posibles desviaciones.
+- **Project Delay (Retraso del Proyecto):** Situación en la que una actividad, hito o proyecto presenta una demora respecto a las fechas establecidas en la planificación.
 
-* *Information Silo:* Información aislada en diferentes fuentes o áreas que dificulta su acceso, actualización y utilización conjunta.
+- **Risk (Riesgo):** Evento o condición incierta que puede afectar positiva o negativamente el cumplimiento de los objetivos del proyecto.
 
-## 2.4. Requirements Specification
+- **Capacity (Capacidad):** Disponibilidad de un recurso o equipo para asumir y ejecutar actividades dentro de un periodo determinado.
+
+- **KPI - Key Performance Indicator (Indicador Clave de Desempeño):** Métrica utilizada para evaluar el desempeño de un proyecto o proceso respecto a un objetivo establecido.
+
+- **Performance Report (Reporte de Desempeño):** Documento que consolida información relevante sobre el avance, estado, indicadores, riesgos y desempeño de un proyecto para apoyar la toma de decisiones.
+
+- **Information Silo (Silo de Información):** Información almacenada de manera aislada en diferentes herramientas, fuentes o áreas, dificultando su acceso, actualización y utilización conjunta.
+
+---
+
+## 2.4 Requirements Specification
+<a id="2-4-requirements-specification"></a>
+
+En esta sección se especifican los requisitos de Vantage PMO a partir de las necesidades y problemas identificados durante el proceso de investigación y análisis de los usuarios.
+
+Para ello, se definen las Epics y User Stories de la solución, incluyendo sus criterios de aceptación, así como las Technical Stories y Spike Stories necesarias para cubrir aspectos técnicos y reducir incertidumbre durante el desarrollo. Asimismo, se presenta el Impact Mapping para relacionar los objetivos del negocio con los actores, impactos y entregables, y finalmente se organiza el conjunto de historias dentro del Product Backlog priorizado y estimado en Story Points.
 
 ### 2.4.1. User Stories
-[Listar Epics, User Stories con formato Gherkin, Spike Stories y Technical Stories]:
+<a id="2-4-1-user-stories"></a>
 
-| Story ID: US01 | User: [Rol] | Priority: [Alta/Media/Baja] | Epic: EP01 |
+En esta sección se presentan las Epics, User Stories, Technical Stories y Spike Stories definidas para Vantage PMO a partir de las necesidades identificadas durante el proceso de investigación y análisis de los usuarios.
+
+Las User Stories representan funcionalidades que generan valor directo para los usuarios finales y se complementan con criterios de aceptación redactados bajo la estructura Gherkin (Given-When-Then), expresada en español como Dado-Cuando-Entonces. Asimismo, se incluyen Technical Stories para capacidades técnicas que no implican interacción directa con el usuario final y Spike Stories orientadas a reducir incertidumbre mediante investigación, análisis y pruebas de viabilidad.
+
+#### Epics
+
+| Epic ID | Epic | Descripción |
+| :--- | :--- | :--- |
+| EP01 | Project & Portfolio Management | Gestión y seguimiento centralizado de proyectos, fases, hitos y estado general del portafolio. |
+| EP02 | Task & Collaboration | Gestión de tareas, responsables, avances, bloqueos y colaboración entre los miembros del equipo. |
+| EP03 | Governance & Risk | Identificación, evaluación y seguimiento de riesgos y desviaciones que puedan afectar los proyectos. |
+| EP04 | Resource & Capacity | Asignación de recursos y seguimiento de la capacidad disponible de los equipos. |
+| EP05 | Document Management | Gestión centralizada de documentos y evidencias asociadas a los proyectos. |
+| EP06 | Analytics & Reporting | Seguimiento de KPIs, consolidación de información y generación de reportes para apoyar la toma de decisiones. |
+| EP07 | Mobile Access & Notifications | Acceso móvil a la información, sincronización y notificaciones relacionadas con eventos relevantes de los proyectos. |
+| EP08 | Identity & Access Management | Gestión de usuarios, roles y permisos de acceso a las capacidades de Vantage PMO. |
+| EP09 | Landing Page | Presentación pública de la propuesta de valor, características y beneficios de Vantage PMO. |
+
+---
+
+#### User Stories
+
+##### US01 - Registrar proyecto
+
+| Story ID: US01 | User: Project Manager | Priority: Alta | Epic: EP01 |
 | :--- | :--- | :--- | :--- |
-| **Title** | [Titulo de la User Story] |
-| **Description** | Como [rol], quiero [accion] para [beneficio]. |
-| **Acceptance Criteria** | **Escenario 1:**<br>Dado que [contexto],<br>Cuando [evento],<br>Entonces [resultado esperado]. |
+| **Title** | Registrar un nuevo proyecto |  |  |
+| **Description** | Como Project Manager, quiero registrar un proyecto con su información principal para iniciar su planificación y seguimiento dentro de la organización. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el Project Manager cuenta con la información requerida del proyecto,<br>**Cuando** registra el proyecto,<br>**Entonces** el sistema almacena el proyecto con sus datos principales y lo deja disponible para su gestión.<br><br>**Escenario 2:**<br>**Dado que** falta información obligatoria del proyecto,<br>**Cuando** se intenta registrar el proyecto,<br>**Entonces** el sistema rechaza el registro e informa que existen datos requeridos pendientes. |  |  |
+
+##### US02 - Definir fases e hitos
+
+| Story ID: US02 | User: Project Manager | Priority: Alta | Epic: EP01 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Definir fases e hitos del proyecto |  |  |
+| **Description** | Como Project Manager, quiero definir fases e hitos para establecer puntos de control que permitan realizar seguimiento al avance del proyecto. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** existe un proyecto activo,<br>**Cuando** el Project Manager registra una fase con sus fechas correspondientes,<br>**Entonces** la fase queda asociada al proyecto.<br><br>**Escenario 2:**<br>**Dado que** existe una fase del proyecto,<br>**Cuando** el Project Manager define un hito válido,<br>**Entonces** el hito queda asociado a la fase y disponible para el seguimiento del proyecto. |  |  |
+
+##### US03 - Consultar estado del portafolio
+
+| Story ID: US03 | User: Project Manager | Priority: Alta | Epic: EP01 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Consultar el estado de múltiples proyectos |  |  |
+| **Description** | Como Project Manager, quiero consultar el estado consolidado de los proyectos bajo mi responsabilidad para identificar rápidamente avances y desviaciones. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** existen varios proyectos bajo responsabilidad del usuario,<br>**Cuando** consulta la información consolidada de sus proyectos,<br>**Entonces** el sistema proporciona el estado actualizado de cada proyecto.<br><br>**Escenario 2:**<br>**Dado que** un proyecto presenta retrasos o desviaciones registradas,<br>**Cuando** el Project Manager consulta su estado,<br>**Entonces** el sistema incluye dichas condiciones dentro de la información consolidada del proyecto. |  |  |
+
+##### US04 - Asignar tareas
+
+| Story ID: US04 | User: Project Manager | Priority: Alta | Epic: EP02 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Asignar tareas a responsables |  |  |
+| **Description** | Como Project Manager, quiero asignar tareas a los miembros del equipo para organizar las responsabilidades del proyecto y realizar seguimiento a su cumplimiento. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** existe una tarea pendiente dentro de un proyecto,<br>**Cuando** el Project Manager la asigna a un miembro del equipo,<br>**Entonces** la tarea queda relacionada con el responsable y con el proyecto correspondiente.<br><br>**Escenario 2:**<br>**Dado que** una tarea ya se encuentra asignada,<br>**Cuando** el Project Manager cambia al responsable,<br>**Entonces** el sistema actualiza la asignación conservando la relación de la tarea con el proyecto. |  |  |
+
+##### US05 - Actualizar estado de una tarea
+
+| Story ID: US05 | User: Team Member | Priority: Alta | Epic: EP02 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Actualizar el estado de una tarea |  |  |
+| **Description** | Como Team Member, quiero actualizar el estado de las tareas que tengo asignadas para mantener informado al equipo sobre su avance. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el Team Member tiene una tarea asignada,<br>**Cuando** actualiza su estado con un valor válido,<br>**Entonces** el sistema registra el nuevo estado de la tarea.<br><br>**Escenario 2:**<br>**Dado que** una tarea cambia a un estado que representa su finalización,<br>**Cuando** se registra el cambio,<br>**Entonces** el sistema conserva la actualización como parte del seguimiento del proyecto. |  |  |
+
+##### US06 - Registrar bloqueos y comentarios
+
+| Story ID: US06 | User: Team Member | Priority: Media | Epic: EP02 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Comunicar bloqueos y observaciones de una tarea |  |  |
+| **Description** | Como Team Member, quiero registrar bloqueos y comentarios asociados a una tarea para mantener informados a los responsables sobre situaciones que pueden afectar su avance. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** una tarea se encuentra en ejecución,<br>**Cuando** el Team Member registra un bloqueo con su motivo,<br>**Entonces** el sistema conserva el bloqueo asociado a la tarea.<br><br>**Escenario 2:**<br>**Dado que** existe una tarea asociada a un proyecto,<br>**Cuando** el Team Member registra un comentario,<br>**Entonces** el comentario queda asociado a la tarea como parte de su historial. |  |  |
+
+##### US07 - Gestionar riesgos
+
+| Story ID: US07 | User: Project Manager | Priority: Alta | Epic: EP03 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Registrar y realizar seguimiento de riesgos |  |  |
+| **Description** | Como Project Manager, quiero registrar y evaluar riesgos para identificar oportunamente situaciones que puedan afectar el cumplimiento de los objetivos del proyecto. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** se identifica una situación que puede afectar un proyecto,<br>**Cuando** el Project Manager registra el riesgo con su información de evaluación,<br>**Entonces** el sistema conserva el riesgo asociado al proyecto.<br><br>**Escenario 2:**<br>**Dado que** un riesgo alcanza una condición que requiere mayor atención,<br>**Cuando** su nivel es actualizado,<br>**Entonces** el sistema registra su nueva condición para facilitar el seguimiento. |  |  |
+
+##### US08 - Gestionar recursos y capacidad
+
+| Story ID: US08 | User: Project Manager | Priority: Alta | Epic: EP04 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Asignar recursos considerando su capacidad |  |  |
+| **Description** | Como Project Manager, quiero conocer la disponibilidad de los recursos y asignarlos a los proyectos para evitar sobrecargas y distribuir adecuadamente el trabajo. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** existe un recurso disponible,<br>**Cuando** el Project Manager lo asigna a un proyecto,<br>**Entonces** el sistema registra la asignación y actualiza la capacidad comprometida del recurso.<br><br>**Escenario 2:**<br>**Dado que** una nueva asignación supera la capacidad disponible del recurso,<br>**Cuando** se evalúa la asignación,<br>**Entonces** el sistema identifica la condición de sobrecarga para que pueda ser revisada. |  |  |
+
+##### US09 - Gestionar documentos
+
+| Story ID: US09 | User: Team Member | Priority: Media | Epic: EP05 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Centralizar documentos de los proyectos |  |  |
+| **Description** | Como Team Member, quiero asociar documentos a los proyectos para evitar que la información se encuentre distribuida entre diferentes herramientas y fuentes. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el Team Member pertenece a un proyecto,<br>**Cuando** registra un documento válido,<br>**Entonces** el documento queda asociado al proyecto correspondiente.<br><br>**Escenario 2:**<br>**Dado que** existe un documento previamente registrado,<br>**Cuando** se incorpora una nueva versión,<br>**Entonces** el sistema conserva la relación entre la versión actual y las versiones anteriores. |  |  |
+
+##### US10 - Capturar evidencia desde el dispositivo móvil
+
+| Story ID: US10 | User: Team Member | Priority: Media | Epic: EP05 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Registrar evidencia utilizando un recurso del dispositivo |  |  |
+| **Description** | Como Team Member, quiero capturar evidencia desde mi dispositivo móvil y asociarla a un proyecto o tarea para mantener centralizada la documentación del trabajo realizado. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el usuario dispone del permiso necesario para acceder al recurso del dispositivo,<br>**Cuando** captura una evidencia válida,<br>**Entonces** el sistema permite asociarla al proyecto o tarea correspondiente.<br><br>**Escenario 2:**<br>**Dado que** el acceso al recurso del dispositivo no está autorizado,<br>**Cuando** se intenta realizar la captura,<br>**Entonces** la operación no se ejecuta y la información existente permanece sin cambios. |  |  |
+
+##### US11 - Consultar KPIs
+
+| Story ID: US11 | User: Project Manager | Priority: Alta | Epic: EP06 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Consultar indicadores de desempeño |  |  |
+| **Description** | Como Project Manager, quiero consultar KPIs relacionados con los proyectos para evaluar su desempeño y detectar posibles desviaciones. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** existen datos actualizados de los proyectos,<br>**Cuando** el Project Manager consulta los indicadores,<br>**Entonces** el sistema proporciona los KPIs calculados a partir de la información disponible.<br><br>**Escenario 2:**<br>**Dado que** un KPI supera un umbral establecido,<br>**Cuando** se actualiza su valor,<br>**Entonces** el sistema registra el incumplimiento del umbral para su seguimiento. |  |  |
+
+##### US12 - Generar reportes de desempeño
+
+| Story ID: US12 | User: Project Manager | Priority: Alta | Epic: EP06 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Generar reportes de desempeño |  |  |
+| **Description** | Como Project Manager, quiero generar reportes utilizando información consolidada de los proyectos para reducir el tiempo dedicado a preparar información para la toma de decisiones. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** existe información actualizada de un proyecto o conjunto de proyectos,<br>**Cuando** el Project Manager solicita un reporte,<br>**Entonces** el sistema genera el reporte utilizando la información consolidada disponible.<br><br>**Escenario 2:**<br>**Dado que** un reporte ha sido generado correctamente,<br>**Cuando** el Project Manager solicita su exportación,<br>**Entonces** el sistema proporciona una versión exportable del reporte. |  |  |
+
+##### US13 - Recibir alertas y recordatorios
+
+| Story ID: US13 | User: Project Manager | Priority: Alta | Epic: EP07 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Recibir alertas sobre eventos relevantes |  |  |
+| **Description** | Como Project Manager, quiero recibir alertas sobre fechas, riesgos, retrasos y desviaciones relevantes para poder tomar acciones oportunamente. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** una fecha relevante se encuentra próxima a vencer,<br>**Cuando** se cumple la condición establecida para el recordatorio,<br>**Entonces** el sistema genera una notificación asociada al proyecto correspondiente.<br><br>**Escenario 2:**<br>**Dado que** ocurre un evento crítico como un riesgo escalado o el incumplimiento de un KPI,<br>**Cuando** el sistema procesa dicho evento,<br>**Entonces** genera una alerta para los usuarios correspondientes. |  |  |
+
+##### US14 - Consultar proyectos desde el dispositivo móvil
+
+| Story ID: US14 | User: Project Manager | Priority: Alta | Epic: EP07 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Consultar información de proyectos desde un dispositivo móvil |  |  |
+| **Description** | Como Project Manager, quiero consultar el estado de mis proyectos desde un dispositivo móvil para realizar seguimiento cuando no me encuentre en mi espacio habitual de trabajo. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el Project Manager cuenta con acceso autorizado,<br>**Cuando** consulta la información de sus proyectos desde la aplicación móvil,<br>**Entonces** obtiene los datos disponibles de los proyectos bajo su responsabilidad.<br><br>**Escenario 2:**<br>**Dado que** existen cambios recientes en la información de los proyectos,<br>**Cuando** el dispositivo dispone de conectividad y realiza la sincronización,<br>**Entonces** la información local se actualiza con los datos disponibles en la fuente central. |  |  |
+
+##### US15 - Gestionar roles y permisos
+
+| Story ID: US15 | User: Administrator | Priority: Media | Epic: EP08 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Gestionar roles y permisos |  |  |
+| **Description** | Como Administrator, quiero asignar roles y permisos a los usuarios para controlar el acceso a la información y capacidades de Vantage PMO. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** existe un usuario registrado,<br>**Cuando** el Administrator le asigna un rol válido,<br>**Entonces** el sistema registra el rol y los permisos asociados.<br><br>**Escenario 2:**<br>**Dado que** un usuario intenta realizar una acción para la cual no posee autorización,<br>**Cuando** el sistema valida sus permisos,<br>**Entonces** la operación es rechazada. |  |  |
+
+##### US16 - Consultar información de Vantage PMO en el Landing Page
+
+| Story ID: US16 | User: Visitor | Priority: Alta | Epic: EP09 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Conocer la propuesta de valor de Vantage PMO |  |  |
+| **Description** | Como Visitor, quiero conocer la propuesta de valor, características principales y beneficios de Vantage PMO para evaluar si la solución responde a las necesidades de mi organización. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** un visitante accede al Landing Page,<br>**Cuando** consulta la información pública de Vantage PMO,<br>**Entonces** puede identificar la propuesta de valor, los principales beneficios y las capacidades generales del producto.<br><br>**Escenario 2:**<br>**Dado que** el visitante desea conocer a quién está dirigida la solución,<br>**Cuando** revisa la información del producto,<br>**Entonces** puede identificar los segmentos objetivo y los principales problemas que Vantage PMO busca resolver. |  |  |
+
+##### US17 - Consultar medios de contacto desde el Landing Page
+
+| Story ID: US17 | User: Visitor | Priority: Media | Epic: EP09 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Consultar medios de contacto del producto |  |  |
+| **Description** | Como Visitor, quiero conocer los medios de contacto de Vantage PMO para poder solicitar información adicional sobre la solución. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el visitante requiere información adicional,<br>**Cuando** consulta los medios de contacto publicados,<br>**Entonces** puede identificar al menos un canal válido para comunicarse con el equipo.<br><br>**Escenario 2:**<br>**Dado que** un medio de contacto publicado se encuentra disponible,<br>**Cuando** el visitante utiliza dicho canal,<br>**Entonces** puede iniciar la comunicación fuera del Landing Page. |  |  |
+
+---
+
+#### Technical Stories
+
+Las Technical Stories representan capacidades necesarias para soportar el funcionamiento de los productos digitales que no implican interacción directa con los usuarios finales.
+
+##### TS01 - Implementar RESTful API interna
+
+| Story ID: TS01 | User: Developer | Priority: Alta | Epic: EP07 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Implementar RESTful API para las capacidades principales |  |  |
+| **Description** | Como Developer, quiero disponer de servicios RESTful para consultar y modificar información de proyectos, tareas, riesgos, recursos y reportes para que la aplicación móvil pueda interactuar con la información centralizada de Vantage PMO. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** una solicitud autenticada contiene información válida,<br>**Cuando** se envía al endpoint correspondiente,<br>**Entonces** el servicio procesa la solicitud y devuelve una respuesta exitosa con la información esperada.<br><br>**Escenario 2:**<br>**Dado que** una solicitud contiene información inválida o incompleta,<br>**Cuando** el servicio la procesa,<br>**Entonces** devuelve una respuesta de error adecuada sin modificar información válida existente. |  |  |
+
+##### TS02 - Implementar almacenamiento local
+
+| Story ID: TS02 | User: Developer | Priority: Alta | Epic: EP07 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Implementar almacenamiento local en la aplicación móvil |  |  |
+| **Description** | Como Developer, quiero almacenar localmente información relevante de los proyectos para permitir que la aplicación móvil conserve datos necesarios entre sesiones y pueda gestionar condiciones temporales de conectividad. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** la aplicación obtiene información válida desde el servicio interno,<br>**Cuando** corresponde persistir dicha información,<br>**Entonces** los datos se almacenan localmente en el dispositivo.<br><br>**Escenario 2:**<br>**Dado que** existen datos almacenados localmente,<br>**Cuando** la aplicación vuelve a ejecutarse,<br>**Entonces** puede recuperar la información persistida manteniendo su consistencia. |  |  |
+
+##### TS03 - Integrar servicio externo de notificaciones
+
+| Story ID: TS03 | User: Developer | Priority: Media | Epic: EP07 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Integrar un servicio externo de notificaciones móviles |  |  |
+| **Description** | Como Developer, quiero integrar un servicio externo de notificaciones para enviar alertas móviles relacionadas con eventos relevantes de los proyectos. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** ocurre un evento configurado para generar una alerta,<br>**Cuando** el backend solicita el envío al servicio externo,<br>**Entonces** el servicio procesa la solicitud y devuelve una respuesta que permite conocer el resultado del envío.<br><br>**Escenario 2:**<br>**Dado que** el servicio externo no se encuentra disponible,<br>**Cuando** se intenta solicitar el envío de una notificación,<br>**Entonces** el error es controlado sin modificar los datos del proyecto. |  |  |
+
+##### TS04 - Implementar autenticación y autorización
+
+| Story ID: TS04 | User: Developer | Priority: Alta | Epic: EP08 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Implementar autenticación y autorización para los servicios |  |  |
+| **Description** | Como Developer, quiero validar la identidad y permisos de los usuarios en las solicitudes realizadas a los servicios para proteger el acceso a la información de Vantage PMO. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** una solicitud contiene credenciales válidas y suficientes permisos,<br>**Cuando** intenta acceder a un recurso protegido,<br>**Entonces** el servicio permite procesar la operación solicitada.<br><br>**Escenario 2:**<br>**Dado que** una solicitud no posee credenciales válidas o los permisos requeridos,<br>**Cuando** intenta acceder a un recurso protegido,<br>**Entonces** el servicio rechaza la operación sin exponer la información solicitada. |  |  |
+
+---
+
+#### Spike Stories
+
+Las Spike Stories se orientan a investigar alternativas y validar su viabilidad antes de realizar una implementación definitiva. Su resultado debe permitir reducir incertidumbre y dejar documentadas las conclusiones técnicas obtenidas.
+
+##### SP01 - Investigar persistencia y sincronización móvil
+
+| Story ID: SP01 | User: Development Team | Priority: Alta | Epic: EP07 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Investigar estrategia de persistencia y sincronización de información móvil |  |  |
+| **Description** | Como equipo de desarrollo, queremos investigar alternativas para almacenar y sincronizar información entre la aplicación móvil y el servicio RESTful para determinar una estrategia adecuada ante cambios de conectividad. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** se han identificado alternativas de almacenamiento y sincronización,<br>**Cuando** finaliza la investigación,<br>**Entonces** el equipo dispone de un documento comparativo con las ventajas, limitaciones y riesgos de las opciones evaluadas.<br><br>**Escenario 2:**<br>**Dado que** se ha seleccionado una alternativa candidata,<br>**Cuando** se completa una prueba de concepto,<br>**Entonces** el equipo documenta los resultados y establece una conclusión sobre su viabilidad para Vantage PMO. |  |  |
+
+##### SP02 - Investigar tecnología externa para notificaciones móviles
+
+| Story ID: SP02 | User: Development Team | Priority: Alta | Epic: EP07 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Investigar tecnología externa para notificaciones móviles |  |  |
+| **Description** | Como equipo de desarrollo, queremos investigar y prototipar una tecnología o servicio externo para notificaciones móviles con el fin de conocer su viabilidad, limitaciones, riesgos y esfuerzo de integración dentro de Vantage PMO. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** se han identificado servicios o tecnologías candidatas,<br>**Cuando** finaliza el análisis comparativo,<br>**Entonces** el equipo documenta las capacidades, restricciones, costos y requisitos técnicos relevantes de las alternativas evaluadas.<br><br>**Escenario 2:**<br>**Dado que** se selecciona una alternativa candidata,<br>**Cuando** se desarrolla una prueba de concepto funcional,<br>**Entonces** el equipo documenta los resultados obtenidos y establece una conclusión técnica sobre su integración con la aplicación móvil. |  |  |
 
 ### 2.4.2. Impact Mapping
-[Captura del Impact Map elaborado en herramienta visual].
+<a id="2-4-2-impact-mapping"></a>
+
+En esta sección se presenta el Impact Mapping de Vantage PMO, elaborado en UXPressia. Este artefacto permite relacionar los Business Goals del modelo de negocio con los User Personas previamente identificados, los cambios de comportamiento esperados, los Deliverables propuestos y las User Stories que permiten materializarlos.
+
+Para su elaboración se definieron dos Business Goals bajo criterios SMART. Asimismo, se consideraron como Actors/Personas a **Gerson Escarate** y **Alessandro Nieto**, vinculando cada uno con los Impacts relacionados con sus necesidades y responsabilidades. A partir de estos Impacts se determinaron los Deliverables y las User Stories correspondientes, manteniendo trazabilidad entre los objetivos del negocio, las necesidades de los usuarios y las funcionalidades propuestas para Vantage PMO.
+
+![Impact-Mapping-Vantage-PMO](assets/images/chapter-2/Needfinding/Impact-Map-Vantage%20PMO.png)
 
 ### 2.4.3. Product Backlog
-| # Orden | User Story ID | Titulo | Story Points | Sprint |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | [ID] | [Titulo] | [Puntaje] | [Sprint] |
+<a id="2-4-3-product-backlog"></a>
+
+En esta sección se presenta el Product Backlog de Vantage PMO, conformado por las User Stories previamente identificadas y priorizadas de acuerdo con el valor que aportan al negocio y a los usuarios de la solución.
+
+Cada User Story ha sido estimada utilizando Story Points de la serie 1, 2, 3, 5 y 8, considerando de manera relativa el esfuerzo, complejidad e incertidumbre asociados a su implementación. Asimismo, las historias han sido distribuidas entre los tres Sprints considerados para el desarrollo del producto. Las User Stories correspondientes al Landing Page se incluyen desde el Sprint 1.
+
+| # Orden | User Story ID | Título | Story Points | Sprint |
+| :---: | :---: | :--- | :---: | :---: |
+| 1 | US03 | Consultar el estado de múltiples proyectos | 5 | Sprint 1 |
+| 2 | US01 | Registrar un nuevo proyecto | 3 | Sprint 1 |
+| 3 | US04 | Asignar tareas a responsables | 3 | Sprint 1 |
+| 4 | US05 | Actualizar el estado de una tarea | 3 | Sprint 1 |
+| 5 | US11 | Consultar indicadores de desempeño | 5 | Sprint 2 |
+| 6 | US12 | Generar reportes de desempeño | 8 | Sprint 2 |
+| 7 | US16 | Conocer la propuesta de valor de Vantage PMO | 3 | Sprint 1 |
+| 8 | US13 | Recibir alertas sobre eventos relevantes | 5 | Sprint 2 |
+| 9 | US07 | Registrar y realizar seguimiento de riesgos | 5 | Sprint 2 |
+| 10 | US09 | Centralizar documentos de los proyectos | 5 | Sprint 2 |
+| 11 | US02 | Definir fases e hitos del proyecto | 5 | Sprint 1 |
+| 12 | US17 | Consultar medios de contacto del producto | 2 | Sprint 1 |
+| 13 | US08 | Asignar recursos considerando su capacidad | 8 | Sprint 3 |
+| 14 | US14 | Consultar información de proyectos desde un dispositivo móvil | 5 | Sprint 3 |
+| 15 | US06 | Comunicar bloqueos y observaciones de una tarea | 3 | Sprint 3 |
+| 16 | US10 | Registrar evidencia utilizando un recurso del dispositivo | 5 | Sprint 3 |
+| 17 | US15 | Gestionar roles y permisos | 5 | Sprint 3 |
 
 ---
 
