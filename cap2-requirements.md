@@ -98,7 +98,7 @@ El Strategic DDD permite identificar y organizar las áreas principales del nego
 Durante esta fase, se identificaron de forma libre los Domain Events que cambian el estado de **MDEPS**, cubriendo el ciclo de vida de proyectos, fases, hitos y tareas, así como autenticación, roles, riesgos, cumplimiento, recursos, reportes, KPIs y versionado de documentos. Cada evento se representó en tiempo pasado mediante post-its naranjas, sin imponer aún un orden estricto.
 
 <p align="center">
-<img src="assets/images/chapter-2/step-01.png" alt="EventStorming Step 1 - Unstructured Exploration" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step-01.png" alt="EventStorming Step 1 - Unstructured Exploration" style="width: 500px; height: 400px">
 </p>
 
 **Step 2: Chronology**
@@ -106,7 +106,7 @@ Durante esta fase, se identificaron de forma libre los Domain Events que cambian
 Los eventos descubiertos se ordenaron en una línea temporal coherente con el flujo real de la PMO: desde la creación del proyecto y la autenticación de usuarios, pasando por la definición de hitos, asignación de tareas y recursos, hasta la detección de riesgos, generación de reportes, actualización de KPIs y archivo de versiones. Este ordenamiento permitió visualizar dependencias y secuencias entre la operación diaria y la toma de decisiones gerencial.
 
 <p align="center">
-<img src="assets/images/chapter-2/step-02.png" alt="EventStorming Step 2 - Chronology" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step-02.png" alt="EventStorming Step 2 - Chronology" style="width: 500px; height: 400px">
 </p>
 
 **Step 3: Pain Points**
@@ -114,7 +114,7 @@ Los eventos descubiertos se ordenaron en una línea temporal coherente con el fl
 Se marcaron los puntos de dolor del dominio donde hoy fallan los procesos manuales de gestión de proyectos: retrasos no detectados a tiempo (`Project Delayed`), tareas bloqueadas sin visibilidad, riesgos escalados tarde, sobrecarga de capacidad (`Capacity Exceeded`), umbrales de KPI incumplidos y fricción en el acceso o la gobernanza de roles. Estos hotspots justifican las hipótesis de Lean UX sobre reporteo manual, silos de información y falta de alertas tempranas.
 
 <p align="center">
-<img src="assets/images/chapter-2/step-03.png" alt="EventStorming Step 3 - Pain Points" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step-03.png" alt="EventStorming Step 3 - Pain Points" style="width: 500px; height: 400px">
 </p>
 
 **Step 4: Pivotal Points**
@@ -122,7 +122,7 @@ Se marcaron los puntos de dolor del dominio donde hoy fallan los procesos manual
 Se identificaron los momentos pivote que cambian el rumbo del portafolio: creación del proyecto, definición y cierre de fases/hitos, asignación crítica de recursos, escalamiento de riesgos, validación o violación de compliance, y la generación de reportes o brechas de KPI. Estos puntos concentran las decisiones de Project Managers, PMO Leads y Stakeholders y delimitan dónde la plataforma debe aportar mayor control.
 
 <p align="center">
-<img src="assets/images/chapter-2/step-04.png" alt="EventStorming Step 4 - Pivotal Points" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step-04.png" alt="EventStorming Step 4 - Pivotal Points" style="width: 500px; height: 400px">
 </p>
 
 **Step 5: Commands**
@@ -130,7 +130,7 @@ Se identificaron los momentos pivote que cambian el rumbo del portafolio: creaci
 A partir de cada evento se derivaron los Commands (intenciones de actor) que lo provocan: crear proyecto, inicializar fase, definir hito, asignar tarea o rol, autenticar usuario, cargar documento, exportar PDF, asignar recurso, generar reporte, etc. Los comandos modelan las acciones de Project Managers, miembros de equipo y administradores sobre la plataforma móvil y web de **MDEPS**.
 
 <p align="center">
-<img src="assets/images/chapter-2/step-05.png" alt="EventStorming Step 5 - Commands" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step-05.png" alt="EventStorming Step 5 - Commands" style="width: 500px; height: 400px">
 </p>
 
 **Step 6: Policies**
@@ -138,7 +138,7 @@ A partir de cada evento se derivaron los Commands (intenciones de actor) que lo 
 Se definieron las Policies (reacciones automáticas del tipo “cuando ocurre X, entonces Y”) propias de una PMO: ante un retraso o umbral de KPI incumplido disparar alertas; al detectar un riesgo, evaluar escalamiento; al exceder capacidad, rebalancear recursos; al validar compliance, habilitar el siguiente hito; al renovar suscripción, reactivar políticas globales. Estas reglas conectan monitoreo en tiempo real con estandarización de procesos.
 
 <p align="center">
-<img src="assets/images/chapter-2/step-06.png" alt="EventStorming Step 6 - Policies" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step-06.png" alt="EventStorming Step 6 - Policies" style="width: 500px; height: 400px">
 </p>
 
 **Step 7: Read Models**
@@ -146,7 +146,7 @@ Se definieron las Policies (reacciones automáticas del tipo “cuando ocurre X,
 Se identificaron los Read Models (información que el actor necesita ver para decidir) alineados al producto: dashboards de salud del portafolio, listado de proyectos y hitos, estado de tareas y bloqueos, matriz de riesgos, capacidad del equipo, KPIs y semáforos, historial de auditoría, preferencias de notificación y reportes exportables. Estos modelos sustentan la visibilidad 360° prometida a Project Managers y Stakeholders.
 
 <p align="center">
-<img src="assets/images/chapter-2/step-07.png" alt="EventStorming Step 7 - Read Models" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step-07.png" alt="EventStorming Step 7 - Read Models" style="width: 500px; height: 400px">
 </p>
 
 **Step 8: External Systems**
@@ -154,7 +154,7 @@ Se identificaron los Read Models (información que el actor necesita ver para de
 Se explicitaron los sistemas externos con los que **MDEPS** interactúa o podría integrarse en el MVP y más adelante: almacenamiento de archivos/documentos, servicio de notificaciones (correo/push), generación de PDF, autenticación/proveedores de identidad, y posibles fuentes de datos operativos (hojas de cálculo o herramientas colaborativas legadas). Quedaron fuera del alcance inicial integraciones pesadas con ERP (SAP/Oracle), según las restricciones del proyecto.
 
 <p align="center">
-<img src="assets/images/chapter-2/step-08.png" alt="EventStorming Step 8 - External Systems" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step-08.png" alt="EventStorming Step 8 - External Systems" style="width: 500px; height: 400px">
 </p>
 
 **Step 9: Aggregates**
@@ -162,7 +162,7 @@ Se explicitaron los sistemas externos con los que **MDEPS** interactúa o podrí
 Los eventos y comandos se agruparon en Aggregates que protegen invariantes del dominio PMO, por ejemplo: **Project** (fases, hitos, estado y retrasos), **Task** (asignación, bloqueos, comentarios), **User/Identity** (autenticación, roles y acceso), **Risk**, **Resource/Capacity**, **Report/KPI** y **Document/Version**. Cada aggregate delimita la unidad de consistencia sobre la que se ejecutan los comandos de la plataforma.
 
 <p align="center">
-<img src="assets/images/chapter-2/step-09.png" alt="EventStorming Step 9 - Aggregates" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step-09.png" alt="EventStorming Step 9 - Aggregates" style="width: 500px; height: 400px">
 </p>
 
 **Step 10: Bounded Contexts**
@@ -170,11 +170,93 @@ Los eventos y comandos se agruparon en Aggregates que protegen invariantes del d
 Finalmente se trazaron los Bounded Contexts candidatos a partir de los clusters del tablero, separando lenguajes y responsabilidades: **IAM** (identidad, roles y acceso), gestión de proyectos/portafolio, tareas y colaboración, riesgos y compliance, recursos y capacidad, analítica/reportes/KPIs, y documentos/versionado.
 
 <p align="center">
-<img src="assets/images/chapter-2/step-10.png" alt="EventStorming Step 10 - Bounded Contexts" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step-10.png" alt="EventStorming Step 10 - Bounded Contexts" style="width: 500px; height: 400px">
 </p>
 
 #### 2.5.1.1. Candidate Context Discovery
-[Identificacion de Bounded Contexts candidatos].
+
+A partir del modelo de Event Storming elaborado en Miro, se desarrolló una sesión de Candidate Context Discovery con el propósito de identificar los bounded contexts de la solución. Durante esta sesión, se empleó principalmente la técnica look-for-pivotal-events.
+
+Primero, se identificaron los eventos clave que reflejan cambios de estado entre las distintas partes del proceso de negocio. Luego, estos eventos se agruparon según los principales cambios de contexto. A continuación, se establecieron fronteras alrededor de los grupos definidos para determinar los límites iniciales de los bounded contexts. Finalmente, se asignaron nombres a cada bounded context. Como resultado, se definieron 9 bounded contexts y se obtuvo la **versión final del Event Storming**.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step-10.png" alt="EventStorming Step 10 - Bounded Contexts" style="width: 500px; height: 400px">
+</p>
+
+A continuación, se detallará en qué consiste cada bounded context:
+
+**1. IAM (Identity and Access Management)**
+
+Gestiona la autenticación de usuarios, la asignación de roles y el control de acceso a la plataforma. Define quién puede operar sobre proyectos, reportes y configuración según su perfil de seguridad.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/iam.png" alt="Bounded Context Candidate - IAM" style="width: 500px; height: 400px">
+</p>
+
+**2. Profile Management**
+
+Administra los perfiles de usuario, preferencias personales y datos de identidad operativa dentro de **MDEPS**. Complementa a IAM al mantener la información de presentación y configuración individual del actor.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/profile-management.png" alt="Bounded Context Candidate - Profile Management" style="width: 500px; height: 400px">
+</p>
+
+**3. Project Management**
+
+Cubre el ciclo de vida del portafolio y de cada proyecto: creación, fases, hitos, estados y retrasos. Es el núcleo de la PMO para planificar, dar seguimiento y cerrar iniciativas.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/project-management.png" alt="Bounded Context Candidate - Project Management" style="width: 500px; height: 400px">
+</p>
+
+**4. Task and Collaboration**
+
+Concentra la ejecución operativa del día a día: asignación de tareas, bloqueos, comentarios y coordinación entre miembros del equipo. Facilita la colaboración sobre el trabajo pendiente del proyecto.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/task-and-collaboration.png" alt="Bounded Context Candidate - Task and Collaboration" style="width: 500px; height: 400px">
+</p>
+
+**5. Governance and Risk**
+
+Agrupa la gestión de riesgos, el cumplimiento (compliance) y las decisiones de gobernanza. Detecta, evalúa y escala desviaciones o amenazas que impactan la salud del portafolio.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/governance-and-risk.png" alt="Bounded Context Candidate - Governance and Risk" style="width: 500px; height: 400px">
+</p>
+
+**6. Resource and Capacity**
+
+Administra la capacidad del equipo, la asignación de recursos y el balanceo ante sobrecarga. Evita exceder límites de disponibilidad y sostiene la planificación realista de la PMO.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/resource-and-capacity.png" alt="Bounded Context Candidate - Resource and Capacity" style="width: 500px; height: 400px">
+</p>
+
+**7. Analytics and Reporting**
+
+Produce dashboards, KPIs, semáforos y reportes exportables (por ejemplo PDF) para Project Managers y Stakeholders. Traduce el estado del dominio en visibilidad 360° para la toma de decisiones.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/analytics-and-reporting.png" alt="Bounded Context Candidate - Analytics and Reporting" style="width: 500px; height: 400px">
+</p>
+
+**8. Document Management**
+
+Controla el ciclo de vida de documentos y su versionado: carga, archivo y trazabilidad de entregables del proyecto. Garantiza un repositorio gobernado alineado a la operación de la PMO.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/document-management.png" alt="Bounded Context Candidate - Document Management" style="width: 500px; height: 400px">
+</p>
+
+**9. System Administration**
+
+Agrupa la configuración global de la plataforma, políticas transversales y administración del sistema (por ejemplo suscripciones o parámetros operativos). Sostiene el gobierno técnico y de plataforma de **MDEPS**.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/system-administration.png" alt="Bounded Context Candidate - System Administration" style="width: 500px; height: 400px">
+</p>
+
 
 #### 2.5.1.2. Domain Message Flows Modeling
 [Diagramas de Domain Storytelling / flujo de mensajes].
