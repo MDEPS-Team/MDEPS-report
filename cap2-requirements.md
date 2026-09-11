@@ -552,38 +552,38 @@ Para la construcción de los User Personas se consideraron los principales patro
 ### 2.3.1 User Personas
 <a id="2-3-1-user-personas"></a>
 
-Se elaboraron dos User Personas, uno por cada segmento objetivo identificado para Vantage PMO. Los perfiles representan los principales patrones encontrados durante el análisis de entrevistas, complementados con los hallazgos del análisis competitivo, y permiten comprender sus objetivos, necesidades, comportamientos, motivaciones y frustraciones.
+Se elaboraron dos User Personas, uno por cada segmento objetivo identificado para Vantage PMO. Los perfiles representan los principales patrones encontrados durante el análisis de entrevistas y permiten comprender sus objetivos, necesidades, comportamientos y frustraciones.
 
-**Segmento 1: Líderes y Jefes de Gestión de Proyectos**
+**Segmento 1**
 
-![User-Persona-1](assets/images/chapter-2/Needfinding/user1.png)
+![User Persona Gerson](assets/images/Gerson%20Escarate.png)
 
-El User Persona definido para el primer segmento es **Carlos Mendoza**, un Project Manager de 32 años que representa a los profesionales encargados de supervisar múltiples proyectos de manera simultánea.
+El User Persona del segmento 1 representa a un líder o jefe de gestión de proyectos que debe supervisar múltiples proyectos de manera simultánea. Su principal necesidad es mantener una visión actualizada del estado de los proyectos y contar con información confiable para tomar decisiones oportunas.
 
-Este arquetipo se caracteriza por realizar un seguimiento frecuente del avance de los proyectos y por necesitar información actualizada sobre tareas, responsables, fechas, recursos y posibles desviaciones. Asimismo, utiliza distintas herramientas digitales para organizar y supervisar sus actividades, lo que puede generar dificultades al momento de consolidar información proveniente de diferentes fuentes.
+El análisis de las entrevistas muestra que este perfil utiliza diferentes herramientas para realizar el seguimiento de sus proyectos y que una de sus principales dificultades está relacionada con la consolidación de información. Asimismo, requiere conocer el avance de las tareas, responsables, fechas y posibles desviaciones.
 
-Entre sus principales objetivos se encuentran mantener una visión actualizada del estado de los proyectos, identificar retrasos o desviaciones oportunamente y reducir el tiempo dedicado a recopilar información y elaborar reportes. Sus principales motivaciones están relacionadas con mejorar el control de los proyectos, tomar decisiones con información confiable y reducir la carga administrativa asociada al seguimiento.
+Su principal motivación es mejorar el control de los proyectos y reducir el tiempo dedicado a actividades administrativas, especialmente aquellas relacionadas con la recopilación y elaboración de reportes. Valora las herramientas que presentan información de manera clara, permiten identificar problemas oportunamente y son sencillas de utilizar.
 
-**Segmento 2: Empresas Medianas y Grandes con Múltiples Proyectos**
+**Segmento 2**
 
-![User-Persona-2](assets/images/chapter-2/Needfinding/user2.png)
+![User Persona Alessandro](assets/images/Alessandro%20Nieto.png)
 
-El User Persona definido para el segundo segmento es **Andrea Torres**, una Coordinadora de Operaciones de 33 años que representa a los profesionales que participan en organizaciones donde se gestionan múltiples proyectos o iniciativas de manera simultánea.
+El User Persona del segmento 2 representa a una persona que participa en una organización con múltiples proyectos o iniciativas y que necesita coordinar tareas, responsables y fechas entre diferentes personas.
 
-Este arquetipo utiliza distintas herramientas y canales para organizar tareas, responsables, fechas y documentos. La información distribuida entre hojas de cálculo, servicios de almacenamiento, correo electrónico y aplicaciones de comunicación dificulta mantener una visión general y actualizada del estado de los proyectos.
+Este perfil utiliza principalmente herramientas independientes como hojas de cálculo, servicios de almacenamiento y aplicaciones de comunicación. La información distribuida entre diferentes canales dificulta obtener una visión general del estado de los proyectos y mantener todos los datos actualizados.
 
-Sus principales objetivos están relacionados con mantener organizadas las actividades, disponer de una visión centralizada de los proyectos y reducir los problemas de coordinación, duplicidad de información y desactualización de datos. Asimismo, valora especialmente las herramientas sencillas, prácticas y que requieran poca capacitación, ya que facilitan su incorporación al flujo de trabajo cotidiano.
+Su principal motivación es mejorar la organización y coordinación del trabajo, evitando olvidos, retrasos y duplicidad de información. Valora especialmente una solución centralizada que sea sencilla de utilizar, requiera poca capacitación y facilite el seguimiento de las actividades.
 
 ---
 
-### 2.3.2. User Task Matrix
+### 2.3.2 User Task Matrix
 <a id="2-3-2-user-task-matrix"></a>
 
-En esta sección se presenta el User Task Matrix correspondiente a los User Personas definidos para los segmentos objetivo de Vantage PMO. La matriz permite identificar y comparar las principales tareas que realizan los usuarios para alcanzar sus objetivos dentro de su contexto actual de trabajo.
+El User Task Matrix permite identificar las principales tareas que realizan los User Personas para alcanzar sus objetivos, independientemente de la existencia de Vantage PMO. Para cada tarea se considera su frecuencia y nivel de importancia dentro de sus actividades.
 
-Las tareas consideradas corresponden a actividades propias del dominio de gestión de proyectos y se realizan independientemente de la existencia de Vantage PMO. Para cada User Persona se evalúa la frecuencia con la que realiza cada tarea y la importancia que esta representa dentro de sus actividades habituales.
+Para el análisis se consideran los dos User Personas definidos previamente: **Gerson Escarate**, representante del segmento de líderes o jefes de gestión de proyectos, y **Alessandro Nieto**, representante del segmento de empresas medianas y grandes con múltiples proyectos.
 
-| Task | Carlos Mendoza |  | Andrea Torres |  |
+| Task | Gerson Escarate |  | Alessandro Nieto |  |
 | :--- | :---: | :---: | :---: | :---: |
 |  | **Frecuencia** | **Importancia** | **Frecuencia** | **Importancia** |
 | Revisar el estado de los proyectos | Diaria | Crítica | Diaria | Alta |
@@ -593,54 +593,40 @@ Las tareas consideradas corresponden a actividades propias del dominio de gesti�
 | Coordinar actividades con responsables | Diaria | Crítica | Diaria | Crítica |
 | Identificar retrasos o desviaciones | Semanal | Crítica | Semanal | Alta |
 | Consolidar información de diferentes fuentes | Semanal | Alta | Semanal | Alta |
-| Elaborar o actualizar reportes | Semanal | Alta | Mensual | Media |
+| Elaborar o actualizar reportes | Semanal | Alta | Mensual | Alta |
 | Revisar disponibilidad de recursos | Semanal | Alta | Semanal | Media |
 | Comunicar avances a otros responsables | Diaria | Alta | Diaria | Alta |
 
-**Análisis**
+El análisis de la matriz evidencia que ambos User Personas comparten tareas relacionadas con el seguimiento de proyectos, revisión de fechas, coordinación con responsables y actualización de información. Estas actividades presentan una frecuencia elevada debido a la necesidad de mantener el control sobre múltiples proyectos.
 
-La matriz evidencia que Carlos Mendoza y Andrea Torres comparten tareas frecuentes relacionadas con el seguimiento de proyectos, la revisión de fechas y plazos, la actualización de información y la coordinación con los responsables. Estas actividades presentan una frecuencia elevada debido a la necesidad de mantener el control sobre múltiples proyectos y disponer de información actualizada.
+En el caso de **Gerson Escarate**, las tareas relacionadas con la revisión del estado de los proyectos, la identificación de retrasos o desviaciones y la consolidación de información presentan una importancia especialmente alta, debido a su responsabilidad en el seguimiento y la toma de decisiones.
 
-En el caso de Carlos Mendoza, las tareas relacionadas con la revisión del estado de los proyectos, la identificación de retrasos o desviaciones y la supervisión de fechas presentan una importancia especialmente alta, debido a su responsabilidad directa en el seguimiento y la toma de decisiones sobre los proyectos bajo su cargo.
-
-Por otro lado, Andrea Torres presenta una mayor necesidad de coordinación y organización de actividades entre diferentes responsables. La revisión de fechas, el seguimiento de tareas y la actualización de información son actividades especialmente importantes para evitar retrasos, olvidos y problemas derivados de información duplicada o desactualizada.
-
-En ambos perfiles se observa una alta importancia de las actividades relacionadas con el seguimiento, la coordinación y la consolidación de información. Sin embargo, mientras Carlos Mendoza presenta un mayor enfoque en el control, análisis de desviaciones y reportes para la toma de decisiones, Andrea Torres se enfoca principalmente en la organización de actividades, responsables y fechas entre diferentes proyectos.
+Por otro lado, **Alessandro Nieto** presenta una mayor necesidad de organización y coordinación de tareas, responsables y fechas. En ambos casos se identifica la necesidad de centralizar la información y facilitar el seguimiento de las actividades.
 
 ---
 
 ### 2.3.3 User Journey Mapping
 <a id="2-3-3-user-journey-mapping"></a>
 
-En esta sección se presentan los User Journey Maps correspondientes a los User Personas definidos para los segmentos objetivo de Vantage PMO. Los mapas representan el recorrido actual de los usuarios en un escenario As-Is, es decir, muestran cómo realizan sus actividades y alcanzan sus objetivos sin utilizar la solución propuesta.
+En esta sección se presentan los User Journey Maps en su estado actual (As-Is). Estos representan el recorrido que realizan los User Personas para gestionar y realizar el seguimiento de sus proyectos sin utilizar Vantage PMO.
 
-Estos artefactos permiten visualizar las principales etapas del recorrido de cada User Persona, los procesos que realiza, las herramientas y canales que utiliza, los problemas que enfrenta y las emociones asociadas a cada etapa. A partir de ello, se identifican los principales puntos de fricción y oportunidades de mejora dentro de la experiencia actual.
+Los mapas permiten visualizar las principales etapas del proceso, las acciones realizadas, los puntos de contacto utilizados y las dificultades que experimentan los usuarios. De esta manera, se identifican oportunidades de mejora relacionadas principalmente con la dispersión de información, el seguimiento de tareas y la coordinación entre responsables.
 
-**Segmento 1: Líderes y Jefes de Gestión de Proyectos**
+**Segmento 1**
 
-El User Journey Map de **Carlos Mendoza** representa el proceso actual que realiza un líder de gestión de proyectos para supervisar múltiples proyectos de manera simultánea.
+![User Journey Map - Gerson Escarate](assets/images/User%20Journey%20Map%20-%20Gerson%20Escarate.png)
 
-![User-Journey-Map-Carlos-Mendoza](assets/images/chapter-2/Needfinding/User-Journey-Map-of-Carlos-Mendoza.png)
+El recorrido de **Gerson Escarate** inicia con la recopilación de información proveniente de diferentes responsables y herramientas. Posteriormente, revisa el avance de las tareas, verifica fechas y analiza posibles retrasos o desviaciones. Finalmente, consolida la información para comunicar el estado de los proyectos y elaborar reportes.
 
-El recorrido inicia con la revisión del estado general de los proyectos mediante herramientas como Excel, Jira y Microsoft Project. Posteriormente, Carlos coordina con los responsables para obtener información actualizada sobre tareas, fechas y recursos, y realiza actividades de control para identificar posibles retrasos o desviaciones.
+Durante este proceso puede experimentar dificultades debido a la información distribuida entre diferentes herramientas, la necesidad de actualizar datos manualmente y el tiempo requerido para consolidar reportes.
 
-A medida que avanza el proceso, la experiencia se vuelve más negativa debido a la necesidad de recopilar y consolidar manualmente información proveniente de diferentes fuentes. La etapa de consolidación representa uno de los principales puntos de fricción, ya que consume tiempo y puede generar errores. Finalmente, Carlos prepara y comunica reportes para apoyar la toma de decisiones, aunque esta actividad depende de que la información recopilada se encuentre actualizada y correctamente consolidada.
+**Segmento 2**
 
-Las principales oportunidades identificadas están relacionadas con la centralización de la información, la mejora de la comunicación entre responsables, la detección oportuna de desviaciones y la reducción del trabajo manual necesario para preparar reportes.
+![User Journey Map - Alessandro Nieto](assets/images/User%20Journey%20Map%20-%20Alessandro%20Nieto.png)
 
-**Segmento 2: Empresas Medianas y Grandes con Múltiples Proyectos**
+El recorrido de **Alessandro Nieto** comienza con la organización de las actividades y la coordinación de tareas con los responsables. Posteriormente, realiza seguimiento mediante diferentes canales de comunicación, verifica fechas y consulta el avance de las actividades.
 
-El User Journey Map de **Andrea Torres** representa el proceso actual que realiza una coordinadora de operaciones y proyectos para organizar y realizar el seguimiento de múltiples iniciativas dentro de una organización.
-
-![User-Journey-Map-Andrea-Torres](assets/images/chapter-2/Needfinding/User-Journey-Map-of-Andrea-Torres.png)
-
-El recorrido inicia con la organización de tareas, responsables, fechas y documentos mediante diferentes herramientas como Excel, Google Drive y Trello. Posteriormente, Andrea coordina las actividades con los responsables y comparte información utilizando distintos canales, como WhatsApp, correo electrónico y documentos compartidos.
-
-Durante las etapas de intercambio y verificación de información, la experiencia se vuelve más negativa debido a la existencia de información distribuida, documentos duplicados o desactualizados y la dificultad para obtener una visión general del estado de los proyectos. La etapa de verificación representa uno de los principales puntos de fricción, ya que requiere revisar manualmente tareas, fechas, responsables y distintas fuentes de información.
-
-Finalmente, Andrea debe corregir y actualizar los datos para mantener un registro confiable de las actividades. Las principales oportunidades identificadas están relacionadas con la centralización de tareas y documentos, la mejora de la trazabilidad de la información, la reducción de duplicidades y la disponibilidad de una visión general y actualizada de los proyectos.
-
-En ambos recorridos se observa que la dispersión de información y el uso de múltiples herramientas generan dificultades de seguimiento y coordinación. Sin embargo, mientras Carlos Mendoza presenta una mayor necesidad de consolidar información y generar reportes para la toma de decisiones, Andrea Torres enfrenta principalmente problemas relacionados con la organización, actualización y consistencia de la información entre diferentes canales.
+Finalmente, recopila la información necesaria para conocer el estado general de los proyectos. Durante este proceso pueden presentarse problemas relacionados con información dispersa, duplicidad de datos, falta de actualización y dificultad para realizar un seguimiento centralizado.
 
 ---
 
@@ -653,7 +639,8 @@ El análisis considera qué observa, escucha, dice y hace cada usuario, así com
 
 **Segmento 1**
 
-![Empathy-Map-1](assets/images/chapter-2/Needfinding/Segment-1/Empathy-Map-Gerson-Escarate.png)
+
+![Empathy Map - Gerson Escarate](assets/images/Empathy%20map%20Gerson%20Escarate.png) 
 
 El líder o jefe de gestión de proyectos busca mantener el control de múltiples proyectos y disponer de información actualizada para tomar decisiones. Está expuesto constantemente a reportes, reuniones, mensajes y diferentes fuentes de información.
 
@@ -663,7 +650,7 @@ Sus principales Gains están relacionados con disponer de una visión general de
 
 **Segmento 2**
 
-![Empathy-Map-2](assets/images/chapter-2/Needfinding/Segment-2/Empathy-Map-Katherine-Herrera.png)
+![Empathy Map - Alessandro Nieto](assets/images/Empathy%20map%20Alessandro%20Nieto.png)
 
 El segundo User Persona busca mantener organizadas las actividades de diferentes proyectos y coordinar correctamente a los responsables. Utiliza diferentes herramientas y canales para comunicarse y compartir información.
 
@@ -792,6 +779,8 @@ El Ubiquitous Language establece un vocabulario común para los principales conc
 - **Performance Report (Reporte de Desempeño):** Documento que consolida información relevante sobre el avance, estado, indicadores, riesgos y desempeño de un proyecto para apoyar la toma de decisiones.
 
 - **Information Silo (Silo de Información):** Información almacenada de manera aislada en diferentes herramientas, fuentes o áreas, dificultando su acceso, actualización y utilización conjunta.
+
+---
 
 ## 2.4 Requirements Specification
 <a id="2-4-requirements-specification"></a>
@@ -1026,9 +1015,9 @@ Las Spike Stories se orientan a investigar alternativas y validar su viabilidad 
 
 En esta sección se presenta el Impact Mapping de Vantage PMO, elaborado en UXPressia. Este artefacto permite relacionar los Business Goals del modelo de negocio con los User Personas previamente identificados, los cambios de comportamiento esperados, los Deliverables propuestos y las User Stories que permiten materializarlos.
 
-Para su elaboración se definieron dos Business Goals bajo criterios SMART. Asimismo, se consideraron como Actors/Personas a **Carlos Mendoza** y **Andrea Torres**, vinculando cada uno con los Impacts relacionados con sus necesidades y responsabilidades. A partir de estos Impacts se determinaron los Deliverables y las User Stories correspondientes, manteniendo trazabilidad entre los objetivos del negocio, las necesidades de los usuarios y las funcionalidades propuestas para Vantage PMO.
+Para su elaboración se definieron dos Business Goals bajo criterios SMART. Asimismo, se consideraron como Actors/Personas a **Gerson Escarate** y **Alessandro Nieto**, vinculando cada uno con los Impacts relacionados con sus necesidades y responsabilidades. A partir de estos Impacts se determinaron los Deliverables y las User Stories correspondientes, manteniendo trazabilidad entre los objetivos del negocio, las necesidades de los usuarios y las funcionalidades propuestas para Vantage PMO.
 
-![Impact-Mapping-Vantage-PMO](assets/images/chapter-2/Requirements/Impact-Map-Vantage-PMO.png)
+![Impact-Mapping-Vantage-PMO](assets/images/chapter-2/Needfinding/Impact-Map-Vantage%20PMO.png)
 
 ### 2.4.3. Product Backlog
 <a id="2-4-3-product-backlog"></a>
@@ -1056,7 +1045,6 @@ Cada User Story ha sido estimada utilizando Story Points de la serie 1, 2, 3, 5 
 | 15 | US06 | Comunicar bloqueos y observaciones de una tarea | 3 | Sprint 3 |
 | 16 | US10 | Registrar evidencia utilizando un recurso del dispositivo | 5 | Sprint 3 |
 | 17 | US15 | Gestionar roles y permisos | 5 | Sprint 3 |
-
 
 ---
 
