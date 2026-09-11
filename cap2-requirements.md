@@ -637,7 +637,8 @@ El análisis considera qué observa, escucha, dice y hace cada usuario, así com
 
 **Segmento 1**
 
-![Empathy-Map-1](assets/images/chapter-2/Needfinding/Segment-1/Empathy-Map-Gerson-Escarate.png)
+
+![Empathy Map - Gerson Escarate](assets/images/Empathy%20map%20Gerson%20Escarate.png) 
 
 El líder o jefe de gestión de proyectos busca mantener el control de múltiples proyectos y disponer de información actualizada para tomar decisiones. Está expuesto constantemente a reportes, reuniones, mensajes y diferentes fuentes de información.
 
@@ -647,7 +648,7 @@ Sus principales Gains están relacionados con disponer de una visión general de
 
 **Segmento 2**
 
-![Empathy-Map-2](assets/images/chapter-2/Needfinding/Segment-2/Empathy-Map-Katherine-Herrera.png)
+![Empathy Map - Alessandro Nieto](assets/images/Empathy%20map%20Alessandro%20Nieto.png)
 
 El segundo User Persona busca mantener organizadas las actividades de diferentes proyectos y coordinar correctamente a los responsables. Utiliza diferentes herramientas y canales para comunicarse y compartir información.
 
