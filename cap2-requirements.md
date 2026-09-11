@@ -556,7 +556,7 @@ Se elaboraron dos User Personas, uno por cada segmento objetivo identificado par
 
 **Segmento 1**
 
-![User-Persona-1] 
+![User Persona Gerson](assets/images/Gerson%20Escarate.png)
 
 El User Persona del segmento 1 representa a un líder o jefe de gestión de proyectos que debe supervisar múltiples proyectos de manera simultánea. Su principal necesidad es mantener una visión actualizada del estado de los proyectos y contar con información confiable para tomar decisiones oportunas.
 
@@ -566,7 +566,7 @@ Su principal motivación es mejorar el control de los proyectos y reducir el tie
 
 **Segmento 2**
 
-![User-Persona-2]
+![User Persona Alessandro](assets/images/Alessandro%20Nieto.png)
 
 El User Persona del segmento 2 representa a una persona que participa en una organización con múltiples proyectos o iniciativas y que necesita coordinar tareas, responsables y fechas entre diferentes personas.
 
@@ -612,7 +612,7 @@ Los mapas permiten visualizar las principales etapas del proceso, las acciones r
 
 **Segmento 1**
 
-![User-Journey-Map-1](assets/images/chapter-2/Needfinding/Segment-1/User-Journey-Map-Gerson-Escarate.png)
+![User Journey Map - Gerson Escarate](assets/images/User%20Journey%20Map%20-%20Gerson%20Escarate.png)
 
 El recorrido del líder o jefe de gestión de proyectos inicia con la recopilación de información proveniente de diferentes responsables y herramientas. Posteriormente, revisa el avance de las tareas, verifica fechas y analiza posibles retrasos o desviaciones. Finalmente, consolida la información para comunicar el estado de los proyectos y elaborar reportes.
 
@@ -620,7 +620,7 @@ Durante este proceso puede experimentar dificultades debido a la información di
 
 **Segmento 2**
 
-![User-Journey-Map-2](assets/images/chapter-2/Needfinding/Segment-2/User-Journey-Map-Katherine-Herrera.png)
+![User Journey Map - Alessandro Nieto](assets/images/User%20Journey%20Map%20-%20Alessandro%20Nieto.png)
 
 El recorrido del segundo User Persona comienza con la organización de las actividades y la asignación de tareas a los responsables. Posteriormente, realiza coordinaciones mediante diferentes canales de comunicación, verifica fechas y consulta el avance de las actividades.
 
@@ -637,7 +637,8 @@ El análisis considera qué observa, escucha, dice y hace cada usuario, así com
 
 **Segmento 1**
 
-![Empathy-Map-1](assets/images/chapter-2/Needfinding/Segment-1/Empathy-Map-Gerson-Escarate.png)
+
+![Empathy Map - Gerson Escarate](assets/images/Empathy%20map%20Gerson%20Escarate.png) 
 
 El líder o jefe de gestión de proyectos busca mantener el control de múltiples proyectos y disponer de información actualizada para tomar decisiones. Está expuesto constantemente a reportes, reuniones, mensajes y diferentes fuentes de información.
 
@@ -647,7 +648,7 @@ Sus principales Gains están relacionados con disponer de una visión general de
 
 **Segmento 2**
 
-![Empathy-Map-2](assets/images/chapter-2/Needfinding/Segment-2/Empathy-Map-Katherine-Herrera.png)
+![Empathy Map - Alessandro Nieto](assets/images/Empathy%20map%20Alessandro%20Nieto.png)
 
 El segundo User Persona busca mantener organizadas las actividades de diferentes proyectos y coordinar correctamente a los responsables. Utiliza diferentes herramientas y canales para comunicarse y compartir información.
 
