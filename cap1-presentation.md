@@ -26,9 +26,9 @@ Para cumplir con este propósito, hemos desarrollado el proyecto **MDEPS** (Proj
   *Resumen:* [Habilidades tecnicas y aportes al equipo].
 
 - **Pacheco Lavado, Rafael Agustin**  
-  [Foto]  
-  *Codigo:* [Codigo] | *Carrera:* Ingenieria de Software  
-  *Resumen:* [Habilidades tecnicas y aportes al equipo].
+  ![Foto-Rafael](assets/images/Rafael.png)    
+  *Codigo:* u202014215 | *Carrera:* Ingenieria de Software  
+  *Resumen:* Soy estudiante de Ingeniería de Software, con interés en programación, análisis de datos y desarrollo de soluciones tecnológicas. Cuento con conocimientos en Python y C++, y me caracterizo por aprender rápido, adaptarme a nuevas herramientas y trabajar de manera organizada y colaborativa.
 
 - **Quiliano Motta, Kirk Douglas**  
   ![Foto-Kirk](assets/images/Kirk.png)    

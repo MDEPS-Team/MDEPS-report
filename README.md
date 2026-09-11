@@ -22,7 +22,7 @@ Proyecto<br>
 | [U202520331] | Fuentes Alvarez, Angiela Stephany |
 | [Codigo]     | Guillen Giraldo, Mike Dylan |
 | [u202417433] | Mendoza Machoa, Lionel Snayder |
-| [Codigo]     | Pacheco Lavado, Rafael Agustin |
+| [u202014215] | Pacheco Lavado, Rafael Agustin |
 | [u202411378] | Quiliano Motta, Kirk Douglas |
 
 **Periodo Academico:** 2026-20
@@ -83,10 +83,10 @@ El curso contribuye al cumplimiento del Student Outcome ABET:
 
 En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET - EAC - Student Outcome 7.
 
-| Criterio Especifico | Acciones Realizadas | Conclusiones |
+| Criterio Específico | Acciones Realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>[Acciones realizadas en AV1]<br><br>**Guillen Giraldo, Mike Dylan:**<br>[Acciones realizadas en AV1]<br><br>**Mendoza Machoa, Lionel Snayder:**<br>[Acciones realizadas en AV1]<br><br>**Pacheco Lavado, Rafael Agustin:**<br>[Acciones realizadas en AV1]<br><br>**Quiliano Motta, Kirk Douglas:**<br>Investigue y aplique metodologias agiles de diseno de producto (Lean UX) y tecnicas de analisis de problemas (5W2H) para definir el alcance del proyecto Vantage PMO, actualizando mis conocimientos en gestion de portafolios y redaccion tecnica estructurada. | **AV1:** [Redactar conclusion grupal sobre la actualizacion de conocimientos en esta primera entrega] |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeno profesional y el desarrollo de proyectos en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>[Acciones realizadas en AV1]<br><br>**Guillen Giraldo, Mike Dylan:**<br>[Acciones realizadas en AV1]<br><br>**Mendoza Machoa, Lionel Snayder:**<br>[Acciones realizadas en AV1]<br><br>**Pacheco Lavado, Rafael Agustin:**<br>[Acciones realizadas en AV1]<br><br>**Quiliano Motta, Kirk Douglas:**<br>Reconoci que para modelar una solucion B2B efectiva, necesitaba aprender sobre los puntos de dolor reales de los Project Managers y el uso estandarizado de repositorios colaborativos (GitHub/GitFlow), lo cual es fundamental para el desarrollo profesional en la industria del software. | **AV1:** [Redactar conclusion grupal sobre la importancia del aprendizaje continuo] |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>[Acciones realizadas en AV1]<br><br>**Guillen Giraldo, Mike Dylan:**<br>[Acciones realizadas en AV1]<br><br>**Mendoza Machoa, Lionel Snayder:**<br>[Acciones realizadas en AV1]<br><br>**Pacheco Lavado, Rafael Agustin:**<br>Investigué y apliqué técnicas de levantamiento y especificación de requisitos como User Personas, User Journey Mapping, EventStorming, User Stories con criterios Gherkin e Impact Mapping, fortaleciendo mis conocimientos para el análisis y diseño de la solución Vantage PMO.<br><br>**Quiliano Motta, Kirk Douglas:**<br>Investigué y apliqué metodologías ágiles de diseño de producto (Lean UX) y técnicas de análisis de problemas (5W2H) para definir el alcance del proyecto Vantage PMO, actualizando mis conocimientos en gestión de portafolios y redacción técnica estructurada. | **AV1:** [Redactar conclusión grupal sobre la actualización de conocimientos en esta primera entrega] |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>[Acciones realizadas en AV1]<br><br>**Guillen Giraldo, Mike Dylan:**<br>[Acciones realizadas en AV1]<br><br>**Mendoza Machoa, Lionel Snayder:**<br>[Acciones realizadas en AV1]<br><br>**Pacheco Lavado, Rafael Agustin:**<br>Reconocí la importancia del aprendizaje continuo al utilizar nuevas herramientas y metodologías como UXPressia, EventStorming e Impact Mapping, adaptándome a conceptos necesarios para transformar las necesidades de los usuarios en requisitos y funcionalidades concretas para el proyecto.<br><br>**Quiliano Motta, Kirk Douglas:**<br>Reconocí que, para modelar una solución B2B efectiva, necesitaba aprender sobre los puntos de dolor reales de los Project Managers y el uso estandarizado de repositorios colaborativos (GitHub/GitFlow), lo cual es fundamental para el desarrollo profesional en la industria del software. | **AV1:** [Redactar conclusión grupal sobre la importancia del aprendizaje continuo] |
 
 ---
 
@@ -105,8 +105,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 - **Objetivo 2:** [Redactar objetivo SMART profesional post-graduacion]
 
 ### Pacheco Lavado, Rafael Agustin
-- **Objetivo 1:** [Redactar objetivo SMART profesional post-graduacion]
-- **Objetivo 2:** [Redactar objetivo SMART profesional post-graduacion]
+- **Objetivo 1:** Durante el primer año después de graduarme, conseguir un puesto profesional relacionado con el desarrollo de software o análisis de datos, fortaleciendo mis conocimientos en Python y desarrollo de aplicaciones mediante la realización de al menos 2 cursos o certificaciones especializadas.
+- **Objetivo 2:** Construir un portafolio técnico en GitHub durante los primeros 18 meses posteriores a mi graduación, desarrollando al menos 4 proyectos que demuestren mis conocimientos en programación, análisis de datos y desarrollo de software, aplicando tecnologías como Python, C++ y JavaScript.
 
 ### Quiliano Motta, Kirk Douglas
 - **Objetivo 1:** Obtener una certificacion en marcos de trabajo agiles (como Scrum Master o SAFe) dentro de los primeros 6 meses posteriores a la graduacion, dedicando 4 horas semanales de estudio, para mejorar mi perfil en la gestion y desarrollo de proyectos de software B2B.
