@@ -1427,3 +1427,252 @@ Este diagrama expone cómo los bloques de construcción principales interactúan
 | **total_projects** | int | NULL | 0 | Cantidad total de proyectos en los que el usuario ha participado. |
 | **total_endorsements**| int | NULL | 0 | Sumatoria total de los respaldos recibidos por el usuario. |
 | **profile_score** | float | NULL | 0.0 | Puntuación general calculada a partir del desempeño y el portafolio del perfil. |
+
+### 2.6.3. Bounded Context: Projects
+
+Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proyecto en capas. A continuación detallamos las capas del Bounded Context referenciado, el cual se encarga de la gestión principal de proyectos dentro de la plataforma PMO.
+
+#### 2.6.3.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Aggregate | Project | Clase para definir el Proyecto. | Ser el punto de entrada principal para modificar y mantener la integridad de la información de los proyectos gestionados. | Relacionado a los Value Objects `Milestone` y `TeamMember`. |
+
+**Sub-capa Model - Value Objects:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Value Object | Milestone | Objeto de valor para hitos. | Encapsular la información de los hitos o entregables clave dentro de la línea de tiempo de un proyecto. | Pertenece al agregado `Project`. |
+| Value Object | TeamMember | Objeto de valor para miembros de equipo. | Encapsular los datos básicos de los participantes asignados a un proyecto específico. | Pertenece al agregado `Project`. |
+
+**Sub-capa Model - Commands:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Command | CreateProjectCommand | Comando para crear proyecto. | Representar la intención del usuario de inicializar y registrar un nuevo proyecto en el sistema. | Usado en la implementación del servicio `ProjectCommandService`. |
+| Command | UpdateProjectCommand | Comando para actualizar proyecto. | Representar la intención de modificar las propiedades o estado de un proyecto existente. | Usado en la implementación del servicio `ProjectCommandService`. |
+
+**Sub-capa Model - Queries:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Query | GetAllProjectsQuery | Consulta general de proyectos. | Representar la intención de listar todos los proyectos disponibles en el sistema. | Usado en el servicio `ProjectQueryService`. |
+| Query | GetProjectByIdQuery | Consulta de proyecto por ID. | Representar la intención de buscar los detalles específicos de un proyecto mediante su identificador. | Usado en el servicio `ProjectQueryService`. |
+
+**Sub-capa Repositories:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | IProjectRepository | Contrato de persistencia de proyectos. | Definir las operaciones de base de datos (CRUD) necesarias para la entidad `Project`. | Implementado en la capa de Infraestructura por `ProjectRepository`. |
+
+#### 2.6.3.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Resource | ProjectResource | Estructura de datos del proyecto. | Exponer la información consolidada de un proyecto hacia el cliente en formato JSON. | Retornado por `ProjectsController`. |
+| Resource | CreateProjectResource | Estructura de petición de creación. | Capturar los datos enviados por el cliente para la creación de un nuevo proyecto. | Transformado a `CreateProjectCommand`. |
+| Resource | UpdateProjectResource | Estructura de petición de actualización. | Capturar los datos enviados por el cliente para modificar un proyecto. | Transformado a `UpdateProjectCommand`. |
+| Resource | MilestoneResource | Estructura de datos de hitos. | Exponer la información de los hitos asociados a un proyecto. | Integrado en las respuestas del controlador de proyectos. |
+| Resource | TeamMemberResource | Estructura de datos de equipo. | Exponer la información de los miembros asignados al proyecto. | Integrado en las respuestas del controlador de proyectos. |
+
+**Sub-capa REST - Transform:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Assembler | CreateProjectCommandFromResourceAssembler | Ensamblador de comando de creación. | Convertir el payload HTTP `CreateProjectResource` en un comando del dominio `CreateProjectCommand`. | Usado en `ProjectsController`. |
+| Assembler | UpdateProjectCommandFromResourceAssembler | Ensamblador de comando de actualización. | Convertir el payload HTTP `UpdateProjectResource` en un comando `UpdateProjectCommand`. | Usado en `ProjectsController`. |
+| Assembler | ProjectResourceFromEntityAssembler | Ensamblador de recurso de proyecto. | Transformar la entidad de dominio `Project` en un DTO `ProjectResource` para la respuesta. | Usado en `ProjectsController`. |
+
+**Sub-capa REST - Controllers:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Controller | ProjectsController | Controlador principal de proyectos. | Exponer y gestionar todos los endpoints RESTful para las operaciones de proyectos (GET, POST, PUT, DELETE). | Coordina con `IProjectCommandService` e `IProjectQueryService`. |
+
+#### 2.6.3.3. Application Layer
+
+**Sub-capa Services - CommandServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | IProjectCommandService | Contrato de servicio de comandos. | Definir las firmas para las operaciones que mutan el estado de los proyectos. | Implementado por `ProjectCommandService`. |
+| Service | ProjectCommandService | Servicio de comandos de proyectos. | Implementar la lógica de negocio para crear, actualizar y procesar proyectos. | Depende directamente de `IProjectRepository`. |
+
+**Sub-capa Services - QueryServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | IProjectQueryService | Contrato de servicio de consultas. | Definir las firmas para las operaciones de lectura de proyectos. | Implementado por `ProjectQueryService`. |
+| Service | ProjectQueryService | Servicio de consultas de proyectos. | Resolver y orquestar las lógicas de búsqueda para retornar proyectos al controlador. | Depende directamente de `IProjectRepository`. |
+
+#### 2.6.3.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Repository | ProjectRepository | Implementación del repositorio de proyectos. | Ejecutar las consultas y transacciones de base de datos utilizando Entity Framework Core para la entidad `Project`. | Implementa la interfaz `IProjectRepository` del dominio. |
+| Configuration | ModelBuilderExtensions | Configuración del modelo relacional. | Configurar el mapeo de las entidades `Project`, y los value objects `Milestone` y `TeamMember` a las tablas de la BD. | Utilizado internamente por el `AppDbContext` compartido. |
+
+#### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
+Se ilustra cómo el controlador REST procesa las peticiones de los clientes y las delega a los servicios de aplicación, los cuales orquestan la lógica de negocio apoyándose en el repositorio para la persistencia de datos.
+
+#### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+##### 2.6.3.6.2. Bounded Context Database Design Diagram
+
+**Tabla: PROJECTS**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **id** | bigint | N-N | default | Identificador único del proyecto (Clave Primaria). |
+| **name** | varchar | N-N | default | Nombre o título principal del proyecto. |
+| **description** | text | NULL | default | Descripción detallada de los objetivos del proyecto. |
+| **start_date** | datetime | N-N | default | Fecha de inicio planificada para el proyecto. |
+| **end_date** | datetime | NULL | default | Fecha límite o de finalización del proyecto. |
+| **created_at** | datetime | NULL | default | Fecha en la que el proyecto fue registrado en el sistema. |
+| **updated_at** | datetime | NULL | default | Fecha de la última modificación del proyecto. |
+
+**Tabla: MILESTONES**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **id** | bigint | N-N | default | Identificador único del hito (Clave Primaria). |
+| **project_id** | bigint | N-N | default | Clave foránea que asocia el hito con un proyecto específico. |
+| **title** | varchar | N-N | default | Título o nombre de la entrega/hito clave. |
+| **due_date** | datetime | N-N | default | Fecha límite para completar el hito. |
+| **is_completed** | bit | NULL | 0 | Indicador booleano sobre si el hito fue alcanzado (true/false). |
+
+**Tabla: TEAM_MEMBERS**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **id** | bigint | N-N | default | Identificador único de la asignación (Clave Primaria). |
+| **project_id** | bigint | N-N | default | Clave foránea del proyecto al que pertenece el miembro. |
+| **user_id** | bigint | N-N | default | Identificador del usuario asignado (referencia al módulo de Perfiles/IAM). |
+| **role** | varchar | N-N | default | Rol o responsabilidad que tiene el usuario dentro de este proyecto. |
+### 2.6.4. Bounded Context: TaskCollaboration
+
+Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proyecto en capas. A continuación detallamos las capas del Bounded Context referenciado, el cual gestiona el ciclo de vida de las tareas y la colaboración entre los miembros del equipo.
+
+#### 2.6.4.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Aggregate | TaskItem | Clase para definir una tarea. | Ser el punto de entrada principal para modificar el estado, asignación y progreso de una tarea específica. | Relacionado a la entidad `TaskComment`. |
+| Entity | TaskComment | Clase para los comentarios. | Encapsular la información y el contenido de los comentarios o notas dejadas en una tarea por los usuarios. | Pertenece al agregado `TaskItem`. |
+
+**Sub-capa Model - Commands:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Command | CreateTaskCommand | Comando para crear tarea. | Representar la intención de registrar una nueva tarea dentro de un proyecto. | Usado en la implementación de `TaskCommandService`. |
+| Command | UpdateTaskCommand | Comando para actualizar tarea. | Representar la intención de modificar la información, estado o prioridad de una tarea. | Usado en la implementación de `TaskCommandService`. |
+| Command | AssignTaskCommand | Comando para asignar tarea. | Representar la intención de delegar una tarea a un miembro del equipo específico. | Usado en la implementación de `TaskCommandService`. |
+| Command | AddTaskCommentCommand| Comando para añadir comentario.| Representar la intención de agregar feedback o notas a una tarea existente. | Usado en la implementación de `TaskCommandService`. |
+
+**Sub-capa Model - Queries:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Query | GetTaskByIdQuery | Consulta de tarea por ID. | Buscar los detalles completos de una tarea mediante su identificador único. | Usado en el servicio `TaskQueryService`. |
+| Query | GetTasksByProjectIdQuery| Consulta de tareas por proyecto.| Listar todas las tareas asociadas a un proyecto en particular. | Usado en el servicio `TaskQueryService`. |
+| Query | GetTasksByAssigneeIdQuery| Consulta de tareas por usuario.| Listar las tareas que han sido asignadas a un usuario específico. | Usado en el servicio `TaskQueryService`. |
+
+**Sub-capa Repositories:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | ITaskRepository | Contrato de persistencia de tareas. | Definir las operaciones CRUD necesarias en la base de datos para la entidad `TaskItem` y sus comentarios. | Implementado en la capa de Infraestructura. |
+
+#### 2.6.4.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Resource | TaskResource | Estructura de datos de la tarea. | Exponer la información de la tarea (estado, asignado, fechas) hacia el cliente. | Retornado por `TasksController`. |
+| Resource | CreateTaskResource | Estructura de petición (Crear). | Capturar los datos enviados por el cliente para crear una nueva tarea. | Transformado a `CreateTaskCommand`. |
+| Resource | UpdateTaskResource | Estructura de petición (Actualizar).| Capturar los datos enviados para modificar los atributos de una tarea. | Transformado a `UpdateTaskCommand`. |
+| Resource | TaskCommentResource | Estructura de datos del comentario.| Exponer el contenido, autor y fecha de un comentario al cliente. | Integrado en las respuestas de tareas. |
+
+**Sub-capa REST - Transform:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Assembler | CreateTaskCommandFromResourceAssembler | Ensamblador (Crear). | Convertir el payload `CreateTaskResource` en un `CreateTaskCommand`. | Usado en `TasksController`. |
+| Assembler | UpdateTaskCommandFromResourceAssembler | Ensamblador (Actualizar). | Convertir el payload `UpdateTaskResource` en un `UpdateTaskCommand`. | Usado en `TasksController`. |
+| Assembler | TaskResourceFromEntityAssembler | Ensamblador (Respuesta). | Transformar la entidad de dominio `TaskItem` en un DTO `TaskResource`. | Usado en `TasksController`. |
+
+**Sub-capa REST - Controllers:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Controller | TasksController | Controlador principal de tareas. | Gestionar los endpoints RESTful para la creación, consulta y actualización de tareas y comentarios. | Coordina con `ITaskCommandService` e `ITaskQueryService`. |
+
+#### 2.6.4.3. Application Layer
+
+**Sub-capa Services - CommandServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | ITaskCommandService | Contrato de comandos de tareas. | Definir las firmas de métodos que alteran el estado de las tareas o agregan comentarios. | Implementado por `TaskCommandService`. |
+| Service | TaskCommandService | Servicio de comandos de tareas. | Procesar la lógica de negocio para crear, actualizar, asignar tareas y añadir comentarios. | Depende de `ITaskRepository`. |
+
+**Sub-capa Services - QueryServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | ITaskQueryService | Contrato de consultas de tareas. | Definir las firmas para la lectura y filtrado de tareas. | Implementado por `TaskQueryService`. |
+| Service | TaskQueryService | Servicio de consultas de tareas. | Resolver las búsquedas de tareas delegando la lectura al repositorio. | Depende de `ITaskRepository`. |
+
+#### 2.6.4.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Repository | TaskRepository | Repositorio de tareas. | Proveer la implementación concreta usando Entity Framework Core para persistir `TaskItem` y `TaskComment`. | Implementa `ITaskRepository`. |
+| Configuration | ModelBuilderExtensions | Configuración del modelo. | Establecer el mapeo ORM entre las entidades de tareas/comentarios y las tablas relacionales. | Utilizado por `AppDbContext`. |
+
+#### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
+En él se ilustra cómo el sistema gestiona la colaboración del equipo: las peticiones entran por el controlador de tareas y se distribuyen hacia los servicios de comando (para crear/modificar tareas y añadir comentarios) o a los servicios de consulta (para listar tareas por proyecto o por usuario asignado).
+
+#### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
+
+##### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+**Tabla: TASK_ITEMS**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **id** | bigint | N-N | default | Identificador único de la tarea (Clave Primaria). |
+| **project_id** | bigint | N-N | default | Identificador del proyecto al que pertenece la tarea (Referencia lógica al módulo Projects). |
+| **assignee_id** | bigint | N-N | default | Identificador del usuario asignado a la tarea (Referencia lógica a Profiles/IAM). |
+| **title** | varchar | N-N | default | Título corto y descriptivo de la tarea a realizar. |
+| **description** | text | NULL | default | Descripción detallada de los requerimientos de la tarea. |
+| **status** | varchar | N-N | 'To Do' | Estado actual de la tarea (ej. To Do, In Progress, Done). |
+| **due_date** | datetime | NULL | default | Fecha límite esperada para la finalización de la tarea. |
+| **created_at** | datetime | NULL | default | Fecha de creación del registro de la tarea en el sistema. |
+| **updated_at** | datetime | NULL | default | Fecha de la última modificación de la tarea. |
+
+**Tabla: TASK_COMMENTS**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **id** | bigint | N-N | default | Identificador único del comentario (Clave Primaria). |
+| **task_item_id** | bigint | N-N | default | Clave foránea que asocia el comentario con una tarea específica. |
+| **author_id** | bigint | N-N | default | Identificador del usuario que escribió el comentario (Referencia lógica a Profiles/IAM). |
+| **content** | text | N-N | default | Contenido en texto del comentario o feedback dejado por el usuario. |
+| **created_at** | datetime | N-N | default | Fecha y hora exacta en la que se publicó el comentario. |
+
