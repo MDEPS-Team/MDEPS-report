@@ -1381,10 +1381,18 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 Este diagrama expone cómo los bloques de construcción principales interactúan dentro del contenedor de la aplicación para satisfacer las necesidades del negocio relacionadas a la gestión de datos profesionales, habilidades, reconocimientos y estadísticas de los usuarios.
 
+<img width="1256" height="990" alt="diagram 2 1" src="https://github.com/user-attachments/assets/8f2ebecd-dd88-46c5-bdba-ce41e759260e" />
+
+
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
+<img width="2235" height="870" alt="diagrama 2 2" src="https://github.com/user-attachments/assets/40e82145-c39d-4072-8a9f-0de724a6bb8f" />
+
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
+
+<img width="646" height="369" alt="diagram 2 3" src="https://github.com/user-attachments/assets/830fade9-c36b-40b7-b45a-0a66b015bf45" />
+
 
 
 **Tabla: PROFILES**
@@ -1521,11 +1529,20 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 Se ilustra cómo el controlador REST procesa las peticiones de los clientes y las delega a los servicios de aplicación, los cuales orquestan la lógica de negocio apoyándose en el repositorio para la persistencia de datos.
 
+<img width="511" height="939" alt="diagram 3 1" src="https://github.com/user-attachments/assets/58012806-e58c-4968-834f-a07974433f59" />
+
+
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
+<img width="1477" height="852" alt="diagrams 3 2" src="https://github.com/user-attachments/assets/0859d941-3d27-47a0-b0d9-b59eb08e0128" />
+
+
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
+<img width="422" height="352" alt="diagrams 3 3" src="https://github.com/user-attachments/assets/5277dded-fa06-4aca-9630-5608a99c9928" />
+
+
 
 **Tabla: PROJECTS**
 
@@ -1646,11 +1663,22 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 En él se ilustra cómo el sistema gestiona la colaboración del equipo: las peticiones entran por el controlador de tareas y se distribuyen hacia los servicios de comando (para crear/modificar tareas y añadir comentarios) o a los servicios de consulta (para listar tareas por proyecto o por usuario asignado).
 
+
+<img width="497" height="985" alt="diagramas 4 1" src="https://github.com/user-attachments/assets/b3959ec8-541d-44a6-b57c-0e39dddb2d21" />
+
+
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
+
 
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 
+<img width="2427" height="911" alt="diagrams 4 2" src="https://github.com/user-attachments/assets/83915623-3357-49e7-84ed-1e2a82833c57" />
+
+
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
+
+<img width="219" height="385" alt="diagrams 4 3" src="https://github.com/user-attachments/assets/416b257a-c949-4d27-bcb8-156a02758727" />
+
 
 **Tabla: TASK_ITEMS**
 
