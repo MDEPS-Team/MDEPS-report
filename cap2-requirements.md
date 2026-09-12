@@ -1248,3 +1248,182 @@ En este diagrama se puede observar cómo las peticiones ingresan a través de lo
 | **action** | varchar | N-N | default | Descripción de la acción o evento realizado por el usuario. |
 | **timestamp** | datetime | N-N | default | Fecha y hora exacta en la que se registró el evento de auditoría. |
 
+### 2.6.2. Bounded Context: Profiles
+
+Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proyecto en capas. A continuación detallamos las capas del Bounded Context referenciado.
+
+#### 2.6.2.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Aggregate | Profile | Clase para definir el Perfil del usuario. | Ser el punto de entrada para modificar y mantener la integridad de los datos personales y profesionales del usuario. | Relacionado con los agregados `ProfileSkill`, `Endorsement` y `ProfileStats`. |
+| Aggregate | ProfileSkill | Clase para definir las habilidades. | Encapsular la información de las habilidades (skills) asociadas a un perfil. | Pertenece a un `Profile` específico. |
+| Aggregate | Endorsement | Clase para definir los respaldos. | Representar las validaciones o recomendaciones dadas a un perfil por otros usuarios. | Vinculado a un `Profile`. |
+| Aggregate | ProfileStats | Clase para definir estadísticas. | Mantener las métricas y estadísticas consolidadas del desempeño o portafolio del perfil. | Vinculado a un `Profile`. |
+
+**Sub-capa Model - Value Objects:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Value Object | EmailAddress | Objeto de valor para correos. | Validar y encapsular el formato y reglas de las direcciones de correo electrónico. | Usado como propiedad dentro del agregado `Profile`. |
+| Value Object | PersonName | Objeto de valor para nombres. | Encapsular la lógica de nombres y apellidos de una persona, asegurando su formato. | Usado como propiedad dentro del agregado `Profile`. |
+
+**Sub-capa Model - Commands:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Command | CreateProfileCommand | Comando para la creación de perfil. | Representar la intención de registrar un nuevo perfil asociado a una cuenta de usuario. | Usado en la implementación de `ProfileCommandService`. |
+| Command | UpdateProfileCommand | Comando para actualizar el perfil. | Representar la intención de modificar la información existente de un perfil. | Usado en la implementación de `ProfileCommandService`. |
+
+**Sub-capa Model - Queries:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Query | GetProfileByIdQuery | Consulta para obtener perfil por ID. | Buscar un perfil específico utilizando su identificador único. | Usado en `ProfileQueryService`. |
+| Query | GetProfileByUserIdQuery | Consulta para obtener perfil por User ID. | Buscar el perfil asociado directamente a la cuenta de usuario (IAM) mediante el `UserId`. | Usado en `ProfileQueryService`. |
+| Query | GetProfileByEmailQuery | Consulta para obtener perfil por correo. | Localizar un perfil en el sistema a través de su dirección de email. | Usado en `ProfileQueryService`. |
+| Query | GetProfileSkillsByUserIdQuery | Consulta para listar habilidades. | Recuperar todas las habilidades registradas bajo un usuario específico. | Usado en `ProfileSkillQueryService`. |
+| Query | GetEndorsementsByUserIdQuery | Consulta para listar respaldos. | Obtener la lista de validaciones o endorsements otorgados a un usuario. | Usado en `EndorsementQueryService`. |
+| Query | GetAllProfileStatsQuery | Consulta para listar estadísticas. | Obtener el conjunto general de métricas o estadísticas de perfiles. | Usado en `ProfileStatsQueryService`. |
+| Query | GetProfileStatsByUserIdQuery | Consulta para métricas de usuario. | Recuperar los datos estadísticos asociados a un usuario en concreto. | Usado en `ProfileStatsQueryService`. |
+
+**Sub-capa Repositories:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | IProfileRepository | Contrato de persistencia de perfiles. | Definir las operaciones de base de datos para la entidad `Profile`. | Implementado en la capa Infrastructure. |
+| Interface | IProfileSkillRepository | Contrato de persistencia de skills. | Definir operaciones de guardado y lectura para `ProfileSkill`. | Implementado en la capa Infrastructure. |
+| Interface | IEndorsementRepository | Contrato de persistencia de respaldos. | Definir el acceso a datos para la entidad `Endorsement`. | Implementado en la capa Infrastructure. |
+| Interface | IProfileStatsRepository | Contrato de persistencia de stats. | Definir el acceso a datos para las métricas de `ProfileStats`. | Implementado en la capa Infrastructure. |
+
+#### 2.6.2.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Resource | ProfileResource | Estructura de datos del perfil. | Exponer los datos del perfil de forma estructurada para el cliente (frontend/mobile). | Retornado por `ProfilesController`. |
+| Resource | CreateProfileResource | Estructura de petición para crear. | Capturar los datos enviados por el cliente para registrar un perfil. | Transformado a `CreateProfileCommand`. |
+| Resource | UpdateProfileResource | Estructura de petición para actualizar. | Capturar los datos enviados para modificar la información del perfil. | Transformado a `UpdateProfileCommand`. |
+| Resource | ProfileSkillResource | Estructura de datos de skills. | Exponer la información de una habilidad de manera accesible. | Retornado por `ProfileSkillsController`. |
+| Resource | EndorsementResource | Estructura de datos de respaldo. | Representar la respuesta API de un endorsement. | Retornado por `EndorsementsController`. |
+| Resource | ProfileStatsResource | Estructura de datos de estadísticas. | Representar las métricas calculadas y estadísticas del perfil para su consumo. | Retornado por `StatsController`. |
+
+**Sub-capa REST - Transform:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Assembler | CreateProfileCommandFromResourceAssembler | Ensamblador de comando de creación. | Transformar el recurso HTTP `CreateProfileResource` a un `CreateProfileCommand`. | Usado en `ProfilesController`. |
+| Assembler | UpdateProfileCommandFromResourceAssembler | Ensamblador de comando de actualización. | Transformar el recurso HTTP `UpdateProfileResource` a un `UpdateProfileCommand`. | Usado en `ProfilesController`. |
+| Assembler | ProfileResourceFromEntityAssembler | Ensamblador de recurso de perfil. | Convertir la entidad de dominio `Profile` en un formato de transferencia `ProfileResource`. | Usado en `ProfilesController`. |
+| Assembler | ProfileSkillResourceFromEntityAssembler | Ensamblador de recurso de skills. | Mapear la entidad `ProfileSkill` hacia su representación API. | Usado en `ProfileSkillsController`. |
+| Assembler | EndorsementResourceFromEntityAssembler | Ensamblador de recurso de respaldos. | Transformar la entidad `Endorsement` hacia un recurso REST. | Usado en `EndorsementsController`. |
+| Assembler | ProfileStatsResourceFromEntityAssembler | Ensamblador de recurso de stats. | Mapear la entidad `ProfileStats` hacia `ProfileStatsResource`. | Usado en `StatsController`. |
+
+**Sub-capa REST - Controllers:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Controller | ProfilesController | Controlador principal de perfiles. | Exponer los endpoints CRUD para la gestión de la información central de los perfiles. | Usa `IProfileCommandService` e `IProfileQueryService`. |
+| Controller | ProfileSkillsController | Controlador de habilidades. | Gestionar las peticiones HTTP sobre las skills asociadas a un usuario. | Interactúa con los servicios de aplicación de Skills. |
+| Controller | EndorsementsController | Controlador de respaldos. | Proveer endpoints para visualizar o registrar validaciones y reconocimientos. | Interactúa con los servicios de Endorsements. |
+| Controller | StatsController | Controlador de estadísticas. | Servir las peticiones relacionadas a métricas de desempeño o portafolio del perfil. | Interactúa con los servicios de Stats. |
+
+**Sub-capa ACL:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Facade Interface | IProfilesContextFacade | Interfaz de la fachada ACL de perfiles. | Proveer un contrato anticorrupción para que otros Bounded Contexts obtengan datos del perfil. | Implementado por `ProfilesContextFacade`. |
+
+#### 2.6.2.3. Application Layer
+
+**Sub-capa Services - CommandServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | IProfileCommandService | Contrato de comandos de perfil. | Definir las operaciones de modificación de datos de perfiles (creación/actualización). | Implementado por `ProfileCommandService`. |
+| Service | ProfileCommandService | Servicio de comandos de perfil. | Ejecutar la lógica de negocio que altera el estado de los perfiles. | Depende de `IProfileRepository`. |
+
+**Sub-capa Services - QueryServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | IProfileQueryService | Contrato de consultas de perfil. | Definir métodos para leer información y estados actuales de los perfiles. | Implementado por `ProfileQueryService`. |
+| Service | ProfileQueryService | Servicio de consultas de perfil. | Resolver queries relacionadas con la obtención de perfiles. | Depende de `IProfileRepository`. |
+| Interface | IProfileSkillQueryService | Contrato de consultas de skills. | Definir lecturas sobre las habilidades del usuario. | Implementado por `ProfileSkillQueryService`. |
+| Service | ProfileSkillQueryService | Servicio de consultas de skills. | Retornar listados y detalles de habilidades. | Depende de `IProfileSkillRepository`. |
+| Interface | IEndorsementQueryService | Contrato de consultas de respaldos. | Definir la lectura de endorsements. | Implementado por `EndorsementQueryService`. |
+| Service | EndorsementQueryService | Servicio de consultas de respaldos. | Retornar la data relacionada a validaciones de perfil. | Depende de `IEndorsementRepository`. |
+| Interface | IProfileStatsQueryService | Contrato de consultas de estadísticas. | Definir la lectura de métricas de perfil. | Implementado por `ProfileStatsQueryService`. |
+| Service | ProfileStatsQueryService | Servicio de consultas de estadísticas. | Orquestar la obtención de datos estadísticos persistidos. | Depende de `IProfileStatsRepository`. |
+| Service | PortfolioStatsCalculator | Servicio de cálculo interno. | Procesar lógicas internas complejas para derivar o calcular estadísticas de portafolio antes de guardarlas o mostrarlas. | Usado por otros servicios de la capa Application. |
+
+**Sub-capa ACL - Implementation:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Facade | ProfilesContextFacade | Implementación de fachada ACL. | Aislar el dominio de perfiles exponiendo operaciones simplificadas para otros contextos (como Projects o TaskCollaboration). | Implementa `IProfilesContextFacade`. |
+
+#### 2.6.2.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Repository | ProfileRepository | Repositorio de perfiles. | Ejecutar las operaciones de base de datos (Entity Framework) para el agregado `Profile`. | Implementa `IProfileRepository`. |
+| Repository | ProfileSkillRepository | Repositorio de skills. | Proveer la conexión a DB para persistir habilidades. | Implementa `IProfileSkillRepository`. |
+| Repository | EndorsementRepository | Repositorio de respaldos. | Ejecutar queries a nivel BD para entidades `Endorsement`. | Implementa `IEndorsementRepository`. |
+| Repository | ProfileStatsRepository | Repositorio de estadísticas. | Manejar las transacciones en BD para `ProfileStats`. | Implementa `IProfileStatsRepository`. |
+| Configuration | ModelBuilderExtensions | Configuración del modelo. | Mapear los agregados y value objects de Profiles (incluyendo las relaciones) hacia tablas SQL mediante EFC. | Consumido por el `AppDbContext` compartido. |
+
+#### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
+Este diagrama expone cómo los bloques de construcción principales interactúan dentro del contenedor de la aplicación para satisfacer las necesidades del negocio relacionadas a la gestión de datos profesionales, habilidades, reconocimientos y estadísticas de los usuarios.
+
+#### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+##### 2.6.2.6.2. Bounded Context Database Design Diagram
+
+
+**Tabla: PROFILES**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **id** | bigint | N-N | default | Identificador único del perfil (Clave Primaria). |
+| **user_id** | bigint | N-N | default | Identificador del usuario en el módulo IAM (Clave Foránea lógica). |
+| **first_name** | varchar | N-N | default | Primer nombre del usuario. |
+| **last_name** | varchar | N-N | default | Apellido del usuario. |
+| **email** | varchar | N-N | default | Dirección de correo electrónico de contacto del perfil. |
+| **date_of_birth** | datetime | NULL | default | Fecha de nacimiento del usuario. |
+| **created_at** | datetime | NULL | default | Fecha de creación del perfil de usuario. |
+| **updated_at** | datetime | NULL | default | Fecha de la última actualización del perfil. |
+
+**Tabla: PROFILE_SKILLS**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **id** | bigint | N-N | default | Identificador único del registro de la habilidad. |
+| **profile_id** | bigint | N-N | default | Clave Foránea que referencia a la tabla PROFILES. |
+| **skill_name** | varchar | N-N | default | Nombre de la habilidad (ej. C#, Figma, HTML). |
+| **experience_years** | int | NULL | 0 | Años de experiencia que el usuario tiene en dicha habilidad. |
+
+**Tabla: ENDORSEMENTS**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **id** | bigint | N-N | default | Identificador único del respaldo o recomendación. |
+| **profile_id** | bigint | N-N | default | Clave Foránea del perfil que *recibe* el respaldo. |
+| **endorser_id** | bigint | N-N | default | Identificador del perfil o usuario que *emite* el respaldo. |
+| **comments** | varchar | NULL | default | Comentarios adicionales o texto de la recomendación. |
+
+**Tabla: PROFILE_STATS**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **id** | bigint | N-N | default | Identificador único del registro de estadísticas. |
+| **profile_id** | bigint | N-N | default | Clave Foránea que referencia a la tabla PROFILES de forma única (1 a 1). |
+| **total_projects** | int | NULL | 0 | Cantidad total de proyectos en los que el usuario ha participado. |
+| **total_endorsements**| int | NULL | 0 | Sumatoria total de los respaldos recibidos por el usuario. |
+| **profile_score** | float | NULL | 0.0 | Puntuación general calculada a partir del desempeño y el portafolio del perfil. |
