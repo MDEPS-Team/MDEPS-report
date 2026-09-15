@@ -10,31 +10,14 @@ Nuestra misión es lograr que ninguna empresa gestione sus proyectos sin un cont
 Para cumplir con este propósito, hemos desarrollado el proyecto **MDEPS** (Project Management Office), una plataforma movil que permite a las organizaciones gestionar, monitorear y controlar todos sus proyectos de manera centralizada, brindando visibilidad en tiempo real, estandarización de procesos y herramientas inteligentes para la toma de decisiones.
 
 ### 1.1.2. Perfiles de integrantes del equipo
-- **Fuentes Alvarez, Angiela Stephany**  
-  [Foto]  
-  *Codigo:*   | *Carrera:* Ingenieria de Software  
-  *Resumen:* [].
 
-- **Guillen Giraldo, Mike Dylan**  
-  [Foto]  
-  *Codigo:* [Codigo] | *Carrera:* Ingenieria de Software  
-  *Resumen:* [Habilidades tecnicas y aportes al equipo].
-
-- **Mendoza Machoa, Lionel Snayder**  
-  [Foto]  
-  *Codigo:* [Codigo] | *Carrera:* Ingenieria de Software  
-  *Resumen:* [Habilidades tecnicas y aportes al equipo].
-
-- **Pacheco Lavado, Rafael Agustin**  
-  ![Foto-Rafael](assets/images/Rafael.png)    
-  *Codigo:* u202014215 | *Carrera:* Ingenieria de Software  
-  *Resumen:* Soy estudiante de Ingeniería de Software, con interés en programación, análisis de datos y desarrollo de soluciones tecnológicas. Cuento con conocimientos en Python y C++, y me caracterizo por aprender rápido, adaptarme a nuevas herramientas y trabajar de manera organizada y colaborativa.
-
-- **Quiliano Motta, Kirk Douglas**  
-  ![Foto-Kirk](assets/images/Kirk.png)    
-  *Codigo:* [u202411378 ] | *Carrera:* Ingenieria de Software  
-  *Resumen:* [Estudiante de la carrera de Ing. Software cursando el 6to ciclo y entusiasmado por aprender lo mas que pueda con conocimientos en lenguajes como python,
-  c++, javascript, html, css, etc.].
+| Foto | Apellido y Nombre |
+| --- | --- |
+| ![foto-angiela](assets/images/chapter-1/profiles/Angiela.png) | **Fuentes Alvarez, Angiela Stephany**<br> **Codigo: U202520331** \| **Carrera: Ingenieria de Software**<br>*Resumen:* [Habilidades tecnicas y aportes al equipo]. |
+| ![foto-dylan](assets/images/chapter-1/profiles/Dylan.png) | **Guillen Giraldo, Mike Dylan**<br> **Codigo: U202211881** \| **Carrera: Ingenieria de Software**<br>Dominio de lenguajes de programación como C++, Python, HTML, CSS y JavaScript, además de experiencia con frameworks modernos (Vue.js, Angular) y TypeScript. Manejo de desarrollo backend con Spring Boot y creación de APIs RESTful. Conocimientos en bases de datos relacionales y no relacionales, control de versiones con Git/GitHub y nociones de análisis de ciberseguridad con Kali Linux. En el equipo me caracterizo por ser una persona enfocada, proactiva y con gran capacidad de aprendizaje continuo: si surge una tecnología o herramienta que no domino, me adapto rápidamente. Además, priorizo la empatía y la comunicación clara para mantener un ambiente de trabajo colaborativo y eficiente. |
+| ![foto-lionel](assets/images/chapter-1/profiles/Lionel.png) | **Mendoza Machoa, Lionel Snayder**<br> **Codigo: u202417433** \| **Carrera: Ingenieria de Software**<br>*Resumen:* [Habilidades tecnicas y aportes al equipo]. |
+| ![foto-rafael](assets/images/chapter-1/profiles/Rafael.png) | **Pacheco Lavado, Rafael Agustin**<br> **Codigo: u202014215** \| **Carrera: Ingenieria de Software**<br>Soy estudiante de Ingeniería de Software, con interés en programación, análisis de datos y desarrollo de soluciones tecnológicas. Cuento con conocimientos en Python y C++, y me caracterizo por aprender rápido, adaptarme a nuevas herramientas y trabajar de manera organizada y colaborativa. |
+| ![foto-kirk](assets/images/chapter-1/profiles/Kirk.png) | **Quiliano Motta, Kirk Douglas**<br> **Codigo: u202411378** \| **Carrera: Ingenieria de Software**<br>Estudiante de la carrera de Ingeniería de Software cursando el 6to ciclo y entusiasmado por aprender lo más que pueda, con conocimientos en lenguajes como Python, C++, JavaScript, HTML, CSS, entre otros. |
 
 ---
 

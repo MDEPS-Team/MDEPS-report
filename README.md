@@ -20,7 +20,7 @@ Proyecto<br>
 | Codigo       | Apellidos y Nombres |
 |:-------------| :--- |
 | [U202520331] | Fuentes Alvarez, Angiela Stephany |
-| [Codigo]     | Guillen Giraldo, Mike Dylan |
+| [U202211881] | Guillen Giraldo, Mike Dylan |
 | [u202417433] | Mendoza Machoa, Lionel Snayder |
 | [u202014215] | Pacheco Lavado, Rafael Agustin |
 | [u202411378] | Quiliano Motta, Kirk Douglas |
@@ -97,8 +97,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 - **Objetivo 2:** Desarrollar un perfil profesional sólido en Ingeniería de Software, participando en al menos 3 proyectos de software y construyendo un portafolio técnico en GitHub que evidencie mis competencias en programación, desarrollo de aplicaciones y trabajo colaborativo.
 
 ### Guillen Giraldo, Mike Dylan
-- **Objetivo 1:** [Redactar objetivo SMART profesional post-graduacion]
-- **Objetivo 2:** [Redactar objetivo SMART profesional post-graduacion]
+- **Objetivo 1:** Consolidarme como ingeniero de software durante los primeros 6 meses posteriores a mi graduación, aprovechando la experiencia adquirida en el desarrollo de proyectos de software de mayor escala que actualmente me encuentro construyendo, y fortaleciendo mis competencias en desarrollo, bases de datos, arquitectura y diseño de soluciones mediante experiencia profesional.
+- **Objetivo 2:** Orientar progresivamente mi perfil hacia la ciberseguridad, complementando mi experiencia en desarrollo de software con formación especializada y participación en proyectos relacionados con seguridad durante los 2 primeros años posteriores a mi graduación, con el propósito de adquirir las competencias necesarias para desempeñarme en el área de seguridad de aplicaciones y sistemas.
 
 ### Mendoza Machoa, Lionel Snayder
 - **Objetivo 1:** [Redactar objetivo SMART profesional post-graduacion]
