@@ -367,14 +367,41 @@ Tras comparar las alternativas de mapeo (mover capabilities, partir o unir conte
 </p>
 
 ### 2.5.3. Software Architecture
+
+En este sección se presenta la arquitectura del sistema mediante el C4 Model, abordando dos perspectivas complementarias. Primero, se muestra una representación general del sistema y su interacción con los actores y elementos externos; posteriormente, se detalla su estructura interna a nivel técnico mediante los Containers. Cada diagrama se acompaña de una descripción de sus componentes y de los criterios considerados para definir las tecnologías utilizadas.
+
 #### 2.5.3.1. Software Architecture Context Level Diagrams
-[Diagrama C4 Nivel 1 Context Diagram y descripcion].
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/software_architecture/context.png" alt="context - VantagePMO">
+</p>
+
+El Context Diagram presenta VantagePMO como el sistema central, acompañado por dos actores principales (Project Leader / PM y Entrepreneurs / Managers) y tres servicios externos (Auth0 & SendGrid, AWS S3 y Risk Engine & Export Services). Su propósito es delimitar el alcance de la solución, mostrando que la gestión de proyectos, recursos, auditoría y análisis del portafolio corresponde a VantagePMO, mientras que la autenticación, las notificaciones, el almacenamiento de archivos, la evaluación de riesgos y la generación de reportes se apoyan en servicios externos.
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 [Diagrama C4 Nivel 2 Container Diagram y descripcion].
 
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/software_architecture/container.png" alt="container - VantagePMO">
+</p>
+
+El Container Diagram representa la organización interna de **VantagePMO** y la interacción entre sus principales componentes. La solución incluye una **Landing Page** para el acceso público, dos aplicaciones móviles dirigidas a diferentes perfiles de usuario y un **Backend API** encargado de procesar las operaciones del sistema. Este backend utiliza **MongoDB** para la persistencia de datos y se integra con servicios externos para cubrir funciones de autenticación, almacenamiento, evaluación de riesgos y generación de reportes.
+
+**Main technological decisions**
+
+- **Mobile Applications**: Se utiliza Kotlin para la aplicación destinada a Project Leaders/PM y Flutter con Dart para la aplicación orientada a Entrepreneurs/Managers.
+- **Backend Services**: Se emplea Java con Spring Boot para implementar la lógica de negocio y exponer los servicios mediante APIs REST.
+- **Database**: Se utiliza MongoDB para almacenar la información relacionada con proyectos, recursos, riesgos y demás operaciones del sistema.
+- **External Integrations**: Se integran Auth0 & SendGrid para autenticación y notificaciones, AWS S3 para almacenamiento y servicios externos para la evaluación de riesgos y generación de reportes.
+- **Landing Page**: Se desarrolla con HTML, CSS y JavaScript para presentar información de VantagePMO y facilitar el acceso a las aplicaciones.
+
 #### 2.5.3.3. Software Architecture Deployment Diagrams
-[Diagrama C4 de Despliegue de infraestructura y descripcion].
+
+A continuación, se presenta el Deployment Diagram del sistema a implementar, el cual representa cómo se distribuirán los distintos componentes de VantagePMO dentro de la infraestructura tecnológica y los entornos donde serán ejecutados. El diagrama permite visualizar la comunicación entre las aplicaciones, el backend, la base de datos y los servicios externos, así como la forma en que estos elementos se integran durante la ejecución del sistema. Su propósito principal es ofrecer una visión clara de la arquitectura de despliegue, facilitando su comprensión, implementación y posterior mantenimiento.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/software_architecture/deployment.png" alt="deployment - VantagePMO">
+</p>
 
 ---
 
