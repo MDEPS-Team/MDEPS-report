@@ -305,7 +305,66 @@ Con el propósito de mejorar la organización del dominio y mantener una comunic
 </p>
 
 ### 2.5.2. Context Mapping
-[Diagrama con relaciones Upstream, Downstream, ACL, Conformist, Customer-Supplier].
+
+Esta sección presenta el desarrollo de los Context Maps, utilizados para representar cómo se relacionan y colaboran los distintos Bounded Contexts que conforman el dominio. Además, se identifican los vínculos existentes entre estos contextos y los patrones de integración propuestos por Domain-Driven Design, entre ellos Anti-corruption Layer, Conformist, Customer/Supplier y Shared Kernel.
+
+A partir del análisis y la discusión realizada por el equipo para delimitar el dominio del proyecto, se definieron los siguientes Bounded Contexts:
+
+- **Identity and Access Management (IAM)**
+- **Profile Management (PM)**
+- **Project and Task Operations (PTO)**
+- **Governance and Resource Optimization (GRO)**
+- **Analytics and Support Services (ASS)**
+
+Durante la elaboración de los Context Maps se revisó la información recolectada en EventStorming, Candidate Context Discovery y Domain Message Flows para diseñar candidatos de integración entre bounded contexts. En ese proceso se evaluaron alternativas como mover capabilities entre contextos, descomponer sub-capabilities, partir un contexto en varios, consolidar funcionalidades en un nuevo context, duplicar una capacidad para romper dependencias, crear shared services o aislar capabilities core. Cada alternativa se discutió considerando patrones DDD (Upstream/Downstream, Open Host Service, Conformist, Customer/Supplier, Published Language y Anti-corruption Layer) hasta llegar a la aproximación final.
+
+**Identity and Access Management (IAM) — Profile Management (PM)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/iam-pm.png" alt="Context Mapping - Identity and Access Management (IAM) y Profile Management (PM)">
+</p>
+
+**IAM** actúa como contexto Upstream y expone su modelo de identidad mediante **Open Host Service (OHS)**; **PM** se relaciona de forma Downstream y adopta ese contrato con un enfoque **Conformist (CF)**. Así, la creación y validación de cuentas en IAM alimenta la ficha de perfil sin que PM imponga su propio lenguaje de autenticación. Esta relación evita duplicar identidad y mantiene un único punto de verdad para credenciales y roles.
+
+**Identity and Access Management (IAM) — Project and Task Operations (PTO)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/iam-pto.png" alt="Context Mapping - Identity and Access Management (IAM) y Project and Task Operations (PTO)">
+</p>
+
+Entre **IAM** (Upstream) y **PTO** (Downstream) se aplica el mismo patrón **OHS / Conformist**: PTO consume la identidad y el acceso ya validados para autorizar operaciones de proyectos y tareas. No se movió la autenticación dentro de PTO porque fragmentaría el control de seguridad; en cambio, PTO se conforma al host de IAM y concentra su lenguaje en la operación del portafolio.
+
+**Project and Task Operations (PTO) — Governance and Resource Optimization (GRO)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/pto-gro.png" alt="Context Mapping - Project and Task Operations (PTO) y Governance and Resource Optimization (GRO)">
+</p>
+
+**PTO** es Upstream respecto de **GRO** y publica un **Published Language (PL)** con eventos y datos de proyectos, tareas y bloqueos. **GRO**, Downstream, consume ese lenguaje para evaluar capacidad, riesgos y cumplimiento. Se descartó fusionar ambos contextos: la operación diaria y la gobernanza tienen ritmos e invariantes distintos; el PL permite integración estable sin Shared Kernel rígido. Además, **GRO** se protege del **Risk Engine** externo mediante **Anti-corruption Layer (ACL)**.
+
+**Profile Management (PM) — Governance and Resource Optimization (GRO)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/pm-gro.png" alt="Context Mapping - Profile Management (PM) y Governance and Resource Optimization (GRO)">
+</p>
+
+La relación entre **PM** (Upstream) y **GRO** (Downstream) se modela como **Customer/Supplier (C/S)**: Governance necesita datos de perfil (roles operativos, preferencias, identidad de actor) para asignar recursos y auditar decisiones, y negocia ese contrato con Profiles como proveedor. Se prefirió C/S frente a Conformist estricto porque GRO puede requerir proyecciones específicas de perfil sin obligar a PM a exponer todo su modelo interno.
+
+**Governance and Resource Optimization (GRO) — Analytics and Support Services (ASS)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/gro-ass.png" alt="Context Mapping - Governance and Resource Optimization (GRO) y Analytics and Support Services (ASS)">
+</p>
+
+**GRO** es Upstream y **ASS** Downstream; la integración se realiza con **Anti-corruption Layer (ACL)** para que Analytics/Support traduzca auditoría, riesgos y métricas de gobernanza a su propio modelo de KPIs, documentos y reportes. **ASS** también usa ACL hacia sistemas externos (**AWS S3** y el servicio PDF), aislando el dominio de formatos y APIs de terceros. De este modo se reduce el acoplamiento y se evita que cambios en almacenamiento o exportación contaminen el core de governance.
+
+**Final Context Map**
+
+Tras comparar las alternativas de mapeo (mover capabilities, partir o unir contextos, duplicar funcionalidad o introducir shared services), el equipo consolidó la siguiente aproximación global. El mapa final refleja IAM como proveedor de identidad (OHS/CF hacia PM y PTO), PTO publicando lenguaje operativo hacia GRO (PL), PM suministrando datos de perfil a GRO (C/S), y GRO/ASS protegiendo el dominio frente a motores y servicios externos con ACL.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/global.png" alt="Final Context Map - VantagePMO">
+</p>
 
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
