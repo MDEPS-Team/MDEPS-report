@@ -1050,30 +1050,319 @@ Cada User Story ha sido estimada utilizando Story Points de la serie 1, 2, 3, 5 
 
 ## 2.5. Strategic-Level Domain-Driven Design
 
+El Strategic DDD permite identificar y organizar las áreas principales del negocio, definiendo los dominios y subdominios y cómo se relacionan entre sí. Esto ayuda a que el sistema represente correctamente los procesos y necesidades de la organización.
+
 ### 2.5.1. EventStorming
-[Explicacion del proceso colaborativo].
+
+**Step 1: Unstructured Exploration**
+
+Durante esta fase, se identificaron de forma libre los Domain Events que cambian el estado de **MDEPS**, cubriendo el ciclo de vida de proyectos, fases, hitos y tareas, así como autenticación, roles, riesgos, cumplimiento, recursos, reportes, KPIs y versionado de documentos. Cada evento se representó en tiempo pasado mediante post-its naranjas, sin imponer aún un orden estricto.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step-01.png" alt="EventStorming Step 1 - Unstructured Exploration" style="width: 500px; height: 400px">
+</p>
+
+**Step 2: Chronology**
+
+Los eventos descubiertos se ordenaron en una línea temporal coherente con el flujo real de la PMO: desde la creación del proyecto y la autenticación de usuarios, pasando por la definición de hitos, asignación de tareas y recursos, hasta la detección de riesgos, generación de reportes, actualización de KPIs y archivo de versiones. Este ordenamiento permitió visualizar dependencias y secuencias entre la operación diaria y la toma de decisiones gerencial.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step-02.png" alt="EventStorming Step 2 - Chronology" style="width: 500px; height: 400px">
+</p>
+
+**Step 3: Pain Points**
+
+Se marcaron los puntos de dolor del dominio donde hoy fallan los procesos manuales de gestión de proyectos: retrasos no detectados a tiempo (`Project Delayed`), tareas bloqueadas sin visibilidad, riesgos escalados tarde, sobrecarga de capacidad (`Capacity Exceeded`), umbrales de KPI incumplidos y fricción en el acceso o la gobernanza de roles. Estos hotspots justifican las hipótesis de Lean UX sobre reporteo manual, silos de información y falta de alertas tempranas.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step-03.png" alt="EventStorming Step 3 - Pain Points" style="width: 500px; height: 400px">
+</p>
+
+**Step 4: Pivotal Points**
+
+Se identificaron los momentos pivote que cambian el rumbo del portafolio: creación del proyecto, definición y cierre de fases/hitos, asignación crítica de recursos, escalamiento de riesgos, validación o violación de compliance, y la generación de reportes o brechas de KPI. Estos puntos concentran las decisiones de Project Managers, PMO Leads y Stakeholders y delimitan dónde la plataforma debe aportar mayor control.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step-04.png" alt="EventStorming Step 4 - Pivotal Points" style="width: 500px; height: 400px">
+</p>
+
+**Step 5: Commands**
+
+A partir de cada evento se derivaron los Commands (intenciones de actor) que lo provocan: crear proyecto, inicializar fase, definir hito, asignar tarea o rol, autenticar usuario, cargar documento, exportar PDF, asignar recurso, generar reporte, etc. Los comandos modelan las acciones de Project Managers, miembros de equipo y administradores sobre la plataforma móvil y web de **MDEPS**.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step-05.png" alt="EventStorming Step 5 - Commands" style="width: 500px; height: 400px">
+</p>
+
+**Step 6: Policies**
+
+Se definieron las Policies (reacciones automáticas del tipo “cuando ocurre X, entonces Y”) propias de una PMO: ante un retraso o umbral de KPI incumplido disparar alertas; al detectar un riesgo, evaluar escalamiento; al exceder capacidad, rebalancear recursos; al validar compliance, habilitar el siguiente hito; al renovar suscripción, reactivar políticas globales. Estas reglas conectan monitoreo en tiempo real con estandarización de procesos.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step-06.png" alt="EventStorming Step 6 - Policies" style="width: 500px; height: 400px">
+</p>
+
+**Step 7: Read Models**
+
+Se identificaron los Read Models (información que el actor necesita ver para decidir) alineados al producto: dashboards de salud del portafolio, listado de proyectos y hitos, estado de tareas y bloqueos, matriz de riesgos, capacidad del equipo, KPIs y semáforos, historial de auditoría, preferencias de notificación y reportes exportables. Estos modelos sustentan la visibilidad 360° prometida a Project Managers y Stakeholders.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step-07.png" alt="EventStorming Step 7 - Read Models" style="width: 500px; height: 400px">
+</p>
+
+**Step 8: External Systems**
+
+Se explicitaron los sistemas externos con los que **MDEPS** interactúa o podría integrarse en el MVP y más adelante: almacenamiento de archivos/documentos, servicio de notificaciones (correo/push), generación de PDF, autenticación/proveedores de identidad, y posibles fuentes de datos operativos (hojas de cálculo o herramientas colaborativas legadas). Quedaron fuera del alcance inicial integraciones pesadas con ERP (SAP/Oracle), según las restricciones del proyecto.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step-08.png" alt="EventStorming Step 8 - External Systems" style="width: 500px; height: 400px">
+</p>
+
+**Step 9: Aggregates**
+
+Los eventos y comandos se agruparon en Aggregates que protegen invariantes del dominio PMO, por ejemplo: **Project** (fases, hitos, estado y retrasos), **Task** (asignación, bloqueos, comentarios), **User/Identity** (autenticación, roles y acceso), **Risk**, **Resource/Capacity**, **Report/KPI** y **Document/Version**. Cada aggregate delimita la unidad de consistencia sobre la que se ejecutan los comandos de la plataforma.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step-09.png" alt="EventStorming Step 9 - Aggregates" style="width: 500px; height: 400px">
+</p>
+
+**Step 10: Bounded Contexts**
+
+Finalmente se trazaron los Bounded Contexts candidatos a partir de los clusters del tablero, separando lenguajes y responsabilidades: **IAM** (identidad, roles y acceso), gestión de proyectos/portafolio, tareas y colaboración, riesgos y compliance, recursos y capacidad, analítica/reportes/KPIs, y documentos/versionado.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step_10.png" alt="EventStorming Step 10 - Bounded Contexts">
+</p>
 
 #### 2.5.1.1. Candidate Context Discovery
-[Identificacion de Bounded Contexts candidatos].
+
+A partir del modelo de Event Storming elaborado en Miro, se desarrolló una sesión de Candidate Context Discovery con el propósito de identificar los bounded contexts de la solución. Durante esta sesión, se empleó principalmente la técnica look-for-pivotal-events.
+
+Primero, se identificaron los eventos clave que reflejan cambios de estado entre las distintas partes del proceso de negocio. Luego, estos eventos se agruparon según los principales cambios de contexto. A continuación, se establecieron fronteras alrededor de los grupos definidos para determinar los límites iniciales de los bounded contexts. Finalmente, se asignaron nombres a cada bounded context. Como resultado, se definieron 5 bounded contexts y se obtuvo la **versión final del Event Storming**.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/steps/step_10.png" alt="EventStorming Step 10 - Bounded Contexts">
+</p>
+
+A continuación, se detallará en qué consiste cada bounded context:
+
+**1. IAM (Identity and Access Management)**
+
+Gestiona la autenticación de usuarios, la asignación de roles y el control de acceso a la plataforma. Define quién puede operar sobre proyectos, reportes y configuración según su perfil de seguridad.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/iam.png" alt="Bounded Context Candidate - IAM">
+</p>
+
+**2. Profile Management**
+
+Administra los perfiles de usuario, preferencias personales, avatar y datos de identidad operativa dentro de **VantagePMO**. Complementa a IAM al mantener la información de presentación y configuración individual del actor.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/profile_management.png" alt="Bounded Context Candidate - Profile Management">
+</p>
+
+**3. Project and Task Operations**
+
+Concentra la operación del día a día de la PMO: creación de proyectos, fases e hitos, junto con la asignación, avance, comentarios y bloqueo de tareas. Es el núcleo operativo donde Project Managers y miembros del equipo planifican y ejecutan el trabajo.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/project_and_task_operations.png" alt="Bounded Context Candidate - Project and Task Operations">
+</p>
+
+**4. Governance and Resource Optimization**
+
+Agrupa la optimización de recursos y capacidad con la gobernanza del portafolio: asignación y balanceo de carga, evaluación y escalamiento de riesgos, compliance y registro de auditoría. Conecta la disponibilidad del equipo con el control de desviaciones y el cumplimiento normativo.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/governance_and_resource_optimization.png" alt="Bounded Context Candidate - Governance and Resource Optimization">
+</p>
+
+**5. Analytics and Support Services**
+
+Integra los servicios de soporte y analítica de la plataforma: gestión documental y versionado (con almacenamiento en la nube), administración global (branding, suscripción y políticas) y el seguimiento de KPIs con generación y exportación de reportes PDF.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/candidates/analytics_and_support_services.png" alt="Bounded Context Candidate - Analytics and Support Services">
+</p>
+
 
 #### 2.5.1.2. Domain Message Flows Modeling
-[Diagramas de Domain Storytelling / flujo de mensajes].
+
+Para evidenciar el intercambio de información entre los diversos bounded contexts, se emplean flujos de mensajes de dominio (Domain Message Flows) basados en comandos, eventos y consultas. Los escenarios centrales del negocio se presentan a continuación:
+
+**Registro e Inicio de Sesión**
+
+Primero, el Project Manager entra desde la página web para registrarse por primera vez. Cuando llena sus datos, el sistema de seguridad guarda su cuenta y automáticamente le manda la orden al módulo de perfiles para que le cree su ficha de usuario. Una vez creado, el PM abre la aplicación móvil, pone su usuario y clave, el sistema valida que sea correcto y le da acceso para entrar a la app.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_access.png" alt="Domain Message Flow - Registro e Inicio de Sesión">
+</p>
+
+**Consulta y Actualización de Perfil**
+
+Cuando el PM entra a la sección 'Mi Perfil' en la app móvil, el sistema primero lee sus datos para mostrarle su foto y nombre en pantalla (por eso no aparece vacía). Luego, si el PM cambia su nombre o cargo y le da a 'Guardar', la app actualiza la información del perfil y avisa al sistema central para que sus datos estén al día en todos lados.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_profile.png" alt="Domain Message Flow - Consulta y Actualización de Perfil">
+</p>
+
+**Inicialización de Proyecto y Ciclo de Vida de Tareas**
+
+El PM crea un nuevo proyecto desde la app móvil; el contexto de Project lo registra, genera las fases de forma automática y deja el proyecto listo para operar. Luego, el equipo asigna y actualiza tareas, consulta el listado desde la app y, si una tarea se bloquea, el sistema notifica a Governance para evaluar el impacto y la capacidad requerida del proyecto.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_project.png" alt="Domain Message Flow - Inicialización de Proyecto y Ciclo de Vida de Tareas">
+</p>
+
+**Asignación de Carga, Escalamiento de Riesgos y Cumplimiento**
+
+El PM asigna recursos y horas desde la app; Governance confirma la asignación y detecta si se excede la capacidad. Ante una sobrecarga o un bloqueo, el motor de riesgos evalúa la gravedad, escala el riesgo con un plan de mitigación y genera un registro de auditoría que Analytics conserva para trazabilidad y cumplimiento.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_risk.png" alt="Domain Message Flow - Asignación de Carga, Escalamiento de Riesgos y Cumplimiento">
+</p>
+
+**Gestión Documental, Seguimiento Analítico y Exportación PDF**
+
+El PM sube un documento desde la app; el archivo se almacena de forma segura en AWS S3 y Analytics registra la carga junto con el seguimiento de KPIs. Después, el PM consulta el resumen analítico del proyecto, genera el reporte y lo exporta a PDF mediante el servicio de exportación, obteniendo el archivo listo para descargar.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_document.png" alt="Domain Message Flow - Gestión Documental, Seguimiento Analítico y Exportación PDF">
+</p>
 
 #### 2.5.1.3. Bounded Context Canvases
-[Lienzos Bounded Context Canvas por cada contexto].
+
+Con el propósito de mejorar la organización del dominio y mantener una comunicación uniforme, se desarrollaron Bounded Context Canvases para cada subdominio identificado. Estos canvases permiten definir las responsabilidades de cada contexto, establecer el lenguaje ubicuo y sus principales modelos, además de especificar los puntos de integración y los flujos de mensajes entre contextos. Los diagramas presentados a continuación reúnen estas definiciones y sirvieron como referencia para orientar la arquitectura, las interfaces y la evolución del sistema.
+
+**Identity and Access Management (IAM)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_iam.png" alt="Bounded Context Canvas - IAM">
+</p>
+
+**Profile Management (PM)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_pm.png" alt="Bounded Context Canvas - Profile Management">
+</p>
+
+**Project and Task Operations (PTO)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_pto.png" alt="Bounded Context Canvas - Project and Task Operations">
+</p>
+
+**Governance and Resource Optimization (GRO)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_gro.png" alt="Bounded Context Canvas - Governance and Resource Optimization">
+</p>
+
+**Analytics and Support Services (ASS)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_ass.png" alt="Bounded Context Canvas - Analytics and Support Services">
+</p>
 
 ### 2.5.2. Context Mapping
-[Diagrama con relaciones Upstream, Downstream, ACL, Conformist, Customer-Supplier].
+
+Esta sección presenta el desarrollo de los Context Maps, utilizados para representar cómo se relacionan y colaboran los distintos Bounded Contexts que conforman el dominio. Además, se identifican los vínculos existentes entre estos contextos y los patrones de integración propuestos por Domain-Driven Design, entre ellos Anti-corruption Layer, Conformist, Customer/Supplier y Shared Kernel.
+
+A partir del análisis y la discusión realizada por el equipo para delimitar el dominio del proyecto, se definieron los siguientes Bounded Contexts:
+
+- **Identity and Access Management (IAM)**
+- **Profile Management (PM)**
+- **Project and Task Operations (PTO)**
+- **Governance and Resource Optimization (GRO)**
+- **Analytics and Support Services (ASS)**
+
+Durante la elaboración de los Context Maps se revisó la información recolectada en EventStorming, Candidate Context Discovery y Domain Message Flows para diseñar candidatos de integración entre bounded contexts. En ese proceso se evaluaron alternativas como mover capabilities entre contextos, descomponer sub-capabilities, partir un contexto en varios, consolidar funcionalidades en un nuevo context, duplicar una capacidad para romper dependencias, crear shared services o aislar capabilities core. Cada alternativa se discutió considerando patrones DDD (Upstream/Downstream, Open Host Service, Conformist, Customer/Supplier, Published Language y Anti-corruption Layer) hasta llegar a la aproximación final.
+
+**Identity and Access Management (IAM) — Profile Management (PM)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/iam-pm.png" alt="Context Mapping - Identity and Access Management (IAM) y Profile Management (PM)">
+</p>
+
+**IAM** actúa como contexto Upstream y expone su modelo de identidad mediante **Open Host Service (OHS)**; **PM** se relaciona de forma Downstream y adopta ese contrato con un enfoque **Conformist (CF)**. Así, la creación y validación de cuentas en IAM alimenta la ficha de perfil sin que PM imponga su propio lenguaje de autenticación. Esta relación evita duplicar identidad y mantiene un único punto de verdad para credenciales y roles.
+
+**Identity and Access Management (IAM) — Project and Task Operations (PTO)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/iam-pto.png" alt="Context Mapping - Identity and Access Management (IAM) y Project and Task Operations (PTO)">
+</p>
+
+Entre **IAM** (Upstream) y **PTO** (Downstream) se aplica el mismo patrón **OHS / Conformist**: PTO consume la identidad y el acceso ya validados para autorizar operaciones de proyectos y tareas. No se movió la autenticación dentro de PTO porque fragmentaría el control de seguridad; en cambio, PTO se conforma al host de IAM y concentra su lenguaje en la operación del portafolio.
+
+**Project and Task Operations (PTO) — Governance and Resource Optimization (GRO)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/pto-gro.png" alt="Context Mapping - Project and Task Operations (PTO) y Governance and Resource Optimization (GRO)">
+</p>
+
+**PTO** es Upstream respecto de **GRO** y publica un **Published Language (PL)** con eventos y datos de proyectos, tareas y bloqueos. **GRO**, Downstream, consume ese lenguaje para evaluar capacidad, riesgos y cumplimiento. Se descartó fusionar ambos contextos: la operación diaria y la gobernanza tienen ritmos e invariantes distintos; el PL permite integración estable sin Shared Kernel rígido. Además, **GRO** se protege del **Risk Engine** externo mediante **Anti-corruption Layer (ACL)**.
+
+**Profile Management (PM) — Governance and Resource Optimization (GRO)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/pm-gro.png" alt="Context Mapping - Profile Management (PM) y Governance and Resource Optimization (GRO)">
+</p>
+
+La relación entre **PM** (Upstream) y **GRO** (Downstream) se modela como **Customer/Supplier (C/S)**: Governance necesita datos de perfil (roles operativos, preferencias, identidad de actor) para asignar recursos y auditar decisiones, y negocia ese contrato con Profiles como proveedor. Se prefirió C/S frente a Conformist estricto porque GRO puede requerir proyecciones específicas de perfil sin obligar a PM a exponer todo su modelo interno.
+
+**Governance and Resource Optimization (GRO) — Analytics and Support Services (ASS)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/gro-ass.png" alt="Context Mapping - Governance and Resource Optimization (GRO) y Analytics and Support Services (ASS)">
+</p>
+
+**GRO** es Upstream y **ASS** Downstream; la integración se realiza con **Anti-corruption Layer (ACL)** para que Analytics/Support traduzca auditoría, riesgos y métricas de gobernanza a su propio modelo de KPIs, documentos y reportes. **ASS** también usa ACL hacia sistemas externos (**AWS S3** y el servicio PDF), aislando el dominio de formatos y APIs de terceros. De este modo se reduce el acoplamiento y se evita que cambios en almacenamiento o exportación contaminen el core de governance.
+
+**Final Context Map**
+
+Tras comparar las alternativas de mapeo (mover capabilities, partir o unir contextos, duplicar funcionalidad o introducir shared services), el equipo consolidó la siguiente aproximación global. El mapa final refleja IAM como proveedor de identidad (OHS/CF hacia PM y PTO), PTO publicando lenguaje operativo hacia GRO (PL), PM suministrando datos de perfil a GRO (C/S), y GRO/ASS protegiendo el dominio frente a motores y servicios externos con ACL.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/context_mapping/global.png" alt="Final Context Map - VantagePMO">
+</p>
 
 ### 2.5.3. Software Architecture
+
+En este sección se presenta la arquitectura del sistema mediante el C4 Model, abordando dos perspectivas complementarias. Primero, se muestra una representación general del sistema y su interacción con los actores y elementos externos; posteriormente, se detalla su estructura interna a nivel técnico mediante los Containers. Cada diagrama se acompaña de una descripción de sus componentes y de los criterios considerados para definir las tecnologías utilizadas.
+
 #### 2.5.3.1. Software Architecture Context Level Diagrams
-[Diagrama C4 Nivel 1 Context Diagram y descripcion].
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/software_architecture/context.png" alt="context - VantagePMO">
+</p>
+
+El Context Diagram presenta VantagePMO como el sistema central, acompañado por dos actores principales (Project Leader / PM y Entrepreneurs / Managers) y tres servicios externos (Auth0 & SendGrid, AWS S3 y Risk Engine & Export Services). Su propósito es delimitar el alcance de la solución, mostrando que la gestión de proyectos, recursos, auditoría y análisis del portafolio corresponde a VantagePMO, mientras que la autenticación, las notificaciones, el almacenamiento de archivos, la evaluación de riesgos y la generación de reportes se apoyan en servicios externos.
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 [Diagrama C4 Nivel 2 Container Diagram y descripcion].
 
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/software_architecture/container.png" alt="container - VantagePMO">
+</p>
+
+El Container Diagram representa la organización interna de **VantagePMO** y la interacción entre sus principales componentes. La solución incluye una **Landing Page** para el acceso público, dos aplicaciones móviles dirigidas a diferentes perfiles de usuario y un **Backend API** encargado de procesar las operaciones del sistema. Este backend utiliza **MongoDB** para la persistencia de datos y se integra con servicios externos para cubrir funciones de autenticación, almacenamiento, evaluación de riesgos y generación de reportes.
+
+**Main technological decisions**
+
+- **Mobile Applications**: Se utiliza Kotlin para la aplicación destinada a Project Leaders/PM y Flutter con Dart para la aplicación orientada a Entrepreneurs/Managers.
+- **Backend Services**: Se emplea Java con Spring Boot para implementar la lógica de negocio y exponer los servicios mediante APIs REST.
+- **Database**: Se utiliza MongoDB para almacenar la información relacionada con proyectos, recursos, riesgos y demás operaciones del sistema.
+- **External Integrations**: Se integran Auth0 & SendGrid para autenticación y notificaciones, AWS S3 para almacenamiento y servicios externos para la evaluación de riesgos y generación de reportes.
+- **Landing Page**: Se desarrolla con HTML, CSS y JavaScript para presentar información de VantagePMO y facilitar el acceso a las aplicaciones.
+
 #### 2.5.3.3. Software Architecture Deployment Diagrams
-[Diagrama C4 de Despliegue de infraestructura y descripcion].
+
+A continuación, se presenta el Deployment Diagram del sistema a implementar, el cual representa cómo se distribuirán los distintos componentes de VantagePMO dentro de la infraestructura tecnológica y los entornos donde serán ejecutados. El diagrama permite visualizar la comunicación entre las aplicaciones, el backend, la base de datos y los servicios externos, así como la forma en que estos elementos se integran durante la ejecución del sistema. Su propósito principal es ofrecer una visión clara de la arquitectura de despliegue, facilitando su comprensión, implementación y posterior mantenimiento.
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/software_architecture/deployment.png" alt="deployment - VantagePMO">
+</p>
 
 ---
 
