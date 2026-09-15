@@ -170,17 +170,17 @@ Los eventos y comandos se agruparon en Aggregates que protegen invariantes del d
 Finalmente se trazaron los Bounded Contexts candidatos a partir de los clusters del tablero, separando lenguajes y responsabilidades: **IAM** (identidad, roles y acceso), gestión de proyectos/portafolio, tareas y colaboración, riesgos y compliance, recursos y capacidad, analítica/reportes/KPIs, y documentos/versionado.
 
 <p align="center">
-<img src="assets/images/chapter-2/EventStorming/steps/step-10.png" alt="EventStorming Step 10 - Bounded Contexts" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step_10.png" alt="EventStorming Step 10 - Bounded Contexts">
 </p>
 
 #### 2.5.1.1. Candidate Context Discovery
 
 A partir del modelo de Event Storming elaborado en Miro, se desarrolló una sesión de Candidate Context Discovery con el propósito de identificar los bounded contexts de la solución. Durante esta sesión, se empleó principalmente la técnica look-for-pivotal-events.
 
-Primero, se identificaron los eventos clave que reflejan cambios de estado entre las distintas partes del proceso de negocio. Luego, estos eventos se agruparon según los principales cambios de contexto. A continuación, se establecieron fronteras alrededor de los grupos definidos para determinar los límites iniciales de los bounded contexts. Finalmente, se asignaron nombres a cada bounded context. Como resultado, se definieron 9 bounded contexts y se obtuvo la **versión final del Event Storming**.
+Primero, se identificaron los eventos clave que reflejan cambios de estado entre las distintas partes del proceso de negocio. Luego, estos eventos se agruparon según los principales cambios de contexto. A continuación, se establecieron fronteras alrededor de los grupos definidos para determinar los límites iniciales de los bounded contexts. Finalmente, se asignaron nombres a cada bounded context. Como resultado, se definieron 5 bounded contexts y se obtuvo la **versión final del Event Storming**.
 
 <p align="center">
-<img src="assets/images/chapter-2/EventStorming/steps/step-10.png" alt="EventStorming Step 10 - Bounded Contexts" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/steps/step_10.png" alt="EventStorming Step 10 - Bounded Contexts">
 </p>
 
 A continuación, se detallará en qué consiste cada bounded context:
@@ -190,71 +190,39 @@ A continuación, se detallará en qué consiste cada bounded context:
 Gestiona la autenticación de usuarios, la asignación de roles y el control de acceso a la plataforma. Define quién puede operar sobre proyectos, reportes y configuración según su perfil de seguridad.
 
 <p align="center">
-<img src="assets/images/chapter-2/EventStorming/candidates/iam.png" alt="Bounded Context Candidate - IAM" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/candidates/iam.png" alt="Bounded Context Candidate - IAM">
 </p>
 
 **2. Profile Management**
 
-Administra los perfiles de usuario, preferencias personales y datos de identidad operativa dentro de **MDEPS**. Complementa a IAM al mantener la información de presentación y configuración individual del actor.
+Administra los perfiles de usuario, preferencias personales, avatar y datos de identidad operativa dentro de **VantagePMO**. Complementa a IAM al mantener la información de presentación y configuración individual del actor.
 
 <p align="center">
-<img src="assets/images/chapter-2/EventStorming/candidates/profile-management.png" alt="Bounded Context Candidate - Profile Management" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/candidates/profile_management.png" alt="Bounded Context Candidate - Profile Management">
 </p>
 
-**3. Project Management**
+**3. Project and Task Operations**
 
-Cubre el ciclo de vida del portafolio y de cada proyecto: creación, fases, hitos, estados y retrasos. Es el núcleo de la PMO para planificar, dar seguimiento y cerrar iniciativas.
+Concentra la operación del día a día de la PMO: creación de proyectos, fases e hitos, junto con la asignación, avance, comentarios y bloqueo de tareas. Es el núcleo operativo donde Project Managers y miembros del equipo planifican y ejecutan el trabajo.
 
 <p align="center">
-<img src="assets/images/chapter-2/EventStorming/candidates/project-management.png" alt="Bounded Context Candidate - Project Management" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/candidates/project_and_task_operations.png" alt="Bounded Context Candidate - Project and Task Operations">
 </p>
 
-**4. Task and Collaboration**
+**4. Governance and Resource Optimization**
 
-Concentra la ejecución operativa del día a día: asignación de tareas, bloqueos, comentarios y coordinación entre miembros del equipo. Facilita la colaboración sobre el trabajo pendiente del proyecto.
+Agrupa la optimización de recursos y capacidad con la gobernanza del portafolio: asignación y balanceo de carga, evaluación y escalamiento de riesgos, compliance y registro de auditoría. Conecta la disponibilidad del equipo con el control de desviaciones y el cumplimiento normativo.
 
 <p align="center">
-<img src="assets/images/chapter-2/EventStorming/candidates/task-and-collaboration.png" alt="Bounded Context Candidate - Task and Collaboration" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/candidates/governance_and_resource_optimization.png" alt="Bounded Context Candidate - Governance and Resource Optimization">
 </p>
 
-**5. Governance and Risk**
+**5. Analytics and Support Services**
 
-Agrupa la gestión de riesgos, el cumplimiento (compliance) y las decisiones de gobernanza. Detecta, evalúa y escala desviaciones o amenazas que impactan la salud del portafolio.
-
-<p align="center">
-<img src="assets/images/chapter-2/EventStorming/candidates/governance-and-risk.png" alt="Bounded Context Candidate - Governance and Risk" style="width: 500px; height: 400px">
-</p>
-
-**6. Resource and Capacity**
-
-Administra la capacidad del equipo, la asignación de recursos y el balanceo ante sobrecarga. Evita exceder límites de disponibilidad y sostiene la planificación realista de la PMO.
+Integra los servicios de soporte y analítica de la plataforma: gestión documental y versionado (con almacenamiento en la nube), administración global (branding, suscripción y políticas) y el seguimiento de KPIs con generación y exportación de reportes PDF.
 
 <p align="center">
-<img src="assets/images/chapter-2/EventStorming/candidates/resource-and-capacity.png" alt="Bounded Context Candidate - Resource and Capacity" style="width: 500px; height: 400px">
-</p>
-
-**7. Analytics and Reporting**
-
-Produce dashboards, KPIs, semáforos y reportes exportables (por ejemplo PDF) para Project Managers y Stakeholders. Traduce el estado del dominio en visibilidad 360° para la toma de decisiones.
-
-<p align="center">
-<img src="assets/images/chapter-2/EventStorming/candidates/analytics-and-reporting.png" alt="Bounded Context Candidate - Analytics and Reporting" style="width: 500px; height: 400px">
-</p>
-
-**8. Document Management**
-
-Controla el ciclo de vida de documentos y su versionado: carga, archivo y trazabilidad de entregables del proyecto. Garantiza un repositorio gobernado alineado a la operación de la PMO.
-
-<p align="center">
-<img src="assets/images/chapter-2/EventStorming/candidates/document-management.png" alt="Bounded Context Candidate - Document Management" style="width: 500px; height: 400px">
-</p>
-
-**9. System Administration**
-
-Agrupa la configuración global de la plataforma, políticas transversales y administración del sistema (por ejemplo suscripciones o parámetros operativos). Sostiene el gobierno técnico y de plataforma de **MDEPS**.
-
-<p align="center">
-<img src="assets/images/chapter-2/EventStorming/candidates/system-administration.png" alt="Bounded Context Candidate - System Administration" style="width: 500px; height: 400px">
+<img src="assets/images/chapter-2/EventStorming/candidates/analytics_and_support_services.png" alt="Bounded Context Candidate - Analytics and Support Services">
 </p>
 
 
@@ -335,7 +303,8 @@ Para cerrar, el PM entra a ver las métricas de rendimiento en su tablero de con
 </p>
 
 #### 2.5.1.3. Bounded Context Canvases
-[Lienzos Bounded Context Canvas por cada contexto].
+
+Con el propósito de mejorar la organización del dominio y mantener una comunicación uniforme, se desarrollaron Bounded Context Canvases para cada subdominio identificado. Estos canvases permiten definir las responsabilidades de cada contexto, establecer el lenguaje ubicuo y sus principales modelos, además de especificar los puntos de integración y los flujos de mensajes entre contextos. Los diagramas presentados a continuación reúnen estas definiciones y sirvieron como referencia para orientar la arquitectura, las interfaces y la evolución del sistema.
 
 ### 2.5.2. Context Mapping
 [Diagrama con relaciones Upstream, Downstream, ACL, Conformist, Customer-Supplier].
