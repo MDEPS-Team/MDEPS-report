@@ -246,60 +246,28 @@ Cuando el PM entra a la sección 'Mi Perfil' en la app móvil, el sistema primer
 <img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_profile.png" alt="Domain Message Flow - Consulta y Actualización de Perfil">
 </p>
 
-**Creación de un Proyecto e Hitos**
+**Inicialización de Proyecto y Ciclo de Vida de Tareas**
 
-Aquí el PM crea un nuevo proyecto desde la app. Tan pronto presiona 'Crear Proyecto', el módulo de proyectos registra la información y le avisa al módulo de recursos para que reserve el paquete inicial de horas para el equipo. Al final, la app le muestra al PM su panel de control con el proyecto listo.
+El PM crea un nuevo proyecto desde la app móvil; el contexto de Project lo registra, genera las fases de forma automática y deja el proyecto listo para operar. Luego, el equipo asigna y actualiza tareas, consulta el listado desde la app y, si una tarea se bloquea, el sistema notifica a Governance para evaluar el impacto y la capacidad requerida del proyecto.
 
 <p align="center">
-<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_project.png" alt="Domain Message Flow - Creación de un Proyecto e Hitos">
+<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_project.png" alt="Domain Message Flow - Inicialización de Proyecto y Ciclo de Vida de Tareas">
 </p>
 
-**Asignación y Avance de Tareas**
+**Asignación de Carga, Escalamiento de Riesgos y Cumplimiento**
 
-El PM entra a la app y le asigna una tarea a un desarrollador. Cuando el desarrollador avanza y marca la tarea como 'Completada', el módulo de tareas avisa automáticamente al módulo del proyecto para que recalcule el avance. Así, el PM ve de inmediato que el proyecto subió, por ejemplo, del 50% al 60% de progreso.
+El PM asigna recursos y horas desde la app; Governance confirma la asignación y detecta si se excede la capacidad. Ante una sobrecarga o un bloqueo, el motor de riesgos evalúa la gravedad, escala el riesgo con un plan de mitigación y genera un registro de auditoría que Analytics conserva para trazabilidad y cumplimiento.
 
 <p align="center">
-<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_status.png" alt="Domain Message Flow - Asignación y Avance de Tareas">
+<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_risk.png" alt="Domain Message Flow - Asignación de Carga, Escalamiento de Riesgos y Cumplimiento">
 </p>
 
-**Reporte de Bloqueos y Alerta de Riesgos**
+**Gestión Documental, Seguimiento Analítico y Exportación PDF**
 
-El PM primero configura en la app qué situaciones son peligrosas para el proyecto. Si un desarrollador se frena por un problema y marca la tarea como 'Bloqueada', el sistema de tareas le avisa al módulo de gestión de riesgos. Este analiza la gravedad y le envía de inmediato una alerta roja o crítica a la pantalla del PM para que intervenga.
-
-<p align="center">
-<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_task.png" alt="Domain Message Flow - Reporte de Bloqueos y Alerta de Riesgos">
-</p>
-
-**Consulta de Disponibilidad y Balanceo de Carga**
-
-El PM quiere asignar más trabajo, pero antes consulta en la app la disponibilidad del equipo para no saturarlos. Si al asignar horas nota que alguien se pasa de su límite, el sistema detecta la sobrecarga y sugiere o redistribuye automáticamente las tareas pendientes hacia otro miembro del equipo con tiempo libre.
+El PM sube un documento desde la app; el archivo se almacena de forma segura en AWS S3 y Analytics registra la carga junto con el seguimiento de KPIs. Después, el PM consulta el resumen analítico del proyecto, genera el reporte y lo exporta a PDF mediante el servicio de exportación, obteniendo el archivo listo para descargar.
 
 <p align="center">
-<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_workload.png" alt="Domain Message Flow - Consulta de Disponibilidad y Balanceo de Carga">
-</p>
-
-**Carga de Documentos y Archivo en la Nube**
-
-El PM necesita adjuntar las especificaciones de un proyecto. Sube el archivo desde la app móvil; el sistema de documentos lo recibe, pero en lugar de saturar nuestra base de datos con archivos pesados, lo guarda de forma segura en un servidor en la nube (AWS S3). Una vez guardado, conecta ese enlace directo a la tarea correspondiente.
-
-<p align="center">
-<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_document.png" alt="Domain Message Flow - Carga de Documentos y Archivo en la Nube">
-</p>
-
-**Aplicación de Normativas y Registro de Auditoría**
-
-El PM solicita aplicar ciertas reglas de calidad o seguridad a su proyecto. El sistema de administración activa estas políticas y le ordena al módulo de auditoría que guarde un historial con fecha y hora. Así queda una 'caja negra' o registro imborrable de quién hizo qué y cuándo.
-
-<p align="center">
-<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_policy.png" alt="Domain Message Flow - Aplicación de Normativas y Registro de Auditoría">
-</p>
-
-**Consulta de Indicadores y Exportación en PDF**
-
-Para cerrar, el PM entra a ver las métricas de rendimiento en su tablero de control. Al presionar el botón 'Exportar Reporte', el sistema organiza todos los datos del proyecto y se los envía a un servicio especializado en documentos para que arme e imprima el archivo PDF listo para descargar.
-
-<p align="center">
-<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_analytis.png" alt="Domain Message Flow - Consulta de Indicadores y Exportación en PDF">
+<img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_document.png" alt="Domain Message Flow - Gestión Documental, Seguimiento Analítico y Exportación PDF">
 </p>
 
 #### 2.5.1.3. Bounded Context Canvases
