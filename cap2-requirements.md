@@ -274,6 +274,36 @@ El PM sube un documento desde la app; el archivo se almacena de forma segura en 
 
 Con el propósito de mejorar la organización del dominio y mantener una comunicación uniforme, se desarrollaron Bounded Context Canvases para cada subdominio identificado. Estos canvases permiten definir las responsabilidades de cada contexto, establecer el lenguaje ubicuo y sus principales modelos, además de especificar los puntos de integración y los flujos de mensajes entre contextos. Los diagramas presentados a continuación reúnen estas definiciones y sirvieron como referencia para orientar la arquitectura, las interfaces y la evolución del sistema.
 
+**Identity and Access Management (IAM)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_iam.png" alt="Bounded Context Canvas - IAM">
+</p>
+
+**Profile Management (PM)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_pm.png" alt="Bounded Context Canvas - Profile Management">
+</p>
+
+**Project and Task Operations (PTO)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_pto.png" alt="Bounded Context Canvas - Project and Task Operations">
+</p>
+
+**Governance and Resource Optimization (GRO)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_gro.png" alt="Bounded Context Canvas - Governance and Resource Optimization">
+</p>
+
+**Analytics and Support Services (ASS)**
+
+<p align="center">
+<img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_ass.png" alt="Bounded Context Canvas - Analytics and Support Services">
+</p>
+
 ### 2.5.2. Context Mapping
 [Diagrama con relaciones Upstream, Downstream, ACL, Conformist, Customer-Supplier].
 
