@@ -209,10 +209,10 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
     <td>Ocupación</td>
     <td>Project Manager</td>
   </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Gerson Escarate.png" width="300"></td>
+</tr>
   <tr>
      <td>Link</td>
   <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQCJwkTTFJByTo5zrMeqXFToAdrOIkEj_1b_FNIw2dZOjq4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IkNvcHkiLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rZOK8T" target="_blank">OneDrive</a></td>
@@ -258,10 +258,10 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
     <td>Ocupación</td>
     <td>Coordinadora de proyectos</td>
   </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Ariadna Martin.jpeg" width="300"></td>
+</tr>
  <tr>
   <td>Link</td>
   <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQDNhw24f2T7Razx6f5Qo9LGAZzrDVNSs1uaimtG_C42pDw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fX0&e=u7wJAJ" target="_blank">OneDrive</a></td>
@@ -307,10 +307,10 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
     <td>Ocupación</td>
     <td>Jefe de proyectos</td>
   </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Chritopher Osorio.png" width="300"> </td>
+</tr>
  <tr>
   <td>Link</td>
   <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQBBhncx36nrQ5k8sXuSlTZLATYB3mQ8FLu4GGps0YtPf78?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fX0&e=g3gc7A" target="_blank">OneDrive</a></td>
@@ -359,9 +359,9 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
     <td>Coordinador de operaciones</td>
   </tr>
   <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Italo Pancorbo.png" width="300"></td>
+</tr>
  <tr>
   <td>Link</td>
   <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQDl9laNTfVITKLdsauDB6OcATi-WjVOVeTx3H9R9yGTQaw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fX0&e=keDFeU" target="_blank">OneDrive</a></td>
@@ -407,10 +407,10 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
     <td>Ocupación</td>
     <td>Administrador de empresa</td>
   </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Piero Reaño.png" width="300"></td>
+</tr>
  <tr>
   <td>Link</td>
   <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQDr3AhKbLbCRJ8tTJq4H-NDAR0XaAcD7fiGc-ETo4n3Z-I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fX0&e=sCgE5N" target="_blank">OneDrive</a></td>
@@ -456,10 +456,10 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
     <td>Ocupación</td>
     <td>Coordinador de proyectos</td>
   </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Noelia Huaccho.png" width="300"></td>
+</tr>
   <tr>
   <td>Link</td>
   <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQCNre9JWUdJT5NYj5KSf5mFAS-lU4MxMG57eAigJtbOaso?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fX0&e=X0Tl5e" target="_blank">OneDrive</a></td>
