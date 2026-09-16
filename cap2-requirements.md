@@ -199,7 +199,7 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
   </tr>
   <tr>
     <td>Edad</td>
-    <td>30 años</td>
+    <td>32 años</td>
   </tr>
   <tr>
     <td>Distrito</td>
@@ -209,17 +209,17 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
     <td>Ocupación</td>
     <td>Project Manager</td>
   </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Gerson Escarate.png" width="300"></td>
+</tr>
   <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>Por agregar</td>
-  </tr>
+     <td>Link</td>
+  <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQCJwkTTFJByTo5zrMeqXFToAdrOIkEj_1b_FNIw2dZOjq4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6IkNvcHkiLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=rZOK8T" target="_blank">OneDrive</a></td>
+</tr>
   <tr>
     <td>Duración</td>
-    <td>Por agregar</td>
+    <td> 3 minutos 11 segundos </td>
   </tr>
   <tr>
     <td>Resumen</td>
@@ -240,40 +240,40 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td>Lucy</td>
+    <td>Ariadna</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td>Linares</td>
+    <td>Martin</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td>28 años</td>
+    <td>26 años</td>
   </tr>
   <tr>
     <td>Distrito</td>
-    <td>Miraflores</td>
+    <td>Surco</td>
   </tr>
   <tr>
     <td>Ocupación</td>
     <td>Coordinadora de proyectos</td>
   </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>Por agregar</td>
-  </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Ariadna Martin.jpeg" width="300"></td>
+</tr>
+ <tr>
+  <td>Link</td>
+  <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQDNhw24f2T7Razx6f5Qo9LGAZzrDVNSs1uaimtG_C42pDw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fX0&e=u7wJAJ" target="_blank">OneDrive</a></td>
+</tr>
   <tr>
     <td>Duración</td>
-    <td>Por agregar</td>
+    <td> 2 minutos 32 segundos </td>
   </tr>
   <tr>
     <td>Resumen</td>
     <td>
-      Lucy trabaja como coordinadora de proyectos y participa en la supervisión de entre cuatro y siete proyectos simultáneamente. Para organizar la información utiliza principalmente Excel, documentos compartidos y Microsoft Teams. Realiza reuniones periódicas para conocer el avance de las actividades, aunque señala que uno de los problemas es mantener actualizada la información cuando participan diferentes responsables. También identifica la elaboración y actualización de reportes como una actividad que consume tiempo. Considera que una herramienta centralizada con dashboards y alertas permitiría visualizar rápidamente el estado de los proyectos y detectar posibles retrasos. Para adoptar una nueva solución considera importante que sea intuitiva y que no requiera un proceso de aprendizaje complejo.
+      Ariadna trabaja como coordinadora de proyectos y participa en la supervisión de entre cuatro y siete proyectos simultáneamente. Para organizar la información utiliza principalmente Excel, documentos compartidos y Microsoft Teams. Realiza reuniones periódicas para conocer el avance de las actividades, aunque señala que uno de los problemas es mantener actualizada la información cuando participan diferentes responsables. También identifica la elaboración y actualización de reportes como una actividad que consume tiempo. Considera que una herramienta centralizada con dashboards y alertas permitiría visualizar rápidamente el estado de los proyectos y detectar posibles retrasos. Para adoptar una nueva solución considera importante que sea intuitiva y que no requiera un proceso de aprendizaje complejo.
     </td>
   </tr>
 </tbody>
@@ -297,7 +297,7 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
   </tr>
   <tr>
     <td>Edad</td>
-    <td>38 años</td>
+    <td>35 años</td>
   </tr>
   <tr>
     <td>Distrito</td>
@@ -307,17 +307,17 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
     <td>Ocupación</td>
     <td>Jefe de proyectos</td>
   </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>Por agregar</td>
-  </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Chritopher Osorio.png" width="300"> </td>
+</tr>
+ <tr>
+  <td>Link</td>
+  <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQBBhncx36nrQ5k8sXuSlTZLATYB3mQ8FLu4GGps0YtPf78?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fX0&e=g3gc7A" target="_blank">OneDrive</a></td>
+</tr>
   <tr>
     <td>Duración</td>
-    <td>Por agregar</td>
+    <td> 2 minutos 6 segundos </td>
   </tr>
   <tr>
     <td>Resumen</td>
@@ -340,40 +340,40 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td>Katherine</td>
+    <td>Italo</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td>Herrera Cotrina</td>
+    <td>Pancorbo</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td>37 años</td>
+    <td>24 años</td>
   </tr>
   <tr>
     <td>Distrito</td>
-    <td>Ancón</td>
+    <td>Pancorbo</td>
   </tr>
   <tr>
     <td>Ocupación</td>
-    <td>Coordinadora de operaciones</td>
+    <td>Coordinador de operaciones</td>
   </tr>
   <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>Por agregar</td>
-  </tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Italo Pancorbo.png" width="300"></td>
+</tr>
+ <tr>
+  <td>Link</td>
+  <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQDl9laNTfVITKLdsauDB6OcATi-WjVOVeTx3H9R9yGTQaw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fX0&e=keDFeU" target="_blank">OneDrive</a></td>
+</tr>
   <tr>
     <td>Duración</td>
-    <td>Por agregar</td>
+    <td> 3 minutos 45 segundos </td>
   </tr>
   <tr>
     <td>Resumen</td>
     <td>
-      Katherine se desempeña como coordinadora de operaciones en una organización donde participa en la gestión de diferentes proyectos e iniciativas. Para organizar las actividades utiliza principalmente Excel, Google Drive y WhatsApp, y ocasionalmente otras herramientas de gestión. Identifica como una de sus principales dificultades la dispersión de información entre diferentes herramientas y canales de comunicación. El seguimiento de fechas, tareas y responsables puede complicarse cuando existen varios proyectos simultáneos. Considera que una plataforma centralizada con alertas y recordatorios facilitaría el control de las actividades y reduciría los problemas de coordinación. Para adoptar una nueva solución considera fundamental que sea fácil de utilizar y que requiera poca capacitación.
+      Italo se desempeña como coordinador de operaciones en una organización donde participa en la gestión de diferentes proyectos e iniciativas. Para organizar las actividades utiliza principalmente Excel, Google Drive y WhatsApp, y ocasionalmente otras herramientas de gestión. Identifica como una de sus principales dificultades la dispersión de información entre diferentes herramientas y canales de comunicación. El seguimiento de fechas, tareas y responsables puede complicarse cuando existen varios proyectos simultáneos. Considera que una plataforma centralizada con alertas y recordatorios facilitaría el control de las actividades y reduciría los problemas de coordinación. Para adoptar una nueva solución considera fundamental que sea fácil de utilizar y que requiera poca capacitación.
     </td>
   </tr>
 </tbody>
@@ -389,40 +389,40 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td>James</td>
+    <td>Piero</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td>Jara</td>
+    <td>Reaño</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td>34 años</td>
+    <td>25 años</td>
   </tr>
   <tr>
     <td>Distrito</td>
-    <td>San Miguel</td>
+    <td>Surquillo</td>
   </tr>
   <tr>
     <td>Ocupación</td>
     <td>Administrador de empresa</td>
   </tr>
-  <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>Por agregar</td>
-  </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Piero Reaño.png" width="300"></td>
+</tr>
+ <tr>
+  <td>Link</td>
+  <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQDr3AhKbLbCRJ8tTJq4H-NDAR0XaAcD7fiGc-ETo4n3Z-I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fX0&e=sCgE5N" target="_blank">OneDrive</a></td>
+</tr>
   <tr>
     <td>Duración</td>
-    <td>Por agregar</td>
+    <td> 2 minutos 16 segundos </td>
   </tr>
   <tr>
     <td>Resumen</td>
     <td>
-      James trabaja en la administración de una empresa que desarrolla diferentes iniciativas de manera simultánea. Actualmente utiliza Excel, correo electrónico y documentos compartidos para organizar la información. Señala que uno de los principales inconvenientes es la existencia de diferentes versiones de los documentos y la posibilidad de trabajar con información desactualizada. Para realizar el seguimiento considera importante conocer las fechas, responsables y estado de las tareas. Considera que una plataforma centralizada permitiría mejorar la organización y reducir la duplicidad de información. Entre las funcionalidades que considera más útiles se encuentran los recordatorios y una vista general de los proyectos. Para adoptar una nueva herramienta considera importante que sea sencilla y práctica para los usuarios.
+      Piero trabaja en la administración de una empresa que desarrolla diferentes iniciativas de manera simultánea. Actualmente utiliza Excel, correo electrónico y documentos compartidos para organizar la información. Señala que uno de los principales inconvenientes es la existencia de diferentes versiones de los documentos y la posibilidad de trabajar con información desactualizada. Para realizar el seguimiento considera importante conocer las fechas, responsables y estado de las tareas. Considera que una plataforma centralizada permitiría mejorar la organización y reducir la duplicidad de información. Entre las funcionalidades que considera más útiles se encuentran los recordatorios y una vista general de los proyectos. Para adoptar una nueva herramienta considera importante que sea sencilla y práctica para los usuarios.
     </td>
   </tr>
 </tbody>
@@ -438,40 +438,40 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
 <tbody>
   <tr>
     <td>Nombre</td>
-    <td>Alessandro</td>
+    <td>Noelia</td>
   </tr>
   <tr>
     <td>Apellidos</td>
-    <td>Nieto</td>
+    <td>Huaccho</td>
   </tr>
   <tr>
     <td>Edad</td>
-    <td>29 años</td>
+    <td>25 años</td>
   </tr>
   <tr>
     <td>Distrito</td>
-    <td>Los Olivos</td>
+    <td>Surco</td>
   </tr>
   <tr>
     <td>Ocupación</td>
     <td>Coordinador de proyectos</td>
   </tr>
+ <tr>
+  <td>Evidencia</td>
+  <td><img src="assets/images/chapter-2/Noelia Huaccho.png" width="300"></td>
+</tr>
   <tr>
-    <td>Evidencia</td>
-    <td>Por agregar</td>
-  </tr>
-  <tr>
-    <td>Link</td>
-    <td>Por agregar</td>
-  </tr>
+  <td>Link</td>
+  <td><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202520331_upc_edu_pe/IQCNre9JWUdJT5NYj5KSf5mFAS-lU4MxMG57eAigJtbOaso?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fX0&e=X0Tl5e" target="_blank">OneDrive</a></td>
+</tr>
   <tr>
     <td>Duración</td>
-    <td>Por agregar</td>
+    <td> 3 minutos </td>
   </tr>
   <tr>
     <td>Resumen</td>
     <td>
-      Alessandro participa en la coordinación de diferentes proyectos y actividades de manera simultánea. Para organizar su trabajo utiliza principalmente WhatsApp, Excel y Trello. Considera que uno de los principales problemas es la dificultad para obtener una visión general de todos los proyectos, especialmente cuando la información se encuentra distribuida en diferentes herramientas. Para realizar un seguimiento adecuado considera necesario conocer las fechas, responsables y tareas pendientes. También considera útiles las notificaciones y recordatorios para evitar que se pasen fechas importantes. Estaría dispuesto a utilizar una plataforma centralizada si esta permite ahorrar tiempo, mejorar la organización y resulta sencilla de utilizar.
+      Noelia participa en la coordinación de diferentes proyectos y actividades de manera simultánea. Para organizar su trabajo utiliza principalmente WhatsApp, Excel y Trello. Considera que uno de los principales problemas es la dificultad para obtener una visión general de todos los proyectos, especialmente cuando la información se encuentra distribuida en diferentes herramientas. Para realizar un seguimiento adecuado considera necesario conocer las fechas, responsables y tareas pendientes. También considera útiles las notificaciones y recordatorios para evitar que se pasen fechas importantes. Estaría dispuesto a utilizar una plataforma centralizada si esta permite ahorrar tiempo, mejorar la organización y resulta sencilla de utilizar.
     </td>
   </tr>
 </tbody>
@@ -487,14 +487,14 @@ Se analizaron 3 entrevistas a personas que desempeñan funciones relacionadas co
 
 | Característica | Mención | % | Evidencia |
 | :--- | :---: | :---: | :--- |
-| **Gestión simultánea de múltiples proyectos** | 3/3 | 100% | Gerson, Lucy y Christopher mencionan que gestionan o supervisan varios proyectos de manera simultánea. |
+| **Gestión simultánea de múltiples proyectos** | 3/3 | 100% | Gerson, Ariadna y Christopher mencionan que gestionan o supervisan varios proyectos de manera simultánea. |
 | **Uso de herramientas digitales para la gestión** | 3/3 | 100% | Los tres entrevistados utilizan herramientas como Jira, Microsoft Project, Excel, documentos compartidos o sistemas internos. |
 | **Seguimiento frecuente del avance de los proyectos** | 3/3 | 100% | Los entrevistados realizan un seguimiento frecuente para conocer el avance de las tareas y el estado de sus proyectos. |
 | **Importancia de contar con información actualizada** | 3/3 | 100% | Los tres consideran importante conocer información sobre avances, responsables, fechas y recursos para controlar los proyectos. |
 | **Dificultades para consolidar información** | 3/3 | 100% | Los entrevistados mencionan dificultades relacionadas con la información distribuida entre diferentes herramientas o responsables. |
-| **Elaboración de reportes como actividad que consume tiempo** | 2/3 | 66,6% | Gerson y Lucy identifican la elaboración o actualización de reportes como una actividad que demanda tiempo. |
+| **Elaboración de reportes como actividad que consume tiempo** | 2/3 | 66,6% | Gerson y Ariadna identifican la elaboración o actualización de reportes como una actividad que demanda tiempo. |
 | **Necesidad de visualizar retrasos o desviaciones** | 3/3 | 100% | Los entrevistados consideran importante identificar oportunamente retrasos, avances y posibles desviaciones. |
-| **Interés en dashboards o información centralizada** | 3/3 | 100% | Gerson, Lucy y Christopher consideran útil contar con una vista centralizada del estado de los proyectos. |
+| **Interés en dashboards o información centralizada** | 3/3 | 100% | Gerson, Ariadna y Christopher consideran útil contar con una vista centralizada del estado de los proyectos. |
 | **Importancia de alertas y recordatorios** | 2/3 | 66,6% | Gerson y Christopher mencionan las alertas o recordatorios como funcionalidades útiles para realizar seguimiento. |
 | **Importancia de la facilidad de uso** | 3/3 | 100% | Los tres entrevistados consideran importante que una nueva plataforma sea intuitiva y sencilla de utilizar. |
 
@@ -518,16 +518,16 @@ Se analizaron 3 entrevistas a personas que participan en organizaciones o activi
 
 | Característica | Mención | % | Evidencia |
 | :--- | :---: | :---: | :--- |
-| **Gestión simultánea de múltiples proyectos o iniciativas** | 3/3 | 100% | Katherine, James y Alessandro mencionan que participan en la gestión de múltiples proyectos o actividades de manera simultánea. |
+| **Gestión simultánea de múltiples proyectos o iniciativas** | 3/3 | 100% | Italo, Piero y Noelia mencionan que participan en la gestión de múltiples proyectos o actividades de manera simultánea. |
 | **Uso de herramientas no centralizadas** | 3/3 | 100% | Los tres utilizan diferentes herramientas como Excel, Google Drive, WhatsApp, correo electrónico o Trello. |
 | **Información dispersa entre diferentes herramientas** | 3/3 | 100% | Los entrevistados identifican dificultades relacionadas con tener información distribuida entre diferentes herramientas y canales de comunicación. |
-| **Dificultades para realizar seguimiento de tareas y fechas** | 3/3 | 100% | Katherine, James y Alessandro consideran necesario realizar un seguimiento de tareas, responsables y fechas para mantener el control. |
-| **Dependencia de herramientas de comunicación informal** | 2/3 | 66,6% | Katherine y Alessandro utilizan principalmente WhatsApp como parte de la coordinación de sus actividades. |
+| **Dificultades para realizar seguimiento de tareas y fechas** | 3/3 | 100% | Italo, Piero y Noelia consideran necesario realizar un seguimiento de tareas, responsables y fechas para mantener el control. |
+| **Dependencia de herramientas de comunicación informal** | 2/3 | 66,6% | Italo y Noelia utilizan principalmente WhatsApp como parte de la coordinación de sus actividades. |
 | **Necesidad de centralizar la información** | 3/3 | 100% | Los tres entrevistados consideran útil contar con una plataforma que reúna la información de los proyectos en un solo lugar. |
-| **Importancia de alertas y recordatorios** | 2/3 | 66,6% | Katherine y Alessandro consideran útiles las alertas o recordatorios para evitar olvidos y controlar fechas importantes. |
+| **Importancia de alertas y recordatorios** | 2/3 | 66,6% | Italo y Noelia consideran útiles las alertas o recordatorios para evitar olvidos y controlar fechas importantes. |
 | **Importancia de la facilidad de uso** | 3/3 | 100% | Los tres entrevistados consideran que una nueva herramienta debe ser sencilla y práctica para facilitar su adopción. |
-| **Interés en acceder a la información desde dispositivos móviles** | 1/3 | 33,3% | Alessandro menciona el acceso móvil como una característica útil para consultar y gestionar información. |
-| **Problemas relacionados con información duplicada o desactualizada** | 2/3 | 66,6% | Katherine y James mencionan dificultades relacionadas con la duplicidad o actualización de información cuando se utilizan diferentes herramientas. |
+| **Interés en acceder a la información desde dispositivos móviles** | 1/3 | 33,3% | Noelia menciona el acceso móvil como una característica útil para consultar y gestionar información. |
+| **Problemas relacionados con información duplicada o desactualizada** | 2/3 | 66,6% | Italo y Piero mencionan dificultades relacionadas con la duplicidad o actualización de información cuando se utilizan diferentes herramientas. |
 
 ### Insights Destacados
 
