@@ -38,7 +38,7 @@ Proyecto<br>
 | 0.1 | [28/08/2026] | Todos | Estructuracion inicial y division de secciones para AV1 |
 | 1.0 | [05/09/2026] | Quiliano Motta, Kirk Douglas | Elaboracion de Caratula, Capitulo I (Startup Profile, Solution Profile, Lean UX, Segmentos), Collaboration Insights y Student Outcome para la entrega AV1. |
 | 1.0 | [15/09/2026] | Guillen Giraldo, Mike Dylan | Desarrollo del Capítulo 2.5 (Strategic-Level Domain-Driven Design), abarcando el modelado mediante EventStorming, Context Mapping y la definición de la arquitectura de software en los niveles Context, Container y Deployment. |
-| 1.0 | [--/09/2026] | Todos | Finalizacion del informe para la entrega AV1 (Semana 4) |
+| 1.0 | [15/09/2026] | Todos | Finalizacion del informe para la entrega AV1 (Semana 4) |
 
 ---
 
