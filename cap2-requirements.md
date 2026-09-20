@@ -1,9 +1,12 @@
 <div style="page-break-before: always;"></div>
 
+<a id="capitulo-ii-requirements-development-and-software-solution-design"></a>
 # Capitulo II: Requirements Development and Software Solution Design
 La recolección y análisis de requisitos es una etapa fundamental en el desarrollo de Vantage PMO, ya que permite identificar y comprender las necesidades de los stakeholders involucrados en la gestión de proyectos. Para ello, se emplean técnicas como el análisis de la competencia y las entrevistas a usuarios pertenecientes a los segmentos objetivo.
 
 A través de este análisis se busca identificar problemáticas relacionadas con la falta de visibilidad, la fragmentación de la información, las dificultades en el seguimiento de proyectos y la ausencia de estandarización en los procesos. Los resultados obtenidos permitirán definir las necesidades y requerimientos más relevantes de los usuarios, estableciendo una base para el diseño de una solución que facilite la gestión de proyectos y contribuya a una toma de decisiones más oportuna.
+
+<a id="21-competidores"></a>
 ## 2.1. Competidores
 En esta sección se analizan las principales soluciones existentes en el mercado relacionadas con la gestión de proyectos y portafolios. El objetivo es identificar sus principales características, ventajas y limitaciones para determinar oportunidades de diferenciación para Vantage PMO.
 
@@ -27,8 +30,8 @@ Planview Portfolios es una solución orientada directamente a la gestión de por
 
 Su principal ventaja es su orientación hacia la gestión estratégica de portafolios y organizaciones de gran escala. Como oportunidad para Vantage PMO, se puede plantear una experiencia más sencilla y accesible para organizaciones que necesitan centralizar el seguimiento de proyectos sin enfrentarse a la complejidad de una plataforma empresarial de gran escala.
 
+<a id="211-analisis-competitivo"></a>
 ### 2.1.1 Análisis competitivo
-<a id="2-1-1-analisis-competitivo"></a>
 
 | **¿Por qué llevar a cabo este análisis?** | Evaluar el posicionamiento de Vantage PMO frente a sus competidores para identificar oportunidades de diferenciación y definir estrategias competitivas. |
 | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,6 +54,7 @@ Su principal ventaja es su orientación hacia la gestión estratégica de portaf
 | **Oportunidades** | • Crecimiento de la digitalización empresarial. <br> • Empresas que aún dependen de herramientas dispersas. <br> • Mayor necesidad de visibilidad sobre múltiples proyectos. | • Expansión hacia diferentes áreas de gestión del trabajo. <br> • Nuevas integraciones y automatizaciones. | • Crecimiento del trabajo colaborativo y digital. <br> • Adopción en diferentes sectores empresariales. | • Creciente demanda de soluciones de Project Portfolio Management. <br> • Incorporación de inteligencia artificial y análisis avanzado. |
 | **Amenazas** | • Competidores consolidados. <br> • Nuevas startups de gestión de proyectos. <br> • Evolución rápida de las tecnologías de gestión. | • Competencia de plataformas de gestión de proyectos y trabajo colaborativo. <br> • Cambios rápidos en las necesidades de los equipos. | • Competidores especializados en diferentes industrias. <br> • Saturación del mercado de gestión de proyectos. | • Competencia de soluciones PPM y SPM. <br> • Evolución de plataformas más simples y accesibles. |
 
+<a id="212-estrategias-y-tacticas-frente-a-competidores"></a>
 ### 2.1.2. Estrategias y tacticas frente a competidores
 Para diferenciar Vantage PMO frente a las soluciones existentes, se plantean las siguientes estrategias y tácticas:
 
@@ -104,8 +108,10 @@ Considerar mecanismos de importación y exportación de información y futuras i
 
 ---
 
+<a id="22-entrevistas"></a>
 ## 2.2. Entrevistas
 
+<a id="221-diseno-de-entrevistas"></a>
 ### 2.2.1. Diseno de entrevistas
 Las entrevistas tienen como objetivo conocer las experiencias, necesidades, dificultades y expectativas de los usuarios relacionados con la gestión de múltiples proyectos. Las preguntas fueron diseñadas para obtener información sobre sus actividades actuales, herramientas utilizadas, problemas frecuentes, toma de decisiones y disposición para utilizar una solución centralizada como Vantage PMO.
 
@@ -140,6 +146,7 @@ Las entrevistas tienen como objetivo conocer las experiencias, necesidades, difi
 9. Si tuvieras una plataforma centralizada para gestionar tus proyectos, ¿qué funcionalidades considerarías más útiles?
 
 10. ¿Estarías dispuesto(a) a utilizar una plataforma de este tipo? ¿Qué características tendría que tener para que realmente te resulte útil?
+
 #### Preguntas complementarias
 
 - ¿Con qué frecuencia revisa el estado de sus proyectos?
@@ -171,6 +178,7 @@ Las entrevistas tienen como objetivo conocer las experiencias, necesidades, difi
 9. ¿Qué funcionalidades considerarías importantes en una plataforma centralizada para gestionar los proyectos de la organización?
 
 10. ¿Qué condiciones tendría que cumplir una nueva plataforma para que la organización estuviera dispuesta a adoptarla?
+
 #### Preguntas complementarias
 
 - ¿Qué herramienta utilizan con mayor frecuencia durante su jornada laboral?
@@ -178,6 +186,7 @@ Las entrevistas tienen como objetivo conocer las experiencias, necesidades, difi
 - ¿Qué información les gustaría consultar desde un dispositivo móvil?
 - ¿Qué problema de la gestión actual les gustaría solucionar primero?
 - ¿Qué factores podrían dificultar la adopción de una nueva herramienta dentro de la empresa?
+<a id="222-registro-de-entrevistas"></a>
 ### 2.2.2. Registro de entrevistas
 
 En esta sección presentamos los registros de las entrevistas realizadas a personas pertenecientes a los segmentos objetivo de Vantage PMO. El objetivo de las entrevistas fue conocer sus experiencias, dificultades y necesidades relacionadas con la gestión y seguimiento de múltiples proyectos, así como identificar oportunidades de mejora mediante una plataforma centralizada.
@@ -232,7 +241,6 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
 </tbody>
 </table>
 
-
 <table>
 <thead>
   <tr>
@@ -281,7 +289,6 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
 </tbody>
 </table>
 
-
 <table>
 <thead>
   <tr>
@@ -329,7 +336,6 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
   </tr>
 </tbody>
 </table>
-
 
 ### Segmento 2: Empresas medianas y grandes con múltiples proyectos
 
@@ -381,7 +387,6 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
 </tbody>
 </table>
 
-
 <table>
 <thead>
   <tr>
@@ -429,7 +434,6 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
   </tr>
 </tbody>
 </table>
-
 
 <table>
 <thead>
@@ -479,8 +483,7 @@ En esta sección presentamos los registros de las entrevistas realizadas a perso
 </tbody>
 </table>
 
-<a id="2-2-3-analisis-de-entrevistas"></a>
-
+<a id="223-analisis-de-entrevistas"></a>
 ## 2.2.3 Análisis de Entrevistas
 
 ### Segmento 1: Líderes y Jefes de Gestión de Proyectos
@@ -544,15 +547,15 @@ Se analizaron 3 entrevistas a personas que participan en organizaciones o activi
 * **La facilidad de uso es una condición para la adopción:** El 100% de los entrevistados considera importante que la herramienta sea sencilla y práctica. Por ello, Vantage PMO debe buscar una experiencia intuitiva que permita incorporar la plataforma al flujo de trabajo sin requerir una capacitación extensa.
 
 * **Existe una oportunidad para el acceso móvil:** Aunque solo el 33,3% menciona explícitamente el acceso desde dispositivos móviles, esta característica puede resultar útil para usuarios que necesitan consultar información mientras se encuentran fuera de su espacio habitual de trabajo.
+<a id="23-needfinding"></a>
 ## 2.3 Needfinding
-<a id="2-3-needfinding"></a>
 
 En esta sección se presentan los artefactos obtenidos a partir del análisis de las entrevistas realizadas a los segmentos objetivo de Vantage PMO. Estos artefactos permiten representar las necesidades, comportamientos, tareas, motivaciones y dificultades de los usuarios.
 
 Para la construcción de los User Personas se consideraron los principales patrones identificados durante las entrevistas, complementándolos con el análisis competitivo realizado previamente. A partir de estos perfiles se elaboraron el User Task Matrix, los User Journey Maps y los Empathy Maps, buscando representar la situación actual de los usuarios antes de utilizar Vantage PMO.
 
+<a id="231-user-personas"></a>
 ### 2.3.1 User Personas
-<a id="2-3-1-user-personas"></a>
 
 Se elaboraron dos User Personas, uno por cada segmento objetivo identificado para Vantage PMO. Los perfiles representan los principales patrones encontrados durante el análisis de entrevistas y permiten comprender sus objetivos, necesidades, comportamientos y frustraciones.
 
@@ -578,8 +581,8 @@ Su principal motivación es mejorar la organización y coordinación del trabajo
 
 ---
 
+<a id="232-user-task-matrix"></a>
 ### 2.3.2 User Task Matrix
-<a id="2-3-2-user-task-matrix"></a>
 
 El User Task Matrix permite identificar las principales tareas que realizan los User Personas para alcanzar sus objetivos, independientemente de la existencia de Vantage PMO. Para cada tarea se considera su frecuencia y nivel de importancia dentro de sus actividades.
 
@@ -607,8 +610,8 @@ Por otro lado, **Alessandro Nieto** presenta una mayor necesidad de organizació
 
 ---
 
+<a id="233-user-journey-mapping"></a>
 ### 2.3.3 User Journey Mapping
-<a id="2-3-3-user-journey-mapping"></a>
 
 En esta sección se presentan los User Journey Maps en su estado actual (As-Is). Estos representan el recorrido que realizan los User Personas para gestionar y realizar el seguimiento de sus proyectos sin utilizar Vantage PMO.
 
@@ -632,15 +635,14 @@ Finalmente, recopila la información necesaria para conocer el estado general de
 
 ---
 
+<a id="234-empathy-mapping"></a>
 ### 2.3.4 Empathy Mapping
-<a id="2-3-4-empathy-mapping"></a>
 
 Se elaboraron los Empathy Maps correspondientes a cada User Persona con el objetivo de profundizar en sus necesidades, comportamientos, pensamientos, emociones, frustraciones y motivaciones.
 
 El análisis considera qué observa, escucha, dice y hace cada usuario, así como los principales Pains y Gains identificados a partir de las entrevistas. Esto permite comprender la experiencia actual de los usuarios y orientar las características de Vantage PMO hacia sus necesidades reales.
 
 **Segmento 1**
-
 
 ![Empathy Map - Gerson Escarate](assets/images/Empathy%20map%20Gerson%20Escarate.png) 
 
@@ -662,8 +664,8 @@ Sus principales Gains están relacionados con centralizar la información, organ
 
 ---
 
+<a id="235-big-picture-eventstorming"></a>
 ### 2.3.5 Big Picture EventStorming
-<a id="2-3-5-big-picture-eventstorming"></a>
 
 En esta sección se presenta el Big Picture EventStorming desarrollado para Vantage PMO. Este artefacto permite obtener una visión general del dominio de gestión de proyectos mediante la identificación de los principales eventos, actores, acciones, reglas y fuentes de información involucradas en los procesos del negocio.
 
@@ -743,8 +745,8 @@ El resultado obtenido también constituye un insumo para las etapas posteriores 
 
 ---
 
+<a id="236-ubiquitous-language"></a>
 ### 2.3.6 Ubiquitous Language
-<a id="2-3-6-ubiquitous-language"></a>
 
 El Ubiquitous Language establece un vocabulario común para los principales conceptos del dominio de gestión de proyectos en Vantage PMO. Su objetivo es evitar ambigüedades y asegurar que los miembros del equipo y los stakeholders utilicen los mismos términos y significados durante el análisis, diseño y desarrollo de la solución.
 
@@ -785,14 +787,13 @@ El Ubiquitous Language establece un vocabulario común para los principales conc
 ---
 
 ## 2.4 Requirements Specification
-<a id="2-4-requirements-specification"></a>
 
 En esta sección se especifican los requisitos de Vantage PMO a partir de las necesidades y problemas identificados durante el proceso de investigación y análisis de los usuarios.
 
 Para ello, se definen las Epics y User Stories de la solución, incluyendo sus criterios de aceptación, así como las Technical Stories y Spike Stories necesarias para cubrir aspectos técnicos y reducir incertidumbre durante el desarrollo. Asimismo, se presenta el Impact Mapping para relacionar los objetivos del negocio con los actores, impactos y entregables, y finalmente se organiza el conjunto de historias dentro del Product Backlog priorizado y estimado en Story Points.
 
+<a id="241-user-stories"></a>
 ### 2.4.1. User Stories
-<a id="2-4-1-user-stories"></a>
 
 En esta sección se presentan las Epics, User Stories, Technical Stories y Spike Stories definidas para Vantage PMO a partir de las necesidades identificadas durante el proceso de investigación y análisis de los usuarios.
 
@@ -1012,8 +1013,8 @@ Las Spike Stories se orientan a investigar alternativas y validar su viabilidad 
 | **Description** | Como equipo de desarrollo, queremos investigar y prototipar una tecnología o servicio externo para notificaciones móviles con el fin de conocer su viabilidad, limitaciones, riesgos y esfuerzo de integración dentro de Vantage PMO. |  |  |
 | **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** se han identificado servicios o tecnologías candidatas,<br>**Cuando** finaliza el análisis comparativo,<br>**Entonces** el equipo documenta las capacidades, restricciones, costos y requisitos técnicos relevantes de las alternativas evaluadas.<br><br>**Escenario 2:**<br>**Dado que** se selecciona una alternativa candidata,<br>**Cuando** se desarrolla una prueba de concepto funcional,<br>**Entonces** el equipo documenta los resultados obtenidos y establece una conclusión técnica sobre su integración con la aplicación móvil. |  |  |
 
+<a id="242-impact-mapping"></a>
 ### 2.4.2. Impact Mapping
-<a id="2-4-2-impact-mapping"></a>
 
 En esta sección se presenta el Impact Mapping de Vantage PMO, elaborado en UXPressia. Este artefacto permite relacionar los Business Goals del modelo de negocio con los User Personas previamente identificados, los cambios de comportamiento esperados, los Deliverables propuestos y las User Stories que permiten materializarlos.
 
@@ -1021,8 +1022,8 @@ Para su elaboración se definieron dos Business Goals bajo criterios SMART. Asim
 
 ![Impact-Mapping-Vantage-PMO](assets/images/chapter-2/Needfinding/Impact-Map-Vantage%20PMO.png)
 
+<a id="243-product-backlog"></a>
 ### 2.4.3. Product Backlog
-<a id="2-4-3-product-backlog"></a>
 
 En esta sección se presenta el Product Backlog de Vantage PMO, conformado por las User Stories previamente identificadas y priorizadas de acuerdo con el valor que aportan al negocio y a los usuarios de la solución.
 
@@ -1050,10 +1051,12 @@ Cada User Story ha sido estimada utilizando Story Points de la serie 1, 2, 3, 5 
 
 ---
 
+<a id="25-strategic-level-domain-driven-design"></a>
 ## 2.5. Strategic-Level Domain-Driven Design
 
 El Strategic DDD permite identificar y organizar las áreas principales del negocio, definiendo los dominios y subdominios y cómo se relacionan entre sí. Esto ayuda a que el sistema represente correctamente los procesos y necesidades de la organización.
 
+<a id="251-eventstorming"></a>
 ### 2.5.1. EventStorming
 
 **Step 1: Unstructured Exploration**
@@ -1136,6 +1139,7 @@ Finalmente se trazaron los Bounded Contexts candidatos a partir de los clusters 
 <img src="assets/images/chapter-2/EventStorming/steps/step_10.png" alt="EventStorming Step 10 - Bounded Contexts">
 </p>
 
+<a id="2511-candidate-context-discovery"></a>
 #### 2.5.1.1. Candidate Context Discovery
 
 A partir del modelo de Event Storming elaborado en Miro, se desarrolló una sesión de Candidate Context Discovery con el propósito de identificar los bounded contexts de la solución. Durante esta sesión, se empleó principalmente la técnica look-for-pivotal-events.
@@ -1188,7 +1192,7 @@ Integra los servicios de soporte y analítica de la plataforma: gestión documen
 <img src="assets/images/chapter-2/EventStorming/candidates/analytics_and_support_services.png" alt="Bounded Context Candidate - Analytics and Support Services">
 </p>
 
-
+<a id="2512-domain-message-flows-modeling"></a>
 #### 2.5.1.2. Domain Message Flows Modeling
 
 Para evidenciar el intercambio de información entre los diversos bounded contexts, se emplean flujos de mensajes de dominio (Domain Message Flows) basados en comandos, eventos y consultas. Los escenarios centrales del negocio se presentan a continuación:
@@ -1233,6 +1237,7 @@ El PM sube un documento desde la app; el archivo se almacena de forma segura en 
 <img src="assets/images/chapter-2/EventStorming/message_flows/message_flow_document.png" alt="Domain Message Flow - Gestión Documental, Seguimiento Analítico y Exportación PDF">
 </p>
 
+<a id="2513-bounded-context-canvases"></a>
 #### 2.5.1.3. Bounded Context Canvases
 
 Con el propósito de mejorar la organización del dominio y mantener una comunicación uniforme, se desarrollaron Bounded Context Canvases para cada subdominio identificado. Estos canvases permiten definir las responsabilidades de cada contexto, establecer el lenguaje ubicuo y sus principales modelos, además de especificar los puntos de integración y los flujos de mensajes entre contextos. Los diagramas presentados a continuación reúnen estas definiciones y sirvieron como referencia para orientar la arquitectura, las interfaces y la evolución del sistema.
@@ -1267,6 +1272,7 @@ Con el propósito de mejorar la organización del dominio y mantener una comunic
 <img src="assets/images/chapter-2/EventStorming/bounded_canvases/canvas_bc_ass.png" alt="Bounded Context Canvas - Analytics and Support Services">
 </p>
 
+<a id="252-context-mapping"></a>
 ### 2.5.2. Context Mapping
 
 Esta sección presenta el desarrollo de los Context Maps, utilizados para representar cómo se relacionan y colaboran los distintos Bounded Contexts que conforman el dominio. Además, se identifican los vínculos existentes entre estos contextos y los patrones de integración propuestos por Domain-Driven Design, entre ellos Anti-corruption Layer, Conformist, Customer/Supplier y Shared Kernel.
@@ -1329,10 +1335,12 @@ Tras comparar las alternativas de mapeo (mover capabilities, partir o unir conte
 <img src="assets/images/chapter-2/EventStorming/context_mapping/global.png" alt="Final Context Map - VantagePMO">
 </p>
 
+<a id="253-software-architecture"></a>
 ### 2.5.3. Software Architecture
 
 En este sección se presenta la arquitectura del sistema mediante el C4 Model, abordando dos perspectivas complementarias. Primero, se muestra una representación general del sistema y su interacción con los actores y elementos externos; posteriormente, se detalla su estructura interna a nivel técnico mediante los Containers. Cada diagrama se acompaña de una descripción de sus componentes y de los criterios considerados para definir las tecnologías utilizadas.
 
+<a id="2531-software-architecture-context-level-diagrams"></a>
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
 <p align="center">
@@ -1341,6 +1349,7 @@ En este sección se presenta la arquitectura del sistema mediante el C4 Model, a
 
 El Context Diagram presenta VantagePMO como el sistema central, acompañado por dos actores principales (Project Leader / PM y Entrepreneurs / Managers) y tres servicios externos (Auth0 & SendGrid, AWS S3 y Risk Engine & Export Services). Su propósito es delimitar el alcance de la solución, mostrando que la gestión de proyectos, recursos, auditoría y análisis del portafolio corresponde a VantagePMO, mientras que la autenticación, las notificaciones, el almacenamiento de archivos, la evaluación de riesgos y la generación de reportes se apoyan en servicios externos.
 
+<a id="2532-software-architecture-container-level-diagrams"></a>
 #### 2.5.3.2. Software Architecture Container Level Diagrams
 [Diagrama C4 Nivel 2 Container Diagram y descripcion].
 
@@ -1358,6 +1367,7 @@ El Container Diagram representa la organización interna de **VantagePMO** y la 
 - **External Integrations**: Se integran Auth0 & SendGrid para autenticación y notificaciones, AWS S3 para almacenamiento y servicios externos para la evaluación de riesgos y generación de reportes.
 - **Landing Page**: Se desarrolla con HTML, CSS y JavaScript para presentar información de VantagePMO y facilitar el acceso a las aplicaciones.
 
+<a id="2533-software-architecture-deployment-diagrams"></a>
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 
 A continuación, se presenta el Deployment Diagram del sistema a implementar, el cual representa cómo se distribuirán los distintos componentes de VantagePMO dentro de la infraestructura tecnológica y los entornos donde serán ejecutados. El diagrama permite visualizar la comunicación entre las aplicaciones, el backend, la base de datos y los servicios externos, así como la forma en que estos elementos se integran durante la ejecución del sistema. Su propósito principal es ofrecer una visión clara de la arquitectura de despliegue, facilitando su comprensión, implementación y posterior mantenimiento.
@@ -1368,12 +1378,15 @@ A continuación, se presenta el Deployment Diagram del sistema a implementar, el
 
 ---
 
+<a id="26-tactical-level-domain-driven-design"></a>
 ## 2.6. Tactical-Level Domain-Driven Design
 
+<a id="261-bounded-context-iam"></a>
 ### 2.6.1. Bounded Context: IAM
 
 Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proyecto en capas. A continuación detallamos las capas del Bounded Context referenciado.
 
+<a id="2611-domain-layer"></a>
 #### 2.6.1.1. Domain Layer
 
 **Sub-capa Model - Aggregates:**
@@ -1405,6 +1418,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | :--- | :--- | :--- | :--- | :--- |
 | Repository | IUserRepository | Interfaz de persistencia para la entidad User. | Definir el contrato para guardar, actualizar y recuperar información de la base de datos para los usuarios. | Implementado por `UserRepository` en la capa de Infraestructura (Infrastructure Layer). |
 
+<a id="2612-interface-layer"></a>
 #### 2.6.1.2. Interface Layer
 
 **Sub-capa REST - Resources:**
@@ -1444,6 +1458,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | Facade Interface | IIamContextFacade | Interfaz de la fachada ACL para el contexto IAM. | Definir un contrato claro y aislado para que otros Bounded Contexts interactúen con IAM. | Define operaciones que pueden ser llamadas desde otros módulos (ej. Profiles, Projects). |
 | Facade | IamContextFacade | Implementación de la fachada ACL para IAM. | Exponer servicios específicos de IAM (como verificar si existe un usuario) a otros Bounded Contexts, actuando como una capa anticorrupción. | Implementa `IIamContextFacade` y utiliza servicios internos de aplicación. |
 
+<a id="2613-application-layer"></a>
 #### 2.6.1.3. Application Layer
 
 **Sub-capa Services - CommandServices:**
@@ -1467,6 +1482,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | Interface | IHashingService | Contrato para el servicio de encriptación. | Definir la funcionalidad necesaria para encriptar y verificar contraseñas. | Utilizado por `UserCommandService` para procesar credenciales seguras. Implementado en la capa de Infraestructura. |
 | Interface | ITokenService | Contrato para el servicio de generación de tokens. | Definir la funcionalidad para generar tokens de autenticación (JWT) para sesiones válidas. | Utilizado por `UserCommandService` al confirmar el inicio de sesión. Implementado en la capa de Infraestructura. |
 
+<a id="2614-infrastructure-layer"></a>
 #### 2.6.1.4. Infrastructure Layer
 
 **Sub-capa Hashing:**
@@ -1497,6 +1513,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | Service | TokenService | Implementación del generador de tokens JWT. | Crear tokens web de formato JSON (JWT) con claims de seguridad para la sesión. | Implementa `ITokenService` de la capa de Aplicación. |
 | Configuration | TokenSettings | Configuración de los tokens. | Mapear los secretos y tiempos de expiración del JWT definidos en las configuraciones del proyecto. | Utilizado por `TokenService` para firmar los tokens. |
 
+<a id="2615-bounded-context-software-architecture-component-level-diagrams"></a>
 #### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 
 Este diagrama representa la descomposición interna del contenedor correspondiente al Bounded Context de identidad y autenticación (IAM) dentro del sistema. Se ilustra en el Nivel 3 del C4 Model  para reflejar los principios de Clean Architecture y Domain-Driven Design aplicados.
@@ -1505,15 +1522,15 @@ En este diagrama se puede observar cómo las peticiones ingresan a través de lo
 
 <img width="776" height="986" alt="diagrama 1" src="https://github.com/user-attachments/assets/caa86808-2bed-40e1-8751-af3738db1fc3" />
 
-
+<a id="2616-bounded-context-software-architecture-code-level-diagrams"></a>
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+<a id="26161-bounded-context-domain-layer-class-diagrams"></a>
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
 <img width="1969" height="952" alt="diagrama2" src="https://github.com/user-attachments/assets/97bb35b1-aff3-4f8b-8316-c8d20974e7c2" />
 
-
+<a id="26162-bounded-context-database-design-diagram"></a>
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
 <img width="203" height="385" alt="diagrama 3" src="https://github.com/user-attachments/assets/bf894c88-6d08-4a9e-9985-13a1c0a7f514" />
-
 
 **Tabla: USERS**
 
@@ -1539,10 +1556,12 @@ En este diagrama se puede observar cómo las peticiones ingresan a través de lo
 | **action** | varchar | N-N | default | Descripción de la acción o evento realizado por el usuario. |
 | **timestamp** | datetime | N-N | default | Fecha y hora exacta en la que se registró el evento de auditoría. |
 
+<a id="262-bounded-context-profiles"></a>
 ### 2.6.2. Bounded Context: Profiles
 
 Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proyecto en capas. A continuación detallamos las capas del Bounded Context referenciado.
 
+<a id="2621-domain-layer"></a>
 #### 2.6.2.1. Domain Layer
 
 **Sub-capa Model - Aggregates:**
@@ -1589,6 +1608,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | Interface | IEndorsementRepository | Contrato de persistencia de respaldos. | Definir el acceso a datos para la entidad `Endorsement`. | Implementado en la capa Infrastructure. |
 | Interface | IProfileStatsRepository | Contrato de persistencia de stats. | Definir el acceso a datos para las métricas de `ProfileStats`. | Implementado en la capa Infrastructure. |
 
+<a id="2622-interface-layer"></a>
 #### 2.6.2.2. Interface Layer
 
 **Sub-capa REST - Resources:**
@@ -1628,6 +1648,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | :--- | :--- | :--- | :--- | :--- |
 | Facade Interface | IProfilesContextFacade | Interfaz de la fachada ACL de perfiles. | Proveer un contrato anticorrupción para que otros Bounded Contexts obtengan datos del perfil. | Implementado por `ProfilesContextFacade`. |
 
+<a id="2623-application-layer"></a>
 #### 2.6.2.3. Application Layer
 
 **Sub-capa Services - CommandServices:**
@@ -1657,6 +1678,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | :--- | :--- | :--- | :--- | :--- |
 | Facade | ProfilesContextFacade | Implementación de fachada ACL. | Aislar el dominio de perfiles exponiendo operaciones simplificadas para otros contextos (como Projects o TaskCollaboration). | Implementa `IProfilesContextFacade`. |
 
+<a id="2624-infrastructure-layer"></a>
 #### 2.6.2.4. Infrastructure Layer
 
 **Sub-capa Persistence:**
@@ -1669,22 +1691,23 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | Repository | ProfileStatsRepository | Repositorio de estadísticas. | Manejar las transacciones en BD para `ProfileStats`. | Implementa `IProfileStatsRepository`. |
 | Configuration | ModelBuilderExtensions | Configuración del modelo. | Mapear los agregados y value objects de Profiles (incluyendo las relaciones) hacia tablas SQL mediante EFC. | Consumido por el `AppDbContext` compartido. |
 
+<a id="2625-bounded-context-software-architecture-component-level-diagrams"></a>
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 Este diagrama expone cómo los bloques de construcción principales interactúan dentro del contenedor de la aplicación para satisfacer las necesidades del negocio relacionadas a la gestión de datos profesionales, habilidades, reconocimientos y estadísticas de los usuarios.
 
 <img width="1256" height="990" alt="diagram 2 1" src="https://github.com/user-attachments/assets/8f2ebecd-dd88-46c5-bdba-ce41e759260e" />
 
-
+<a id="2626-bounded-context-software-architecture-code-level-diagrams"></a>
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
+<a id="26261-bounded-context-domain-layer-class-diagrams"></a>
 ##### 2.6.2.6.1. Bounded Context Domain Layer Class Diagrams
 
 <img width="2235" height="870" alt="diagrama 2 2" src="https://github.com/user-attachments/assets/40e82145-c39d-4072-8a9f-0de724a6bb8f" />
 
+<a id="26262-bounded-context-database-design-diagram"></a>
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
 <img width="646" height="369" alt="diagram 2 3" src="https://github.com/user-attachments/assets/830fade9-c36b-40b7-b45a-0a66b015bf45" />
-
-
 
 **Tabla: PROFILES**
 
@@ -1727,10 +1750,12 @@ Este diagrama expone cómo los bloques de construcción principales interactúan
 | **total_endorsements**| int | NULL | 0 | Sumatoria total de los respaldos recibidos por el usuario. |
 | **profile_score** | float | NULL | 0.0 | Puntuación general calculada a partir del desempeño y el portafolio del perfil. |
 
+<a id="263-bounded-context-projects"></a>
 ### 2.6.3. Bounded Context: Projects
 
 Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proyecto en capas. A continuación detallamos las capas del Bounded Context referenciado, el cual se encarga de la gestión principal de proyectos dentro de la plataforma PMO.
 
+<a id="2631-domain-layer"></a>
 #### 2.6.3.1. Domain Layer
 
 **Sub-capa Model - Aggregates:**
@@ -1766,6 +1791,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | :--- | :--- | :--- | :--- | :--- |
 | Interface | IProjectRepository | Contrato de persistencia de proyectos. | Definir las operaciones de base de datos (CRUD) necesarias para la entidad `Project`. | Implementado en la capa de Infraestructura por `ProjectRepository`. |
 
+<a id="2632-interface-layer"></a>
 #### 2.6.3.2. Interface Layer
 
 **Sub-capa REST - Resources:**
@@ -1792,6 +1818,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | :--- | :--- | :--- | :--- | :--- |
 | Controller | ProjectsController | Controlador principal de proyectos. | Exponer y gestionar todos los endpoints RESTful para las operaciones de proyectos (GET, POST, PUT, DELETE). | Coordina con `IProjectCommandService` e `IProjectQueryService`. |
 
+<a id="2633-application-layer"></a>
 #### 2.6.3.3. Application Layer
 
 **Sub-capa Services - CommandServices:**
@@ -1808,6 +1835,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | Interface | IProjectQueryService | Contrato de servicio de consultas. | Definir las firmas para las operaciones de lectura de proyectos. | Implementado por `ProjectQueryService`. |
 | Service | ProjectQueryService | Servicio de consultas de proyectos. | Resolver y orquestar las lógicas de búsqueda para retornar proyectos al controlador. | Depende directamente de `IProjectRepository`. |
 
+<a id="2634-infrastructure-layer"></a>
 #### 2.6.3.4. Infrastructure Layer
 
 **Sub-capa Persistence:**
@@ -1817,23 +1845,23 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | Repository | ProjectRepository | Implementación del repositorio de proyectos. | Ejecutar las consultas y transacciones de base de datos utilizando Entity Framework Core para la entidad `Project`. | Implementa la interfaz `IProjectRepository` del dominio. |
 | Configuration | ModelBuilderExtensions | Configuración del modelo relacional. | Configurar el mapeo de las entidades `Project`, y los value objects `Milestone` y `TeamMember` a las tablas de la BD. | Utilizado internamente por el `AppDbContext` compartido. |
 
+<a id="2635-bounded-context-software-architecture-component-level-diagrams"></a>
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 Se ilustra cómo el controlador REST procesa las peticiones de los clientes y las delega a los servicios de aplicación, los cuales orquestan la lógica de negocio apoyándose en el repositorio para la persistencia de datos.
 
 <img width="511" height="939" alt="diagram 3 1" src="https://github.com/user-attachments/assets/58012806-e58c-4968-834f-a07974433f59" />
 
-
+<a id="2636-bounded-context-software-architecture-code-level-diagrams"></a>
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
+<a id="26361-bounded-context-domain-layer-class-diagrams"></a>
 ##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 <img width="1477" height="852" alt="diagrams 3 2" src="https://github.com/user-attachments/assets/0859d941-3d27-47a0-b0d9-b59eb08e0128" />
 
-
+<a id="26362-bounded-context-database-design-diagram"></a>
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
 <img width="422" height="352" alt="diagrams 3 3" src="https://github.com/user-attachments/assets/5277dded-fa06-4aca-9630-5608a99c9928" />
-
-
 
 **Tabla: PROJECTS**
 
@@ -1865,10 +1893,12 @@ Se ilustra cómo el controlador REST procesa las peticiones de los clientes y la
 | **project_id** | bigint | N-N | default | Clave foránea del proyecto al que pertenece el miembro. |
 | **user_id** | bigint | N-N | default | Identificador del usuario asignado (referencia al módulo de Perfiles/IAM). |
 | **role** | varchar | N-N | default | Rol o responsabilidad que tiene el usuario dentro de este proyecto. |
+<a id="264-bounded-context-taskcollaboration"></a>
 ### 2.6.4. Bounded Context: TaskCollaboration
 
 Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proyecto en capas. A continuación detallamos las capas del Bounded Context referenciado, el cual gestiona el ciclo de vida de las tareas y la colaboración entre los miembros del equipo.
 
+<a id="2641-domain-layer"></a>
 #### 2.6.4.1. Domain Layer
 
 **Sub-capa Model - Aggregates:**
@@ -1901,6 +1931,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | :--- | :--- | :--- | :--- | :--- |
 | Interface | ITaskRepository | Contrato de persistencia de tareas. | Definir las operaciones CRUD necesarias en la base de datos para la entidad `TaskItem` y sus comentarios. | Implementado en la capa de Infraestructura. |
 
+<a id="2642-interface-layer"></a>
 #### 2.6.4.2. Interface Layer
 
 **Sub-capa REST - Resources:**
@@ -1926,6 +1957,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | :--- | :--- | :--- | :--- | :--- |
 | Controller | TasksController | Controlador principal de tareas. | Gestionar los endpoints RESTful para la creación, consulta y actualización de tareas y comentarios. | Coordina con `ITaskCommandService` e `ITaskQueryService`. |
 
+<a id="2643-application-layer"></a>
 #### 2.6.4.3. Application Layer
 
 **Sub-capa Services - CommandServices:**
@@ -1942,6 +1974,7 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | Interface | ITaskQueryService | Contrato de consultas de tareas. | Definir las firmas para la lectura y filtrado de tareas. | Implementado por `TaskQueryService`. |
 | Service | TaskQueryService | Servicio de consultas de tareas. | Resolver las búsquedas de tareas delegando la lectura al repositorio. | Depende de `ITaskRepository`. |
 
+<a id="2644-infrastructure-layer"></a>
 #### 2.6.4.4. Infrastructure Layer
 
 **Sub-capa Persistence:**
@@ -1951,25 +1984,24 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 | Repository | TaskRepository | Repositorio de tareas. | Proveer la implementación concreta usando Entity Framework Core para persistir `TaskItem` y `TaskComment`. | Implementa `ITaskRepository`. |
 | Configuration | ModelBuilderExtensions | Configuración del modelo. | Establecer el mapeo ORM entre las entidades de tareas/comentarios y las tablas relacionales. | Utilizado por `AppDbContext`. |
 
+<a id="2645-bounded-context-software-architecture-component-level-diagrams"></a>
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 En él se ilustra cómo el sistema gestiona la colaboración del equipo: las peticiones entran por el controlador de tareas y se distribuyen hacia los servicios de comando (para crear/modificar tareas y añadir comentarios) o a los servicios de consulta (para listar tareas por proyecto o por usuario asignado).
 
-
 <img width="497" height="985" alt="diagramas 4 1" src="https://github.com/user-attachments/assets/b3959ec8-541d-44a6-b57c-0e39dddb2d21" />
 
-
+<a id="2646-bounded-context-software-architecture-code-level-diagrams"></a>
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
 
-
+<a id="26461-bounded-context-domain-layer-class-diagrams"></a>
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 
 <img width="2427" height="911" alt="diagrams 4 2" src="https://github.com/user-attachments/assets/83915623-3357-49e7-84ed-1e2a82833c57" />
 
-
+<a id="26462-bounded-context-database-design-diagram"></a>
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
 <img width="219" height="385" alt="diagrams 4 3" src="https://github.com/user-attachments/assets/416b257a-c949-4d27-bcb8-156a02758727" />
-
 
 **Tabla: TASK_ITEMS**
 

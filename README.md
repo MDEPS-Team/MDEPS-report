@@ -72,10 +72,16 @@
 Durante esta primera entrega, el equipo establecio la estructura base del repositorio utilizando el flujo de trabajo GitFlow. Las tareas se dividieron de forma equitativa, permitiendo que la redaccion del modelo de negocio, el analisis de la competencia y el diseno de la arquitectura se trabajaran en ramas independientes (feature/...) antes de integrarse a la rama develop. El equipo mantuvo sincronizacion constante para alinear los hallazgos del Lean UX con los requerimientos del producto.
 
 #### Contributors
-[Insertar captura de pantalla de GitHub Insights > Contributors del repositorio del informe]
+<div align="center">
+  <img src="assets/images/insights/contributors_01.png" alt="Contributors 01" width="720">
+  <br><br>
+  <img src="assets/images/insights/contributors_02.png" alt="Contributors 02" width="720">
+</div>
 
 #### Commits Over Time & Pulse
-[Insertar captura de pantalla de GitHub Insights > Pulse / Commits]
+<div align="center">
+  <img src="assets/images/insights/commits.png" alt="Commits over time" width="720">
+</div>
 
 ---
 
@@ -83,18 +89,90 @@ Durante esta primera entrega, el equipo establecio la estructura base del reposi
 
 - [Capitulo I: Presentacion](cap1-presentation.md#capitulo-i-presentacion)
   - [1.1. Startup Profile](cap1-presentation.md#11-startup-profile)
+    - [1.1.1. Descripcion de la Startup](cap1-presentation.md#111-descripcion-de-la-startup)
+    - [1.1.2. Perfiles de integrantes del equipo](cap1-presentation.md#112-perfiles-de-integrantes-del-equipo)
   - [1.2. Solution Profile](cap1-presentation.md#12-solution-profile)
-  - [1.3. Segmentos Objetivo](cap1-presentation.md#13-segmentos-objetivo)
+    - [1.2.1. Antecedentes y problematica](cap1-presentation.md#121-antecedentes-y-problematica)
+    - [1.2.2. Lean UX Process](cap1-presentation.md#122-lean-ux-process)
+      - [1.2.2.1. Lean UX Problem Statements](cap1-presentation.md#1221-lean-ux-problem-statements)
+      - [1.2.2.2. Lean UX Assumptions](cap1-presentation.md#1222-lean-ux-assumptions)
+      - [1.2.2.3. Lean UX Hypothesis Statements](cap1-presentation.md#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4. Lean UX Canvas](cap1-presentation.md#1224-lean-ux-canvas)
+  - [1.3. Segmentos objetivo](cap1-presentation.md#13-segmentos-objetivo)
 - [Capitulo II: Requirements Development and Software Solution Design](cap2-requirements.md#capitulo-ii-requirements-development-and-software-solution-design)
   - [2.1. Competidores](cap2-requirements.md#21-competidores)
+    - [2.1.1 Análisis competitivo](cap2-requirements.md#211-analisis-competitivo)
+    - [2.1.2. Estrategias y tacticas frente a competidores](cap2-requirements.md#212-estrategias-y-tacticas-frente-a-competidores)
   - [2.2. Entrevistas](cap2-requirements.md#22-entrevistas)
-  - [2.3. Needfinding](cap2-requirements.md#23-needfinding)
-  - [2.4. Requirements Specification](cap2-requirements.md#24-requirements-specification)
+    - [2.2.1. Diseno de entrevistas](cap2-requirements.md#221-diseno-de-entrevistas)
+    - [2.2.2. Registro de entrevistas](cap2-requirements.md#222-registro-de-entrevistas)
+    - [2.2.3 Análisis de Entrevistas](cap2-requirements.md#223-analisis-de-entrevistas)
+  - [2.3 Needfinding](cap2-requirements.md#23-needfinding)
+    - [2.3.1 User Personas](cap2-requirements.md#231-user-personas)
+    - [2.3.2 User Task Matrix](cap2-requirements.md#232-user-task-matrix)
+    - [2.3.3 User Journey Mapping](cap2-requirements.md#233-user-journey-mapping)
+    - [2.3.4 Empathy Mapping](cap2-requirements.md#234-empathy-mapping)
+    - [2.3.5 Big Picture EventStorming](cap2-requirements.md#235-big-picture-eventstorming)
+    - [2.3.6 Ubiquitous Language](cap2-requirements.md#236-ubiquitous-language)
+  - [2.4 Requirements Specification](cap2-requirements.md#24-requirements-specification)
+    - [2.4.1. User Stories](cap2-requirements.md#241-user-stories)
+    - [2.4.2. Impact Mapping](cap2-requirements.md#242-impact-mapping)
+    - [2.4.3. Product Backlog](cap2-requirements.md#243-product-backlog)
   - [2.5. Strategic-Level Domain-Driven Design](cap2-requirements.md#25-strategic-level-domain-driven-design)
+    - [2.5.1. EventStorming](cap2-requirements.md#251-eventstorming)
+      - [2.5.1.1. Candidate Context Discovery](cap2-requirements.md#2511-candidate-context-discovery)
+      - [2.5.1.2. Domain Message Flows Modeling](cap2-requirements.md#2512-domain-message-flows-modeling)
+      - [2.5.1.3. Bounded Context Canvases](cap2-requirements.md#2513-bounded-context-canvases)
+    - [2.5.2. Context Mapping](cap2-requirements.md#252-context-mapping)
+    - [2.5.3. Software Architecture](cap2-requirements.md#253-software-architecture)
+      - [2.5.3.1. Software Architecture Context Level Diagrams](cap2-requirements.md#2531-software-architecture-context-level-diagrams)
+      - [2.5.3.2. Software Architecture Container Level Diagrams](cap2-requirements.md#2532-software-architecture-container-level-diagrams)
+      - [2.5.3.3. Software Architecture Deployment Diagrams](cap2-requirements.md#2533-software-architecture-deployment-diagrams)
   - [2.6. Tactical-Level Domain-Driven Design](cap2-requirements.md#26-tactical-level-domain-driven-design)
+    - [2.6.1. Bounded Context: IAM](cap2-requirements.md#261-bounded-context-iam)
+      - [2.6.1.1. Domain Layer](cap2-requirements.md#2611-domain-layer)
+      - [2.6.1.2. Interface Layer](cap2-requirements.md#2612-interface-layer)
+      - [2.6.1.3. Application Layer](cap2-requirements.md#2613-application-layer)
+      - [2.6.1.4. Infrastructure Layer](cap2-requirements.md#2614-infrastructure-layer)
+      - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](cap2-requirements.md#2615-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](cap2-requirements.md#2616-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](cap2-requirements.md#26161-bounded-context-domain-layer-class-diagrams)
+        - [2.6.1.6.2. Bounded Context Database Design Diagram](cap2-requirements.md#26162-bounded-context-database-design-diagram)
+    - [2.6.2. Bounded Context: Profiles](cap2-requirements.md#262-bounded-context-profiles)
+      - [2.6.2.1. Domain Layer](cap2-requirements.md#2621-domain-layer)
+      - [2.6.2.2. Interface Layer](cap2-requirements.md#2622-interface-layer)
+      - [2.6.2.3. Application Layer](cap2-requirements.md#2623-application-layer)
+      - [2.6.2.4. Infrastructure Layer](cap2-requirements.md#2624-infrastructure-layer)
+      - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](cap2-requirements.md#2625-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](cap2-requirements.md#2626-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](cap2-requirements.md#26261-bounded-context-domain-layer-class-diagrams)
+        - [2.6.2.6.2. Bounded Context Database Design Diagram](cap2-requirements.md#26262-bounded-context-database-design-diagram)
+    - [2.6.3. Bounded Context: Projects](cap2-requirements.md#263-bounded-context-projects)
+      - [2.6.3.1. Domain Layer](cap2-requirements.md#2631-domain-layer)
+      - [2.6.3.2. Interface Layer](cap2-requirements.md#2632-interface-layer)
+      - [2.6.3.3. Application Layer](cap2-requirements.md#2633-application-layer)
+      - [2.6.3.4. Infrastructure Layer](cap2-requirements.md#2634-infrastructure-layer)
+      - [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](cap2-requirements.md#2635-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](cap2-requirements.md#2636-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](cap2-requirements.md#26361-bounded-context-domain-layer-class-diagrams)
+        - [2.6.3.6.2. Bounded Context Database Design Diagram](cap2-requirements.md#26362-bounded-context-database-design-diagram)
+    - [2.6.4. Bounded Context: TaskCollaboration](cap2-requirements.md#264-bounded-context-taskcollaboration)
+      - [2.6.4.1. Domain Layer](cap2-requirements.md#2641-domain-layer)
+      - [2.6.4.2. Interface Layer](cap2-requirements.md#2642-interface-layer)
+      - [2.6.4.3. Application Layer](cap2-requirements.md#2643-application-layer)
+      - [2.6.4.4. Infrastructure Layer](cap2-requirements.md#2644-infrastructure-layer)
+      - [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](cap2-requirements.md#2645-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](cap2-requirements.md#2646-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](cap2-requirements.md#26461-bounded-context-domain-layer-class-diagrams)
+        - [2.6.4.6.2. Bounded Context Database Design Diagram](cap2-requirements.md#26462-bounded-context-database-design-diagram)
 - [Conclusiones](conclusiones.md#conclusiones)
+- [Recomendaciones](conclusiones.md#recomendaciones)
 - [Bibliografia](Bibliografia.md#bibliografia)
 - [Anexos](Anexos.md#anexos)
+  - [Anexo A Event Storming](Anexos.md#anexo-a-event-storming)
+  - [Anexo B Domain Message Flows Modeling](Anexos.md#anexo-b-domain-message-flows-modeling)
+  - [Anexo C Bounded Context Canvases](Anexos.md#anexo-c-bounded-context-canvases)
+  - [Anexo D Context Mapping](Anexos.md#anexo-d-context-mapping)
 
 ---
 

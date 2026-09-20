@@ -1,9 +1,12 @@
 <div style="page-break-before: always;"></div>
 
+<a id="capitulo-i-presentacion"></a>
 # Capitulo I: Presentacion
 
+<a id="11-startup-profile"></a>
 ## 1.1. Startup Profile
 
+<a id="111-descripcion-de-la-startup"></a>
 ### 1.1.1. Descripcion de la Startup
 Somos una startup peruana denominada **MDEPS** (Managements Development Engineering Project Systems), creada por estudiantes de la carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC), que tiene como objetivo principal optimizar la gestión de proyectos dentro de las organizaciones mediante el uso de tecnología.
 
@@ -11,6 +14,7 @@ Nuestra misión es lograr que ninguna empresa gestione sus proyectos sin un cont
 
 Para cumplir con este propósito, hemos desarrollado el proyecto **MDEPS** (Project Management Office), una plataforma movil que permite a las organizaciones gestionar, monitorear y controlar todos sus proyectos de manera centralizada, brindando visibilidad en tiempo real, estandarización de procesos y herramientas inteligentes para la toma de decisiones.
 
+<a id="112-perfiles-de-integrantes-del-equipo"></a>
 ### 1.1.2. Perfiles de integrantes del equipo
 
 | Foto | Apellido y Nombre |
@@ -23,9 +27,12 @@ Para cumplir con este propósito, hemos desarrollado el proyecto **MDEPS** (Proj
 
 ---
 
+<a id="12-solution-profile"></a>
 ## 1.2. Solution Profile
 
+<a id="121-antecedentes-y-problematica"></a>
 ### 1.2.1. Antecedentes y problematica
+
 #### What / ¿QUÉ?
 Se presenta una fragmentación de la información y falta de visibilidad en la ejecución de proyectos, lo que impide un control centralizado y eficiente de los recursos organizacionales.
 
@@ -56,8 +63,10 @@ Las organizaciones pierden entre un 20% y 30% de su productividad semanal en tar
 - La arquitectura y el control de versiones deben aplicar obligatoriamente las practicas exigidas: uso de GitFlow, Conventional Commits, Semantic Versioning y Domain-Driven Design (DDD).
 - El alcance del Producto Minimo Viable (MVP) se centrara unicamente en las funcionalidades core de monitoreo, asignacion de recursos y reportes, excluyendo integraciones complejas con sistemas ERP heredados (como SAP u Oracle) debido a limitaciones de tiempo.
 
+<a id="122-lean-ux-process"></a>
 ### 1.2.2. Lean UX Process
 
+<a id="1221-lean-ux-problem-statements"></a>
 #### 1.2.2.1. Lean UX Problem Statements
 El estado actual de la gestion de proyectos en organizaciones medianas y grandes se ha enfocado principalmente en procesos manuales, hojas de calculo aisladas y comunicacion fragmentada, lo que resulta en una perdida de productividad de hasta el 30%.
 
@@ -68,6 +77,7 @@ Nuestro producto o servicio abordara esta brecha mediante una plataforma web y m
 Nuestro enfoque inicial seran los Project Managers, PMO Leads y Stakeholders de empresas medianas y grandes.
 
 Sabremos que tenemos exito cuando veamos una reduccion del 25% en el tiempo de elaboracion de reportes, una disminucion en los sobrecostos por retrasos y un incremento en la productividad semanal de los Project Managers.
+<a id="1222-lean-ux-assumptions"></a>
 #### 1.2.2.2. Lean UX Assumptions
 **Business Assumptions (Creencias del Negocio)**
 1. Creemos que las organizaciones necesitan centralizar la visibilidad de sus proyectos y estandarizar la toma de decisiones basada en datos reales.
@@ -98,7 +108,9 @@ Sabremos que tenemos exito cuando veamos una reduccion del 25% en el tiempo de e
 3. Creemos que un **Sistema de Alertas Tempranas** notificara desviaciones para evitar el incumplimiento de plazos.
 4. Creemos que un **Modulo de Gestion de Recursos** permitira la asignacion inteligente de personal y el seguimiento de tareas criticas.
 
+<a id="1223-lean-ux-hypothesis-statements"></a>
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
 ##### Visualización y Control Centralizado
 **Creemos que** al ofrecer un Dashboard en tiempo real con métricas unificadas, reduciremos los retrasos en la toma de decisiones estratégicas en un 20%. **Sabremos que estamos bien cuando veamos los siguientes comentarios del mercado:** "Ahora puedo ver el estado de todos mis proyectos en una sola pantalla" y/o los logs de la plataforma muestren que los Stakeholders consultan los dashboards diariamente antes de sus reuniones.
 
@@ -111,6 +123,7 @@ Sabremos que tenemos exito cuando veamos una reduccion del 25% en el tiempo de e
 ##### Optimización de Recursos
 **Creemos que** centralizar la asignación de recursos y seguimiento de hitos disminuirá los sobrecostos operativos por mala planificación. **Sabremos que estamos bien cuando veamos los siguientes comentarios del mercado:** "Tenemos menos cuellos de botella por falta de personal" y/o los indicadores financieros de los clientes muestren una mejora en el margen operativo de sus proyectos.
 
+<a id="1224-lean-ux-canvas"></a>
 #### 1.2.2.4. Lean UX Canvas
 
 | **Business Problem** | **Solutions** | **Business Outcomes** |
@@ -127,7 +140,9 @@ Sabremos que tenemos exito cuando veamos una reduccion del 25% en el tiempo de e
 
 ---
 
+<a id="13-segmentos-objetivo"></a>
 ## 1.3. Segmentos objetivo
+
 ### Segmento 1: Líderes y Jefes de Gestión de Proyectos
 
 Corresponde a los usuarios directos y principales adoptantes de la plataforma. Esta conformado por profesionales de entre 30 y 50 anos, con formacion solida en Ingenieria o Administracion y, frecuentemente, con certificaciones internacionales como el PMP o especializaciones en metodologias agiles. Su dia a dia se ve afectado por la frustracion de realizar un seguimiento reactivo basado en datos fragmentados y canales informales como WhatsApp o correos electronicos. Psicograficamente, estos lideres valoran la precision informativa y buscan herramientas que les permitan predecir desviaciones de presupuesto o cronograma antes de que ocurran. Estadisticamente, se estima que un jefe de proyectos en el Peru invierte hasta un 30% de su jornada semanal unicamente en la consolidacion manual de informes, una carga administrativa que se busca erradicar para permitirles enfocarse en la estrategia y la eficiencia del equipo.
