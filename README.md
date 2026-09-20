@@ -80,7 +80,8 @@ Durante esta primera entrega, el equipo establecio la estructura base del reposi
 
 #### Commits Over Time & Pulse
 <div align="center">
-  <img src="assets/images/insights/commits.png" alt="Commits over time" width="720">
+  <img width="440" height="201" alt="image" src="https://github.com/user-attachments/assets/a4b95c4a-1d2a-461b-bcef-1d97355d71d5" />
+
 </div>
 
 ---
