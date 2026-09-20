@@ -1,35 +1,56 @@
-<img src="assets/images/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
+<div align="center">
+  <img src="assets/images/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
 
-**Universidad Peruana de Ciencias Aplicadas**<br>
-**Carrera de Ingeniería de Software**
+  <h3>Universidad Peruana de Ciencias Aplicadas</h3>
+  <h3>Carrera de Ingeniería de Software</h3>
 
-**1ACC0238**<br>
-**Aplicaciones para Dispositivos Móviles**<br>
-NRC<br>
-**13975**<br>
-**Informe del Trabajo Final**<br>
-Docente<br>
-**David Gerardo Quevedo Velasco**<br>
-Equipo<br>
-**MDEPS**
+  <p><strong>1ACC0238</strong><br>
+  <strong>Aplicaciones para Dispositivos Móviles</strong><br>
+  NRC<br>
+  <strong>13975</strong><br>
+  <strong>Informe del Trabajo Final</strong><br>
+  Docente<br>
+  <strong>David Gerardo Quevedo Velasco</strong><br>
+  Equipo<br>
+  <strong>MDEPS</strong></p>
 
-Proyecto<br>
-**Vantage PMO**
+  <p>Proyecto<br>
+  <strong>Vantage PMO</strong></p>
 
+  <table align="center">
+    <tr>
+      <th>Código</th>
+      <th>Apellidos y Nombres</th>
+    </tr>
+    <tr>
+      <td>[U202520331]</td>
+      <td>Fuentes Alvarez, Angiela Stephany</td>
+    </tr>
+    <tr>
+      <td>[U202211881]</td>
+      <td>Guillen Giraldo, Mike Dylan</td>
+    </tr>
+    <tr>
+      <td>[u202417433]</td>
+      <td>Mendoza Machoa, Lionel Snayder</td>
+    </tr>
+    <tr>
+      <td>[u202014215]</td>
+      <td>Pacheco Lavado, Rafael Agustin</td>
+    </tr>
+    <tr>
+      <td>[u202411378]</td>
+      <td>Quiliano Motta, Kirk Douglas</td>
+    </tr>
+  </table>
 
-| Codigo       | Apellidos y Nombres |
-|:-------------| :--- |
-| [U202520331] | Fuentes Alvarez, Angiela Stephany |
-| [U202211881] | Guillen Giraldo, Mike Dylan |
-| [u202417433] | Mendoza Machoa, Lionel Snayder |
-| [u202014215] | Pacheco Lavado, Rafael Agustin |
-| [u202411378] | Quiliano Motta, Kirk Douglas |
-
-**Periodo Academico:** 2026-20
-**Fecha:** [Setiembre  2026]
+  <p><strong>Periodo Académico:</strong> 2026-20<br>
+  <strong>Fecha:</strong> Setiembre 2026</p>
 </div>
 
 ---
+
+<div style="page-break-before: always;"></div>
 
 ## Registro de Versiones del Informe
 
@@ -40,7 +61,7 @@ Proyecto<br>
 | 1.0 | [15/09/2026] | Guillen Giraldo, Mike Dylan | Desarrollo del Capítulo 2.5 (Strategic-Level Domain-Driven Design), abarcando el modelado mediante EventStorming, Context Mapping y la definición de la arquitectura de software en los niveles Context, Container y Deployment. |
 | 1.0 | [--/09/2026] | Todos | Finalizacion del informe para la entrega AV1 (Semana 4) |
 
----
+<div style="page-break-after: always;"></div>
 
 ## Project Report Collaboration Insights
 
@@ -60,20 +81,20 @@ Durante esta primera entrega, el equipo establecio la estructura base del reposi
 
 ## Contenido (Tabla de Contenidos)
 
-- [Capitulo I: Presentacion](#capitulo-i-presentacion)
-  - [1.1. Startup Profile](#11-startup-profile)
-  - [1.2. Solution Profile](#12-solution-profile)
-  - [1.3. Segmentos Objetivo](#13-segmentos-objetivo)
-- [Capitulo II: Requirements Development and Software Solution Design](#capitulo-ii-requirements-development-and-software-solution-design)
-  - [2.1. Competidores](#21-competidores)
-  - [2.2. Entrevistas](#22-entrevistas)
-  - [2.3. Needfinding](#23-needfinding)
-  - [2.4. Requirements Specification](#24-requirements-specification)
-  - [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
-  - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
-- [Conclusiones](#conclusiones)
-- [Bibliografia](#bibliografia)
-- [Anexos](#anexos)
+- [Capitulo I: Presentacion](cap1-presentation.md#capitulo-i-presentacion)
+  - [1.1. Startup Profile](cap1-presentation.md#11-startup-profile)
+  - [1.2. Solution Profile](cap1-presentation.md#12-solution-profile)
+  - [1.3. Segmentos Objetivo](cap1-presentation.md#13-segmentos-objetivo)
+- [Capitulo II: Requirements Development and Software Solution Design](cap2-requirements.md#capitulo-ii-requirements-development-and-software-solution-design)
+  - [2.1. Competidores](cap2-requirements.md#21-competidores)
+  - [2.2. Entrevistas](cap2-requirements.md#22-entrevistas)
+  - [2.3. Needfinding](cap2-requirements.md#23-needfinding)
+  - [2.4. Requirements Specification](cap2-requirements.md#24-requirements-specification)
+  - [2.5. Strategic-Level Domain-Driven Design](cap2-requirements.md#25-strategic-level-domain-driven-design)
+  - [2.6. Tactical-Level Domain-Driven Design](cap2-requirements.md#26-tactical-level-domain-driven-design)
+- [Conclusiones](conclusiones.md#conclusiones)
+- [Bibliografia](Bibliografia.md#bibliografia)
+- [Anexos](Anexos.md#anexos)
 
 ---
 

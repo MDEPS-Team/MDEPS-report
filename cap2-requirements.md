@@ -1,3 +1,5 @@
+<div style="page-break-before: always;"></div>
+
 # Capitulo II: Requirements Development and Software Solution Design
 La recolección y análisis de requisitos es una etapa fundamental en el desarrollo de Vantage PMO, ya que permite identificar y comprender las necesidades de los stakeholders involucrados en la gestión de proyectos. Para ello, se emplean técnicas como el análisis de la competencia y las entrevistas a usuarios pertenecientes a los segmentos objetivo.
 
