@@ -64,8 +64,31 @@ Para el posicionamiento orgánico del Landing Page en motores de búsqueda, se h
 *   **Footer Navigation:** Ubicado al pie de página, agrupa enlaces secundarios como *Términos y Condiciones*, *Políticas de Privacidad*, *Redes Sociales* y *Soporte*.
 
 ## 3.1.3. Landing Page UI Design
+El diseño del Landing Page tiene como objetivo principal convertir visitantes (líderes de proyectos, directores de PMO y ejecutivos) en usuarios o leads comerciales, comunicando de manera clara y directa la propuesta de valor de Vantage PMO.
 ### 3.1.3.1. Landing Page Wireframe
+Los wireframes de baja fidelidad establecen la estructura esquelética de la web. Se ha priorizado la correcta distribución de los bloques de contenido (Hero Section, Problema/Solución, Beneficios, Planes y Formulario de Contacto), garantizando un flujo de lectura lógico antes de aplicar los estilos visuales.
+
+**Wireframe Desktop:**
+![Wireframe-Home](assets/images/chapter-3/Home-Wireframes.png)
+
+![Wireframe-Home](assets/images/chapter-3/Beneficios-WireFrames.png)
+
+![Wireframe-Home](assets/images/chapter-3/Caracteristicas-WireFrames.png)
+
+![Wireframe-Home](assets/images/chapter-3/Planes-WireFrames.png)
+
 ### 3.1.3.2. Landing Page Mock-up
+Los mock-ups de alta fidelidad aplican directamente las Style Guidelines definidas previamente. Reflejan el uso estratégico del azul corporativo (#1565C0), la jerarquía de la tipografía Roboto y la limpieza de los componentes, asegurando que la interfaz transmita confianza, eficiencia y profesionalismo empresarial B2B.
+
+**Mock-up Desktop:**
+![MockUp-Home](assets/images/chapter-3/Home-MockUp.png)
+
+![MockUp-Home](assets/images/chapter-3/Beneficios-MockUp.png)
+
+![MockUp-Home](assets/images/chapter-3/Caracteristicas-MockUp.png)
+
+![MockUp-Home](assets/images/chapter-3/Planes-MockUp.png)
+
 
 ## 3.1.4. Mobile Applications UX/UI Design
 ### 3.1.4.1. Mobile Applications Wireframes
