@@ -258,5 +258,51 @@ Profile centraliza la información de la cuenta, las opciones de seguridad y las
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/profile/profile-changes-success.png" alt="Mockup de confirmación de cambios guardados" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/profile/logout-confirmation-modal.png" alt="Mockup de confirmación de cierre de sesión" width="150"> |<p align="center"><img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/logout-success.png" alt="Mockup de cierre de sesión exitoso" width="150"></p>|
 
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
+
+Esta sección presenta la propuesta de User Flows para la aplicación móvil Vantage PMO. Se define un flujo para cada User Goal, considerando las personas usuarias involucradas —visitante, usuario registrado y Project Manager— y manteniendo la correspondencia con los Wireflows de la sección anterior. Los diagramas incorporan los mock-ups de las pantallas, la ruta esperada (happy path) y las rutas alternativas o condiciones que pueden interrumpir o desviar el recorrido (unhappy paths). Se elaboraron con la herramienta de diseño indicada para la propuesta (Figma). Cada flujo incluye el objetivo del usuario y una explicación de sus pasos y decisiones.
+
+<table width="100%">
+	<tr>
+		<th width="35%">User Goal y explicación</th>
+		<th width="65%">User Flow</th>
+	</tr>
+	<tr>
+		<td><strong>UG-01 — Gestión de acceso a la cuenta.</strong> Como usuario, quiero iniciar sesión o recuperar mi contraseña, para acceder de forma segura a Vantage PMO.<br><br><strong>Happy path:</strong> desde el acceso, el usuario solicita recuperar la contraseña, recibe y verifica el código enviado a su correo, define una contraseña nueva y llega a la confirmación. <strong>Alternativas:</strong> si no recibe el código, puede solicitar su reenvío; si el código o los datos no son válidos, debe corregirlos o volver a solicitarlo antes de continuar. También puede volver al acceso e iniciar sesión.</td>
+		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-01-authentication.png" alt="User Flow de acceso y recuperación de cuenta" width="100%"></td>
+	</tr>
+	<tr>
+		<td><strong>UG-02 — Registro de usuario.</strong> Como visitante, quiero crear una cuenta y completar mis datos, para comenzar a utilizar Vantage PMO con un perfil adecuado a mis responsabilidades.<br><br><strong>Happy path:</strong> completa los datos personales, de contacto y acceso, y el perfil profesional; selecciona un rol y recibe la confirmación de la cuenta creada. <strong>Alternativas:</strong> los datos obligatorios incompletos o no válidos deben corregirse en el paso correspondiente antes de avanzar; el usuario puede permanecer en el formulario y completar la información pendiente.</td>
+		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-02-user-registration.png" alt="User Flow de registro de usuario" width="100%"></td>
+	</tr>
+	<tr>
+		<td><strong>UG-03 — Consulta móvil del portafolio.</strong> Como Project Manager, quiero consultar el estado del portafolio desde el móvil, para detectar avances y desviaciones.<br><br><strong>Happy path:</strong> revisa los indicadores y alertas del dashboard, abre la lista de proyectos y profundiza en el roadmap para consultar la planificación. <strong>Alternativas:</strong> puede permanecer en la vista general o ajustar los filtros y periodos disponibles para enfocar la consulta antes de abrir un proyecto o el roadmap.</td>
+		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-03-mobile-portfolio-overview.png" alt="User Flow de consulta móvil del portafolio" width="100%"></td>
+	</tr>
+	<tr>
+		<td><strong>UG-04 — Registro de proyecto.</strong> Como Project Manager, quiero registrar un proyecto con su información principal, para iniciar su planificación y seguimiento.<br><br><strong>Happy path:</strong> parte de la lista de proyectos, completa la información de la iniciativa y sus datos de planificación, y consulta la confirmación de creación. <strong>Alternativas:</strong> si faltan datos requeridos o no son válidos, debe corregir el formulario antes de registrar el proyecto; también puede salir del formulario sin completar el alta.</td>
+		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-04-project-registration.png" alt="User Flow de registro de proyecto" width="100%"></td>
+	</tr>
+	<tr>
+		<td><strong>UG-05 — Gestión de tareas en Kanban.</strong> Como Project Manager, quiero crear y asignar tareas, para organizar el trabajo del equipo.<br><br><strong>Happy path:</strong> abre el tablero del proyecto, crea una tarea, define su información y responsables, y recibe confirmación de que quedó registrada. <strong>Alternativas:</strong> si falta información necesaria para registrar o asignar la tarea, debe completarla antes de confirmar; puede cancelar la creación y regresar al tablero sin guardar.</td>
+		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-05-task-assignment-kanban.png" alt="User Flow de creación y asignación de tareas en Kanban" width="100%"></td>
+	</tr>
+	<tr>
+		<td><strong>UG-06 — Análisis y generación de reportes.</strong> Como Project Manager, quiero consultar indicadores y generar reportes, para evaluar el desempeño de los proyectos.<br><br><strong>Happy path:</strong> revisa los KPIs, selecciona el periodo y formato de exportación, solicita el reporte y recibe la confirmación de descarga. <strong>Alternativas:</strong> puede cambiar el periodo o formato, o cancelar la exportación y volver a los indicadores; si la generación no se completa, el flujo no muestra un éxito y permite volver a intentarlo.</td>
+		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-06-kpi-reporting.png" alt="User Flow de análisis y generación de reportes" width="100%"></td>
+	</tr>
+	<tr>
+		<td><strong>UG-07 — Seguimiento de alertas y riesgos.</strong> Como Project Manager, quiero revisar alertas y riesgos, para actuar oportunamente ante eventos que puedan afectar los proyectos.<br><br><strong>Happy path:</strong> accede desde Governance a la cola de alertas, revisa la prioridad, la causa y la acción recomendada, y aplica la mitigación o marca la alerta como atendida. <strong>Alternativas:</strong> si la acción requiere autorización, puede dejarla pendiente o reasignarla a una persona responsable; también puede revisar otra alerta antes de actuar.</td>
+		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-07-governance-alerts-risks.png" alt="User Flow de revisión de alertas y riesgos" width="100%"></td>
+	</tr>
+	<tr>
+		<td><strong>UG-08 — Actualización del perfil.</strong> Como usuario registrado, quiero actualizar mis datos personales o mi fotografía, para mantener vigente la información de mi cuenta.<br><br><strong>Happy path:</strong> desde el perfil, elige editar los datos de la cuenta o actualizar la fotografía, guarda los cambios y recibe una confirmación. <strong>Alternativas:</strong> puede cancelar la edición para conservar la información actual; si los datos no superan la validación, debe corregirlos antes de guardar.</td>
+		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-08-profile-update.png" alt="User Flow de actualización del perfil" width="100%"></td>
+	</tr>
+	<tr>
+		<td><strong>UG-09 — Cierre de sesión.</strong> Como usuario autenticado, quiero cerrar mi sesión de forma segura, para proteger el acceso a mi cuenta cuando termine de utilizar la aplicación.<br><br><strong>Happy path:</strong> inicia el cierre desde el perfil y confirma la acción en el diálogo; el recorrido termina en la pantalla de cierre exitoso. <strong>Alternativa:</strong> si cancela o descarta el diálogo, vuelve al perfil y conserva su sesión activa.</td>
+		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-09-logout.png" alt="User Flow de cierre de sesión" width="100%"></td>
+	</tr>
+</table>
+
 ### 3.1.4.5. Mobile Applications Prototyping
 *(Insertar enlaces al video de Figma)*
