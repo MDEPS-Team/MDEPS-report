@@ -1501,7 +1501,8 @@ Este diagrama representa la descomposición interna del contenedor correspondien
 
 En este diagrama se puede observar cómo las peticiones ingresan a través de los controladores REST (Interface Layer), los cuales delegan la lógica de negocio a los servicios de comando y consulta (Application Layer). Estos servicios, a su vez, orquestan las operaciones apoyándose en los componentes de infraestructura (Infrastructure Layer), como el repositorio para la persistencia de datos y los servicios externos para el manejo de encriptación (BCrypt) y generación de tokens (JWT).
 
-<img width="776" height="986" alt="diagrama 1" src="https://github.com/user-attachments/assets/caa86808-2bed-40e1-8751-af3738db1fc3" />
+<img width="2235" height="2790" alt="IAM_Component_Diagram" src="https://github.com/user-attachments/assets/2080b0ca-fbdb-424c-baf2-4340cbd5ccbb" />
+
 
 
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
@@ -1510,32 +1511,25 @@ En este diagrama se puede observar cómo las peticiones ingresan a través de lo
 
 
 ##### 2.6.1.6.2. Bounded Context Database Design Diagram
-<img width="203" height="385" alt="diagrama 3" src="https://github.com/user-attachments/assets/bf894c88-6d08-4a9e-9985-13a1c0a7f514" />
+<img width="394" height="539" alt="database1" src="https://github.com/user-attachments/assets/8605a79b-dc57-4035-9c31-63d845ed98d3" />
 
 
-**Tabla: USERS**
-
-| Campo | Tipo | Nulo | Default | Comentario / Descripción |
-| :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único del registro, generalmente una clave primaria. |
-| **created_at** | datetime | NULL | default | Fecha y hora en que se creó el registro. |
-| **updated_at** | datetime | NULL | default | Fecha y hora de la última actualización del registro. |
-| **company_name** | varchar | NULL | default | Nombre de la empresa asociada al usuario o entidad. |
-| **email** | varchar | N-N | default | Dirección de correo electrónico del usuario. |
-| **first_name** | varchar | N-N | default | Primer nombre del usuario. |
-| **last_name** | varchar | N-N | default | Apellido del usuario. |
-| **password** | varchar | N-N | default | Contraseña del usuario (almacenada de forma segura, usualmente encriptada). |
-| **trial** | bit | NULL | default | Indica si el usuario está en un período de prueba (true/false)[. |
-| **username** | varchar | N-N | default | Nombre de usuario único utilizado para iniciar sesión. |
-
-**Tabla: USER_AUDITS**
+**Tabla: Users**
 
 | Campo | Tipo | Nulo | Default | Comentario / Descripción |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único del registro de auditoría. |
-| **user_id** | bigint | N-N | default | Clave foránea que referencia a la tabla USERS. |
-| **action** | varchar | N-N | default | Descripción de la acción o evento realizado por el usuario. |
-| **timestamp** | datetime | N-N | default | Fecha y hora exacta en la que se registró el evento de auditoría. |
+| **Id** | bigint | N-N | default | Identificador único del usuario (Clave Primaria). |
+| **Username** | varchar(150) | N-N | default | Nombre de usuario único para el inicio de sesión. |
+| **PasswordHash** | varchar(255) | N-N | default | Contraseña del usuario encriptada de forma segura (Hash). |
+
+**Tabla: UserAudits**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único del registro de auditoría (Clave Primaria). |
+| **UserId** | bigint | N-N | default | Clave foránea que referencia al usuario asociado (Ref: Users). |
+| **CreatedAt** | datetime | N-N | default | Fecha y hora exacta de la creación del registro. |
+| **UpdatedAt** | datetime | NULL | default | Fecha y hora de la última actualización del registro. |
 
 ### 2.6.2. Bounded Context: Profiles
 
@@ -1670,7 +1664,8 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 #### 2.6.2.5. Bounded Context Software Architecture Component Level Diagrams
 Este diagrama expone cómo los bloques de construcción principales interactúan dentro del contenedor de la aplicación para satisfacer las necesidades del negocio relacionadas a la gestión de datos profesionales, habilidades, reconocimientos y estadísticas de los usuarios.
 
-<img width="1256" height="990" alt="diagram 2 1" src="https://github.com/user-attachments/assets/8f2ebecd-dd88-46c5-bdba-ce41e759260e" />
+<img width="2130" height="2790" alt="Profiles_Component_Diagram" src="https://github.com/user-attachments/assets/532085bf-09ef-445e-b72a-8dbb291d1930" />
+
 
 
 #### 2.6.2.6. Bounded Context Software Architecture Code Level Diagrams
@@ -1680,54 +1675,47 @@ Este diagrama expone cómo los bloques de construcción principales interactúan
 
 ##### 2.6.2.6.2. Bounded Context Database Design Diagram
 
-<img width="646" height="369" alt="diagram 2 3" src="https://github.com/user-attachments/assets/830fade9-c36b-40b7-b45a-0a66b015bf45" />
+<img width="792" height="906" alt="database2" src="https://github.com/user-attachments/assets/fcd991f3-4361-44f2-9ac0-30652ec0e55a" />
 
-
-
-**Tabla: PROFILES**
+**Tabla: Profiles**
 
 | Campo | Tipo | Nulo | Default | Comentario / Descripción |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único del perfil (Clave Primaria). |
-| **user_id** | bigint | N-N | default | Identificador del usuario en el módulo IAM (Clave Foránea lógica). |
-| **first_name** | varchar | N-N | default | Primer nombre del usuario. |
-| **last_name** | varchar | N-N | default | Apellido del usuario. |
-| **email** | varchar | N-N | default | Dirección de correo electrónico de contacto del perfil. |
-| **date_of_birth** | datetime | NULL | default | Fecha de nacimiento del usuario. |
-| **created_at** | datetime | NULL | default | Fecha de creación del perfil de usuario. |
-| **updated_at** | datetime | NULL | default | Fecha de la última actualización del perfil. |
+| **Id** | bigint | N-N | default | Identificador único del perfil (Clave Primaria). |
+| **UserId** | bigint | N-N | default | Referencia al usuario en IAM (Ref: IAM.Users). |
+| **FirstName** | varchar(100) | N-N | default | Nombres del usuario. |
+| **LastName** | varchar(100) | N-N | default | Apellidos del usuario. |
+| **Email** | varchar(150) | N-N | default | Correo electrónico del usuario. |
+| **DateOfBirth** | datetime | NULL | default | Fecha de nacimiento del usuario. |
 
-**Tabla: PROFILE_SKILLS**
+**Tabla: ProfileSkills**
 
 | Campo | Tipo | Nulo | Default | Comentario / Descripción |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único del registro de la habilidad. |
-| **profile_id** | bigint | N-N | default | Clave Foránea que referencia a la tabla PROFILES. |
-| **skill_name** | varchar | N-N | default | Nombre de la habilidad (ej. C#, Figma, HTML). |
-| **experience_years** | int | NULL | 0 | Años de experiencia que el usuario tiene en dicha habilidad. |
+| **Id** | bigint | N-N | default | Identificador único de la habilidad (Clave Primaria). |
+| **ProfileId** | bigint | N-N | default | Clave foránea que asocia la habilidad con un perfil. |
+| **SkillName** | varchar(100) | N-N | default | Nombre descriptivo de la habilidad. |
 
-**Tabla: ENDORSEMENTS**
-
-| Campo | Tipo | Nulo | Default | Comentario / Descripción |
-| :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único del respaldo o recomendación. |
-| **profile_id** | bigint | N-N | default | Clave Foránea del perfil que *recibe* el respaldo. |
-| **endorser_id** | bigint | N-N | default | Identificador del perfil o usuario que *emite* el respaldo. |
-| **comments** | varchar | NULL | default | Comentarios adicionales o texto de la recomendación. |
-
-**Tabla: PROFILE_STATS**
+**Tabla: ProfileStats**
 
 | Campo | Tipo | Nulo | Default | Comentario / Descripción |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único del registro de estadísticas. |
-| **profile_id** | bigint | N-N | default | Clave Foránea que referencia a la tabla PROFILES de forma única (1 a 1). |
-| **total_projects** | int | NULL | 0 | Cantidad total de proyectos en los que el usuario ha participado. |
-| **total_endorsements**| int | NULL | 0 | Sumatoria total de los respaldos recibidos por el usuario. |
-| **profile_score** | float | NULL | 0.0 | Puntuación general calculada a partir del desempeño y el portafolio del perfil. |
+| **Id** | bigint | N-N | default | Identificador único de las estadísticas (Clave Primaria). |
+| **ProfileId** | bigint | N-N | default | Clave foránea que enlaza al perfil del usuario. |
+| **TasksCompleted** | int | N-N | default | Contador de tareas finalizadas. |
+| **ProjectsCollaborated**| int | N-N | default | Contador de proyectos en los que ha colaborado. |
 
-### 2.6.3. Bounded Context: Projects
+**Tabla: Endorsements**
 
-Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proyecto en capas. A continuación detallamos las capas del Bounded Context referenciado, el cual se encarga de la gestión principal de proyectos dentro de la plataforma PMO.
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único del respaldo (Clave Primaria). |
+| **ProfileSkillId** | bigint | N-N | default | Clave foránea hacia la habilidad validada. |
+| **EndorserProfileId** | bigint | N-N | default | Identificador del perfil que otorga la validación. |
+
+### 2.6.3. Bounded Context: Project and Task Operations
+
+Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proyecto en capas. A continuación detallamos las capas del Bounded Context referenciado, el cual agrupa la gobernanza del portafolio (Projects) y la ejecución operativa (Task Collaboration).
 
 #### 2.6.3.1. Domain Layer
 
@@ -1735,34 +1723,32 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Aggregate | Project | Clase para definir el Proyecto. | Ser el punto de entrada principal para modificar y mantener la integridad de la información de los proyectos gestionados. | Relacionado a los Value Objects `Milestone` y `TeamMember`. |
-
-**Sub-capa Model - Value Objects:**
-
-| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
-| :--- | :--- | :--- | :--- | :--- |
-| Value Object | Milestone | Objeto de valor para hitos. | Encapsular la información de los hitos o entregables clave dentro de la línea de tiempo de un proyecto. | Pertenece al agregado `Project`. |
-| Value Object | TeamMember | Objeto de valor para miembros de equipo. | Encapsular los datos básicos de los participantes asignados a un proyecto específico. | Pertenece al agregado `Project`. |
+| Aggregate | Project | Clase principal para definir un Proyecto. | Mantener la integridad de los datos generales del proyecto, su estado y ciclo de vida. | Agrupa objetos de valor dependientes como `Milestone` y `TeamMember`. |
+| Aggregate | Board | Clase para definir el tablero ágil del proyecto. | Representar el espacio de trabajo (Kanban) asociado a un proyecto específico. | Relacionado con `Project` (1 a 1) y contiene múltiples `CollaborationTask`. |
+| Aggregate | CollaborationTask | Clase para definir la tarea de trabajo. | Gestionar el estado operativo de una asignación (ej. progreso, bloqueos, comentarios). | Pertenece a un `Board` y se asigna a un perfil de usuario. |
 
 **Sub-capa Model - Commands:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Command | CreateProjectCommand | Comando para crear proyecto. | Representar la intención del usuario de inicializar y registrar un nuevo proyecto en el sistema. | Usado en la implementación del servicio `ProjectCommandService`. |
-| Command | UpdateProjectCommand | Comando para actualizar proyecto. | Representar la intención de modificar las propiedades o estado de un proyecto existente. | Usado en la implementación del servicio `ProjectCommandService`. |
+| Command | CreateProjectCommand | Comando para la creación de un proyecto. | Representar la intención del gestor de iniciar un nuevo proyecto en el portafolio. | Usado en `ProjectCommandService`. |
+| Command | UpdateProjectCommand | Comando para actualizar un proyecto. | Representar la intención de modificar la información general o cronograma del proyecto. | Usado en `ProjectCommandService`. |
+| Command | CollaborationTaskCommands | Conjunto de comandos operativos. | Representar intenciones tácticas como crear tareas, cambiar estados o registrar bloqueos. | Usado en `CollaborationTaskCommandService`. |
 
 **Sub-capa Model - Queries:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Query | GetAllProjectsQuery | Consulta general de proyectos. | Representar la intención de listar todos los proyectos disponibles en el sistema. | Usado en el servicio `ProjectQueryService`. |
-| Query | GetProjectByIdQuery | Consulta de proyecto por ID. | Representar la intención de buscar los detalles específicos de un proyecto mediante su identificador. | Usado en el servicio `ProjectQueryService`. |
+| Query | GetAllProjectsQuery | Consulta general de portafolio. | Solicitar la lista completa de proyectos disponibles para el usuario actual. | Usado en `ProjectQueryService`. |
+| Query | GetProjectByIdQuery | Consulta de detalle de proyecto. | Solicitar toda la información de un proyecto específico, incluyendo hitos. | Usado en `ProjectQueryService`. |
+| Query | TaskCollaborationQueries | Consultas del tablero de trabajo. | Obtener las tareas filtradas por tablero, estado o responsable asignado. | Usado en `TaskCollaborationQueryServices`. |
 
 **Sub-capa Repositories:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Interface | IProjectRepository | Contrato de persistencia de proyectos. | Definir las operaciones de base de datos (CRUD) necesarias para la entidad `Project`. | Implementado en la capa de Infraestructura por `ProjectRepository`. |
+| Repository | IProjectRepository | Interfaz de persistencia para proyectos. | Definir el contrato para almacenar y recuperar proyectos de la base de datos. | Implementado en la capa de Infraestructura por `ProjectRepository`. |
+| Repository | ITaskCollaborationRepositories | Interfaces de persistencia operativas. | Definir el contrato para guardar tableros, tareas y comentarios del equipo. | Implementado por `TaskCollaborationRepositories`. |
 
 #### 2.6.3.2. Interface Layer
 
@@ -1770,25 +1756,28 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Resource | ProjectResource | Estructura de datos del proyecto. | Exponer la información consolidada de un proyecto hacia el cliente en formato JSON. | Retornado por `ProjectsController`. |
-| Resource | CreateProjectResource | Estructura de petición de creación. | Capturar los datos enviados por el cliente para la creación de un nuevo proyecto. | Transformado a `CreateProjectCommand`. |
-| Resource | UpdateProjectResource | Estructura de petición de actualización. | Capturar los datos enviados por el cliente para modificar un proyecto. | Transformado a `UpdateProjectCommand`. |
-| Resource | MilestoneResource | Estructura de datos de hitos. | Exponer la información de los hitos asociados a un proyecto. | Integrado en las respuestas del controlador de proyectos. |
-| Resource | TeamMemberResource | Estructura de datos de equipo. | Exponer la información de los miembros asignados al proyecto. | Integrado en las respuestas del controlador de proyectos. |
+| Resource | ProjectResource | Representación del proyecto. | Definir la estructura JSON expuesta al consultar un proyecto. | Generado por `ProjectResourceFromEntityAssembler`. |
+| Resource | CreateProjectResource | Datos de entrada para creación. | Capturar los datos enviados por el cliente para inicializar un proyecto. | Transformado a comando por su respectivo Assembler. |
+| Resource | UpdateProjectResource | Datos de entrada para actualización. | Capturar la información a modificar en un proyecto existente. | Transformado a comando por su respectivo Assembler. |
+| Resource | MilestoneResource | Representación de un hito. | Exponer la fecha límite y detalle de un entregable clave. | Anidado dentro de las respuestas de proyectos. |
+| Resource | TeamMemberResource | Representación de un miembro. | Exponer el perfil asignado al proyecto y su rol. | Anidado dentro de las respuestas de proyectos. |
+| Resource | TaskCollaborationResources | Representación de tareas y tableros. | Exponer los datos de las tareas (título, estado, bloqueos) hacia la aplicación móvil. | Usado por `TaskCollaborationControllers`. |
 
 **Sub-capa REST - Transform:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Assembler | CreateProjectCommandFromResourceAssembler | Ensamblador de comando de creación. | Convertir el payload HTTP `CreateProjectResource` en un comando del dominio `CreateProjectCommand`. | Usado en `ProjectsController`. |
-| Assembler | UpdateProjectCommandFromResourceAssembler | Ensamblador de comando de actualización. | Convertir el payload HTTP `UpdateProjectResource` en un comando `UpdateProjectCommand`. | Usado en `ProjectsController`. |
-| Assembler | ProjectResourceFromEntityAssembler | Ensamblador de recurso de proyecto. | Transformar la entidad de dominio `Project` en un DTO `ProjectResource` para la respuesta. | Usado en `ProjectsController`. |
+| Assembler | CreateProjectCommandFromResourceAssembler | Ensamblador de creación. | Transformar el recurso HTTP `CreateProjectResource` en un comando de dominio. | Vincula la capa de interfaz con la aplicación. |
+| Assembler | UpdateProjectCommandFromResourceAssembler | Ensamblador de actualización. | Transformar `UpdateProjectResource` en comandos de modificación. | Vincula la capa de interfaz con la aplicación. |
+| Assembler | ProjectResourceFromEntityAssembler | Ensamblador de salida. | Mapear la entidad de dominio `Project` a su recurso visualizable. | Prepara la respuesta HTTP final. |
+| Assembler | TaskCollaborationAssemblers | Ensambladores operativos. | Transformar recursos de tareas en comandos y entidades de tareas en recursos JSON. | Mantiene aislada la entidad `CollaborationTask` de la web. |
 
 **Sub-capa REST - Controllers:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Controller | ProjectsController | Controlador principal de proyectos. | Exponer y gestionar todos los endpoints RESTful para las operaciones de proyectos (GET, POST, PUT, DELETE). | Coordina con `IProjectCommandService` e `IProjectQueryService`. |
+| Controller | ProjectsController | Controlador de gobernanza. | Exponer endpoints RESTful para administrar proyectos, hitos y miembros de equipo. | Coordina con los servicios de comando y consulta de `Projects`. |
+| Controller | TaskCollaborationControllers | Controladores operativos. | Exponer endpoints RESTful para mover tareas en el Kanban, agregar comentarios y bloqueos. | Coordina con los servicios de `TaskCollaboration`. |
 
 #### 2.6.3.3. Application Layer
 
@@ -1796,15 +1785,19 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Interface | IProjectCommandService | Contrato de servicio de comandos. | Definir las firmas para las operaciones que mutan el estado de los proyectos. | Implementado por `ProjectCommandService`. |
-| Service | ProjectCommandService | Servicio de comandos de proyectos. | Implementar la lógica de negocio para crear, actualizar y procesar proyectos. | Depende directamente de `IProjectRepository`. |
+| Interface | IProjectCommandService | Contrato de operaciones (Project). | Definir las operaciones de modificación para el portafolio. | Implementado por `ProjectCommandService`. |
+| Service | ProjectCommandService | Servicio de comandos (Project). | Orquestar transacciones de creación, modificación y cerrado de proyectos. | Utiliza `IProjectRepository`. |
+| Interface | ICollaborationTaskCommandService | Contrato de operaciones operativas. | Definir las acciones de cambio de estado y actualización de tareas. | Implementado por `CollaborationTaskCommandService`. |
+| Service | CollaborationTaskCommandService | Servicio de comandos de tareas. | Validar reglas de negocio tácticas (ej. obligar a poner un motivo al bloquear una tarea). | Utiliza `ITaskCollaborationRepositories`. |
 
 **Sub-capa Services - QueryServices:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Interface | IProjectQueryService | Contrato de servicio de consultas. | Definir las firmas para las operaciones de lectura de proyectos. | Implementado por `ProjectQueryService`. |
-| Service | ProjectQueryService | Servicio de consultas de proyectos. | Resolver y orquestar las lógicas de búsqueda para retornar proyectos al controlador. | Depende directamente de `IProjectRepository`. |
+| Interface | IProjectQueryService | Contrato de lectura (Project). | Definir métodos para listar y filtrar el portafolio. | Implementado por `ProjectQueryService`. |
+| Service | ProjectQueryService | Servicio de lectura (Project). | Ejecutar consultas optimizadas sobre la estructura de proyectos y sus hitos. | Utiliza `IProjectRepository`. |
+| Interface | ITaskCollaborationQueryServices | Contrato de lectura de tableros. | Definir métodos para obtener las tareas activas de un tablero. | Implementado por `TaskCollaborationQueryServices`. |
+| Service | TaskCollaborationQueryServices | Servicio de lectura de tableros. | Retornar el estado actual del Kanban sin alterar sus datos. | Utiliza `ITaskCollaborationRepositories`. |
 
 #### 2.6.3.4. Infrastructure Layer
 
@@ -1812,60 +1805,80 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Repository | ProjectRepository | Implementación del repositorio de proyectos. | Ejecutar las consultas y transacciones de base de datos utilizando Entity Framework Core para la entidad `Project`. | Implementa la interfaz `IProjectRepository` del dominio. |
-| Configuration | ModelBuilderExtensions | Configuración del modelo relacional. | Configurar el mapeo de las entidades `Project`, y los value objects `Milestone` y `TeamMember` a las tablas de la BD. | Utilizado internamente por el `AppDbContext` compartido. |
+| Repository | ProjectRepository | Implementación de repositorio (Project). | Ejecutar el CRUD físico de la entidad `Project` y sus Value Objects asociados mediante EF Core. | Implementa la interfaz `IProjectRepository`. |
+| Repository | TaskCollaborationRepositories | Implementación de repositorio (Tasks). | Ejecutar el CRUD físico de tableros y tareas colaborativas mediante EF Core. | Implementa la interfaz `ITaskCollaborationRepositories`. |
+| Configuration | ModelBuilderExtensions | Configuraciones ORM (Proyectos y Tareas). | Mapear por fluent API cómo las entidades de ambos módulos se guardan en las tablas MySQL. | Usado por `AppDbContext` compartido. |
 
 #### 2.6.3.5. Bounded Context Software Architecture Component Level Diagrams
 Se ilustra cómo el controlador REST procesa las peticiones de los clientes y las delega a los servicios de aplicación, los cuales orquestan la lógica de negocio apoyándose en el repositorio para la persistencia de datos.
 
-<img width="511" height="939" alt="diagram 3 1" src="https://github.com/user-attachments/assets/58012806-e58c-4968-834f-a07974433f59" />
+<img width="2550" height="2790" alt="ProjectTask_Component_Diagram" src="https://github.com/user-attachments/assets/bc01a460-b9e1-4eb0-97ac-f7c1dab44e44" />
+
 
 
 #### 2.6.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 2.6.3.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img width="1477" height="852" alt="diagrams 3 2" src="https://github.com/user-attachments/assets/0859d941-3d27-47a0-b0d9-b59eb08e0128" />
+<img width="547" height="679" alt="projecttask 1" src="https://github.com/user-attachments/assets/985e2ca2-319d-445b-bdd4-6d62c51f8232" />
+
 
 
 ##### 2.6.3.6.2. Bounded Context Database Design Diagram
-<img width="422" height="352" alt="diagrams 3 3" src="https://github.com/user-attachments/assets/5277dded-fa06-4aca-9630-5608a99c9928" />
+<img width="1294" height="944" alt="database3" src="https://github.com/user-attachments/assets/94a29eae-6310-4d92-8081-4c09b03faaa1" />
 
-
-
-**Tabla: PROJECTS**
+**Tabla: Projects**
 
 | Campo | Tipo | Nulo | Default | Comentario / Descripción |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único del proyecto (Clave Primaria). |
-| **name** | varchar | N-N | default | Nombre o título principal del proyecto. |
-| **description** | text | NULL | default | Descripción detallada de los objetivos del proyecto. |
-| **start_date** | datetime | N-N | default | Fecha de inicio planificada para el proyecto. |
-| **end_date** | datetime | NULL | default | Fecha límite o de finalización del proyecto. |
-| **created_at** | datetime | NULL | default | Fecha en la que el proyecto fue registrado en el sistema. |
-| **updated_at** | datetime | NULL | default | Fecha de la última modificación del proyecto. |
+| **Id** | bigint | N-N | default | Identificador único del proyecto (Clave Primaria). |
+| **Name** | varchar(150) | N-N | default | Nombre representativo del proyecto. |
+| **Description** | varchar(500) | NULL | default | Descripción detallada del proyecto. |
+| **Status** | varchar(50) | N-N | default | Estado actual del proyecto. |
 
-**Tabla: MILESTONES**
+**Tabla: Milestones**
 
 | Campo | Tipo | Nulo | Default | Comentario / Descripción |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único del hito (Clave Primaria). |
-| **project_id** | bigint | N-N | default | Clave foránea que asocia el hito con un proyecto específico. |
-| **title** | varchar | N-N | default | Título o nombre de la entrega/hito clave. |
-| **due_date** | datetime | N-N | default | Fecha límite para completar el hito. |
-| **is_completed** | bit | NULL | 0 | Indicador booleano sobre si el hito fue alcanzado (true/false). |
+| **Id** | bigint | N-N | default | Identificador único del hito (Clave Primaria). |
+| **ProjectId** | bigint | N-N | default | Clave foránea al proyecto asociado. |
+| **Title** | varchar(100) | N-N | default | Título descriptivo del hito. |
+| **DueDate** | datetime | N-N | default | Fecha límite para el cumplimiento del hito. |
 
-**Tabla: TEAM_MEMBERS**
+**Tabla: TeamMembers**
 
 | Campo | Tipo | Nulo | Default | Comentario / Descripción |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único de la asignación (Clave Primaria). |
-| **project_id** | bigint | N-N | default | Clave foránea del proyecto al que pertenece el miembro. |
-| **user_id** | bigint | N-N | default | Identificador del usuario asignado (referencia al módulo de Perfiles/IAM). |
-| **role** | varchar | N-N | default | Rol o responsabilidad que tiene el usuario dentro de este proyecto. |
-### 2.6.4. Bounded Context: TaskCollaboration
+| **Id** | bigint | N-N | default | Identificador único del miembro (Clave Primaria). |
+| **ProjectId** | bigint | N-N | default | Clave foránea al proyecto. |
+| **ProfileId** | bigint | N-N | default | Clave foránea al perfil del usuario (Ref: Profiles). |
+| **Role** | varchar(50) | N-N | default | Rol desempeñado en el proyecto. |
 
-Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proyecto en capas. A continuación detallamos las capas del Bounded Context referenciado, el cual gestiona el ciclo de vida de las tareas y la colaboración entre los miembros del equipo.
+**Tabla: Boards**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único del tablero (Clave Primaria). |
+| **ProjectId** | bigint | N-N | default | Clave foránea al proyecto que contiene el tablero. |
+
+**Tabla: CollaborationTasks**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único de la tarea (Clave Primaria). |
+| **BoardId** | bigint | N-N | default | Clave foránea al tablero Kanban correspondiente. |
+| **AssigneeProfileId** | bigint | NULL | default | Perfil asignado a la ejecución de la tarea (Ref: Profiles).|
+| **Title** | varchar(150) | N-N | default | Título descriptivo de la tarea. |
+| **Status** | varchar(50) | N-N | default | Estado actual de la tarea. |
+| **BlockReason** | varchar(500) | NULL | default | Motivo registrado si la tarea está bloqueada. |
+
+
+
+
+
+### 2.6.4. Bounded Context: Governance and Resource Optimization
+
+Siguiendo el modelo de arquitectura "Clean Architecture", detallamos a continuación las capas de este Bounded Context. Este módulo unifica la evaluación de riesgos operacionales (Risk Compliance) y el monitoreo de la capacidad laboral del equipo (Resource Planning).
 
 #### 2.6.4.1. Domain Layer
 
@@ -1873,31 +1886,30 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Aggregate | TaskItem | Clase para definir una tarea. | Ser el punto de entrada principal para modificar el estado, asignación y progreso de una tarea específica. | Relacionado a la entidad `TaskComment`. |
-| Entity | TaskComment | Clase para los comentarios. | Encapsular la información y el contenido de los comentarios o notas dejadas en una tarea por los usuarios. | Pertenece al agregado `TaskItem`. |
+| Aggregate | RiskMatrix | Clase para definir la matriz de riesgos. | Centralizar la evaluación, probabilidad e impacto de los riesgos operativos. | Contiene múltiples objetos `RiskItem` y `HeatmapCell`. |
+| Aggregate | ComplianceMetrics | Clase para definir métricas de cumplimiento. | Mantener la integridad de los indicadores de salud del proyecto según estándares de la PMO. | Utiliza `SystemIntegrityAlert` para notificar desviaciones. |
+| Aggregate | ResourcePlanningDashboard | Clase para definir el panel de recursos. | Consolidar la vista global de asignación, capacidad y disponibilidad del equipo. | Agrupa la utilización por departamento (`DepartmentUtilization`). |
 
 **Sub-capa Model - Commands:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Command | CreateTaskCommand | Comando para crear tarea. | Representar la intención de registrar una nueva tarea dentro de un proyecto. | Usado en la implementación de `TaskCommandService`. |
-| Command | UpdateTaskCommand | Comando para actualizar tarea. | Representar la intención de modificar la información, estado o prioridad de una tarea. | Usado en la implementación de `TaskCommandService`. |
-| Command | AssignTaskCommand | Comando para asignar tarea. | Representar la intención de delegar una tarea a un miembro del equipo específico. | Usado en la implementación de `TaskCommandService`. |
-| Command | AddTaskCommentCommand| Comando para añadir comentario.| Representar la intención de agregar feedback o notas a una tarea existente. | Usado en la implementación de `TaskCommandService`. |
+| Command | RiskComplianceCommands | Comandos de gestión de riesgos. | Representar la intención de registrar, mitigar o escalar un riesgo en el portafolio. | Usado en servicios de aplicación de `RiskCompliance`. |
+| Command | ResourcePlanningCommands | Comandos de asignación. | Representar la intención de recalcular la capacidad laboral o registrar una asignación. | Usado en servicios de aplicación de `ResourcePlanning`. |
 
 **Sub-capa Model - Queries:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Query | GetTaskByIdQuery | Consulta de tarea por ID. | Buscar los detalles completos de una tarea mediante su identificador único. | Usado en el servicio `TaskQueryService`. |
-| Query | GetTasksByProjectIdQuery| Consulta de tareas por proyecto.| Listar todas las tareas asociadas a un proyecto en particular. | Usado en el servicio `TaskQueryService`. |
-| Query | GetTasksByAssigneeIdQuery| Consulta de tareas por usuario.| Listar las tareas que han sido asignadas a un usuario específico. | Usado en el servicio `TaskQueryService`. |
+| Query | RiskComplianceQueries | Consultas de métricas de riesgo. | Obtener el estado actual de la matriz de riesgos y alertas de integridad. | Usado en `RiskComplianceQueryService`. |
+| Query | GetAllResourcePlanningDashboardsQuery | Consulta global de capacidad. | Solicitar la consolidación de la carga laboral y la brecha de capacidad (`CapacityGap`). | Usado en `ResourcePlanningDashboardQueryService`. |
 
 **Sub-capa Repositories:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Interface | ITaskRepository | Contrato de persistencia de tareas. | Definir las operaciones CRUD necesarias en la base de datos para la entidad `TaskItem` y sus comentarios. | Implementado en la capa de Infraestructura. |
+| Repository | IRiskComplianceRepositories | Interfaz de persistencia de riesgos. | Definir el contrato para guardar y recuperar métricas y matrices de riesgo. | Implementado por `RiskComplianceRepositories`. |
+| Repository | IResourcePlanningDashboardRepository | Interfaz de persistencia de capacidad. | Definir el contrato para almacenar las métricas de planificación de recursos. | Implementado por `ResourcePlanningDashboardRepository`. |
 
 #### 2.6.4.2. Interface Layer
 
@@ -1905,24 +1917,22 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Resource | TaskResource | Estructura de datos de la tarea. | Exponer la información de la tarea (estado, asignado, fechas) hacia el cliente. | Retornado por `TasksController`. |
-| Resource | CreateTaskResource | Estructura de petición (Crear). | Capturar los datos enviados por el cliente para crear una nueva tarea. | Transformado a `CreateTaskCommand`. |
-| Resource | UpdateTaskResource | Estructura de petición (Actualizar).| Capturar los datos enviados para modificar los atributos de una tarea. | Transformado a `UpdateTaskCommand`. |
-| Resource | TaskCommentResource | Estructura de datos del comentario.| Exponer el contenido, autor y fecha de un comentario al cliente. | Integrado en las respuestas de tareas. |
+| Resource | RiskComplianceResources | Representación de riesgos. | Definir la estructura JSON expuesta al consultar la matriz de riesgos o alertas. | Generado por su respectivo Assembler. |
+| Resource | ResourcePlanningDashboardResource | Representación de capacidad. | Exponer la consolidación de recursos (`ResourceAllocation`) y utilización al cliente. | Generado por `ResourcePlanningDashboardResourceFromEntityAssembler`. |
 
 **Sub-capa REST - Transform:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Assembler | CreateTaskCommandFromResourceAssembler | Ensamblador (Crear). | Convertir el payload `CreateTaskResource` en un `CreateTaskCommand`. | Usado en `TasksController`. |
-| Assembler | UpdateTaskCommandFromResourceAssembler | Ensamblador (Actualizar). | Convertir el payload `UpdateTaskResource` en un `UpdateTaskCommand`. | Usado en `TasksController`. |
-| Assembler | TaskResourceFromEntityAssembler | Ensamblador (Respuesta). | Transformar la entidad de dominio `TaskItem` en un DTO `TaskResource`. | Usado en `TasksController`. |
+| Assembler | RiskComplianceResourceFromEntityAssembler | Ensamblador de salida de riesgos. | Transformar las entidades `RiskMatrix` y `ComplianceMetrics` en respuestas RESTful. | Aísla el modelo de dominio de riesgos de la capa externa. |
+| Assembler | ResourcePlanningDashboardResourceFromEntityAssembler | Ensamblador de salida de recursos. | Mapear la entidad `ResourcePlanningDashboard` a su recurso visualizable en el dashboard. | Prepara la respuesta HTTP de planificación. |
 
 **Sub-capa REST - Controllers:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Controller | TasksController | Controlador principal de tareas. | Gestionar los endpoints RESTful para la creación, consulta y actualización de tareas y comentarios. | Coordina con `ITaskCommandService` e `ITaskQueryService`. |
+| Controller | RiskComplianceControllers | Controladores de auditoría y riesgo. | Exponer endpoints RESTful para reportar desviaciones operacionales y consultar métricas. | Coordina con los servicios de `RiskCompliance`. |
+| Controller | ResourcePlanningController | Controlador de planificación de recursos. | Exponer endpoints RESTful para monitorear la sobrecarga o disponibilidad de los perfiles. | Coordina con los servicios de `ResourcePlanning`. |
 
 #### 2.6.4.3. Application Layer
 
@@ -1930,15 +1940,17 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Interface | ITaskCommandService | Contrato de comandos de tareas. | Definir las firmas de métodos que alteran el estado de las tareas o agregan comentarios. | Implementado por `TaskCommandService`. |
-| Service | TaskCommandService | Servicio de comandos de tareas. | Procesar la lógica de negocio para crear, actualizar, asignar tareas y añadir comentarios. | Depende de `ITaskRepository`. |
+| Interface | IRiskComplianceCommandService | Contrato de operaciones (Riesgo). | Definir operaciones de mutación para métricas de riesgo y cumplimiento. | Implementado por servicios de la capa de aplicación. |
+| Interface | IResourcePlanningCommandService | Contrato de operaciones (Recursos). | Definir acciones para recalibrar los tableros de asignación laboral. | Implementado por servicios de la capa de aplicación. |
 
 **Sub-capa Services - QueryServices:**
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Interface | ITaskQueryService | Contrato de consultas de tareas. | Definir las firmas para la lectura y filtrado de tareas. | Implementado por `TaskQueryService`. |
-| Service | TaskQueryService | Servicio de consultas de tareas. | Resolver las búsquedas de tareas delegando la lectura al repositorio. | Depende de `ITaskRepository`. |
+| Interface | IRiskComplianceQueryService | Contrato de lectura (Riesgo). | Definir métodos para evaluar la exposición al riesgo del portafolio. | Implementado por `RiskComplianceQueryService`. |
+| Service | RiskComplianceQueryService | Servicio de lectura (Riesgo). | Ejecutar las consultas de métricas de cumplimiento sin afectar el estado del sistema. | Utiliza `IRiskComplianceRepositories`. |
+| Interface | IResourcePlanningDashboardQueryService | Contrato de lectura (Capacidad). | Definir la lectura de los datos consolidados de planificación. | Implementado por `ResourcePlanningDashboardQueryService`. |
+| Service | ResourcePlanningDashboardQueryService | Servicio de lectura (Capacidad). | Orquestar la obtención de la capacidad del equipo y el porcentaje de ocupación. | Utiliza `IResourcePlanningDashboardRepository`. |
 
 #### 2.6.4.4. Infrastructure Layer
 
@@ -1946,14 +1958,15 @@ Siguiendo el modelo de arquitectura "Clean Architecture", hemos dividido el proy
 
 | Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
 | :--- | :--- | :--- | :--- | :--- |
-| Repository | TaskRepository | Repositorio de tareas. | Proveer la implementación concreta usando Entity Framework Core para persistir `TaskItem` y `TaskComment`. | Implementa `ITaskRepository`. |
-| Configuration | ModelBuilderExtensions | Configuración del modelo. | Establecer el mapeo ORM entre las entidades de tareas/comentarios y las tablas relacionales. | Utilizado por `AppDbContext`. |
-
+| Repository | RiskComplianceRepositories | Implementación de repositorio (Riesgo). | Ejecutar el CRUD físico de métricas y riesgos operacionales mediante EF Core. | Implementa la interfaz `IRiskComplianceRepositories`. |
+| Repository | ResourcePlanningDashboardRepository | Implementación de repositorio (Recursos). | Ejecutar el CRUD físico de la asignación y utilización de capacidad mediante EF Core. | Implementa la interfaz `IResourcePlanningDashboardRepository`. |
+| Configuration | ModelBuilderExtensions | Configuraciones ORM (Riesgos y Capacidad). | Mapear por fluent API cómo las entidades de ambos módulos se guardan en las tablas MySQL. | Usado por `AppDbContext` compartido. |
 #### 2.6.4.5. Bounded Context Software Architecture Component Level Diagrams
 En él se ilustra cómo el sistema gestiona la colaboración del equipo: las peticiones entran por el controlador de tareas y se distribuyen hacia los servicios de comando (para crear/modificar tareas y añadir comentarios) o a los servicios de consulta (para listar tareas por proyecto o por usuario asignado).
 
 
-<img width="497" height="985" alt="diagramas 4 1" src="https://github.com/user-attachments/assets/b3959ec8-541d-44a6-b57c-0e39dddb2d21" />
+
+<img width="1550" height="2761" alt="Governance_Component_Diagram" src="https://github.com/user-attachments/assets/5794d938-4fbc-49e5-a96d-ddc8be8e7a3e" />
 
 
 #### 2.6.4.6. Bounded Context Software Architecture Code Level Diagrams
@@ -1961,35 +1974,224 @@ En él se ilustra cómo el sistema gestiona la colaboración del equipo: las pet
 
 ##### 2.6.4.6.1. Bounded Context Domain Layer Class Diagrams
 
-<img width="2427" height="911" alt="diagrams 4 2" src="https://github.com/user-attachments/assets/83915623-3357-49e7-84ed-1e2a82833c57" />
+
+<img width="724" height="399" alt="governance1" src="https://github.com/user-attachments/assets/6deee1b8-8bd8-4445-b888-8ed37d79143c" />
+
 
 
 ##### 2.6.4.6.2. Bounded Context Database Design Diagram
 
-<img width="219" height="385" alt="diagrams 4 3" src="https://github.com/user-attachments/assets/416b257a-c949-4d27-bcb8-156a02758727" />
 
+<img width="1639" height="652" alt="database4" src="https://github.com/user-attachments/assets/64aa9057-d75f-4294-b15d-554ef9b345ef" />
 
-**Tabla: TASK_ITEMS**
-
-| Campo | Tipo | Nulo | Default | Comentario / Descripción |
-| :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único de la tarea (Clave Primaria). |
-| **project_id** | bigint | N-N | default | Identificador del proyecto al que pertenece la tarea (Referencia lógica al módulo Projects). |
-| **assignee_id** | bigint | N-N | default | Identificador del usuario asignado a la tarea (Referencia lógica a Profiles/IAM). |
-| **title** | varchar | N-N | default | Título corto y descriptivo de la tarea a realizar. |
-| **description** | text | NULL | default | Descripción detallada de los requerimientos de la tarea. |
-| **status** | varchar | N-N | 'To Do' | Estado actual de la tarea (ej. To Do, In Progress, Done). |
-| **due_date** | datetime | NULL | default | Fecha límite esperada para la finalización de la tarea. |
-| **created_at** | datetime | NULL | default | Fecha de creación del registro de la tarea en el sistema. |
-| **updated_at** | datetime | NULL | default | Fecha de la última modificación de la tarea. |
-
-**Tabla: TASK_COMMENTS**
+**Tabla: RiskMatrices**
 
 | Campo | Tipo | Nulo | Default | Comentario / Descripción |
 | :--- | :--- | :--- | :--- | :--- |
-| **id** | bigint | N-N | default | Identificador único del comentario (Clave Primaria). |
-| **task_item_id** | bigint | N-N | default | Clave foránea que asocia el comentario con una tarea específica. |
-| **author_id** | bigint | N-N | default | Identificador del usuario que escribió el comentario (Referencia lógica a Profiles/IAM). |
-| **content** | text | N-N | default | Contenido en texto del comentario o feedback dejado por el usuario. |
-| **created_at** | datetime | N-N | default | Fecha y hora exacta en la que se publicó el comentario. |
+| **Id** | bigint | N-N | default | Identificador único de la matriz (Clave Primaria). |
+| **ProjectId** | bigint | N-N | default | Clave foránea al proyecto (Ref: Projects). |
+
+**Tabla: RiskItems**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único del riesgo (Clave Primaria). |
+| **RiskMatrixId** | bigint | N-N | default | Clave foránea a la matriz de riesgos. |
+| **Description** | varchar(250) | N-N | default | Descripción del riesgo operativo. |
+| **Probability** | decimal | N-N | default | Nivel de probabilidad del riesgo. |
+| **Impact** | decimal | N-N | default | Nivel de impacto del riesgo. |
+| **MitigationPlan** | varchar(500) | NULL | default | Plan de mitigación establecido. |
+
+**Tabla: ComplianceMetrics**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único de la métrica (Clave Primaria). |
+| **ProjectId** | bigint | N-N | default | Clave foránea al proyecto evaluado (Ref: Projects).|
+| **IntegrityScore** | decimal | N-N | default | Puntuación de integridad calculada. |
+| **LastEvaluated** | datetime | N-N | default | Fecha y hora de la última evaluación. |
+
+**Tabla: ResourcePlanningDashboards**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único del dashboard (Clave Primaria). |
+| **LastUpdated** | datetime | N-N | default | Fecha de la última actualización del panel. |
+
+**Tabla: ResourceAllocations**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único de asignación (Clave Primaria). |
+| **DashboardId** | bigint | N-N | default | Clave foránea al panel de planificación. |
+| **ProfileId** | bigint | N-N | default | Clave foránea al perfil evaluado (Ref: Profiles). |
+| **AssignedHours** | int | N-N | default | Horas asignadas al recurso. |
+| **CapacityGap** | decimal | N-N | default | Brecha de capacidad calculada. |
+
+**Tabla: DepartmentUtilizations**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único de utilización (Clave Primaria). |
+| **DashboardId** | bigint | N-N | default | Clave foránea al panel de planificación. |
+| **DepartmentName**| varchar(100) | N-N | default | Nombre del departamento evaluado. |
+| **UtilizationPercentage**| decimal | N-N | default | Porcentaje de ocupación del departamento. |
+
+
+
+### 2.6.5. Bounded Context: Analytics and Support Services
+
+Siguiendo el modelo de arquitectura "Clean Architecture", detallamos a continuación las capas de este Bounded Context. Este módulo unifica la inteligencia de negocios mediante métricas y reportes (Analytics & Reports) con la atención y soporte técnico a los usuarios de la plataforma (Support).
+
+#### 2.6.5.1. Domain Layer
+
+**Sub-capa Model - Aggregates:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Aggregate | AnalyticsDashboard | Clase principal de analíticas. | Centralizar los KPIs, retorno de inversión (ROI) y gastos mensuales del portafolio. | Contiene Value Objects como `PortfolioRoi` y `MonthlyExpenditure`. |
+| Aggregate | Report | Clase para definir un reporte exportable. | Mantener la integridad de los datos consolidados que se exportarán (ej. en formato PDF). | Se nutre de los datos consolidados en `AnalyticsDashboard`. |
+| Aggregate | SupportTicket | Clase para la gestión de tickets. | Representar una solicitud de ayuda o reporte de error emitido por un usuario. | Relacionado de manera externa con la entidad `User` del módulo IAM. |
+
+**Sub-capa Model - Commands:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Command | CreateSupportTicketCommand | Comando para crear un ticket. | Representar la intención del usuario de solicitar soporte técnico. | Usado en `SupportTicketCommandService`. |
+| Command | UpdateSupportTicketCommand | Comando para actualizar un ticket. | Representar la intención de cambiar el estado de un ticket (ej. Abierto a Resuelto). | Usado en `SupportTicketCommandService`. |
+
+**Sub-capa Model - Queries:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Query | GetAllAnalyticsDashboardsQuery | Consulta de métricas globales. | Obtener los paneles analíticos con el resumen de salud de los proyectos. | Usado en `AnalyticsDashboardQueryService`. |
+| Query | GetAllReportsQuery | Consulta del historial de reportes. | Obtener el registro de todos los reportes generados previamente en la plataforma. | Usado en `ReportQueryService`. |
+| Query | GetAllSupportTicketsQuery | Consulta de bandeja de soporte. | Solicitar la lista de tickets activos o históricos para su atención. | Usado en `SupportTicketQueryService`. |
+
+**Sub-capa Repositories:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Repository | IAnalyticsDashboardRepository | Interfaz de persistencia (Analytics). | Definir el contrato para guardar y recuperar métricas consolidadas. | Implementado por `AnalyticsDashboardRepository`. |
+| Repository | IReportRepository | Interfaz de persistencia (Reports). | Definir el contrato para almacenar la metadata de los reportes generados. | Implementado por `ReportRepository`. |
+| Repository | ISupportTicketRepository | Interfaz de persistencia (Support). | Definir el contrato para persistir los tickets de ayuda y sus estados. | Implementado por `SupportTicketRepository`. |
+
+#### 2.6.5.2. Interface Layer
+
+**Sub-capa REST - Resources:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Resource | AnalyticsDashboardResource | Representación del dashboard. | Definir la estructura JSON que envía las métricas (KPIs, ROI) al frontend/móvil. | Generado por `AnalyticsDashboardResourceFromEntityAssembler`. |
+| Resource | ReportResource | Representación del reporte. | Exponer la información y enlaces de descarga de los reportes consolidados. | Generado por `ReportResourceFromEntityAssembler`. |
+| Resource | SupportTicketResource | Representación del ticket. | Exponer los detalles, prioridad y estado de una solicitud de soporte. | Utilizado en las respuestas del controlador de soporte. |
+
+**Sub-capa REST - Transform:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Assembler | AnalyticsDashboardResourceFromEntityAssembler | Ensamblador de métricas. | Mapear la entidad `AnalyticsDashboard` a su representación pública. | Aísla la lógica de negocio de la capa de presentación. |
+| Assembler | ReportResourceFromEntityAssembler | Ensamblador de reportes. | Transformar la entidad `Report` en un recurso JSON. | Prepara la respuesta de informes. |
+| Assembler | SupportTicketAssemblers | Ensambladores de soporte. | Transformar recursos HTTP a comandos (`CreateSupportTicketCommand`) y viceversa. | Vincula las peticiones web con la lógica de negocio. |
+
+**Sub-capa REST - Controllers:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Controller | AnalyticsController | Controlador de analíticas. | Exponer endpoints RESTful para consultar el rendimiento y métricas financieras de los portafolios. | Coordina con `AnalyticsDashboardQueryService`. |
+| Controller | ReportsController | Controlador de reportes. | Exponer endpoints para listar y descargar reportes ejecutivos. | Coordina con `ReportQueryService`. |
+| Controller | SupportTicketsController | Controlador de mesa de ayuda. | Exponer endpoints para la creación, actualización y seguimiento de tickets. | Coordina con los servicios de comando y consulta de soporte. |
+
+#### 2.6.5.3. Application Layer
+
+**Sub-capa Services - CommandServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | ISupportTicketCommandService | Contrato de operaciones (Soporte). | Definir las operaciones de modificación de estado para los tickets. | Implementado por `SupportTicketCommandService`. |
+| Service | SupportTicketCommandService | Servicio de comandos (Soporte). | Manejar la lógica de negocio al abrir o resolver solicitudes de soporte. | Utiliza `ISupportTicketRepository`. |
+
+**Sub-capa Services - QueryServices:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Interface | IAnalyticsDashboardQueryService | Contrato de lectura (Analytics). | Definir la obtención de métricas y KPIs. | Implementado por su respectivo servicio. |
+| Interface | IReportQueryService | Contrato de lectura (Reports). | Definir la consulta del historial de reportes. | Implementado por su respectivo servicio. |
+| Service | SupportTicketQueryService | Servicio de lectura (Soporte). | Orquestar las consultas para listar los tickets pendientes de resolución. | Utiliza `ISupportTicketRepository`. |
+
+#### 2.6.5.4. Infrastructure Layer
+
+**Sub-capa Persistence:**
+
+| Tipo | Nombre | Descripción | Responsabilidad Principal | Relación con otros elementos |
+| :--- | :--- | :--- | :--- | :--- |
+| Repository | AnalyticsDashboardRepository | Implementación de repositorio (Analytics). | Ejecutar el CRUD físico de los paneles métricos mediante EF Core. | Implementa la interfaz `IAnalyticsDashboardRepository`. |
+| Repository | ReportRepository | Implementación de repositorio (Reports). | Ejecutar el CRUD físico de la metadata de reportes. | Implementa la interfaz `IReportRepository`. |
+| Repository | SupportTicketRepository | Implementación de repositorio (Support). | Ejecutar el CRUD físico de los tickets de asistencia técnica. | Implementa la interfaz `ISupportTicketRepository`. |
+| Configuration | ModelBuilderExtensions | Configuraciones ORM. | Mapear por fluent API las entidades de Analytics, Reports y Support hacia la base de datos MySQL. | Usado por `AppDbContext` central. |
+
+#### 2.6.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+
+
+
+<img width="2550" height="2790" alt="AnalyticsSupport_Component_Diagram" src="https://github.com/user-attachments/assets/cf1aac1e-336d-4fbf-9ae5-a78210b80a24" />
+
+
+
+#### 2.6.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+
+##### 2.6.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+
+<img width="667" height="432" alt="risk 1" src="https://github.com/user-attachments/assets/73df53aa-0fd7-4e56-ad30-6399360d0c40" />
+
+
+
+##### 2.6.5.6.2. Bounded Context Database Design Diagram
+
+
+<img width="1112" height="728" alt="database5" src="https://github.com/user-attachments/assets/91f591d2-478f-4b46-9aa0-cc58cf78d28a" />
+
+**Tabla: AnalyticsDashboards**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único del dashboard analítico (PK). |
+| **ProjectId** | bigint | N-N | default | Clave foránea al proyecto asociado (Ref: Projects). |
+| **TotalInvestment** | decimal | N-N | default | Inversión total en el proyecto. |
+| **ReturnValue** | decimal | N-N | default | Valor de retorno calculado. |
+| **RoiPercentage** | decimal | N-N | default | Porcentaje de retorno de inversión (ROI). |
+
+**Tabla: MonthlyExpenditures**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único del registro de gasto (PK). |
+| **DashboardId** | bigint | N-N | default | Clave foránea al dashboard analítico. |
+| **Month** | int | N-N | default | Mes al que corresponde el gasto. |
+| **Year** | int | N-N | default | Año al que corresponde el gasto. |
+| **Amount** | decimal | N-N | default | Monto exacto gastado. |
+
+**Tabla: Reports**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único del reporte (Clave Primaria). |
+| **DashboardId** | bigint | N-N | default | Clave foránea al dashboard analítico base. |
+| **ReportUrl** | varchar(255) | N-N | default | Enlace o URL al archivo del reporte. |
+| **GeneratedAt** | datetime | N-N | default | Fecha y hora en la que se generó el reporte. |
+
+**Tabla: SupportTickets**
+
+| Campo | Tipo | Nulo | Default | Comentario / Descripción |
+| :--- | :--- | :--- | :--- | :--- |
+| **Id** | bigint | N-N | default | Identificador único del ticket (Clave Primaria). |
+| **UserId** | bigint | N-N | default | Clave foránea al usuario creador (Ref: Users). |
+| **IssueTitle** | varchar(150) | N-N | default | Título descriptivo del problema reportado. |
+| **Description** | varchar(500) | NULL | default | Descripción detallada de la incidencia. |
+| **Status** | varchar(50) | N-N | default | Estado actual del ticket. |
+| **CreatedAt** | datetime | N-N | default | Fecha de creación del ticket en el sistema. |
+| **ResolvedAt** | datetime | NULL | default | Fecha de resolución del ticket. |
 
