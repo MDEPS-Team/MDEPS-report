@@ -180,6 +180,83 @@ Los diagramas de flujo de interfaz (wireflows) muestran cómo se conectan las pa
 </table>
 
 ### 3.1.4.3. Mobile Applications Mock-ups
+
+Los siguientes mockups presentan la propuesta visual de Vantage PMO en un dispositivo móvil. A diferencia de los wireframes, muestran la aplicación de color, tipografía, iconografía, componentes y estados de interacción con mayor nivel de detalle. Se organizan según las áreas de uso para facilitar la lectura de las pantallas principales y sus variantes.
+
+#### 3.1.4.3.1. Authentication
+
+Este flujo reúne el inicio de la aplicación, el acceso y la recuperación de contraseña. También incluye el cierre de sesión exitoso como estado de salida de la cuenta.
+
+| Inicio | Inicio de sesión | Recuperación por correo |
+|:--:|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/mobile-splash-screen.png" alt="Mockup de inicio de Vantage PMO" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/login-screen.png" alt="Mockup de inicio de sesión" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/password-recovery-email.png" alt="Mockup de recuperación de contraseña por correo" width="150"> |
+
+| Verificación del código | Nueva contraseña | Recuperación completada |
+|:--:|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/password-recovery-verification-code.png" alt="Mockup de verificación del código" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/password-recovery-new-password.png" alt="Mockup de creación de nueva contraseña" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/password-recovery-success.png" alt="Mockup de confirmación de contraseña actualizada" width="150"> |
+
+#### 3.1.4.3.2. Registration
+
+El registro se presenta como un proceso progresivo, con indicadores de avance y formularios separados por tipo de información. La última pantalla confirma la creación de la cuenta y resume el perfil configurado.
+
+| Datos personales | Contacto y acceso | Perfil profesional |
+|:--:|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/registration/personal-information.png" alt="Mockup del paso de datos personales" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/registration/contact-and-access.png" alt="Mockup del paso de contacto y acceso" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/registration/professional-profile.png" alt="Mockup del paso de perfil profesional" width="150"> |
+
+| Selección de rol | Registro completado |
+|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/registration/role-selection.png" alt="Mockup de selección de rol" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/registration/registration-success.png" alt="Mockup de cuenta creada" width="150"> |
+
+#### 3.1.4.3.3. Dashboard
+
+La pantalla principal combina una alerta prioritaria con indicadores del portafolio, hitos, salud de proyectos y capacidad del equipo. La navegación inferior mantiene el acceso a las áreas centrales de la aplicación.
+
+<p align="center"><img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/dashboard/home-dashboard.png" alt="Mockup del dashboard móvil con alerta prioritaria e indicadores" width="190"></p>
+
+#### 3.1.4.3.4. Projects
+
+Projects concentra la consulta del portafolio, el registro de iniciativas y la gestión del trabajo en Kanban. También presenta las opciones de exportación y la planificación estratégica mediante el roadmap.
+
+| Lista de proyectos | Crear proyecto | Proyecto creado |
+|:--:|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/project-list.png" alt="Mockup de la lista de proyectos" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/project-creation-form.png" alt="Mockup del formulario de creación de proyecto" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/project-creation-success.png" alt="Mockup de confirmación de proyecto creado" width="150"> |
+
+| Tablero Kanban | Crear tarea | Tarea registrada |
+|:--:|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/kanban-board.png" alt="Mockup del tablero Kanban" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/kanban-task-creation-modal.png" alt="Mockup del formulario de creación de tarea" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/task-creation-success.png" alt="Mockup de confirmación de tarea registrada" width="150"> |
+
+| Exportar reporte | Dossier exportado | Roadmap estratégico |
+|:--:|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/strategic-roadmap.png" alt="Mockup del roadmap estratégico" width="150">  | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/project-dossier-export-success.png" alt="Mockup de confirmación de dossier exportado" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/project-report-export-modal.png" alt="Mockup del modal de exportación de reporte" width="150"> |
+
+#### 3.1.4.3.5. Analytics
+
+Analytics ofrece una vista de indicadores de desempeño, filtros temporales y opciones de exportación. El estado de éxito muestra la confirmación de generación y descarga del dossier ejecutivo.
+
+| Indicadores | Configurar exportación | Exportación completada |
+|:--:|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/analytics/analytics-dashboard.png" alt="Mockup de analítica con indicadores de desempeño" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/analytics/analytics-report-export-modal.png" alt="Mockup de opciones de exportación analítica" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/analytics/analytics-report-export-success.png" alt="Mockup de reporte analítico exportado" width="150"> |
+
+#### 3.1.4.3.6. Governance
+
+Governance reúne el estado de cumplimiento institucional y la atención de bloqueos. La segunda pantalla prioriza alertas, expone sus causas y ofrece acciones de mitigación.
+
+| Supervisión de gobernanza | Resolución de alertas |
+|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/governance/governance-dashboard.png" alt="Mockup del dashboard de gobernanza y cumplimiento" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/governance/active-alerts-resolution.png" alt="Mockup de alertas activas y acciones de resolución" width="150"> |
+
+#### 3.1.4.3.7. Profile
+
+Profile centraliza la información de la cuenta, las opciones de seguridad y las preferencias. Los mockups incluyen la edición de datos, el cambio de fotografía, la confirmación de modificaciones y el diálogo previo al cierre de sesión.
+
+| Perfil | Editar cuenta y seguridad | Actualizar fotografía |
+|:--:|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/profile/profile-overview.png" alt="Mockup de vista general del perfil" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/profile/account-security-edit-modal.png" alt="Mockup de edición de cuenta y seguridad" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/profile/profile-photo-edit-modal.png" alt="Mockup de actualización de fotografía de perfil" width="150"> |
+
+| Cambios guardados | Confirmar cierre de sesión | Cierre de sesión exitoso |
+|:--:|:--:|:--:|
+| <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/profile/profile-changes-success.png" alt="Mockup de confirmación de cambios guardados" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/profile/logout-confirmation-modal.png" alt="Mockup de confirmación de cierre de sesión" width="150"> |<p align="center"><img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/logout-success.png" alt="Mockup de cierre de sesión exitoso" width="150"></p>|
+
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
 ### 3.1.4.5. Mobile Applications Prototyping
 *(Insertar enlaces al video de Figma)*
