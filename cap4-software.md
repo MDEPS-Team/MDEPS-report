@@ -56,7 +56,7 @@ _Ejemplo de versión:_ `v1.3.4`
 
 ### Convenciones de Commits
 
-Se adoptará el estándar de **Conventional Commits** para la redacción de los mensajes de commit, lo cual permitirá estructurar mejor los cambios realizados. Este enfoque facilita la automatización de procesos como la integración continua y la generación de historiales de cambios (changelogs).
+Se adoptará el estándar de **Conventional Commits** para la redacción de los mensajes de commit, lo cual permitirá estructurar mejor los cambios realizados. Este enfoque 4.2.1.1facilita la automatización de procesos como la integración continua y la generación de historiales de cambios (changelogs).
 
 **Ejemplos:**
 
@@ -178,9 +178,233 @@ Se debe crear un repositorio en GitHub y subir todos los archivos del proyecto (
 ![img.png](assets/images/img.png)
 # 4.2
 ## 4.2.1. Sprint 1
-### 4.2.1.1. Sprint Planning 1
-### 4.2.1.2. Aspect Leaders and Collaborators
-### 4.2.1.3. Sprint Backlog 1
+##### 4.2.1.1. Sprint Planning 1
+
+En esta sección, se presenta la planificación correspondiente al Sprint 1 de Vantage PMO. El Sprint 1 tiene como propósito organizar y priorizar las actividades necesarias para avanzar desde los requerimientos y artefactos de análisis hacia el diseño, implementación y validación de la solución.
+
+| **Sprint #** | **Sprint 1** |
+|--------------|--------------|
+| **Sprint Planning Background** | Planificación de las actividades correspondientes al primer Sprint de implementación y validación de Vantage PMO. |
+| **Date** | [2026/01/10] |
+| **Time** | [16:00pm] |
+| **Location** | [Reunión virtual mediante discord] |
+| **Prepared By** | Fuentes Alvarez, Angiela Stephany |
+| **Attendees** | Fuentes Alvarez, Angiela Stephany / Guillen Giraldo, Mike Dylan / Mendoza Machoa, Lionel Snayder / Pacheco Lavado, Rafael Agustin / Quiliano Motta, Kirk Douglas |
+| **Sprint n-1 Review Summary** | No aplica, debido a que corresponde al primer Sprint del proyecto. |
+| **Sprint n-1 Retrospective Summary** | No aplica, debido a que corresponde al primer Sprint del proyecto. |
+| **Sprint Goal & User Stories** | Transformar los requerimientos y hallazgos obtenidos durante las etapas de análisis en una solución implementable y validable, integrando actividades de diseño UX/UI, desarrollo de funcionalidades, implementación de servicios y pruebas. |
+| **Sprint 1** | Durante el Sprint 1, el equipo trabajará en la implementación de los componentes priorizados de Vantage PMO, considerando tanto las actividades de diseño como las de desarrollo y validación. Entre las actividades contempladas se encuentran el diseño de la Landing Page, el diseño UX/UI de la aplicación móvil, la elaboración de Wireframes, Wireflows, Mock-ups y User Flows, así como el desarrollo del prototipo. Asimismo, se considera la implementación de funcionalidades del backend, incluyendo módulos relacionados con Analytics, Projects, Dashboard, Meetings, Profiles, Reports, Resource Planning, Risk Compliance, Schedule, Settings, Support, Task Collaboration y Workspace. Como parte del Sprint también se contempla la implementación de servicios REST, la configuración de OpenAPI/Swagger y la ejecución de pruebas para validar las funcionalidades desarrolladas. |
+| **Sprint 1 Velocity** | [18 Story Points] |
+| **Sum of Story Points** | [18 Story Points] |
+
+##### 4.2.1.2. Aspect Leaders and Collaborators
+
+En el marco del Sprint 1, se han priorizado las actividades relacionadas con la transformación de los requerimientos y hallazgos obtenidos durante las etapas de análisis en propuestas concretas de diseño, implementación y validación para Vantage PMO. Los esfuerzos del equipo se orientan hacia el diseño de la Landing Page, el diseño UX/UI de la aplicación móvil, la elaboración de flujos de usuario y prototipos, así como las actividades relacionadas con la implementación, testing y documentación de la solución.
+
+A fin de garantizar una ejecución coordinada y una adecuada distribución de responsabilidades, se ha implementado la Matriz de Liderazgo y Colaboración (LACX). En esta herramienta se identifican los responsables principales (L) y los colaboradores (C) para cada aspecto del Sprint 1.
+
+| **Team Member (Guillen Giraldo, Mike Dylan)** | **GitHub Username** | **Landing Page** | **Mobile App UX/UI** | **User Flows & Prototyping** | **Implementation** | **Testing** | **Documentation** |
+| ---------------------------------------- | ------------------- | ---------------- | -------------------- | ----------------------------- | ------------------ | ----------- | ---------------- |
+| Fuentes Alvarez, Angiela Stephany | [GitHub Username] | L | C | C | C | C | L |
+| Guillen Giraldo, Mike Dylan | [GitHub Username] | C | L | C | C | C | C |
+| Mendoza Machoa, Lionel Snayder | [GitHub Username] | C | C | L | C | C | C |
+| Pacheco Lavado, Rafael Agustin | [GitHub Username] | C | C | C | L | C | C |
+| Quiliano Motta, Kirk Douglas | [GitHub Username] | C | C | C | C | L | C |
+##### 4.2.1.3. Sprint Backlog 1
+
+El objetivo principal de este Sprint consiste en establecer y desarrollar el núcleo funcional de Vantage PMO, transformando los requerimientos identificados en funcionalidades concretas para la solución. Para ello, el equipo se enfocará en la implementación de un sistema de autenticación que permita gestionar el acceso de los usuarios de manera segura, considerando validaciones, protección de rutas y mecanismos de autenticación.
+
+Asimismo, se trabajará en el desarrollo del Perfil de Empresa y en la incorporación de funcionalidades orientadas a mejorar la experiencia de usuario, incluyendo la previsualización de elementos de marca, micro-interacciones y transiciones. De manera complementaria, se desarrollarán funcionalidades relacionadas con la visualización del portafolio, navegación responsive e internacionalización de la solución.
+
+Finalmente, el Sprint contempla la implementación de un sistema de notificaciones y alertas, considerando Service Workers, sincronización en segundo plano, almacenamiento seguro de tokens y mecanismos relacionados con la privacidad y el consentimiento del usuario. Estas actividades buscan consolidar una experiencia funcional, segura y adaptable para los usuarios de Vantage PMO.
+
+**Screenshot del Board**
+
+![Sprint-Backlog-01](assets/images/chapter-4/sprint-backlog/sprint-backlog-01.png)
+
+*Trello:* [ *Trello:* https://trello.com/invite/b/6ac433ccc4aceff5ddfa2659/ATTI76b34ccca40c77b2b4fc2151a54e4fddA1F4B43C/aplicaciones-moviles]
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Sprint #</th>
+    <th>Sprint 01</th>
+    <th colspan="7"></th>
+  </tr>
+
+  <tr>
+    <th colspan="2">User Story</th>
+    <th colspan="2">Work-item / Task</th>
+    <th>Description</th>
+    <th>Estimation (hours)</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+
+  <tr>
+    <td>US-20</td>
+    <td>Autenticación (Acceso)</td>
+    <td>US20-T1</td>
+    <td>Inicio de sesión</td>
+    <td>Permite iniciar sesión mediante un formulario con validación de credenciales y estados de carga/error.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>To-do</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US20-T2</td>
+    <td>Conexión con proveedor de autenticación</td>
+    <td>Permite la conexión con el proveedor de autenticación (Firebase/Auth0/JWT) e implementa la redirección segura.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>To-do</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US20-T3</td>
+    <td>Protección de rutas</td>
+    <td>Permite proteger las rutas del dashboard mediante middleware, redirigiendo usuarios no autorizados.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>To-do</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US20-T4</td>
+    <td>Internacionalización</td>
+    <td>Permite la localización (i18n) de etiquetas y mensajes de error para una experiencia multi-idioma.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td>US-31</td>
+    <td>Perfil de Empresa (Demo)</td>
+    <td>US31-T1</td>
+    <td>Previsualización de marca</td>
+    <td>Permite previsualizar en tiempo real el nombre y colores de la marca en un widget interactivo de demo.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>To-do</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US31-T2</td>
+    <td>Carga de logos</td>
+    <td>Permite cargar y visualizar logos localmente para la demostración sin requerir persistencia en base de datos.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US31-T3</td>
+    <td>UX y Branding</td>
+    <td>Permite mejorar el UX y Branding mediante micro-interacciones y transiciones fluidas en el simulador.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>To-do</td>
+  </tr>
+
+  <tr>
+    <td>US-02</td>
+    <td>Visualización de Portafolio (Intro)</td>
+    <td>US02-T1</td>
+    <td>Galería de funciones</td>
+    <td>Permite visualizar la galería de funciones con estados de proyectos y barras de progreso dinámicas.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US02-T2</td>
+    <td>Navegación visual</td>
+    <td>Permite una navegación visual atractiva.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US02-T3</td>
+    <td>Diseño responsive</td>
+    <td>Permite una navegación fluida en cualquier dispositivo gracias al diseño responsive optimizado para móvil y tablet.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>To-fix</td>
+  </tr>
+
+  <tr>
+    <td>US-37</td>
+    <td>Notificaciones Push Landing</td>
+    <td>US37-T1</td>
+    <td>Suscripción a alertas</td>
+    <td>Permite la suscripción a alertas mediante la configuración de Service Workers y sincronización en segundo plano.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>In-progress</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US37-T2</td>
+    <td>Gestión del consentimiento</td>
+    <td>Permite gestionar el consentimiento del usuario mediante un modal de soft-prompt con propuesta de valor.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>Done</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US37-T3</td>
+    <td>Almacenamiento de tokens</td>
+    <td>Permite el almacenamiento seguro de los tokens de suscripción en el backend para el envío de notificaciones.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>In-progress</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US37-T4</td>
+    <td>Privacidad y cumplimiento legal</td>
+    <td>Permite garantizar el cumplimiento legal y la gestión de privacidad en el sistema de alertas del sitio.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>In-progress</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>US20-T5</td>
+    <td>Privacidad y consentimiento</td>
+    <td>Permite cumplir con el soporte legal integrando vínculos de privacidad y consentimiento en el acceso.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>In-progress</td>
+  </tr>
+</table>
 
 ### 4.2.1.4. Development Evidence for Sprint Review
 
