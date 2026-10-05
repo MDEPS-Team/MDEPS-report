@@ -184,10 +184,153 @@ Para el despliegue de la API REST y la base de datos, se utilizó la plataforma 
 3. Configuración de variables de entorno, incluyendo la cadena de conexión a la base de datos (`ConnectionStrings__DefaultConnection`) y la habilitación de la documentación pública (`ASPNETCORE_ENVIRONMENT = Development`).
 # 4.2
 ## 4.2.1. Sprint 1
-### 4.2.1.1. Sprint Planning 1
-### 4.2.1.2. Aspect Leaders and Collaborators
-### 4.2.1.3. Sprint Backlog 1
+##### 4.2.1.1. Sprint Planning 1
 
+En esta sección, se presenta la planificación correspondiente al Sprint 1 de Vantage PMO.
+
+| **Sprint #** | **Sprint 1** |
+|--------------|--------------|
+| **Sprint Planning Background** | |
+| **Date** | [Fecha real del Sprint Planning] |
+| **Time** | [Hora real] |
+| **Location** | [Lugar o plataforma utilizada] |
+| **Prepared By** | Fuentes Alvarez, Angiela Stephany |
+| **Attendees** | Fuentes Alvarez, Angiela Stephany / Guillen Giraldo, Mike Dylan / Mendoza Machoa, Lionel Snayder / Pacheco Lavado, Rafael Agustin / Quiliano Motta, Kirk Douglas |
+| **Sprint n-1 Review Summary** | No aplica |
+| **Sprint n-1 Retrospective Summary** | No aplica |
+| **Sprint Goal & User Stories** | |
+| **Sprint 1** | El objetivo del Sprint 1 es transformar los requerimientos y hallazgos obtenidos durante las etapas de análisis en propuestas concretas de diseño y planificación para Vantage PMO. Durante este sprint, el equipo trabajará en la elaboración de los Wireframes y Mock-ups del Landing Page, el diseño UX/UI de la aplicación móvil, la definición de los flujos de usuario y el desarrollo del prototipo, buscando mantener coherencia con las necesidades identificadas en los segmentos objetivo y con los artefactos desarrollados previamente. |
+| **Sprint 1 Velocity** | [XX Story Points] |
+| **Sum of Story Points** | [XX Story Points] |
+##### 4.2.1.2. Aspect Leaders and Collaborators
+
+En el marco del Sprint 1, se han priorizado las actividades relacionadas con la transformación de los requerimientos y hallazgos obtenidos durante las etapas de análisis en propuestas concretas de diseño y planificación para Vantage PMO. Los esfuerzos del equipo se orientan hacia el diseño de la Landing Page, el diseño UX/UI de la aplicación móvil, la elaboración de flujos de usuario y prototipos, así como las actividades relacionadas con la implementación y documentación de la solución.
+
+A fin de garantizar una ejecución coordinada y una adecuada distribución de responsabilidades, se ha implementado la Matriz de Liderazgo y Colaboración (LACX). En esta herramienta se identifican los responsables principales (L) y los colaboradores (C) para cada aspecto del Sprint 1.
+
+| **Team Member (Last Name, First Name)** | **GitHub Username** | **Landing Page** | **Mobile App UX/UI** | **User Flows & Prototyping** | **Implementation** | **Testing** | **Documentation** |
+| ---------------------------------------- | ------------------- | ---------------- | -------------------- | ----------------------------- | ------------------ | ----------- | ---------------- |
+| Fuentes Alvarez, Angiela Stephany | [GitHub Username] | L | C | C | C | C | L |
+| Guillen Giraldo, Mike Dylan | [GitHub Username] | C | L | C | C | C | C |
+| Mendoza Machoa, Lionel Snayder | [GitHub Username] | C | C | L | C | C | C |
+| Pacheco Lavado, Rafael Agustin | [GitHub Username] | C | C | C | L | C | C |
+| Quiliano Motta, Kirk Douglas | [GitHub Username] | C | C | C | C | L | C |
+##### 4.2.1.3. Sprint Backlog 1
+
+El Sprint Backlog 1 reúne las historias de usuario y actividades priorizadas por el equipo para el desarrollo del Sprint 1 de Vantage PMO. El trabajo se encuentra orientado a transformar los requerimientos y necesidades identificados durante las etapas anteriores en propuestas concretas de diseño y planificación para la solución.
+
+Durante este sprint se consideran actividades relacionadas con el diseño de la Landing Page, el desarrollo de la experiencia UX/UI de la aplicación móvil, la elaboración de Wireflows y User Flows, la creación de Mock-ups y el desarrollo del prototipo. Estas actividades buscan asegurar que la solución mantenga coherencia con los User Personas, User Journey Maps, Empathy Maps y demás artefactos desarrollados durante el proceso de Requirements Elicitation & Analysis.
+
+**Screenshot del Board**
+
+![Sprint-Backlog-01](assets/images/chapter-4/sprint-backlog/sprint-backlog-01.png)
+
+*Trello:* [URL DEL TABLERO DE TRELLO]
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Sprint #</th>
+    <th>Sprint 01</th>
+    <th colspan="7"></th>
+  </tr>
+
+  <tr>
+    <th colspan="2">User Story</th>
+    <th colspan="2">Work-item / Task</th>
+    <th colspan="5"></th>
+  </tr>
+
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Estimation (hours)</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+
+  <!-- USER STORY 01 -->
+  <tr>
+    <td>US-XXX</td>
+    <td>Diseño de Landing Page</td>
+    <td>T001</td>
+    <td>Elaboración de Wireframes</td>
+    <td>Diseñar la estructura visual y organización de contenidos del Landing Page considerando las necesidades identificadas durante el proceso de análisis.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>[Status]</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T002</td>
+    <td>Elaboración de Mock-ups</td>
+    <td>Desarrollar los Mock-ups del Landing Page aplicando los lineamientos visuales y de experiencia de usuario definidos para Vantage PMO.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>[Status]</td>
+  </tr>
+
+  <!-- USER STORY 02 -->
+  <tr>
+    <td>US-XXX</td>
+    <td>Diseño UX/UI de la Aplicación Móvil</td>
+    <td>T003</td>
+    <td>Elaboración de Wireframes</td>
+    <td>Diseñar los Wireframes de las aplicaciones móviles considerando los User Personas y las necesidades identificadas durante el proceso de Needfinding.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>[Status]</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T004</td>
+    <td>Elaboración de Wireflow Diagrams</td>
+    <td>Definir los flujos de interacción de las aplicaciones mediante Wireflows asociados a los principales objetivos de los usuarios.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>[Status]</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T005</td>
+    <td>Elaboración de Mock-ups</td>
+    <td>Desarrollar los Mock-ups de la aplicación móvil incorporando los principios de diseño, arquitectura de información y lineamientos visuales definidos.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>[Status]</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T006</td>
+    <td>Elaboración de User Flow Diagrams</td>
+    <td>Representar los flujos de interacción esperados para los principales objetivos de los usuarios, incluyendo los caminos principales y alternativos.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>[Status]</td>
+  </tr>
+  
+  <tr>
+    <td>US-XXX</td>
+    <td>Prototipado de la Aplicación</td>
+    <td>T007</td>
+    <td>Desarrollo del prototipo</td>
+    <td>Integrar los Mock-ups y flujos definidos para construir un prototipo navegable que permita validar la experiencia propuesta.</td>
+    <td>[XX h]</td>
+    <td>[Integrante]</td>
+    <td>[Status]</td>
+  </tr>
+
+</table>
 ### 4.2.1.4. Development Evidence for Sprint Review
 
 Durante el Sprint 1 se realizaron avances en la implementación de los productos que conforman Vantage PMO. Como parte del desarrollo, se avanzó en la construcción de los servicios del backend, incorporando la estructura necesaria para gestionar las principales capacidades del dominio mediante servicios RESTful.
@@ -338,68 +481,5 @@ Durante la validación, se ejecutaron peticiones `POST` para la creación de ent
 *Figura: Ejecución de un endpoint de la API y respuesta HTTP validando la persistencia en la base de datos.*
 
 ### 4.2.1.7. Services Documentation Evidence for Sprint Review
-<a id="5-2-1-6-services-documentation-evidence-for-sprint-review"></a>
-
-Durante este sprint se llevó a cabo el desarrollo e implementación de la Landing Page estática, así como la construcción y despliegue del Backend de la aplicación mediante servicios RESTful documentados interactivamente con Swagger (OpenAPI 3.0).
-
-**Descripción de los logros:**
-- Despliegue de la Landing Page en un entorno web accesible (GitHub Pages).
-- Despliegue de la API RESTful en Railway, conectada a una base de datos MySQL.
-- Documentación interactiva de los Bounded Contexts habilitada para consumo y pruebas públicas.
-
-| Recurso | Acción implementada | HTTP | URL / Endpoint | Link de repositorio |
-| :--- | :--- | :--- | :--- | :--- |
-| Landing Page | Vista inicial | GET | [https://mdeps-team.github.io/MDEPS-Landing-page/](https://mdeps-team.github.io/MDEPS-Landing-page/) | [MDEPS-Landing-page](https://github.com/MDEPS-Team/MDEPS-Landing-page) |
-| API REST (Swagger) | Documentación interactiva y Endpoints de negocio | GET / POST / PUT / PATCH / DELETE | [https://mdeps-back-end-production.up.railway.app/swagger/index.html](https://mdeps-back-end-production.up.railway.app/swagger/index.html) | [MDEPS-Back-End](https://github.com/MDEPS-Team/MDEPS-Back-End) |
-
-#### 4.2.1.8. Software Deployment Evidence for Sprint Review
-<a id="5-2-1-7-software-deployment-evidence-for-sprint-review"></a>
-
-En este Sprint se ejecutaron las tareas necesarias para publicar la Landing Page, haciendo uso de GitHub Pages como servicio de alojamiento web. A continuación, se presentan las actividades desarrolladas durante este proceso:
-
-![img_2.png](assets/images/img_2.png)
-
-![img_3.png](assets/images/img_3.png)
-
-**Evidencias de Despliegue del Backend en Railway**
-
-El servicio backend se encuentra en estado Activo, compilado correctamente desde la rama `main` y exponiendo el puerto público asignado por la plataforma para la comunicación con la base de datos y clientes externos.
-
-![img.png](assets/img4.png)
-*Figura: Panel de Railway confirmando el despliegue exitoso del servicio de MySQL y el contenedor de .NET.*
-
-
-#### 4.2.1.9. Team Collaboration Insights during Sprint
-<a id="5-2-1-8-team-collaboration-insights-during-sprint"></a>
-
-La finalización de este Sprint es el resultado de un esfuerzo coordinado para transformar los requerimientos de Vantage PMO en componentes de software funcionales. El equipo adoptó un flujo de trabajo ágil y riguroso, caracterizado por los siguientes puntos clave:
-
-- La carga de trabajo se distribuyó estratégicamente, permitiendo que cada desarrollador liderara áreas críticas según su especialidad, desde la lógica de internacionalización hasta la optimización del diseño responsivo y multimedia.
-
-- La evolución del proyecto se documentó a través de un historial de cambios continuo y granular. La unión de los módulos se realizó mediante procesos de Pull Request hacia la rama de integración, asegurando que cada nueva funcionalidad cumpliera con los estándares del proyecto antes de ser consolidada.
-
-- Mantuvimos un canal de comunicación técnica constante para gestionar la integración de APIs y estilos, logrando resolver discrepancias de diseño o lógica de manera inmediata y colaborativa.
-
-- El éxito de la entrega se fundamentó en la aplicación de buenas prácticas de desarrollo, asegurando un código limpio, mantenible y alineado con los objetivos de negocio de la plataforma.
-
-- Este enfoque metodológico no solo permitió cumplir con el Sprint Goal, sino que garantizó una contribución equilibrada y de alto impacto por parte de todos los miembros del equipo en la construcción de la Landing Page.
-
-**Métricas de Actividad en el Repositorio**
-
-Como evidencia del dinamismo y la colaboración técnica, se adjuntan los indicadores de actividad (commits, merges y contribuciones) extraídos de GitHub:
-
-### Analíticos de GitHub — Report
-
-
-#### Analíticos de GitHub — Landing Page
-
-<p align="center">
-  <img src="assets/images/chapter-5/Team-Colaboration/Committers.jpeg" alt="Top Committers — Sprint 1" width="600"/>
-</p>
-Se evidencia la participación plena de los cinco integrantes en el desarrollo de la Landing Page. La distribución de las contribuciones técnicas valida una colaboración equitativa y constante por parte de todo el equipo durante el ciclo de trabajo inicial.
-
-
-
-Se evidencia la colaboración constante y la sinergia grupal mediante la trazabilidad de los aportes individuales. Cada integrante sumó valor en áreas críticas del desarrollo, garantizando no solo el avance técnico del sistema, sino también el cumplimiento de los acuerdos establecidos durante la planificación del ciclo de trabajo.
-
-</div>
+### 4.2.1.8. Software Deployment Evidence for Sprint Review
+### 4.2.1.9. Team Collaboration Insights during Sprint
