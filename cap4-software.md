@@ -175,7 +175,7 @@ Repositorio de Código Fuente
 
 Se debe crear un repositorio en GitHub y subir todos los archivos del proyecto (HTML, CSS, JS). Es obligatorio que el archivo index.html esté ubicado en la raíz del repositorio para poder realizar el despliegue correctamente.
 
-![img.png](img.png)
+![img.png](assets/images/img.png)
 # 4.2
 ## 4.2.1. Sprint 1
 ### 4.2.1.1. Sprint Planning 1
@@ -317,7 +317,7 @@ Video de Demostración y Navegación: https://upcedupe-my.sharepoint.com/:v:/g/p
 
 Screenshots de la Implementación:
 
-![img_1.png](img_1.png)
+![img_1.png](assets/images/img_1.png)
 
 ###  4.2.1.7. Services Documentation Evidence for Sprint Review
 
@@ -354,9 +354,9 @@ En este sprint no se desarrollaron endpoints REST tradicionales; sin embargo, se
 
 En este Sprint se ejecutaron las tareas necesarias para publicar la Landing Page, haciendo uso de GitHub Pages como servicio de alojamiento web. A continuación, se presentan las actividades desarrolladas durante este proceso:
 
-![img_2.png](img_2.png)
+![img_2.png](assets/images/img_2.png)
 
-![img_3.png](img_3.png)
+![img_3.png](assets/images/img_3.png)
 
 
 #### 4.2.1.9. Team Collaboration Insights during Sprint
