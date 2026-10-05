@@ -34,8 +34,6 @@ Proyecto<br>
 
 ## Registro de Versiones del Informe
 
-## Registro de Versiones del Informe
-
 | Version | Fecha | Autor | Descripcion de Modificacion |
 | :--- | :--- | :--- | :--- |
 | 0.1 | [28/08/2026] | Todos | Estructuracion inicial y division de secciones para AV1 |
