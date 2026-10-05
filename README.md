@@ -1,3 +1,5 @@
+<div align="center">
+
 <img src="assets/images/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
 
 **Universidad Peruana de Ciencias Aplicadas**<br>
@@ -17,16 +19,35 @@ Proyecto<br>
 **Vantage PMO**
 
 
-| Codigo       | Apellidos y Nombres |
-|:-------------| :--- |
-| [U202520331] | Fuentes Alvarez, Angiela Stephany |
-| [U202211881] | Guillen Giraldo, Mike Dylan |
-| [u202417433] | Mendoza Machoa, Lionel Snayder |
-| [u202014215] | Pacheco Lavado, Rafael Agustin |
-| [u202411378] | Quiliano Motta, Kirk Douglas |
+<table align="center">
+  <tr>
+    <th>Codigo</th>
+    <th>Apellidos y Nombres</th>
+  </tr>
+  <tr>
+    <td>U202520331</td>
+    <td>Fuentes Alvarez, Angiela Stephany</td>
+  </tr>
+  <tr>
+    <td>U202211881</td>
+    <td>Guillen Giraldo, Mike Dylan</td>
+  </tr>
+  <tr>
+    <td>u202417433</td>
+    <td>Mendoza Machoa, Lionel Snayder</td>
+  </tr>
+  <tr>
+    <td>u202014215</td>
+    <td>Pacheco Lavado, Rafael Agustin</td>
+  </tr>
+  <tr>
+    <td>u202411378</td>
+    <td>Quiliano Motta, Kirk Douglas</td>
+  </tr>
+</table>
 
-**Periodo Academico:** 2026-20
-**Fecha:** [Setiembre  2026]
+**Periodo Academico:** 2026-20<br>
+**Fecha:** Septiembre
 
 </div>
 
@@ -43,6 +64,7 @@ Proyecto<br>
 | 1.0 | [15/09/2026] | Guillen Giraldo, Mike Dylan | Desarrollo del Capítulo 2.5 (Strategic-Level Domain-Driven Design), abarcando el modelado mediante EventStorming, Context Mapping y la definición de la arquitectura de software en los niveles Context, Container y Deployment. |
 | 1.0 | [15/09/2026] | Todos | Finalizacion del informe para la entrega AV1 (Semana 4) |
 | 2.0 | [05/10/2026] | Quiliano Motta, Kirk Douglas | Desarrollo del Capítulo 3 (Solution UI/UX Design), abarcando las secciones 3.1.1 (Style Guidelines), 3.1.2 (Information Architecture) y 3.1.3 (Landing Page UI Design - Wireframes y Mock-ups). |
+| 2.0 | [05/10/2026] | Guillen Giraldo, Mike Dylan | Centrado de la portada; incorporación de enlaces internos y anclas de navegación para el Capítulo III; y actualización del Student Outcome para TB1, con acciones realizadas individuales y conclusiones grupales. |
 | 2.0 | [05/10/2026] | Todos | Finalización e integración del informe para la entrega TB1 (Semana 7), incluyendo los Capítulos III y IV, configuración de software y evidencias del Sprint 1. |
 
 <div style="page-break-after: always;"></div>
