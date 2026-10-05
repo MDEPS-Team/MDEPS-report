@@ -166,16 +166,22 @@ const hamburger = document.getElementById('hamburger');
 < button onclick="sendForm()">Enviar</ button>
 ```
 ### 4.1.4. Software Deployment Configuration
-
 <a id="5-1-4-software-deployment-configuration"></a>
 
 Para la Landing Page desarrollada en HTML, CSS y JavaScript, la configuración del despliegue en GitHub Pages se define de la siguiente manera:
 
-Repositorio de Código Fuente
+**Repositorio de Código Fuente**
 
 Se debe crear un repositorio en GitHub y subir todos los archivos del proyecto (HTML, CSS, JS). Es obligatorio que el archivo index.html esté ubicado en la raíz del repositorio para poder realizar el despliegue correctamente.
 
-![img.png](assets/images/img.png)
+![img.png](img.png)
+
+**Despliegue del Backend (Web Service)**
+
+Para el despliegue de la API REST y la base de datos, se utilizó la plataforma **Railway**. El proceso de configuración consistió en:
+1. Provisión de un servicio de base de datos **MySQL** alojado en la nube.
+2. Vinculación directa con el repositorio de GitHub (`MDEPS-Back-End`) utilizando el archivo `Dockerfile` ubicado en la raíz del proyecto para la compilación del entorno en .NET 10.
+3. Configuración de variables de entorno, incluyendo la cadena de conexión a la base de datos (`ConnectionStrings__DefaultConnection`) y la habilitación de la documentación pública (`ASPNETCORE_ENVIRONMENT = Development`).
 # 4.2
 ## 4.2.1. Sprint 1
 ### 4.2.1.1. Sprint Planning 1
@@ -319,35 +325,32 @@ Screenshots de la Implementación:
 
 ![img_1.png](assets/images/img_1.png)
 
-###  4.2.1.7. Services Documentation Evidence for Sprint Review
+**Ejecución e Interactividad del Backend**
 
+Además del entorno web, se logró desplegar exitosamente el backend de Vantage PMO basado en arquitectura DDD y CQRS. A través de la interfaz interactiva de Swagger, se demostró la ejecución real de los Endpoints de los distintos Bounded Contexts (Authentication, Projects, Analytics, etc.).
+
+Durante la validación, se ejecutaron peticiones `POST` para la creación de entidades y peticiones `GET` para verificar su correcta persistencia en la base de datos MySQL alojada en Railway, confirmando que la API no retorna datos simulados, sino que procesa transacciones reales.
+
+![img.png](assets/img5.png)
+*Figura: Interfaz interactiva de Swagger documentando los Bounded Contexts del sistema.*
+
+![img.png](assets/img7.png)
+*Figura: Ejecución de un endpoint de la API y respuesta HTTP validando la persistencia en la base de datos.*
+
+### 4.2.1.7. Services Documentation Evidence for Sprint Review
 <a id="5-2-1-6-services-documentation-evidence-for-sprint-review"></a>
 
-Durante este sprint se llevó a cabo el desarrollo y la implementación completa del Landing Page del sistema, el cual representa el primer punto de contacto para los usuarios y funciona como acceso inicial a la plataforma.
+Durante este sprint se llevó a cabo el desarrollo e implementación de la Landing Page estática, así como la construcción y despliegue del Backend de la aplicación mediante servicios RESTful documentados interactivamente con Swagger (OpenAPI 3.0).
 
-En este sprint no se desarrollaron endpoints REST tradicionales; sin embargo, se incluye la documentación correspondiente a la URL donde se encuentra desplegado el recurso, junto con evidencias del despliegue, la interacción del usuario y los commits asociados al proceso de desarrollo.
+**Descripción de los logros:**
+- Despliegue de la Landing Page en un entorno web accesible (GitHub Pages).
+- Despliegue de la API RESTful en Railway, conectada a una base de datos MySQL.
+- Documentación interactiva de los Bounded Contexts habilitada para consumo y pruebas públicas.
 
-**Descripción del logro:**
-
-- Desarrollo e implementación del Landing Page estático.
-- Despliegue del Landing Page en un entorno accesible.
-
-<table border="1" cellspacing="0" cellpadding="5">
-  <tr>
-    <th>Recurso</th>
-    <th>Acción implementada</th>
-    <th>HTTP</th>
-    <th>URL / Endpoint</th>
-    <th>Link de repositorio</th>
-  </tr>
-  <tr>
-    <td>Landig Page</td>
-    <td>Vista inicial</td>
-    <td>GET</td>
-    <td><a href="https://mdeps-team.github.io/MDEPS-Landing-page/">https://mdeps-team.github.io/MDEPS-Landing-page/</a></td>
-    <td><a href="https://github.com/MDEPS-Team/MDEPS-Landing-page">https://github.com/MDEPS-Team/MDEPS-Landing-page</a></td>
-  </tr>
-</table>
+| Recurso | Acción implementada | HTTP | URL / Endpoint | Link de repositorio |
+| :--- | :--- | :--- | :--- | :--- |
+| Landing Page | Vista inicial | GET | [https://mdeps-team.github.io/MDEPS-Landing-page/](https://mdeps-team.github.io/MDEPS-Landing-page/) | [MDEPS-Landing-page](https://github.com/MDEPS-Team/MDEPS-Landing-page) |
+| API REST (Swagger) | Documentación interactiva y Endpoints de negocio | GET / POST / PUT / PATCH / DELETE | [https://mdeps-back-end-production.up.railway.app/swagger/index.html](https://mdeps-back-end-production.up.railway.app/swagger/index.html) | [MDEPS-Back-End](https://github.com/MDEPS-Team/MDEPS-Back-End) |
 
 #### 4.2.1.8. Software Deployment Evidence for Sprint Review
 <a id="5-2-1-7-software-deployment-evidence-for-sprint-review"></a>
@@ -357,6 +360,13 @@ En este Sprint se ejecutaron las tareas necesarias para publicar la Landing Page
 ![img_2.png](assets/images/img_2.png)
 
 ![img_3.png](assets/images/img_3.png)
+
+**Evidencias de Despliegue del Backend en Railway**
+
+El servicio backend se encuentra en estado Activo, compilado correctamente desde la rama `main` y exponiendo el puerto público asignado por la plataforma para la comunicación con la base de datos y clientes externos.
+
+![img.png](assets/img4.png)
+*Figura: Panel de Railway confirmando el despliegue exitoso del servicio de MySQL y el contenedor de .NET.*
 
 
 #### 4.2.1.9. Team Collaboration Insights during Sprint
