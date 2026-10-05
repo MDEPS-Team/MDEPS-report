@@ -1,51 +1,33 @@
-<div align="center">
-  <img src="assets/images/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
+<img src="assets/images/UPC_logo_transparente.png" alt="Logo-UPC" width="150">
 
-  <h3>Universidad Peruana de Ciencias Aplicadas</h3>
-  <h3>Carrera de Ingeniería de Software</h3>
+**Universidad Peruana de Ciencias Aplicadas**<br>
+**Carrera de Ingeniería de Software**
 
-  <p><strong>1ACC0238</strong><br>
-  <strong>Aplicaciones para Dispositivos Móviles</strong><br>
-  NRC<br>
-  <strong>13975</strong><br>
-  <strong>Informe del Trabajo Final</strong><br>
-  Docente<br>
-  <strong>David Gerardo Quevedo Velasco</strong><br>
-  Equipo<br>
-  <strong>MDEPS</strong></p>
+**1ACC0238**<br>
+**Aplicaciones para Dispositivos Móviles**<br>
+NRC<br>
+**13975**<br>
+**Informe del Trabajo Final**<br>
+Docente<br>
+**David Gerardo Quevedo Velasco**<br>
+Equipo<br>
+**MDEPS**
 
-  <p>Proyecto<br>
-  <strong>Vantage PMO</strong></p>
+Proyecto<br>
+**Vantage PMO**
 
-  <table align="center">
-    <tr>
-      <th>Código</th>
-      <th>Apellidos y Nombres</th>
-    </tr>
-    <tr>
-      <td>U202520331</td>
-      <td>Fuentes Alvarez, Angiela Stephany</td>
-    </tr>
-    <tr>
-      <td>U202211881</td>
-      <td>Guillen Giraldo, Mike Dylan</td>
-    </tr>
-    <tr>
-      <td>U202417433</td>
-      <td>Mendoza Machoa, Lionel Snayder</td>
-    </tr>
-    <tr>
-      <td>U202014215</td>
-      <td>Pacheco Lavado, Rafael Agustin</td>
-    </tr>
-    <tr>
-      <td>U202411378</td>
-      <td>Quiliano Motta, Kirk Douglas</td>
-    </tr>
-  </table>
 
-  <p><strong>Periodo Académico:</strong> 2026-20<br>
-  <strong>Fecha:</strong> Setiembre 2026</p>
+| Codigo       | Apellidos y Nombres |
+|:-------------| :--- |
+| [U202520331] | Fuentes Alvarez, Angiela Stephany |
+| [U202211881] | Guillen Giraldo, Mike Dylan |
+| [u202417433] | Mendoza Machoa, Lionel Snayder |
+| [u202014215] | Pacheco Lavado, Rafael Agustin |
+| [u202411378] | Quiliano Motta, Kirk Douglas |
+
+**Periodo Academico:** 2026-20
+**Fecha:** [Setiembre  2026]
+
 </div>
 
 ---
@@ -60,7 +42,8 @@
 | 1.0 | [05/09/2026] | Quiliano Motta, Kirk Douglas | Elaboracion de Caratula, Capitulo I (Startup Profile, Solution Profile, Lean UX, Segmentos), Collaboration Insights y Student Outcome para la entrega AV1. |
 | 1.0 | [15/09/2026] | Guillen Giraldo, Mike Dylan | Desarrollo del Capítulo 2.5 (Strategic-Level Domain-Driven Design), abarcando el modelado mediante EventStorming, Context Mapping y la definición de la arquitectura de software en los niveles Context, Container y Deployment. |
 | 1.0 | [15/09/2026] | Todos | Finalizacion del informe para la entrega AV1 (Semana 4) |
-| 1.1 | [05/10/2026] | Guillen Giraldo, Mike Dylan | Incorporación de anclas de navegación para las secciones del Capítulo III, actualización de sus enlaces en la tabla de contenido y eliminación de anclas antiguas sin uso. |
+| 2.0 | [05/10/2026] | Quiliano Motta, Kirk Douglas | Desarrollo del Capítulo 3 (Solution UI/UX Design), abarcando las secciones 3.1.1 (Style Guidelines), 3.1.2 (Information Architecture) y 3.1.3 (Landing Page UI Design - Wireframes y Mock-ups). |
+| 2.0 | [05/10/2026] | Todos | Finalización e integración del informe para la entrega TB1 (Semana 7), incluyendo los Capítulos III y IV, configuración de software y evidencias del Sprint 1. |
 
 <div style="page-break-after: always;"></div>
 
