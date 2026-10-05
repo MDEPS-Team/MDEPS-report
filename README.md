@@ -32,6 +32,8 @@ Proyecto<br>
 
 ---
 
+<div style="page-break-before: always;"></div>
+
 ## Registro de Versiones del Informe
 
 | Version | Fecha | Autor | Descripcion de Modificacion |
@@ -43,7 +45,7 @@ Proyecto<br>
 | 2.0 | [05/10/2026] | Quiliano Motta, Kirk Douglas | Desarrollo del Capítulo 3 (Solution UI/UX Design), abarcando las secciones 3.1.1 (Style Guidelines), 3.1.2 (Information Architecture) y 3.1.3 (Landing Page UI Design - Wireframes y Mock-ups). |
 | 2.0 | [05/10/2026] | Todos | Finalización e integración del informe para la entrega TB1 (Semana 7), incluyendo los Capítulos III y IV, configuración de software y evidencias del Sprint 1. |
 
----
+<div style="page-break-after: always;"></div>
 
 ## Project Report Collaboration Insights
 
@@ -54,29 +56,141 @@ Proyecto<br>
 Durante esta primera entrega, el equipo establecio la estructura base del repositorio utilizando el flujo de trabajo GitFlow. Las tareas se dividieron de forma equitativa, permitiendo que la redaccion del modelo de negocio, el analisis de la competencia y el diseno de la arquitectura se trabajaran en ramas independientes (feature/...) antes de integrarse a la rama develop. El equipo mantuvo sincronizacion constante para alinear los hallazgos del Lean UX con los requerimientos del producto.
 
 #### Contributors
-[Insertar captura de pantalla de GitHub Insights > Contributors del repositorio del informe]
+<div align="center">
+  <img src="assets/images/insights/contributors_01.png" alt="Contributors 01" width="720">
+  <br><br>
+  <img src="assets/images/insights/contributors_02.png" alt="Contributors 02" width="720">
+</div>
 
 #### Commits Over Time & Pulse
-[Insertar captura de pantalla de GitHub Insights > Pulse / Commits]
+<div align="center">
+  <img width="440" height="201" alt="image" src="https://github.com/user-attachments/assets/a4b95c4a-1d2a-461b-bcef-1d97355d71d5" />
+
+</div>
 
 ---
 
 ## Contenido (Tabla de Contenidos)
 
-- [Capitulo I: Presentacion](#capitulo-i-presentacion)
-  - [1.1. Startup Profile](#11-startup-profile)
-  - [1.2. Solution Profile](#12-solution-profile)
-  - [1.3. Segmentos Objetivo](#13-segmentos-objetivo)
-- [Capitulo II: Requirements Development and Software Solution Design](#capitulo-ii-requirements-development-and-software-solution-design)
-  - [2.1. Competidores](#21-competidores)
-  - [2.2. Entrevistas](#22-entrevistas)
-  - [2.3. Needfinding](#23-needfinding)
-  - [2.4. Requirements Specification](#24-requirements-specification)
-  - [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
-  - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
-- [Conclusiones](#conclusiones)
-- [Bibliografia](#bibliografia)
-- [Anexos](#anexos)
+- [Capitulo I: Presentacion](cap1-presentation.md#capitulo-i-presentacion)
+  - [1.1. Startup Profile](cap1-presentation.md#11-startup-profile)
+    - [1.1.1. Descripcion de la Startup](cap1-presentation.md#111-descripcion-de-la-startup)
+    - [1.1.2. Perfiles de integrantes del equipo](cap1-presentation.md#112-perfiles-de-integrantes-del-equipo)
+  - [1.2. Solution Profile](cap1-presentation.md#12-solution-profile)
+    - [1.2.1. Antecedentes y problematica](cap1-presentation.md#121-antecedentes-y-problematica)
+    - [1.2.2. Lean UX Process](cap1-presentation.md#122-lean-ux-process)
+      - [1.2.2.1. Lean UX Problem Statements](cap1-presentation.md#1221-lean-ux-problem-statements)
+      - [1.2.2.2. Lean UX Assumptions](cap1-presentation.md#1222-lean-ux-assumptions)
+      - [1.2.2.3. Lean UX Hypothesis Statements](cap1-presentation.md#1223-lean-ux-hypothesis-statements)
+      - [1.2.2.4. Lean UX Canvas](cap1-presentation.md#1224-lean-ux-canvas)
+  - [1.3. Segmentos objetivo](cap1-presentation.md#13-segmentos-objetivo)
+- [Capitulo II: Requirements Development and Software Solution Design](cap2-requirements.md#capitulo-ii-requirements-development-and-software-solution-design)
+  - [2.1. Competidores](cap2-requirements.md#21-competidores)
+    - [2.1.1 Análisis competitivo](cap2-requirements.md#211-analisis-competitivo)
+    - [2.1.2. Estrategias y tacticas frente a competidores](cap2-requirements.md#212-estrategias-y-tacticas-frente-a-competidores)
+  - [2.2. Entrevistas](cap2-requirements.md#22-entrevistas)
+    - [2.2.1. Diseno de entrevistas](cap2-requirements.md#221-diseno-de-entrevistas)
+    - [2.2.2. Registro de entrevistas](cap2-requirements.md#222-registro-de-entrevistas)
+    - [2.2.3 Análisis de Entrevistas](cap2-requirements.md#223-analisis-de-entrevistas)
+  - [2.3 Needfinding](cap2-requirements.md#23-needfinding)
+    - [2.3.1 User Personas](cap2-requirements.md#231-user-personas)
+    - [2.3.2 User Task Matrix](cap2-requirements.md#232-user-task-matrix)
+    - [2.3.3 User Journey Mapping](cap2-requirements.md#233-user-journey-mapping)
+    - [2.3.4 Empathy Mapping](cap2-requirements.md#234-empathy-mapping)
+    - [2.3.5 Big Picture EventStorming](cap2-requirements.md#235-big-picture-eventstorming)
+    - [2.3.6 Ubiquitous Language](cap2-requirements.md#236-ubiquitous-language)
+  - [2.4 Requirements Specification](cap2-requirements.md#24-requirements-specification)
+    - [2.4.1. User Stories](cap2-requirements.md#241-user-stories)
+    - [2.4.2. Impact Mapping](cap2-requirements.md#242-impact-mapping)
+    - [2.4.3. Product Backlog](cap2-requirements.md#243-product-backlog)
+  - [2.5. Strategic-Level Domain-Driven Design](cap2-requirements.md#25-strategic-level-domain-driven-design)
+    - [2.5.1. EventStorming](cap2-requirements.md#251-eventstorming)
+      - [2.5.1.1. Candidate Context Discovery](cap2-requirements.md#2511-candidate-context-discovery)
+      - [2.5.1.2. Domain Message Flows Modeling](cap2-requirements.md#2512-domain-message-flows-modeling)
+      - [2.5.1.3. Bounded Context Canvases](cap2-requirements.md#2513-bounded-context-canvases)
+    - [2.5.2. Context Mapping](cap2-requirements.md#252-context-mapping)
+    - [2.5.3. Software Architecture](cap2-requirements.md#253-software-architecture)
+      - [2.5.3.1. Software Architecture Context Level Diagrams](cap2-requirements.md#2531-software-architecture-context-level-diagrams)
+      - [2.5.3.2. Software Architecture Container Level Diagrams](cap2-requirements.md#2532-software-architecture-container-level-diagrams)
+      - [2.5.3.3. Software Architecture Deployment Diagrams](cap2-requirements.md#2533-software-architecture-deployment-diagrams)
+  - [2.6. Tactical-Level Domain-Driven Design](cap2-requirements.md#26-tactical-level-domain-driven-design)
+    - [2.6.1. Bounded Context: IAM](cap2-requirements.md#261-bounded-context-iam)
+      - [2.6.1.1. Domain Layer](cap2-requirements.md#2611-domain-layer)
+      - [2.6.1.2. Interface Layer](cap2-requirements.md#2612-interface-layer)
+      - [2.6.1.3. Application Layer](cap2-requirements.md#2613-application-layer)
+      - [2.6.1.4. Infrastructure Layer](cap2-requirements.md#2614-infrastructure-layer)
+      - [2.6.1.5. Bounded Context Software Architecture Component Level Diagrams](cap2-requirements.md#2615-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.1.6. Bounded Context Software Architecture Code Level Diagrams](cap2-requirements.md#2616-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.1.6.1. Bounded Context Domain Layer Class Diagrams](cap2-requirements.md#26161-bounded-context-domain-layer-class-diagrams)
+        - [2.6.1.6.2. Bounded Context Database Design Diagram](cap2-requirements.md#26162-bounded-context-database-design-diagram)
+    - [2.6.2. Bounded Context: Profiles](cap2-requirements.md#262-bounded-context-profiles)
+      - [2.6.2.1. Domain Layer](cap2-requirements.md#2621-domain-layer)
+      - [2.6.2.2. Interface Layer](cap2-requirements.md#2622-interface-layer)
+      - [2.6.2.3. Application Layer](cap2-requirements.md#2623-application-layer)
+      - [2.6.2.4. Infrastructure Layer](cap2-requirements.md#2624-infrastructure-layer)
+      - [2.6.2.5. Bounded Context Software Architecture Component Level Diagrams](cap2-requirements.md#2625-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.2.6. Bounded Context Software Architecture Code Level Diagrams](cap2-requirements.md#2626-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.2.6.1. Bounded Context Domain Layer Class Diagrams](cap2-requirements.md#26261-bounded-context-domain-layer-class-diagrams)
+        - [2.6.2.6.2. Bounded Context Database Design Diagram](cap2-requirements.md#26262-bounded-context-database-design-diagram)
+    - [2.6.3. Bounded Context: Projects](cap2-requirements.md#263-bounded-context-projects)
+      - [2.6.3.1. Domain Layer](cap2-requirements.md#2631-domain-layer)
+      - [2.6.3.2. Interface Layer](cap2-requirements.md#2632-interface-layer)
+      - [2.6.3.3. Application Layer](cap2-requirements.md#2633-application-layer)
+      - [2.6.3.4. Infrastructure Layer](cap2-requirements.md#2634-infrastructure-layer)
+      - [2.6.3.5. Bounded Context Software Architecture Component Level Diagrams](cap2-requirements.md#2635-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.3.6. Bounded Context Software Architecture Code Level Diagrams](cap2-requirements.md#2636-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.3.6.1. Bounded Context Domain Layer Class Diagrams](cap2-requirements.md#26361-bounded-context-domain-layer-class-diagrams)
+        - [2.6.3.6.2. Bounded Context Database Design Diagram](cap2-requirements.md#26362-bounded-context-database-design-diagram)
+    - [2.6.4. Bounded Context: TaskCollaboration](cap2-requirements.md#264-bounded-context-taskcollaboration)
+      - [2.6.4.1. Domain Layer](cap2-requirements.md#2641-domain-layer)
+      - [2.6.4.2. Interface Layer](cap2-requirements.md#2642-interface-layer)
+      - [2.6.4.3. Application Layer](cap2-requirements.md#2643-application-layer)
+      - [2.6.4.4. Infrastructure Layer](cap2-requirements.md#2644-infrastructure-layer)
+      - [2.6.4.5. Bounded Context Software Architecture Component Level Diagrams](cap2-requirements.md#2645-bounded-context-software-architecture-component-level-diagrams)
+      - [2.6.4.6. Bounded Context Software Architecture Code Level Diagrams](cap2-requirements.md#2646-bounded-context-software-architecture-code-level-diagrams)
+        - [2.6.4.6.1. Bounded Context Domain Layer Class Diagrams](cap2-requirements.md#26461-bounded-context-domain-layer-class-diagrams)
+        - [2.6.4.6.2. Bounded Context Database Design Diagram](cap2-requirements.md#26462-bounded-context-database-design-diagram)
+- [Capítulo III: Solution UI/UX Design](cap3-design.md#capitulo-iii-solution-ui-ux-design)
+  - [3.1 Product Design](cap3-design.md#31-product-design)
+    - [3.1.1. Style Guidelines](cap3-design.md#311-style-guidelines)
+        - [3.1.1.1. General Style Guidelines](cap3-design.md#3111-general-style-guidelines)
+    - [3.1.2. Information Architecture](cap3-design.md#312-information-architecture)
+        - [3.1.2.1. Organization Systems](cap3-design.md#3121-organization-systems)
+        - [3.1.2.2. Labeling Systems](cap3-design.md#3122-labeling-systems)
+        - [3.1.2.3. SEO Tags and Meta Tags](cap3-design.md#3123-seo-tags-and-meta-tags)
+        - [3.1.2.4. Searching Systems](cap3-design.md#3124-searching-systems)
+        - [3.1.2.5. Navigation Systems](cap3-design.md#3125-navigation-systems)
+    - [3.1.3. Landing Page UI Design](cap3-design.md#313-landing-page-ui-design)
+        - [3.1.3.1. Landing Page Wireframe](cap3-design.md#3131-landing-page-wireframe)
+        - [3.1.3.2. Landing Page Mock-up](cap3-design.md#3132-landing-page-mock-up)
+    - [3.1.4. Mobile Applications UX/UI Design](cap3-design.md#314-mobile-applications-ux-ui-design)
+        - [3.1.4.1. Mobile Applications Wireframes](cap3-design.md#3141-mobile-applications-wireframes)
+          - [3.1.4.1.1. Authentication](cap3-design.md#31411-authentication)
+          - [3.1.4.1.2. Registration](cap3-design.md#31412-registration)
+          - [3.1.4.1.3. Dashboard](cap3-design.md#31413-dashboard)
+          - [3.1.4.1.4. Projects](cap3-design.md#31414-projects)
+          - [3.1.4.1.5. Analytics](cap3-design.md#31415-analytics)
+          - [3.1.4.1.6. Governance](cap3-design.md#31416-governance)
+          - [3.1.4.1.7. Profile](cap3-design.md#31417-profile)
+        - [3.1.4.2. Mobile Applications Wireflow Diagrams](cap3-design.md#3142-mobile-applications-wireflow-diagrams)
+        - [3.1.4.3. Mobile Applications Mock-ups](cap3-design.md#3143-mobile-applications-mock-ups)
+          - [3.1.4.3.1. Authentication](cap3-design.md#31431-authentication)
+          - [3.1.4.3.2. Registration](cap3-design.md#31432-registration)
+          - [3.1.4.3.3. Dashboard](cap3-design.md#31433-dashboard)
+          - [3.1.4.3.4. Projects](cap3-design.md#31434-projects)
+          - [3.1.4.3.5. Analytics](cap3-design.md#31435-analytics)
+          - [3.1.4.3.6. Governance](cap3-design.md#31436-governance)
+          - [3.1.4.3.7. Profile](cap3-design.md#31437-profile)
+        - [3.1.4.4. Mobile Applications User Flow Diagrams](cap3-design.md#3144-mobile-applications-user-flow-diagrams)
+        - [3.1.4.5. Mobile Applications Prototyping](cap3-design.md#3145-mobile-applications-prototyping)
+- [Conclusiones](conclusiones.md#conclusiones)
+- [Recomendaciones](conclusiones.md#recomendaciones)
+- [Bibliografia](Bibliografia.md#bibliografia)
+- [Anexos](Anexos.md#anexos)
+  - [Anexo A Event Storming](Anexos.md#anexo-a-event-storming)
+  - [Anexo B Domain Message Flows Modeling](Anexos.md#anexo-b-domain-message-flows-modeling)
+  - [Anexo C Bounded Context Canvases](Anexos.md#anexo-c-bounded-context-canvases)
+  - [Anexo D Context Mapping](Anexos.md#anexo-d-context-mapping)
 
 ---
 
@@ -89,9 +203,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio Específico | Acciones Realizadas | Conclusiones |
 | :--- | :--- | :--- |
-| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>Participación en el desarrollo del Capítulo 2 de Vantage PMO, trabajando en el análisis de competidores, diseño y realización de entrevistas y proceso de Needfinding. Se realizó la recopilación y análisis de información de los segmentos objetivo y se desarrollaron artefactos de análisis y experiencia de usuario, incluyendo User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture EventStorming y Ubiquitous Language. Estas actividades permitieron aplicar y ampliar conocimientos sobre análisis de requerimientos, levantamiento de información y diseño centrado en el usuario, contribuyendo a la definición de las necesidades y oportunidades de mejora de la solución.<br><br>**Guillen Giraldo, Mike Dylan:**<br>Investigación y actualización de conocimientos sobre Domain-Driven Design (DDD), EventStorming, Context Mapping y el modelo C4, aplicándolos en el análisis y definición de la arquitectura de VantagePMO. Asimismo, se estudiaron conceptos relacionados con Bounded Contexts, Domain Message Flows y diagramas de arquitectura a nivel Context, Container y Deployment, con el fin de seleccionar y aplicar estrategias adecuadas para el desarrollo de la solución de software.<br><br>**Mendoza Machoa, Lionel Snayder:**<br> Investigué y apliqué los principios de Clean Architecture y Domain-Driven Design (DDD) para estructurar y documentar los Bounded Contexts clave del backend (IAM, Profiles, Projects y TaskCollaboration). Además, actualicé mis conocimientos técnicos en la elaboración de diagramas de componentes (modelo C4), diagramas de clases UML y diseño de modelos relacionales de bases de datos, utilizando herramientas asíncronas como PlantUML y Markdown para la correcta especificación de la solución Vantage PMO.<br><br>**Pacheco Lavado, Rafael Agustin:**<br>Investigué y apliqué técnicas de levantamiento y especificación de requisitos como User Personas, User Journey Mapping, EventStorming, User Stories con criterios Gherkin e Impact Mapping, fortaleciendo mis conocimientos para el análisis y diseño de la solución Vantage PMO.<br><br>**Quiliano Motta, Kirk Douglas:**<br>Investigué y apliqué metodologías ágiles de diseño de producto (Lean UX) y técnicas de análisis de problemas (5W2H) para definir el alcance del proyecto Vantage PMO, actualizando mis conocimientos en gestión de portafolios y redacción técnica estructurada. | **AV1:**  El liderazgo compartido permitió que cada integrante asumiera responsabilidad sobre un módulo específico del reporte, aportando desde su especialidad sin depender de una figura central. Esta distribución de liderazgo fortaleció la autonomía del equipo y aceleró el avance en paralelo de los capítulos, demostrando que un liderazgo distribuido es viable cuando se establecen convenciones claras. Asumir resolución de problemas de integración y bases de datos demostró que gestionar y destrabar cuellos de botella técnicos agiliza enormemente el trabajo del resto del equipo. Esto garantizó que los compañeros pudieran enfocarse en desarrollar nuevas funcionalidades visuales sin retrasos, evidenciando que un liderazgo técnico proactivo es fundamental para mantener el ritmo del proyecto y asegurar la estabilidad de la plataforma.
- |
-| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>[Acciones realizadas en AV1]<br><br>**Guillen Giraldo, Mike Dylan:**<br>Investigué y aprendí de manera autónoma nuevos conceptos y herramientas relacionados con Domain-Driven Design, EventStorming, Context Mapping y C4 Model, aplicándolos en el desarrollo de la arquitectura de VantagePMO. Esto me permitió reconocer la importancia de mantener un aprendizaje continuo para poder afrontar nuevos requerimientos y mejorar mis competencias profesionales.<br><br>**Mendoza Machoa, Lionel Snayder:**<br>Reconocí la importancia de adoptar estándares de la industria mediante el aprendizaje práctico de flujos de trabajo colaborativos, aplicando GitFlow (creación de ramas de características específicas, control de versiones y gestión de Pull Requests) directamente desde WebStorm hacia GitHub. Asimismo, comprendí que dominar la redacción técnica y la generación de diagramas por código es fundamental para mantener un aprendizaje continuo y asegurar la escalabilidad en proyectos de software profesionales.<br><br>**Pacheco Lavado, Rafael Agustin:**<br>Reconocí la importancia del aprendizaje continuo al utilizar nuevas herramientas y metodologías como UXPressia, EventStorming e Impact Mapping, adaptándome a conceptos necesarios para transformar las necesidades de los usuarios en requisitos y funcionalidades concretas para el proyecto.<br><br>**Quiliano Motta, Kirk Douglas:**<br>Reconocí que, para modelar una solución B2B efectiva, necesitaba aprender sobre los puntos de dolor reales de los Project Managers y el uso estandarizado de repositorios colaborativos (GitHub/GitFlow), lo cual es fundamental para el desarrollo profesional en la industria del software. | **AV1:** El entorno colaborativo creado permitió cumplir con los objetivos del proyecto dentro del plazo establecido, a pesar de la complejidad de coordinar cinco capítulos en paralelo. La planificación semanal y el uso disciplinado de GitFlow demostraron ser prácticas efectivas para un equipo distribuido, minimizando conflictos de integración y asegurando que cada entregable reflejara el aporte colectivo del grupo. La comunicación transparente durante la resolución de errores creó un ambiente de apoyo donde los fallos del código se solucionaron de forma educativa y conjunta, sin buscar culpables. La disciplina al sincronizar los avances locales y el trabajo en la calidad documental demostraron que la colaboración integral (tanto en el código como en el reporte) es clave para cumplir con los hitos del cronograma y entregar un producto de software robusto dentro de los plazos establecidos. |
+| **Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y, en especial, para su proyecto en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>Acciones realizadas en AV1<br><br>Participación en el desarrollo del Capítulo 2 de Vantage PMO, trabajando en el análisis de competidores, diseño y realización de entrevistas y proceso de Needfinding. Se realizó la recopilación y análisis de información de los segmentos objetivo y se desarrollaron artefactos de análisis y experiencia de usuario, incluyendo User Personas, User Task Matrix, User Journey Mapping, Empathy Mapping, Big Picture EventStorming y Ubiquitous Language. Estas actividades permitieron aplicar y ampliar conocimientos sobre análisis de requerimientos, levantamiento de información y diseño centrado en el usuario, contribuyendo a la definición de las necesidades y oportunidades de mejora de la solución.<br><br>**Guillen Giraldo, Mike Dylan:**<br>Investigación y actualización de conocimientos sobre Domain-Driven Design (DDD), EventStorming, Context Mapping y el modelo C4, aplicándolos en el análisis y definición de la arquitectura de VantagePMO. Asimismo, se estudiaron conceptos relacionados con Bounded Contexts, Domain Message Flows y diagramas de arquitectura a nivel Context, Container y Deployment, con el fin de seleccionar y aplicar estrategias adecuadas para el desarrollo de la solución de software.<br><br>**Mendoza Machoa, Lionel Snayder:**<br> Investigué y apliqué los principios de Clean Architecture y Domain-Driven Design (DDD) para estructurar y documentar los Bounded Contexts clave del backend (IAM, Profiles, Projects y TaskCollaboration). Además, actualicé mis conocimientos técnicos en la elaboración de diagramas de componentes (modelo C4), diagramas de clases UML y diseño de modelos relacionales de bases de datos, utilizando herramientas asíncronas como PlantUML y Markdown para la correcta especificación de la solución Vantage PMO.<br><br>**Pacheco Lavado, Rafael Agustin:**<br>Investigué y apliqué técnicas de levantamiento y especificación de requisitos como User Personas, User Journey Mapping, EventStorming, User Stories con criterios Gherkin e Impact Mapping, fortaleciendo mis conocimientos para el análisis y diseño de la solución Vantage PMO.<br><br>**Quiliano Motta, Kirk Douglas:**<br>Investigué y apliqué metodologías ágiles de diseño de producto (Lean UX) y técnicas de análisis de problemas (5W2H) para definir el alcance del proyecto Vantage PMO, actualizando mis conocimientos en gestión de portafolios y redacción técnica estructurada.<br><br>**Acciones realizadas en TB1:**<br>**Guillen Giraldo, Mike Dylan:**<br>En el Capítulo III, desarrollé la documentación de diseño UX/UI y añadí anclas y enlaces internos para navegar por sus secciones desde la tabla de contenido. | **AV1:**  El liderazgo compartido permitió que cada integrante asumiera responsabilidad sobre un módulo específico del reporte, aportando desde su especialidad sin depender de una figura central. Esta distribución de liderazgo fortaleció la autonomía del equipo y aceleró el avance en paralelo de los capítulos, demostrando que un liderazgo distribuido es viable cuando se establecen convenciones claras. Asumir resolución de problemas de integración y bases de datos demostró que gestionar y destrabar cuellos de botella técnicos agiliza enormemente el trabajo del resto del equipo. Esto garantizó que los compañeros pudieran enfocarse en desarrollar nuevas funcionalidades visuales sin retrasos, evidenciando que un liderazgo técnico proactivo es fundamental para mantener el ritmo del proyecto y asegurar la estabilidad de la plataforma.<br><br>**TB1:** El trabajo realizado durante esta entrega permitió al equipo integrar los avances de análisis, diseño y desarrollo de la solución, manteniendo una visión compartida de los objetivos de Vantage PMO. La distribución de responsabilidades y la colaboración entre los integrantes facilitaron reunir distintas perspectivas y producir entregables coherentes. Como resultado, se consolidó una base común para continuar el proyecto y responder de manera organizada a las necesidades identificadas.<br> |
+| **Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software.** | **Fuentes Alvarez, Angiela Stephany:**<br>Acciones realizadas en AV1<br><br>**Guillen Giraldo, Mike Dylan:**<br>Investigué y aprendí de manera autónoma nuevos conceptos y herramientas relacionados con Domain-Driven Design, EventStorming, Context Mapping y C4 Model, aplicándolos en el desarrollo de la arquitectura de VantagePMO. Esto me permitió reconocer la importancia de mantener un aprendizaje continuo para poder afrontar nuevos requerimientos y mejorar mis competencias profesionales.<br><br>**Mendoza Machoa, Lionel Snayder:**<br>Reconocí la importancia de adoptar estándares de la industria mediante el aprendizaje práctico de flujos de trabajo colaborativos, aplicando GitFlow (creación de ramas de características específicas, control de versiones y gestión de Pull Requests) directamente desde WebStorm hacia GitHub. Asimismo, comprendí que dominar la redacción técnica y la generación de diagramas por código es fundamental para mantener un aprendizaje continuo y asegurar la escalabilidad en proyectos de software profesionales.<br><br>**Pacheco Lavado, Rafael Agustin:**<br>Reconocí la importancia del aprendizaje continuo al utilizar nuevas herramientas y metodologías como UXPressia, EventStorming e Impact Mapping, adaptándome a conceptos necesarios para transformar las necesidades de los usuarios en requisitos y funcionalidades concretas para el proyecto.<br><br>**Quiliano Motta, Kirk Douglas:**<br>Reconocí que, para modelar una solución B2B efectiva, necesitaba aprender sobre los puntos de dolor reales de los Project Managers y el uso estandarizado de repositorios colaborativos (GitHub/GitFlow), lo cual es fundamental para el desarrollo profesional en la industria del software.<br><br>**Acciones realizadas en TB1:**<br>**Guillen Giraldo, Mike Dylan:**<br>En el Capítulo III, aprendí a estructurar anclas y enlaces internos en Markdown, incorporándolos en sus secciones y verificando que cada enlace de la tabla de contenido tuviera un destino válido. | **AV1:** El entorno colaborativo creado permitió cumplir con los objetivos del proyecto dentro del plazo establecido, a pesar de la complejidad de coordinar cinco capítulos en paralelo. La planificación semanal y el uso disciplinado de GitFlow demostraron ser prácticas efectivas para un equipo distribuido, minimizando conflictos de integración y asegurando que cada entregable reflejara el aporte colectivo del grupo. La comunicación transparente durante la resolución de errores creó un ambiente de apoyo donde los fallos del código se solucionaron de forma educativa y conjunta, sin buscar culpables. La disciplina al sincronizar los avances locales y el trabajo en la calidad documental demostraron que la colaboración integral (tanto en el código como en el reporte) es clave para cumplir con los hitos del cronograma y entregar un producto de software robusto dentro de los plazos establecidos.<br><br>**TB1:** Durante esta entrega, el equipo fortaleció sus conocimientos al investigar y aplicar conceptos, métodos y herramientas necesarios para avanzar en las distintas áreas del proyecto. El trabajo colaborativo permitió compartir lo aprendido, resolver dudas y conectar el análisis de necesidades con las decisiones de diseño y las propuestas de solución. Esta experiencia confirmó que el aprendizaje continuo y la revisión conjunta contribuyen a mejorar la calidad de los entregables y a preparar al equipo para las siguientes etapas.<br> |
 
 ---
 
