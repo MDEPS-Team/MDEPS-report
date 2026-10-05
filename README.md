@@ -27,6 +27,7 @@ Proyecto<br>
 
 **Periodo Academico:** 2026-20
 **Fecha:** [Setiembre  2026]
+
 </div>
 
 ---
