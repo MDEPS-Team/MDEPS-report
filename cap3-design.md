@@ -1,94 +1,352 @@
+<div style="page-break-before: always;"></div>
+
 # Capítulo III: Solution UI/UX Design
 
-## 3.1.1. Style Guidelines
-Para asegurar una experiencia de usuario consistente, profesional y orientada a la productividad, el diseño visual de Vantage PMO se basa en los principios de **Material Design**, utilizando la biblioteca Angular Material para el entorno web.
-### 3.1.1.1. General Style Guidelines
+## 3.1 Product Design
+### 3.1.1. Style Guidelines.
+<a id="4-1-style-guidelines"></a>
 
-**1. Branding y Tono de Comunicación**
-*   **Identidad de Marca:** Vantage PMO proyecta confianza, eficiencia y control. El diseño debe ser minimalista para evitar sobrecargar cognitivamente a los Project Managers y Stakeholders que manejan grandes volúmenes de datos.
-*   **Tono de Comunicación:** Formal, respetuoso y sereno. La plataforma utiliza un lenguaje directo e instructivo, evitando jergas innecesarias para facilitar la toma de decisiones ejecutivas.
+El diseño se enfoca en una interfaz intuitiva que garantiza la seguridad y escalabilidad del sistema siendo capaz de manejar múltiples proyectos con alta disponibilidad y un control de acceso estrictamente definido por roles.
 
-![Branding-image](assets/images/chapter-3/Branding.png)
+#### 3.1.1.1. General Style Guidelines.
+<a id="4-1-1-general-style-guidelines"></a>
 
-**2. Typography (Tipografía)**
-Se ha seleccionado la familia tipográfica **Roboto** (estándar de Material Design) por su excelente legibilidad en pantallas digitales y tablas de datos densas.
-*   **Headings (H1, H2, H3):** Roboto Bold y Medium (Ej. H1: 32px, H2: 24px) para diferenciar claramente las secciones de los dashboards.
-*   **Body Text:** Roboto Regular (14px - 16px) para el contenido general, descripciones de tareas y reportes.
-*   **Labels & Captions:** Roboto Light (12px) para etiquetas secundarias y metadatos.
+En este apartado se detallan las decisiones de estilo que definen la identidad visual de Vantage PMO, una plataforma web y mobile orientada a la gestión centralizada de proyectos (PMO).
+Las decisiones relacionadas con branding, tipografía, colores, espaciado y lenguaje buscan transmitir profesionalismo, claridad, control y confianza, elementos clave en entornos corporativos.
 
-![Typography-image](assets/images/chapter-3/Tipografia.png)
+**Colores**
 
-**3. Colors (Paleta de Colores)**
-La paleta está diseñada para reducir la fatiga visual y destacar únicamente la información crítica (alertas y estados de proyectos).
-*   **Primary Color (Azul Corporativo - #1565C0):** Transmite seguridad, tecnología y profesionalismo. Utilizado en la barra de navegación, botones principales (Call to Actions) y enlaces.
-*   **Secondary Color (Gris Pizarra - #455A64):** Utilizado para textos principales, fondos de paneles y bordes, manteniendo una interfaz limpia.
-*   **Semantic Colors (Estados y Alertas):**
-    *   *Éxito / A tiempo:* Verde (#2E7D32) para hitos completados.
-    *   *Advertencia / Riesgo:* Ámbar (#FF8F00) para desviaciones de presupuesto o tiempo.
-    *   *Error / Retraso Crítico:* Rojo (#C62828) para tareas bloqueadas o KPIs incumplidos.
-*   **Background:** Blanco (#FFFFFF) y Gris muy claro (#F5F5F6) para maximizar el contraste y facilitar la lectura de reportes.
+La paleta de colores de Vantage PMO fue seleccionada con un enfoque en la claridad visual, profesionalismo y jerarquía de información. Cada color cumple un rol específico dentro de la plataforma:
 
-![Colors-image](assets/images/chapter-3/Paleta-Colores.png)
+<div style="text-align:center;">
+  <img src="assets/images/chapter-3/application-ux-ui-design/style-guidelines/color-palette.png"
+       alt="Paleta de Colores">
+</div>
 
-**4. Spacing y Grid**
-Se utiliza un sistema de grilla de 12 columnas responsivas, con un espaciado base de 8px (8, 16, 24, 32) para mantener proporciones exactas y jerarquía visual entre los elementos del dashboard y el Landing Page.
+- **Azul primario – #1E40AF:**
+Este color representa confianza, control y tecnología. En Vantage PMO, se utiliza como el color principal en botones, barras de navegación y elementos clave del sistema. Su presencia dominante permite identificar rápidamente las acciones principales dentro de la plataforma.
 
-![Spacing-image](assets/images/chapter-3/Spacing-Grid.png)
+- **Gris azulado secundario – #475569:**
+Este color transmite estabilidad y estructura. Se emplea en textos secundarios, iconos y elementos de soporte. Ayuda a mantener un equilibrio visual sin restar protagonismo a las acciones principales.
+
+- **Marrón acento – #882D00:**
+Este color aporta contraste y énfasis. Se utiliza en acciones específicas o elementos que requieren atención especial dentro del sistema, como botones secundarios o indicadores relevantes. Su uso es moderado para no saturar la interfaz.
+
+- **Gris neutro – #64748B:**
+Este color simboliza neutralidad y equilibrio. Se utiliza en fondos, divisores y elementos menos relevantes, permitiendo que la interfaz mantenga orden y claridad.
+
+- **Escalas de color:**
+Cada uno de estos colores cuenta con variaciones de intensidad (claros y oscuros), lo que permite generar jerarquía visual, diferenciar estados y mejorar la organización de la información dentro de dashboards y módulos.
+
+**Tipografía**
+
+Se seleccionó la tipografía **“Inter”** como fuente principal para toda la plataforma debido a su diseño moderno, legible y altamente adaptable a entornos digitales.
+
+<div style="text-align:center;">
+  <img src="assets/images/chapter-3/application-ux-ui-design/style-guidelines/inter-font.png"
+       alt="Tipografía Font">
+</div>
+
+Esta tipografía garantiza una experiencia de lectura clara, especialmente en interfaces con alta densidad de información como dashboards y reportes.
+
+En cuanto al tamaño, se utiliza jerárquicamente para resaltar títulos, botones y texto de soporte. Los tamaños más grandes captan la atención en puntos clave como métricas o encabezados, mientras que los más pequeños se emplean para detalles secundarios, mejorando la comprensión y eficiencia en la interacción.
+
+**Branding**
+
+El branding de **Vantage PMO** está diseñado para reflejar control, claridad y profesionalismo dentro de la gestión de proyectos. El logo y los elementos visuales adoptan un enfoque minimalista, utilizando formas simples y una composición limpia que transmite orden y eficiencia.
+
+<div style="text-align:center;">
+  <img src="assets/images/chapter-3/application-ux-ui-design/style-guidelines/vantage-pmo-branding.png"
+       alt="Branding Vantage PMO">
+</div>
+
+**Espaciado**
+
+El diseño de **Vantage PMO** se centra en una estrategia que aprovecha de manera inteligente los espacios en blanco, tanto a gran escala como en los detalles de la interfaz, con el objetivo de brindar una experiencia de usuario clara y organizada. Estos espacios no solo cumplen una función estética, sino que también son fundamentales para mejorar la comprensión del contenido y resaltar elementos importantes como los botones de acción, dashboards y métricas clave del sistema. El contenido de cada sección se presenta en bloques o tarjetas con márgenes definidos, lo que permite mantener una estructura visual ordenada y equilibrada. Además, los márgenes que rodean estos elementos contribuyen a evitar la sobrecarga visual y facilitan la lectura de información compleja. Por su parte, los rellenos laterales se ajustan en función del tamaño del dispositivo, garantizando una distribución adecuada y una interfaz responsiva adaptable a distintos entornos.
+
+**Dimensiones para el tono de comunicación y lenguaje aplicado**
+
+En **Vantage PMO**, definimos cuidadosamente el tono de nuestra comunicación para alinearlo con la misión de la plataforma: optimizar la gestión de proyectos y facilitar la toma de decisiones estratégicas en organizaciones. Nuestro tono de voz busca transmitir claridad y confianza, combinando una comunicación profesional, directa y accesible, permitiendo que los usuarios comprendan rápidamente la información y actúen en base a ella.
+
+Optamos por un tono formal pero comprensible, que permita a los usuarios sentirse seguros al interactuar con funcionalidades clave como dashboards, reportes y control de proyectos. Buscamos que cada interacción refleje precisión y control, fomentando una gestión eficiente, pero también claridad, asegurando que los usuarios mantengan una visión completa de sus proyectos en todo momento. Este equilibrio nos permite impulsar la toma de decisiones informadas, al mismo tiempo que proyectamos confianza y solidez en entornos corporativos.
+
+Además, se han considerado los siguientes aspectos clave en el diseño de Vantage PMO:
+
+- **Consistencia:** La coherencia en el diseño es esencial para brindar una experiencia uniforme y eficiente. Todos los elementos visuales e interactivos de Vantage PMO mantienen una línea gráfica clara, lo que permite que los usuarios se familiaricen rápidamente con la plataforma y la utilicen de manera eficiente, especialmente en contextos donde se requiere analizar información constantemente.
+
+- **Navegación:** La estructura de navegación ha sido pensada para ser intuitiva y organizada. Los usuarios pueden acceder fácilmente a secciones como dashboards, gestión de proyectos, reportes y recursos, lo que permite ahorrar tiempo y facilita la toma de decisiones en entornos donde la información debe ser consultada de manera rápida y precisa.
+
+- **Accesibilidad:** La plataforma fue diseñada para adaptarse a distintos dispositivos y contextos de uso. Desde computadoras hasta otros entornos digitales, Vantage PMO ofrece una interfaz clara, elementos visibles y navegación simplificada, permitiendo a los usuarios interactuar con la plataforma de manera eficiente sin importar el entorno.
+
+**Elementos de Diseño**
+
+Además de los lineamientos definidos en cuanto a colores, tipografía y branding, en el diseño visual de **Vantage PMO** se han considerado diversos elementos fundamentales del diseño gráfico que contribuyen a mejorar la experiencia del usuario y a consolidar una identidad visual coherente dentro de la plataforma.
+
+Uno de los elementos más importantes es la **línea**, la cual se utiliza para organizar la interfaz mediante la separación de secciones, formularios y tarjetas de información dentro de los distintos módulos. Su aplicación permite estructurar el contenido de manera clara, facilitando la lectura y evitando la saturación visual. Por otro lado, el color no solo cumple una función estética, sino también comunicativa, ya que permite diferenciar estados, acciones y niveles de importancia dentro del sistema. La paleta utilizada, basada en tonos azules y grises con acentos estratégicos, refuerza la claridad y el enfoque profesional de la plataforma.
+
+En relación con el **tamaño**, este se aplica de manera jerárquica para destacar elementos clave como títulos, indicadores y botones de acción. Los componentes de mayor tamaño captan la atención del usuario en puntos críticos de la navegación, mientras que los elementos secundarios mantienen dimensiones más discretas para no interferir con la lectura principal. En cuanto a la textura, se opta por un enfoque sutil mediante el uso de fondos uniformes y superficies limpias, lo que aporta profundidad visual sin afectar la claridad de la información presentada.
+
+El **espacio** también juega un papel fundamental en el diseño de Vantage PMO. Se emplean márgenes adecuados y separaciones consistentes entre elementos, lo que permite una interfaz ordenada y fácil de recorrer, especialmente en contextos donde se maneja una gran cantidad de datos. Asimismo, el uso del contraste (valor o brillo) permite establecer jerarquías visuales claras, diferenciando de forma efectiva entre elementos interactivos, textos principales y fondos.
+
+Finalmente, en cuanto a las **formas**, se priorizan estructuras simples y modernas que favorecen la usabilidad. Los botones con bordes suavizados, las tarjetas organizadas y los íconos minimalistas contribuyen a una apariencia limpia y profesional. Estas decisiones refuerzan la percepción de una herramienta tecnológica eficiente, alineada con el objetivo de facilitar la gestión centralizada de proyectos.
+
+**Principios de Diseño**
+
+En cuanto a los principios de diseño, el **contraste** se utiliza para destacar elementos clave dentro de la plataforma, como **botones** de acción (CTA), alertas o estados críticos de los proyectos. Esto permite que la información importante sea fácilmente identificable, mejorando la accesibilidad visual y facilitando la toma de decisiones. Asimismo, la repetición de colores, formas e iconografía contribuye a generar consistencia en toda la interfaz, ayudando a que los usuarios reconozcan rápidamente los componentes y comprendan su funcionamiento sin necesidad de reaprendizaje constante.
+
+Por otro lado, la **alineación** cumple un rol fundamental en la organización del contenido, ya que todos los elementos, como dashboards, formularios y listas de proyectos, siguen una estructura ordenada y coherente. Esto facilita la navegación y mejora la experiencia del usuario al interactuar con la plataforma. De igual manera, el principio de proximidad permite agrupar de forma lógica los elementos relacionados, como métricas, tareas o recursos asociados a un proyecto, lo que favorece una mejor interpretación de la información y una interacción más eficiente.
+
+Estos principios no se aplican de manera aislada, sino que forman parte de un sistema de diseño integral que busca ser **funcional, claro y alineado** con los objetivos de Vantage PMO: optimizar la gestión de proyectos mediante una experiencia intuitiva, organizada y orientada a la toma de decisiones estratégicas.
+
+### 3.1.2. Information Architecture.
+<a id="4-2-information-architecture"></a>
+
+Se enfoca en la forma crítica de salud de los proyectos (KPIs y semáforos) sea siempre el punto de partida de la navegación.
+
+#### 3.1.2.1. Organization Systems.
+<a id="4-2-1-organization-systems"></a>
+
+En la plataforma Vantage PMO, se emplea principalmente la organización jerárquica para resaltar la información crítica relacionada con la salud de los proyectos y portafolios. Elementos como KPIs clave, semáforos de estado, alertas de riesgo y desviaciones de cronograma o presupuesto se presentan con mayor jerarquía visual dentro de los dashboards. Esta priorización permite que los usuarios identifiquen de forma inmediata los proyectos que requieren atención o toma de decisiones.
+
+Asimismo, se aplica una organización secuencial en procesos que requieren una guía paso a paso, como la creación de proyectos, la configuración de portafolios, la asignación de responsables, o la generación de reportes ejecutivos. Estos flujos siguen una progresión lógica y controlada para reducir errores, estandarizar procesos y facilitar la experiencia de uso, especialmente para usuarios con distintos niveles de madurez en gestión de proyectos.
+
+En cuanto a los esquemas de categorización, Vantage PMO no utiliza una organización alfabética como criterio principal. En su lugar, se emplea una organización cronológica para el seguimiento de información histórica, como el avance del proyecto en el tiempo, hitos cumplidos, desviaciones acumuladas y evolución de indicadores.
+Adicionalmente, el contenido se clasifica según el rol del usuario, permitiendo que Project Managers, PMO Leads y Stakeholders accedan a vistas, niveles de detalle y funcionalidades adaptadas a sus responsabilidades y necesidades de información.
+#### 3.1.2.2. Labeling Systems.
+<a id="4-2-2-labeling-systems"></a>
+
+A continuación, se presenta el sistema de etiquetado (labeling system) diseñado para la plataforma Vantage PMO. Este sistema busca representar la información de forma clara y consistente, utilizando etiquetas cortas, precisas y alineadas al lenguaje de la gestión de proyectos, con el objetivo de minimizar la carga cognitiva, facilitar la navegación y mantener coherencia visual con la guía de diseño establecida.
+
+Se ha priorizado la claridad semántica, el uso de términos familiares para profesionales de proyectos y la coherencia con el tono de comunicación profesional y orientado a resultados de la plataforma.
+
+**Landing Page**
+
+* Inicio: Sección principal de presentación de Vantage PMO. Comunica la propuesta de valor y permite el acceso a la plataforma.
+* Características: Descripción de las funcionalidades clave del sistema, como gestión de proyectos, control de portafolios y automatización de reportes.
+* Beneficios: Explicación de los beneficios estratégicos para Project Managers, PMOs y Stakeholders.
+* Casos de Uso: Ejemplos de aplicación de Vantage PMO en empresas medianas y grandes.
+* Contacto: Canal para solicitudes de información, demostraciones o soporte comercial.
+
+**Aplicación Web - Project Managers y PMO Leads**
+
+* Dashboard: Vista general con indicadores clave del estado de proyectos y portafolios, semáforos, alertas y métricas críticas.
+* Proyectos: Listado y gestión de proyectos registrados. Incluye estado, responsables, cronograma y presupuesto.
+* Portafolios: Visualización y control agrupado de proyectos estratégicos.
+* KPIs: Seguimiento detallado de indicadores de desempeño relacionados a tiempo, costo, alcance y riesgos.
+* Riesgos: Registro y monitoreo de riesgos, con niveles de impacto y probabilidad.
+* Reportes: Generación y descarga de reportes ejecutivos y operativos.
+* Configuración: Gestión de parámetros del sistema, usuarios y roles.
+
+**Aplicación Web – Stakeholders**
+
+* Resumen Ejecutivo: Vista simplificada del estado general de los proyectos y portafolios.
+* Indicadores Clave: KPIs relevantes para la toma de decisiones estratégicas.
+* Alertas: Notificaciones sobre desviaciones críticas o riesgos relevantes.
+* Reportes Ejecutivos: Acceso a reportes consolidados para evaluación y seguimiento.
+
+#### 3.1.2.3. SEO Tags and Meta Tags.
+<a id="4-2-3-seo-tags-meta-tags"></a>
+
+Para asegurar que la plataforma *Vantage PMO* sea funcional por los motores de búsqueda y presente un buen diseño, se han configurado los siguientes meta tags técnicos:
+
+* **Title Tag:** en html: 
+    `<title>Vantage PMO | Gestión Estratégica de Proyectos y Portafolios B2B</title>`
+
+* **Description:** en html:
+    `<meta name="description" content="Optimice la toma de decisiones con Vantage PMO. Plataforma SaaS para la centralización, monitoreo en tiempo real y reporteo automático de proyectos empresariales.">`
+
+* **Keywords:** en html:
+    `<meta name="keywords" content="PMO, Gestión de Proyectos, SaaS Perú, MDEPS, Dashboard de Proyectos, Eficiencia Operativa, Control de Riesgos">`
+
+* **Open Graph (Optimización para redes sociales):**
+    * `<meta property="og:title" content="Vantage PMO: De la gestión reactiva a la estratégica">`
+
+    * `<meta property="og:description" content="Centralice su información y elimine la fricción operativa con nuestra solución especializada en PMO.">`
+
+    * `<meta property="og:image" content="https://vantagepmo.com/assets/og-preview.png">`
+
+    * `<meta property="og:url" content="https://vantagepmo.com">`
+
+* **Robots:** en html:
+    `<meta name="robots" content="index, follow">`
+
+#### 3.1.2.4. Searching Systems.
+<a id="4-2-4-searching-systems"></a>
+
+El sistema de búsqueda está diseñado  para poder reducir el tiempo de localización de datos críticos:
+
+1.  **Barra de Búsqueda Global:** Implementada en la parte superior del Dashboard. Permite en la búsqueda rápida por:
+    * Nombre o código del proyecto.
+    * Nombre del responsable asignado.
+    * Etiquetas de tareas específicas.
+2.  **Filtro de Avances:** En los módulos de backlog y el portafolio, los usuarios pueden segmentar la información mediante:
+    * **Indicadores de Salud:** Filtrado por semáforos (Verde, Amarillo, Rojo).
+    * **Estado Operativo:** (En curso, Detenido, Finalizado).
+    * **Prioridad y Carga:** Según el impacto en el negocio.
+3.  **Búsqueda Documental:** Capacidad de búsqueda dentro del repositorio central de documentos para localizar actas, PDFs de reportes generados anteriormente y archivos de colaboración mediante palabras clave en el título y metadatos.
+
+#### 3.1.2.5. Navigation Systems.
+<a id="4-2-5-navigation-systems"></a>
+
+La navegación se estructura para que el usuario nunca este a más de tres clics de la información que necesita:
+
+1.  **Navegación Global (Menú Lateral):** es el slidebar persistente con acceso directo a los pilares del sistema:
+    * **Dashboard:** Resumen ejecutivo y KPIs.
+    * **Proyectos:** Vista de portafolio y CRUD.
+    * **Reportes:** Módulo de generación de informes automáticos.
+    * **Riesgos:** Matriz de clasificación y alertas tempranas.
+
+2.  **Navegación de Contexto:** Sistema que facilitan en la orientación del usuario dentro de subsecciones (*Portafolio > Proyecto Logistica > Gestión de Riesgos*).
+
+3.  **Navegación Local:** Se utilizan pestañas para navegar entre el Tablero Kanban, los indicadores de salud, gestión de recursos y el repositorio de documentos.
+
+4.  **Acciones Rápidas:** Botones de acción flotante y accesos directos para la creación inmediata de proyectos o registro de riesgos, condicionados por los permisos del usuario.
 
 
-## 3.1.2. Information Architecture
-La arquitectura de información de Vantage PMO está estructurada para que los visitantes del Landing Page comprendan el valor del producto en menos de un minuto, y para que los usuarios de la plataforma accedan a sus portafolios sin fricción.
+### 3.1.3. Landing Page UI Design.
+<a id="4-3-landing-page-ui-design"></a>
 
-### 3.1.2.1. Organization Systems
-*   **Landing Page:** Organización secuencial y jerárquica (Visual Hierarchy). El flujo guía al visitante desde la presentación del problema (silos de información), pasando por la solución (Vantage PMO), beneficios (reducción de tiempos), hasta el Call to Action (Registro/Contacto).
-*   **Plataforma Web/Móvil:** Organización matricial y por tópicos. Los proyectos se agrupan por estado, prioridad y responsable, permitiendo a los PMs y Stakeholders alternar entre vistas de alto nivel (Portafolio) y vistas de detalle (Tareas y Recursos).
+Este apartado define la identidad visual y estética de la página de inicio. En esta sección se detallan los elementos gráficos —como la paleta de colores, la tipografía que transforman la estructura del wireframe en una interfaz funcional y atractiva, asegurando una experiencia de usuario coherente con la propuesta.
 
-### 3.1.2.2. Labelling Systems
-Las etiquetas se han definido buscando claridad, utilizando un vocabulario estándar de gestión de proyectos (Ubiquitous Language) para evitar confusiones.
-*   **Navegación del Landing Page:** *Home*, *Beneficios*, *Características*, *Planes*, *Contacto*.
-*   **Botones (CTAs):** *Comenzar ahora*, *Solicitar Demo*, *Iniciar Sesión*.
+#### 3.1.3.1. Landing Page Wireframe.
+<a id="4-3-1-landing-page-wireframe"></a>
 
-### 3.1.2.3. SEO Tags and Meta Tags
-Para el posicionamiento orgánico del Landing Page en motores de búsqueda, se han definido las siguientes etiquetas orientadas al segmento corporativo B2B:
-*   **Title Tag:** `<title>Vantage PMO | Centraliza la Gestión de tus Proyectos y Portafolios</title>`
-*   **Meta Description:** `<meta name="description" content="Optimiza la gestión de proyectos de tu empresa. Reduce tiempos de reporteo, recibe alertas tempranas y toma mejores decisiones con Vantage PMO.">`
-*   **Meta Keywords:** `<meta name="keywords" content="gestión de proyectos, software PMO, control de portafolios, MDEPS, productividad B2B, project management SaaS">`
-*   **Author:** `<meta name="author" content="MDEPS">`
+**LADING PAGE WEB**
 
-### 3.1.2.4. Searching Systems
-*   **Landing Page:** Al ser un sitio web estático informativo, no requiere una barra de búsqueda compleja. La navegación se facilita mediante enlaces ancla (Anchor links).
-*   **Plataforma App/Web:** Se contará con una barra de búsqueda global (Global Search) autocompletable, permitiendo a los usuarios filtrar por *Nombre de Proyecto*, *Responsable*, *Hito* o *Estado*.
+<div style="text-align:center;">
+  <img src="assets/images/chapter-3/application-ux-ui-design/landing-page-wireframes/landing-page-wireframe-desktop.png"
+       alt="Wireframe de la landing page para escritorio">
+</div>
 
-### 3.1.2.5. Navigation Systems
-*   **Global Navigation:** Barra de navegación superior fija (Sticky Header) en el Landing Page que acompaña al usuario durante el scroll, garantizando acceso constante al botón de "Iniciar Sesión".
-*   **Footer Navigation:** Ubicado al pie de página, agrupa enlaces secundarios como *Términos y Condiciones*, *Políticas de Privacidad*, *Redes Sociales* y *Soporte*.
+**Barra de Navegación**: Ubicada en la parte superior, incluye el logotipo y enlaces de navegación, junto con botones de "Login" y "start".
 
-## 3.1.3. Landing Page UI Design
-El diseño del Landing Page tiene como objetivo principal convertir visitantes (líderes de proyectos, directores de PMO y ejecutivos) en usuarios o leads comerciales, comunicando de manera clara y directa la propuesta de valor de Vantage PMO.
-### 3.1.3.1. Landing Page Wireframe
-Los wireframes de baja fidelidad establecen la estructura esquelética de la web. Se ha priorizado la correcta distribución de los bloques de contenido (Hero Section, Problema/Solución, Beneficios, Planes y Formulario de Contacto), garantizando un flujo de lectura lógico antes de aplicar los estilos visuales.
+**Título Principal**:"Centralize your projects, control your future". Define el beneficio central de la plataforma.
 
-**Wireframe Desktop:**
-![Wireframe-Home](assets/images/chapter-3/Home-Wireframes.png)
+**Texto**: Un párrafo descriptivo que detalla cómo la herramienta ayuda a los equipos a gestionar proyectos complejos.
 
-![Wireframe-Home](assets/images/chapter-3/Beneficios-WireFrames.png)
+**Llamados a la Acción**: Un botón primario para "Get started" y un enlace secundario para "See how it works".
 
-![Wireframe-Home](assets/images/chapter-3/Caracteristicas-WireFrames.png)
+**Elemento Visual**: Un contenedor de imagen (placeholder) de gran formato a la derecha para mostrar la interfaz del software o un video explicativo.
 
-![Wireframe-Home](assets/images/chapter-3/Planes-WireFrames.png)
+**Sección de Pilares de Gestión**: Bajo el título "Three pillars of management", se divide la pantalla en tres bloques informativos:
+- **Pilar 1**: Enfoque en la simplicidad y el orden.
+- **Pilar 2**: Control total sobre las tareas y cronogramas.
+- **Pilar 3**: Flexibilidad para adaptarse a diferentes flujos de trabajo.
 
-### 3.1.3.2. Landing Page Mock-up
-Los mock-ups de alta fidelidad aplican directamente las Style Guidelines definidas previamente. Reflejan el uso estratégico del azul corporativo (#1565C0), la jerarquía de la tipografía Roboto y la limpieza de los componentes, asegurando que la interfaz transmita confianza, eficiencia y profesionalismo empresarial B2B.
+**Contenido**: A la izquierda, una imagen de la arquitectura del sistema; a la derecha, texto que refuerza la robustez técnica del producto y logotipos de certificaciones o tecnologías integradas.
 
-**Mock-up Desktop:**
-![MockUp-Home](assets/images/chapter-3/Home-MockUp.png)
+**Flujo de Onboarding**: Se detalla la facilidad de implementación bajo el título "Getting started takes minutes, not months":
 
-![MockUp-Home](assets/images/chapter-3/Beneficios-MockUp.png)
+- 1: Conectar los proyectos existentes a la plataforma.
+- 2: Configurar el enfoque de proyectos.
+- 3: Generar insights y liderar mediante el uso de datos.
 
-![MockUp-Home](assets/images/chapter-3/Caracteristicas-MockUp.png)
+**Logotipos**: Una franja horizontal con marcas de empresas que validan la plataforma.
 
-![MockUp-Home](assets/images/chapter-3/Planes-MockUp.png)
+**Pie de Página**: Contiene el logotipo, descripción de la misión, redes sociales y columnas de enlaces rápidos (Product, Company, Resources, Legal).
 
+**LADING PAGE MOBILE**
+
+<div style="text-align:center;">
+  <img src="assets/images/chapter-3/application-ux-ui-design/landing-page-wireframes/landing-page-wireframe-mobile.png"
+       alt="Wireframe de la landing page para móvil">
+</div>
+
+**Cabecera y Navegación**: Se utiliza para ocultar los enlaces de navegación, manteniendo el logotipo a la izquierda para maximizar el espacio.
+
+**Headline**:centrado para impacto inmediato.El botón principal ocupa el ancho completo o se destaca visualmente, seguido por el enlace secundario.
+
+**Imagen de Soporte**: Un contenedor gris ubicado debajo del texto para mostrar el producto sin interrumpir la lectura inicial.
+
+1. **Pilares de Gestión**: Bajo el título "Three pillars of management", las tres tarjetas de beneficios se presentan. Cada una contiene su icono centrado, título y breve descripción para facilitar el escaneo visual.
+
+2. **Beneficios Enumerados**: Se mantienen los números de gran tamaño para guiar el recorrido del usuario. Cada punto (Control, Alineación, Comunicación y Datos) incluye su respectivo cuerpo de texto alineado a la izquierda.
+
+3. **Sección de Autoridad Técnica**: El bloque presenta el texto descriptivo primero, seguido de una cuadrícula de iconos de tecnologías y cerrando con una imagen representativa del sistema.
+
+**Flujo de Usuario y Conversión**: Desglosa el proceso en tres bloques verticales numerados, asegurando que el usuario comprenda el flujo de trabajo (Conectar, Monitorear, Liderar) con iconos claros para cada fase.
+
+**Testimonios**: Se muestra un solo testimonio a la vez o en formato carrusel, incluyendo la calificación de estrellas y la identidad del cliente.
+
+**Logos de Respaldo**: Los logotipos de empresas asociadas se reorganizan en una cuadrícula compacta de dos columnas para no extender demasiado el largo de la página.
+
+**Cierre**: Un banner final con el mensaje de invitación y el botón de acción principal.
+
+**Newsletter**: Un formulario de suscripción vertical con el campo de texto y el botón de registro apilados.Los enlaces de navegación (Product, Company, Resources) se presentan en listas verticales expandibles o fijas.Finaliza con iconos de redes sociales y los términos legales en la base de la pantalla.
+
+#### 3.1.3.2. Landing Page Mock-up.
+<a id="4-3-2-landing-page-mock-up"></a>
+
+**LADING PAGE MOCK-UP WEB**
+
+<div style="text-align:center;">
+  <img src="assets/images/chapter-3/application-ux-ui-design/landing-page-mockups/landing-page-mockup-desktop.png"
+       alt="Mockup de la landing page para escritorio">
+</div>
+
+**Barra de Navegación**: Ubicada en la parte superior, incluye el logotipo de la marca a la izquierda y enlaces de navegación (Product, Pricing, Blog, Resources) a la derecha, junto con botones de "Login" y "Start".
+
+**Título Principal**: Con el texto "Centralize your projects, control your future.". Define el beneficio central de la plataforma.
+
+**Cuerpo de Texto**: Un párrafo descriptivo que detalla cómo la herramienta ayuda a los equipos a gestionar proyectos complejos de manera eficiente.
+
+**Llamados a la Acción**: Dos botones claros: uno primario destacado en azul con el texto "Try for free" y uno secundario tipo enlace con el texto "See how".
+
+**Elemento Visual Principal**: A la derecha, una fotografía de estudio.
+
+**Sección de Pilares de Gestión**: Bajo el título centrado, se divide la pantalla en tres bloques informativos que detallan las funcionalidades principales. A diferencia del wireframe, cada bloque cuenta con una fotografía real en lugar de un marcador de posición:
+- Pilar 1: "Manage and control.." Se ilustra con una fotografía en primer plano.El texto se centra en la simplicidad y el orden.
+- Pilar 2: "Centralize communication.." Se ilustra con una foto de estilo de vida de una persona. El texto se  centraliza en las comunicaciones.
+- Pilar 3: "Maximize efficiency.." Se ilustra con unas manos sosteniendo una taza de café y escribiendo en un bloc de notas. El texto se centra en maximizar la eficiencia y reducir el riesgo.
+
+**Sección de Transformación y Beneficios**: Sección que utiliza una numeración secuencial del 01 al 04 para guiar al usuario a través de los beneficios clave:
+- **01. Control:** Qué cambia al tomar el control de la información de los proyectos.
+- **02. Alineación:** Finalización de proyectos a tiempo y equipos sincronizados.
+- **03. Comunicación:** Flujos de trabajo que realmente funcionan y conectividad efectiva.
+- **04. Datos:** Toma de decisiones basada en hechos reales, no en intuiciones.
+
+**Testimonios**: Espacio dedicado a "Real voices" que muestra una reseña de usuario con una calificación de 5 estrellas, la cita de texto del testimonio, y la identificación del cliente.
+
+**Logotipos**: Una franja horizontal con logotipos de empresas reconocidas (como "Spotify", "Netflix") que validan la fiabilidad de la plataforma.
+
+**Final**: Un banner final simplificado a la izquierda con el título "Ready to lead better projects?" y el botón de acción principal.
+
+**Newsletter**: Sección de captura de correos con el título "Stay ahead of what's next".
+
+**Pie de Página**: Contiene el logotipo, descripción de la misión, redes sociales y columnas de enlaces rápidos (Product, Company, Resources, Legal).
+
+**LADING PAGE MOCK-UP MOBILE**
+
+<div style="text-align:center;">
+  <img src="assets/images/chapter-3/application-ux-ui-design/landing-page-mockups/landing-page-mockup-mobile.png"
+       alt="Mockup de la landing page para móvil">
+</div>
+
+**Header y Navegación**: El logotipo de la marca se ubica a la izquierda. Se utiliza un menú para ocultar los enlaces de navegación, maximizando el espacio en la pantalla pequeña.
+
+**Título (H1)**: "Centralize your projects, control your future.", centrado y en negrita.
+**Texto**: El párrafo descriptivo se presenta centrado bajo el título.
+
+**Opciones**: Los botones se presentan en columna: un botón primario destacado en azul ("Try for free") arriba, y el enlace secundario ("See how") abajo.
+
+**Elemento Visual**: Una fotografía ubicada debajo de los botones de acción para una composición compacta.
+
+**Cuerpo de Contenidos**: Todos los bloques de contenido se reorganizan:
+1. **Pilares de Gestión**: Bajo el título centrado, las tres tarjetas de beneficios se presentan de forma apilada. Cada una incluye su fotografía real de alta fidelidad centrada, seguida del título y la descripción.
+2. **Beneficios Enumerados (01-04)**: Se mantienen los números secuenciales (del 01 al 04) de gran tamaño como guías visuales alineados a la izquierda. Cada punto presenta su título y texto descriptivo idéntico al wireframe.
+3. **Autoridad y Respaldo**:Presenta primero el texto descriptivo, seguido de una cuadrícula compacta de logotipos de certificaciones o tecnologías integradas.
+
+**Onboarding en Pasos**: Cada bloque incluye un icono claro (conexión, engranaje, gráfico), el título del paso y la descripción.
+
+**Testimonios**: Se muestra una reseña con calificación de 5 estrellas, la cita de texto del testimonio, el nombre y cargo del usuario. Se presenta en un formato de carrusel donde solo una reseña es visible a la vez.
+
+**Logos de Respaldo**: Los logotipos de empresas asociadas ("Spotify", "Netflix") se reorganizan en una cuadrícula compacta de dos columnas para optimizar el largo de la página.
+
+**Cierre**: Un banner final con el título centrado "Ready to lead better projects?" y el botón de acción principal arriba de la fotografía.
+
+**Newsletter**: Una sección vertical de suscripción con el título "Stay ahead of what's next", el campo de entrada de correo electrónico y el botón de registro apilados uno sobre el otro.
+
+**Footer Organizado**: Los enlaces de navegación (Product, Company, Resources) se presentan en listas verticales fijas o expandibles. Finaliza con iconos de redes sociales y los términos legales en la base de la pantalla, en una composición compacta.
 
 ## 3.1.4. Mobile Applications UX/UI Design
 ### 3.1.4.1. Mobile Applications Wireframes
@@ -353,4 +611,16 @@ Esta sección presenta la propuesta de User Flows para la aplicación móvil Van
 		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-06-kpi-reporting.png" alt="User Flow de análisis y generación de reportes" width="100%"></td>
 	</tr>
 	<tr>
-		<td><strong>UG-07 — Seguimiento de alertas y riesgos.</strong> Como Project Manager, quiero revisar alertas y riesgos, para actuar oportunamente ante eventos que puedan afectar los proyectos.<br><br><strong>Happy path:</strong> accede desde Governance a la cola de alertas, revisa la prioridad, la causa y la acción recomendada, y aplica la mitigación o marca la alerta como atendida. <strong>Alternativas:</strong> si la acción requiere autorización, puede dejarla pendiente o reasignarla a una
+		<td><strong>UG-07 — Seguimiento de alertas y riesgos.</strong> Como Project Manager, quiero revisar alertas y riesgos, para actuar oportunamente ante eventos que puedan afectar los proyectos.<br><br><strong>Happy path:</strong> accede desde Governance a la cola de alertas, revisa la prioridad, la causa y la acción recomendada, y aplica la mitigación o marca la alerta como atendida. <strong>Alternativas:</strong> si la acción requiere autorización, puede dejarla pendiente o reasignarla a una  persona responsable; también puede revisar otra alerta antes de actuar.</td>		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-07-governance-alerts-risks.png" alt="User Flow de revisión de alertas y riesgos" width="100%"></td>	</tr>	<tr>		<td><strong>UG-08 — Actualización del perfil.</strong> Como usuario registrado, quiero actualizar mis datos personales o mi fotografía, para mantener vigente la información de mi cuenta.<br><br><strong>Happy path:</strong> desde el perfil, elige editar los datos de la cuenta o actualizar la fotografía, guarda los cambios y recibe una confirmación. <strong>Alternativas:</strong> puede cancelar la edición para conservar la información actual; si los datos no superan la validación, debe corregirlos antes de guardar.</td>		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-08-profile-update.png" alt="User Flow de actualización del perfil" width="100%"></td>	</tr>	<tr>		<td><strong>UG-09 — Cierre de sesión.</strong> Como usuario autenticado, quiero cerrar mi sesión de forma segura, para proteger el acceso a mi cuenta cuando termine de utilizar la aplicación.<br><br><strong>Happy path:</strong> inicia el cierre desde el perfil y confirma la acción en el diálogo; el recorrido termina en la pantalla de cierre exitoso. <strong>Alternativa:</strong> si cancela o descarta el diálogo, vuelve al perfil y conserva su sesión activa.</td>		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-09-logout.png" alt="User Flow de cierre de sesión" width="100%"></td>	</tr></table>
+
+#### 3.1.4.5. Mobile Applications Prototyping
+
+| Aplicación | Descripción |
+|:--|:--|
+| Vantage PMO - aplicación móvil | Prototipo interactivo de los principales flujos de la aplicación. |
+
+<p align="center">
+  <img src="assets/images/chapter-3/application-ux-ui-design/mobile-applicatitons-prototyping/application-prototyping.png" alt="Captura del prototipo interactivo móvil de Vantage PMO" width="560">
+</p>
+
+<p align="center"><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211881_upc_edu_pe/IQD1dvT64yqhTJE2rM8KYwquAbufQxjl6uKsKcufv-1EC64?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=csDJeZ">Ver demostración</a></p>
