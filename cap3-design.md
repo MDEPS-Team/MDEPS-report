@@ -17,7 +17,7 @@ Las decisiones relacionadas con branding, tipografía, colores, espaciado y leng
 La paleta de colores de Vantage PMO fue seleccionada con un enfoque en la claridad visual, profesionalismo y jerarquía de información. Cada color cumple un rol específico dentro de la plataforma:
 
 <div style="text-align:center;">
-  <img src="assets/images/chapter-4/color-palette.png" 
+  <img src="assets/images/chapter-3/application-ux-ui-design/style-guidelines/color-palette.png"
        alt="Paleta de Colores">
 </div>
 
@@ -41,7 +41,7 @@ Cada uno de estos colores cuenta con variaciones de intensidad (claros y oscuros
 Se seleccionó la tipografía **“Inter”** como fuente principal para toda la plataforma debido a su diseño moderno, legible y altamente adaptable a entornos digitales.
 
 <div style="text-align:center;">
-  <img src="assets/images/chapter-4/inter-font.png" 
+  <img src="assets/images/chapter-3/application-ux-ui-design/style-guidelines/inter-font.png"
        alt="Tipografía Font">
 </div>
 
@@ -54,7 +54,7 @@ En cuanto al tamaño, se utiliza jerárquicamente para resaltar títulos, botone
 El branding de **Vantage PMO** está diseñado para reflejar control, claridad y profesionalismo dentro de la gestión de proyectos. El logo y los elementos visuales adoptan un enfoque minimalista, utilizando formas simples y una composición limpia que transmite orden y eficiencia.
 
 <div style="text-align:center;">
-  <img src="assets/images/chapter-4/vantage-pmo-branding.png " 
+  <img src="assets/images/chapter-3/application-ux-ui-design/style-guidelines/vantage-pmo-branding.png"
        alt="Branding Vantage PMO">
 </div>
 
@@ -212,8 +212,9 @@ Este apartado define la identidad visual y estética de la página de inicio. En
 **LADING PAGE WEB**
 
 <div style="text-align:center;">
-  <img src="assets/images/chapter-4/web-aplications/Home • Desktop.png"
-       alt="Home desktop">
+  <img src="assets/images/chapter-3/application-ux-ui-design/landing-page-wireframes/landing-page-wireframe-desktop.png"
+       alt="Wireframe de la landing page para escritorio">
+</div>
 
 **Barra de Navegación**: Ubicada en la parte superior, incluye el logotipo y enlaces de navegación, junto con botones de "Login" y "start".
 
@@ -245,8 +246,9 @@ Este apartado define la identidad visual y estética de la página de inicio. En
 **LADING PAGE MOBILE**
 
 <div style="text-align:center;">
-  <img src="assets/images/chapter-4/web-aplications/Home • Mobile.png"
-       alt="Home mobile">
+  <img src="assets/images/chapter-3/application-ux-ui-design/landing-page-wireframes/landing-page-wireframe-mobile.png"
+       alt="Wireframe de la landing page para móvil">
+</div>
 
 **Cabecera y Navegación**: Se utiliza para ocultar los enlaces de navegación, manteniendo el logotipo a la izquierda para maximizar el espacio.
 
@@ -276,8 +278,9 @@ Este apartado define la identidad visual y estética de la página de inicio. En
 **LADING PAGE MOCK-UP WEB**
 
 <div style="text-align:center;">
-  <img src="assets/images/chapter-4/web-aplications/Home • Desktop (mok-ups).png"
-       alt="Home desktop">
+  <img src="assets/images/chapter-3/application-ux-ui-design/landing-page-mockups/landing-page-mockup-desktop.png"
+       alt="Mockup de la landing page para escritorio">
+</div>
 
 **Barra de Navegación**: Ubicada en la parte superior, incluye el logotipo de la marca a la izquierda y enlaces de navegación (Product, Pricing, Blog, Resources) a la derecha, junto con botones de "Login" y "Start".
 
@@ -313,8 +316,9 @@ Este apartado define la identidad visual y estética de la página de inicio. En
 **LADING PAGE MOCK-UP MOBILE**
 
 <div style="text-align:center;">
-  <img src="assets/images/chapter-4/web-aplications/Home • Mobile (mok-ups).png"
-       alt="Home mobile">
+  <img src="assets/images/chapter-3/application-ux-ui-design/landing-page-mockups/landing-page-mockup-mobile.png"
+       alt="Mockup de la landing page para móvil">
+</div>
 
 **Header y Navegación**: El logotipo de la marca se ubica a la izquierda. Se utiliza un menú para ocultar los enlaces de navegación, maximizando el espacio en la pantalla pequeña.
 
