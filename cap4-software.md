@@ -186,9 +186,133 @@ Se debe crear un repositorio en GitHub y subir todos los archivos del proyecto (
 ### 4.2.1.1. Sprint Planning 1
 ### 4.2.1.2. Aspect Leaders and Collaborators
 ### 4.2.1.3. Sprint Backlog 1
+
 ### 4.2.1.4. Development Evidence for Sprint Review
+
+Durante el Sprint 1 se realizaron avances en la implementación de los productos que conforman Vantage PMO. Como parte del desarrollo, se avanzó en la construcción de los servicios del backend, incorporando la estructura necesaria para gestionar las principales capacidades del dominio mediante servicios RESTful.
+
+El código fuente se mantiene en repositorios de GitHub, utilizando control de versiones para registrar los cambios realizados durante la implementación. En el backend se incorporaron componentes correspondientes a las capas de dominio, aplicación, infraestructura e interfaces REST, permitiendo establecer la base para las funcionalidades definidas para el Sprint 1.
+
+A continuación, se presentan los commits asociados a los avances de implementación realizados durante el Sprint.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [MDEPS-Team/MDEPS-Back-End](https://github.com/MDEPS-Team/MDEPS-Back-End) | main | 062e857 | feat: backend migration | — | 2026-10-04 |
+
+El commit presentado corresponde a la incorporación de la implementación inicial del backend de Vantage PMO, incluyendo la estructura de los diferentes módulos del dominio y los servicios REST necesarios para exponer las funcionalidades del sistema.
+
 ### 4.2.1.5. Testing Suite Evidence for Sprint Review
+
+Durante el Sprint 1 se implementó una suite de pruebas automatizadas para validar parte de las funcionalidades del backend de Vantage PMO. Las pruebas fueron desarrolladas utilizando **xUnit** sobre **.NET 10**, incorporando pruebas unitarias, una prueba de integración y una prueba de aceptación bajo el enfoque BDD.
+
+Las pruebas realizadas se encuentran relacionadas principalmente con la **US11 - Consultar indicadores de desempeño**, debido a que validan componentes pertenecientes al bounded context de Analytics, encargado de gestionar y proporcionar información relacionada con los indicadores de desempeño del portafolio.
+
+La suite desarrollada permitió verificar tanto el comportamiento de objetos individuales del dominio como la interacción entre componentes de persistencia y la correcta satisfacción de un escenario de aceptación definido mediante Gherkin.
+
+#### Unit Tests
+
+Para las pruebas unitarias se seleccionaron objetos de valor pertenecientes al módulo Analytics. El objetivo fue comprobar que los objetos mantengan correctamente la información proporcionada durante su creación.
+
+| Test ID | Test Type | Related User Story | Class | Test | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| UT01 | Unit Test | US11 | `SummaryKpis` | `Constructor_ShouldAssignProvidedValues` | Verifica que los valores correspondientes a fondos disponibles, índice de velocidad, exposición al riesgo y planes de mitigación sean asignados correctamente al crear un objeto `SummaryKpis`. |
+| UT02 | Unit Test | US11 | `PortfolioRoi` | `Constructor_ShouldAssignProvidedValues` | Verifica que el porcentaje de ROI, nivel de eficiencia, valor objetivo y valor proyectado sean almacenados correctamente en un objeto `PortfolioRoi`. |
+
+Estas pruebas permiten validar de manera aislada los objetos utilizados para representar los principales indicadores de desempeño mostrados por el módulo Analytics.
+
+#### Integration Tests
+
+Para validar la interacción entre la capa de persistencia y el dominio se implementó una prueba de integración utilizando **Entity Framework Core InMemory**.
+
+| Test ID | Test Type | Related User Story | Component | Test | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| IT01 | Integration Test | US11 | `AnalyticsDashboardRepository` | `AddAndList_ShouldPersistAndReturnAnalyticsDashboard` | Verifica que un objeto `AnalyticsDashboard` pueda almacenarse mediante el repositorio y posteriormente recuperarse correctamente, conservando sus indicadores y datos asociados. |
+
+La prueba utiliza una base de datos en memoria para verificar la integración entre `AppDbContext`, Entity Framework Core y `AnalyticsDashboardRepository`, evitando modificar la base de datos utilizada por la aplicación durante el desarrollo.
+
+#### Acceptance Tests
+
+Para validar el comportamiento esperado desde la perspectiva del usuario se implementó un Acceptance Test bajo el enfoque **Behavior-Driven Development (BDD)**.
+
+El escenario se relaciona con la **US11 - Consultar indicadores de desempeño**, donde el Project Manager debe poder consultar los indicadores correspondientes al desempeño del portafolio.
+
+El escenario fue definido mediante un archivo `.feature` utilizando Gherkin:
+
+```gherkin
+Feature: Analytics Dashboard
+
+  As a Project Manager
+  I want to consult portfolio performance indicators
+  So that I can identify the current state and performance of the projects
+
+  Scenario: Consult portfolio performance indicators successfully
+    Given that analytics information exists for the portfolio
+    When the Project Manager requests the analytics dashboard
+    Then the system returns the portfolio performance indicators
+```
+
+Los Steps correspondientes fueron implementados en la clase `AnalyticsDashboardSteps`. En el paso `Given` se prepara información de Analytics utilizando una base de datos en memoria; en el paso `When` se consulta la información mediante `AnalyticsDashboardRepository`; finalmente, en el paso `Then` se verifica que el sistema retorne correctamente los indicadores de desempeño esperados.
+
+| Test ID | Test Type | Related User Story | Feature | Scenario |
+| :--- | :--- | :--- | :--- | :--- |
+| AT01 | Acceptance Test - BDD | US11 | Analytics Dashboard | Consult portfolio performance indicators successfully |
+
+#### Testing Execution Evidence
+
+La ejecución de la suite de pruebas fue realizada mediante el Test Explorer de Visual Studio. Como resultado se ejecutaron cuatro pruebas automatizadas, obteniendo los siguientes resultados:
+
+| Test Type | Tests Executed | Passed | Failed |
+| :--- | :---: | :---: | :---: |
+| Unit Tests | 2 | 2 | 0 |
+| Integration Tests | 1 | 1 | 0 |
+| Acceptance Tests | 1 | 1 | 0 |
+| **Total** | **4** | **4** | **0** |
+
+La ejecución confirmó que las cuatro pruebas implementadas finalizaron correctamente, sin presentar errores ni pruebas omitidas.
+
+![Testing Suite Execution - Sprint 1](assets/images/chapter-4/testing/testing-suite-sprint-1.png)
+
+*Figura. Ejecución de la suite de pruebas del backend de Vantage PMO en Visual Studio, mostrando cuatro pruebas superadas y cero errores.*
+
+Asimismo, la siguiente evidencia muestra el escenario de aceptación definido mediante Gherkin para la consulta de indicadores de desempeño.
+
+![Analytics Dashboard Feature](assets/images/chapter-4/testing/analytics-dashboard-feature.png)
+
+*Figura. Escenario de Acceptance Test en Gherkin correspondiente a la US11 - Consultar indicadores de desempeño.*
+
+#### Testing Repository and Commits
+
+Los archivos correspondientes a las pruebas automatizadas se encuentran almacenados dentro del repositorio del backend de Vantage PMO, en el proyecto `vantagePMO-platform.Tests`.
+
+**Repository:** [MDEPS-Team/MDEPS-Back-End](https://github.com/MDEPS-Team/MDEPS-Back-End)
+
+Los principales archivos incorporados para la suite de pruebas son:
+
+- `vantagePMO-platform.Tests/SummaryKpisTests.cs`
+- `vantagePMO-platform.Tests/PortfolioRoiTests.cs`
+- `vantagePMO-platform.Tests/AnalyticsDashboardRepositoryIntegrationTests.cs`
+- `vantagePMO-platform.Tests/Features/analytics-dashboard.feature`
+- `vantagePMO-platform.Tests/Features/Steps/AnalyticsDashboardSteps.cs`
+- `vantagePMO-platform.Tests/vantagePMO-platform.Tests.csproj`
+
+A continuación, se presenta el commit relacionado con la implementación de las pruebas durante el Sprint 1.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| MDEPS-Team/MDEPS-Back-End | feature/4.2.1.5-testing | ff70649 | test: add sprint 1 backend test suite | — | 2026-10-05 |
+
 ### 4.2.1.6. Execution Evidence for Sprint Review
+
+Durante el Sprint 1 se avanzó en la implementación del backend de Vantage PMO, incluyendo la construcción de bounded contexts, servicios de aplicación, repositorios, controladores REST y configuración de persistencia.
+
+Como parte del trabajo realizado durante el Sprint, se implementaron componentes correspondientes a módulos como Analytics, Projects, Dashboard, Meetings, Profiles, Reports, Resource Planning, Risk Compliance, Schedule, Settings, Support, Task Collaboration y Workspace.
+
+Asimismo, se configuró la exposición de servicios mediante controladores REST y documentación OpenAPI/Swagger, estableciendo los endpoints necesarios para las funcionalidades desarrolladas en el backend.
+
+Durante la validación técnica del Sprint se comprobó que el proyecto compila correctamente y que la suite de pruebas automatizadas implementada para el módulo Analytics finaliza satisfactoriamente. Las pruebas realizadas incluyen dos pruebas unitarias, una prueba de integración y una prueba de aceptación bajo BDD, todas ejecutadas correctamente.
+
+Estos resultados evidencian el avance alcanzado en la implementación técnica del backend durante el Sprint 1 y proporcionan una base para la integración posterior con las interfaces de usuario y los flujos funcionales del producto.
+
 ### 4.2.1.7. Services Documentation Evidence for Sprint Review
 ### 4.2.1.8. Software Deployment Evidence for Sprint Review
 ### 4.2.1.9. Team Collaboration Insights during Sprint
