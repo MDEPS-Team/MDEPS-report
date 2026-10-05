@@ -27,6 +27,7 @@ Proyecto<br>
 
 **Periodo Academico:** 2026-20
 **Fecha:** [Setiembre  2026]
+
 </div>
 
 ---
@@ -39,6 +40,8 @@ Proyecto<br>
 | 1.0 | [05/09/2026] | Quiliano Motta, Kirk Douglas | Elaboracion de Caratula, Capitulo I (Startup Profile, Solution Profile, Lean UX, Segmentos), Collaboration Insights y Student Outcome para la entrega AV1. |
 | 1.0 | [15/09/2026] | Guillen Giraldo, Mike Dylan | Desarrollo del Capítulo 2.5 (Strategic-Level Domain-Driven Design), abarcando el modelado mediante EventStorming, Context Mapping y la definición de la arquitectura de software en los niveles Context, Container y Deployment. |
 | 1.0 | [15/09/2026] | Todos | Finalizacion del informe para la entrega AV1 (Semana 4) |
+| 2.0 | [05/10/2026] | Quiliano Motta, Kirk Douglas | Desarrollo del Capítulo 3 (Solution UI/UX Design), abarcando las secciones 3.1.1 (Style Guidelines), 3.1.2 (Information Architecture) y 3.1.3 (Landing Page UI Design - Wireframes y Mock-ups). |
+| 2.0 | [05/10/2026] | Todos | Finalización e integración del informe para la entrega TB1 (Semana 7), incluyendo los Capítulos III y IV, configuración de software y evidencias del Sprint 1. |
 
 ---
 
