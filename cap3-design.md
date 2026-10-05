@@ -1,15 +1,18 @@
 <div style="page-break-before: always;"></div>
 
+<a id="capitulo-iii-solution-ui-ux-design"></a>
 # Capítulo III: Solution UI/UX Design
 
+<a id="31-product-design"></a>
 ## 3.1 Product Design
+
+<a id="311-style-guidelines"></a>
 ### 3.1.1. Style Guidelines.
-<a id="4-1-style-guidelines"></a>
 
 El diseño se enfoca en una interfaz intuitiva que garantiza la seguridad y escalabilidad del sistema siendo capaz de manejar múltiples proyectos con alta disponibilidad y un control de acceso estrictamente definido por roles.
 
+<a id="3111-general-style-guidelines"></a>
 #### 3.1.1.1. General Style Guidelines.
-<a id="4-1-1-general-style-guidelines"></a>
 
 En este apartado se detallan las decisiones de estilo que definen la identidad visual de Vantage PMO, una plataforma web y mobile orientada a la gestión centralizada de proyectos (PMO).
 Las decisiones relacionadas con branding, tipografía, colores, espaciado y lenguaje buscan transmitir profesionalismo, claridad, control y confianza, elementos clave en entornos corporativos.
@@ -98,13 +101,13 @@ Por otro lado, la **alineación** cumple un rol fundamental en la organización 
 
 Estos principios no se aplican de manera aislada, sino que forman parte de un sistema de diseño integral que busca ser **funcional, claro y alineado** con los objetivos de Vantage PMO: optimizar la gestión de proyectos mediante una experiencia intuitiva, organizada y orientada a la toma de decisiones estratégicas.
 
+<a id="312-information-architecture"></a>
 ### 3.1.2. Information Architecture.
-<a id="4-2-information-architecture"></a>
 
 Se enfoca en la forma crítica de salud de los proyectos (KPIs y semáforos) sea siempre el punto de partida de la navegación.
 
+<a id="3121-organization-systems"></a>
 #### 3.1.2.1. Organization Systems.
-<a id="4-2-1-organization-systems"></a>
 
 En la plataforma Vantage PMO, se emplea principalmente la organización jerárquica para resaltar la información crítica relacionada con la salud de los proyectos y portafolios. Elementos como KPIs clave, semáforos de estado, alertas de riesgo y desviaciones de cronograma o presupuesto se presentan con mayor jerarquía visual dentro de los dashboards. Esta priorización permite que los usuarios identifiquen de forma inmediata los proyectos que requieren atención o toma de decisiones.
 
@@ -112,8 +115,8 @@ Asimismo, se aplica una organización secuencial en procesos que requieren una g
 
 En cuanto a los esquemas de categorización, Vantage PMO no utiliza una organización alfabética como criterio principal. En su lugar, se emplea una organización cronológica para el seguimiento de información histórica, como el avance del proyecto en el tiempo, hitos cumplidos, desviaciones acumuladas y evolución de indicadores.
 Adicionalmente, el contenido se clasifica según el rol del usuario, permitiendo que Project Managers, PMO Leads y Stakeholders accedan a vistas, niveles de detalle y funcionalidades adaptadas a sus responsabilidades y necesidades de información.
+<a id="3122-labeling-systems"></a>
 #### 3.1.2.2. Labeling Systems.
-<a id="4-2-2-labeling-systems"></a>
 
 A continuación, se presenta el sistema de etiquetado (labeling system) diseñado para la plataforma Vantage PMO. Este sistema busca representar la información de forma clara y consistente, utilizando etiquetas cortas, precisas y alineadas al lenguaje de la gestión de proyectos, con el objetivo de minimizar la carga cognitiva, facilitar la navegación y mantener coherencia visual con la guía de diseño establecida.
 
@@ -144,8 +147,8 @@ Se ha priorizado la claridad semántica, el uso de términos familiares para pro
 * Alertas: Notificaciones sobre desviaciones críticas o riesgos relevantes.
 * Reportes Ejecutivos: Acceso a reportes consolidados para evaluación y seguimiento.
 
+<a id="3123-seo-tags-and-meta-tags"></a>
 #### 3.1.2.3. SEO Tags and Meta Tags.
-<a id="4-2-3-seo-tags-meta-tags"></a>
 
 Para asegurar que la plataforma *Vantage PMO* sea funcional por los motores de búsqueda y presente un buen diseño, se han configurado los siguientes meta tags técnicos:
 
@@ -170,8 +173,8 @@ Para asegurar que la plataforma *Vantage PMO* sea funcional por los motores de b
 * **Robots:** en html:
     `<meta name="robots" content="index, follow">`
 
+<a id="3124-searching-systems"></a>
 #### 3.1.2.4. Searching Systems.
-<a id="4-2-4-searching-systems"></a>
 
 El sistema de búsqueda está diseñado  para poder reducir el tiempo de localización de datos críticos:
 
@@ -185,8 +188,8 @@ El sistema de búsqueda está diseñado  para poder reducir el tiempo de localiz
     * **Prioridad y Carga:** Según el impacto en el negocio.
 3.  **Búsqueda Documental:** Capacidad de búsqueda dentro del repositorio central de documentos para localizar actas, PDFs de reportes generados anteriormente y archivos de colaboración mediante palabras clave en el título y metadatos.
 
+<a id="3125-navigation-systems"></a>
 #### 3.1.2.5. Navigation Systems.
-<a id="4-2-5-navigation-systems"></a>
 
 La navegación se estructura para que el usuario nunca este a más de tres clics de la información que necesita:
 
@@ -203,13 +206,13 @@ La navegación se estructura para que el usuario nunca este a más de tres clics
 4.  **Acciones Rápidas:** Botones de acción flotante y accesos directos para la creación inmediata de proyectos o registro de riesgos, condicionados por los permisos del usuario.
 
 
+<a id="313-landing-page-ui-design"></a>
 ### 3.1.3. Landing Page UI Design.
-<a id="4-3-landing-page-ui-design"></a>
 
 Este apartado define la identidad visual y estética de la página de inicio. En esta sección se detallan los elementos gráficos —como la paleta de colores, la tipografía que transforman la estructura del wireframe en una interfaz funcional y atractiva, asegurando una experiencia de usuario coherente con la propuesta.
 
+<a id="3131-landing-page-wireframe"></a>
 #### 3.1.3.1. Landing Page Wireframe.
-<a id="4-3-1-landing-page-wireframe"></a>
 
 **LADING PAGE WEB**
 
@@ -274,8 +277,8 @@ Este apartado define la identidad visual y estética de la página de inicio. En
 
 **Newsletter**: Un formulario de suscripción vertical con el campo de texto y el botón de registro apilados.Los enlaces de navegación (Product, Company, Resources) se presentan en listas verticales expandibles o fijas.Finaliza con iconos de redes sociales y los términos legales en la base de la pantalla.
 
+<a id="3132-landing-page-mock-up"></a>
 #### 3.1.3.2. Landing Page Mock-up.
-<a id="4-3-2-landing-page-mock-up"></a>
 
 **LADING PAGE MOCK-UP WEB**
 
@@ -348,7 +351,9 @@ Este apartado define la identidad visual y estética de la página de inicio. En
 
 **Footer Organizado**: Los enlaces de navegación (Product, Company, Resources) se presentan en listas verticales fijas o expandibles. Finaliza con iconos de redes sociales y los términos legales en la base de la pantalla, en una composición compacta.
 
+<a id="314-mobile-applications-ux-ui-design"></a>
 ## 3.1.4. Mobile Applications UX/UI Design
+<a id="3141-mobile-applications-wireframes"></a>
 ### 3.1.4.1. Mobile Applications Wireframes
 
 Los siguientes wireframes presentan las principales vistas de la aplicación móvil Vantage PMO. Se organizan según el recorrido del usuario: acceso, registro, consulta del dashboard y gestión de proyectos, análisis, gobernanza y perfil. Las pantallas representan tanto vistas principales como estados de confirmación y formularios necesarios para comprender la navegación propuesta.
@@ -359,6 +364,7 @@ Los siguientes wireframes presentan las principales vistas de la aplicación mó
 
 **Arquitectura de información.** Antes de iniciar sesión, la información se organiza en acceso, recuperación de credenciales y creación de cuenta. Después de autenticarse, una navegación persistente agrupa las áreas principales en Home, Projects, Analytics, Governance y Profile. Dentro de cada área, la jerarquía conduce de la vista general a una tarea concreta por ejemplo, seleccionar un proyecto, revisar una alerta o editar la cuenta— y presenta confirmaciones al completar acciones relevantes. Esta organización responde a la necesidad identificada de consultar desde el móvil el estado de los proyectos, sus responsables, fechas, indicadores y alertas desde un punto centralizado.
 
+<a id="31411-authentication"></a>
 #### 3.1.4.1.1. Authentication
 
 El recorrido de autenticación comienza con la pantalla de inicio de Vantage PMO y el formulario de acceso. Si el usuario no recuerda sus credenciales, puede solicitar un código, verificarlo, definir una nueva contraseña y confirmar la actualización. La secuencia hace visible el paso actual y ofrece una confirmación final; la pantalla de cierre exitoso comunica que la sesión terminó.
@@ -372,6 +378,7 @@ El recorrido de autenticación comienza con la pantalla de inicio de Vantage PMO
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/authentication/password-recovery-verification-code.png" alt="Verificación del código de seguridad" width="175"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/authentication/password-recovery-new-password.png" alt="Formulario para crear una contraseña nueva" width="175"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/authentication/password-recovery-success.png" alt="Confirmación de contraseña actualizada" width="175"> |
 
 
+<a id="31412-registration"></a>
 #### 3.1.4.1.2. Registration
 
 El registro se divide en cuatro pasos datos personales, contacto y acceso, perfil profesional y selección de rol seguidos por una pantalla de cuenta creada. El indicador numerado permite reconocer el avance y anticipar cuánto falta; la agrupación de campos reduce la carga de cada pantalla. La selección de rol introduce una arquitectura personalizada según las responsabilidades del usuario dentro de la PMO.
@@ -384,12 +391,14 @@ El registro se divide en cuatro pasos datos personales, contacto y acceso, perfi
 |:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/registration/registration-role-selection.png" alt="Cuarto paso del registro: selección de rol" width="175"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/registration/registration-success.png" alt="Confirmación de cuenta creada" width="175"> |
 
+<a id="31413-dashboard"></a>
 #### 3.1.4.1.3. Dashboard
 
 El dashboard es la entrada al espacio de trabajo autenticado. Presenta primero el saludo y el contexto del usuario, después una alerta prioritaria y métricas resumidas de proyectos, hitos, salud y capacidad. Esta jerarquía permite detectar asuntos que requieren atención antes de profundizar en cada proyecto. La barra inferior mantiene accesibles las cinco áreas principales y combina icono con etiqueta.
 
 <p align="center"><img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/dashboard/home-dashboard.png" alt="Dashboard móvil con alerta prioritaria, métricas y navegación principal" width="220"></p>
 
+<a id="31414-projects"></a>
 #### 3.1.4.1.4. Projects
 
 La sección de proyectos organiza el trabajo desde una lista filtrable hacia la creación de iniciativas, el tablero Kanban y acciones de seguimiento. Los formularios agrupan la identificación, los participantes y las fechas; el tablero permite consultar tareas por estado y equipo, mientras que la creación de una tarea muestra un formulario contextual y una confirmación. Las vistas de exportación y roadmap amplían el recorrido hacia la consulta ejecutiva y la planificación del portafolio.
@@ -406,6 +415,7 @@ La sección de proyectos organiza el trabajo desde una lista filtrable hacia la 
 |:--:|:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/projects/project-report-export-modal.png" alt="Selección del formato y periodo de exportación del reporte" width="175"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/projects/project-dossier-export-success.png" alt="Confirmación de dossier de proyecto exportado" width="175"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/projects/strategic-roadmap.png" alt="Roadmap estratégico con hitos y trayectoria del portafolio" width="175"> |
 
+<a id="31415-analytics"></a>
 #### 3.1.4.1.5. Analytics
 
 Analytics presenta indicadores de eficiencia y desempeño en una vista resumida. Los filtros temporales permiten delimitar el análisis y la acción de exportación abre una selección de periodo y formato. La pantalla de éxito cierra ese flujo e informa que el reporte fue generado, haciendo visible el resultado de la acción.
@@ -414,6 +424,7 @@ Analytics presenta indicadores de eficiencia y desempeño en una vista resumida.
 |:--:|:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/analytics/analytics-dashboard.png" alt="Dashboard de analítica con indicadores de desempeño" width="175"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/analytics/analytics-report-export-modal.png" alt="Modal para configurar la exportación del reporte analítico" width="175"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/analytics/analytics-report-export-success.png" alt="Confirmación de reporte analítico exportado" width="175"> |
 
+<a id="31416-governance"></a>
 #### 3.1.4.1.6. Governance
 
 Governance agrupa la supervisión de cumplimiento y la atención de alertas. El dashboard resume el estado institucional y los protocolos activos; la vista de alertas prioriza bloqueos y riesgos, explica su causa y propone una acción. La combinación de prioridad textual, descripción e intervención reduce la dependencia de señales cromáticas y facilita decidir qué atender primero.
@@ -422,6 +433,7 @@ Governance agrupa la supervisión de cumplimiento y la atención de alertas. El 
 |:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/governance/governance-dashboard.png" alt="Dashboard de gobernanza, cumplimiento y protocolos" width="175"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/governance/active-alerts-resolution.png" alt="Cola priorizada de alertas con causas y acciones recomendadas" width="175"> |
 
+<a id="31417-profile"></a>
 #### 3.1.4.1.7. Profile
 
 Profile reúne la información de la cuenta, las preferencias y los controles de seguridad. Desde el perfil se accede a la edición de la cuenta, a la actualización de la fotografía y a la confirmación de cierre de sesión. Los estados de éxito hacen explícito cuándo los cambios quedaron guardados; separar estas acciones del contenido de Projects y Governance mantiene una arquitectura predecible.
@@ -434,6 +446,7 @@ Profile reúne la información de la cuenta, las preferencias y los controles de
 |:--:|:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/profile/profile-changes-success.png" alt="Confirmación de cambios de perfil guardados" width="175"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/profile/logout-confirmation-modal.png" alt="Confirmación antes de cerrar sesión" width="175"> |<p align="center"><img src="assets/images/chapter-3/application-ux-ui-design/application-wireframes/authentication/logout-success.png" alt="Confirmación de cierre de sesión" width="175"></p>|
 
+<a id="3142-mobile-applications-wireflow-diagrams"></a>
 ### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
 Los diagramas de flujo de interfaz (wireflows) muestran cómo se conectan las pantallas y acciones de Vantage PMO para que cada usuario alcance un objetivo concreto (User Goal). Cada recorrido presenta la secuencia de interacción, desde el punto de entrada hasta la respuesta del sistema, e incluye los pasos necesarios para completar la tarea. Los nueve objetivos se relacionan con las User Stories (US) del capítulo II cuando corresponde; también se incluyen flujos complementarios de autenticación, registro y gestión de cuenta para representar de forma integral la experiencia móvil.
@@ -499,10 +512,12 @@ Los diagramas de flujo de interfaz (wireflows) muestran cómo se conectan las pa
 	</tr>
 </table>
 
+<a id="3143-mobile-applications-mock-ups"></a>
 ### 3.1.4.3. Mobile Applications Mock-ups
 
 Los siguientes mockups presentan la propuesta visual de Vantage PMO en un dispositivo móvil. A diferencia de los wireframes, muestran la aplicación de color, tipografía, iconografía, componentes y estados de interacción con mayor nivel de detalle. Se organizan según las áreas de uso para facilitar la lectura de las pantallas principales y sus variantes.
 
+<a id="31431-authentication"></a>
 #### 3.1.4.3.1. Authentication
 
 Este flujo reúne el inicio de la aplicación, el acceso y la recuperación de contraseña. También incluye el cierre de sesión exitoso como estado de salida de la cuenta.
@@ -515,6 +530,7 @@ Este flujo reúne el inicio de la aplicación, el acceso y la recuperación de c
 |:--:|:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/password-recovery-verification-code.png" alt="Mockup de verificación del código" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/password-recovery-new-password.png" alt="Mockup de creación de nueva contraseña" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/password-recovery-success.png" alt="Mockup de confirmación de contraseña actualizada" width="150"> |
 
+<a id="31432-registration"></a>
 #### 3.1.4.3.2. Registration
 
 El registro se presenta como un proceso progresivo, con indicadores de avance y formularios separados por tipo de información. La última pantalla confirma la creación de la cuenta y resume el perfil configurado.
@@ -527,12 +543,14 @@ El registro se presenta como un proceso progresivo, con indicadores de avance y 
 |:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/registration/role-selection.png" alt="Mockup de selección de rol" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/registration/registration-success.png" alt="Mockup de cuenta creada" width="150"> |
 
+<a id="31433-dashboard"></a>
 #### 3.1.4.3.3. Dashboard
 
 La pantalla principal combina una alerta prioritaria con indicadores del portafolio, hitos, salud de proyectos y capacidad del equipo. La navegación inferior mantiene el acceso a las áreas centrales de la aplicación.
 
 <p align="center"><img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/dashboard/home-dashboard.png" alt="Mockup del dashboard móvil con alerta prioritaria e indicadores" width="190"></p>
 
+<a id="31434-projects"></a>
 #### 3.1.4.3.4. Projects
 
 Projects concentra la consulta del portafolio, el registro de iniciativas y la gestión del trabajo en Kanban. También presenta las opciones de exportación y la planificación estratégica mediante el roadmap.
@@ -549,6 +567,7 @@ Projects concentra la consulta del portafolio, el registro de iniciativas y la g
 |:--:|:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/strategic-roadmap.png" alt="Mockup del roadmap estratégico" width="150">  | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/project-dossier-export-success.png" alt="Mockup de confirmación de dossier exportado" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/projects/project-report-export-modal.png" alt="Mockup del modal de exportación de reporte" width="150"> |
 
+<a id="31435-analytics"></a>
 #### 3.1.4.3.5. Analytics
 
 Analytics ofrece una vista de indicadores de desempeño, filtros temporales y opciones de exportación. El estado de éxito muestra la confirmación de generación y descarga del dossier ejecutivo.
@@ -557,6 +576,7 @@ Analytics ofrece una vista de indicadores de desempeño, filtros temporales y op
 |:--:|:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/analytics/analytics-dashboard.png" alt="Mockup de analítica con indicadores de desempeño" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/analytics/analytics-report-export-modal.png" alt="Mockup de opciones de exportación analítica" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/analytics/analytics-report-export-success.png" alt="Mockup de reporte analítico exportado" width="150"> |
 
+<a id="31436-governance"></a>
 #### 3.1.4.3.6. Governance
 
 Governance reúne el estado de cumplimiento institucional y la atención de bloqueos. La segunda pantalla prioriza alertas, expone sus causas y ofrece acciones de mitigación.
@@ -565,6 +585,7 @@ Governance reúne el estado de cumplimiento institucional y la atención de bloq
 |:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/governance/governance-dashboard.png" alt="Mockup del dashboard de gobernanza y cumplimiento" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/governance/active-alerts-resolution.png" alt="Mockup de alertas activas y acciones de resolución" width="150"> |
 
+<a id="31437-profile"></a>
 #### 3.1.4.3.7. Profile
 
 Profile centraliza la información de la cuenta, las opciones de seguridad y las preferencias. Los mockups incluyen la edición de datos, el cambio de fotografía, la confirmación de modificaciones y el diálogo previo al cierre de sesión.
@@ -577,6 +598,7 @@ Profile centraliza la información de la cuenta, las opciones de seguridad y las
 |:--:|:--:|:--:|
 | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/profile/profile-changes-success.png" alt="Mockup de confirmación de cambios guardados" width="150"> | <img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/profile/logout-confirmation-modal.png" alt="Mockup de confirmación de cierre de sesión" width="150"> |<p align="center"><img src="assets/images/chapter-3/application-ux-ui-design/application-mockups/authentication/logout-success.png" alt="Mockup de cierre de sesión exitoso" width="150"></p>|
 
+<a id="3144-mobile-applications-user-flow-diagrams"></a>
 ### 3.1.4.4. Mobile Applications User Flow Diagrams
 
 Esta sección presenta la propuesta de User Flows para la aplicación móvil Vantage PMO. Se define un flujo para cada User Goal, considerando las personas usuarias involucradas —visitante, usuario registrado y Project Manager— y manteniendo la correspondencia con los Wireflows de la sección anterior. Los diagramas incorporan los mock-ups de las pantallas, la ruta esperada (happy path) y las rutas alternativas o condiciones que pueden interrumpir o desviar el recorrido (unhappy paths). Se elaboraron con la herramienta de diseño indicada para la propuesta (Figma). Cada flujo incluye el objetivo del usuario y una explicación de sus pasos y decisiones.
@@ -613,6 +635,7 @@ Esta sección presenta la propuesta de User Flows para la aplicación móvil Van
 	<tr>
 		<td><strong>UG-07 — Seguimiento de alertas y riesgos.</strong> Como Project Manager, quiero revisar alertas y riesgos, para actuar oportunamente ante eventos que puedan afectar los proyectos.<br><br><strong>Happy path:</strong> accede desde Governance a la cola de alertas, revisa la prioridad, la causa y la acción recomendada, y aplica la mitigación o marca la alerta como atendida. <strong>Alternativas:</strong> si la acción requiere autorización, puede dejarla pendiente o reasignarla a una  persona responsable; también puede revisar otra alerta antes de actuar.</td>		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-07-governance-alerts-risks.png" alt="User Flow de revisión de alertas y riesgos" width="100%"></td>	</tr>	<tr>		<td><strong>UG-08 — Actualización del perfil.</strong> Como usuario registrado, quiero actualizar mis datos personales o mi fotografía, para mantener vigente la información de mi cuenta.<br><br><strong>Happy path:</strong> desde el perfil, elige editar los datos de la cuenta o actualizar la fotografía, guarda los cambios y recibe una confirmación. <strong>Alternativas:</strong> puede cancelar la edición para conservar la información actual; si los datos no superan la validación, debe corregirlos antes de guardar.</td>		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-08-profile-update.png" alt="User Flow de actualización del perfil" width="100%"></td>	</tr>	<tr>		<td><strong>UG-09 — Cierre de sesión.</strong> Como usuario autenticado, quiero cerrar mi sesión de forma segura, para proteger el acceso a mi cuenta cuando termine de utilizar la aplicación.<br><br><strong>Happy path:</strong> inicia el cierre desde el perfil y confirma la acción en el diálogo; el recorrido termina en la pantalla de cierre exitoso. <strong>Alternativa:</strong> si cancela o descarta el diálogo, vuelve al perfil y conserva su sesión activa.</td>		<td><img src="assets/images/chapter-3/application-ux-ui-design/application-user-flow-diagrams/ug-09-logout.png" alt="User Flow de cierre de sesión" width="100%"></td>	</tr></table>
 
+<a id="3145-mobile-applications-prototyping"></a>
 #### 3.1.4.5. Mobile Applications Prototyping
 
 | Aplicación | Descripción |
