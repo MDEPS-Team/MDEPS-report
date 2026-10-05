@@ -37,17 +37,12 @@ Todas las funcionalidades y mejoras fueron finalmente integradas en la rama main
 
 ---
 
-**Landing Page — GitHub Pages**
+URL de los Repositorios:
+Organización: https://github.com/MDEPS-Team
+Reporte: https://github.com/MDEPS-Team/MDEPS-Landing-page
+Landing Page: https://github.com/MDEPS-Team/MDEPS-Landing-page
+Backend: https://github.com/MDEPS-Team/MDEPS-Back-End
 
-Enlace de despliegue: 
-
-![Landing Page desplegada en Github deployment]()
-
-**Landing Page — Repositorio GitHub**
-
-Enlace del repositorio: https://github.com/BL-Aplicaciones-Web-1ASI0730-2610-12158/Vantage-PMO-Business-Web-Page
-
-![Repositorio GitHub — Landing Page](assets/images/chapter-5/landing-page/landing-page-repository.png)
 
 ### Versionado Semántico
 
@@ -180,8 +175,8 @@ Repositorio de Código Fuente
 
 Se debe crear un repositorio en GitHub y subir todos los archivos del proyecto (HTML, CSS, JS). Es obligatorio que el archivo index.html esté ubicado en la raíz del repositorio para poder realizar el despliegue correctamente.
 
-![Github Repository](assets/images/chapter-5/landing-page/landing-page-repository.png)
-
+![img.png](img.png)
+# 4.2
 ## 4.2.1. Sprint 1
 ### 4.2.1.1. Sprint Planning 1
 ### 4.2.1.2. Aspect Leaders and Collaborators
@@ -302,17 +297,99 @@ A continuación, se presenta el commit relacionado con la implementación de las
 | MDEPS-Team/MDEPS-Back-End | feature/4.2.1.5-testing | ff70649 | test: add sprint 1 backend test suite | — | 2026-10-05 |
 
 ### 4.2.1.6. Execution Evidence for Sprint Review
+<a id="5-2-1-5-execution-evidence-for-sprint-review"></a>
 
-Durante el Sprint 1 se avanzó en la implementación del backend de Vantage PMO, incluyendo la construcción de bounded contexts, servicios de aplicación, repositorios, controladores REST y configuración de persistencia.
+Durante el presente Sprint, se ha logrado la transición de una interfaz estática a un ecosistema interactivo y funcional, cumpliendo con el objetivo de establecer el núcleo de acceso y la propuesta de valor visual de Vantage PMO. Los hitos alcanzados se centran en la implementación de un sistema de seguridad robusto, la personalización dinámica de la identidad de marca y la optimización de la experiencia de usuario a través de múltiples dispositivos y lenguajes.
 
-Como parte del trabajo realizado durante el Sprint, se implementaron componentes correspondientes a módulos como Analytics, Projects, Dashboard, Meetings, Profiles, Reports, Resource Planning, Risk Compliance, Schedule, Settings, Support, Task Collaboration y Workspace.
+**Resumen de Logros:**
 
-Asimismo, se configuró la exposición de servicios mediante controladores REST y documentación OpenAPI/Swagger, estableciendo los endpoints necesarios para las funcionalidades desarrolladas en el backend.
+- Seguridad y Acceso: Se ha desplegado un módulo de autenticación completo que integra proveedores de identidad modernos, garantizando un flujo de inicio de sesión seguro, validado y alineado con normativas legales de privacidad.
 
-Durante la validación técnica del Sprint se comprobó que el proyecto compila correctamente y que la suite de pruebas automatizadas implementada para el módulo Analytics finaliza satisfactoriamente. Las pruebas realizadas incluyen dos pruebas unitarias, una prueba de integración y una prueba de aceptación bajo BDD, todas ejecutadas correctamente.
+- Interactividad y Demostración: Se implementó un motor de previsualización en tiempo real que permite a los potenciales clientes interactuar con la plataforma, personalizando elementos de branding y visualizando la capacidad del dashboard de portafolio sin fricciones técnicas.
 
-Estos resultados evidencian el avance alcanzado en la implementación técnica del backend durante el Sprint 1 y proporcionan una base para la integración posterior con las interfaces de usuario y los flujos funcionales del producto.
+- Accesibilidad y Alcance Global: Gracias a la implementación de internacionalización (i18n) y un diseño estrictamente responsivo, la plataforma es ahora capaz de ofrecer una navegación coherente y profesional tanto en entornos de escritorio como en dispositivos móviles, eliminando barreras de idioma y formato.
 
-### 4.2.1.7. Services Documentation Evidence for Sprint Review
-### 4.2.1.8. Software Deployment Evidence for Sprint Review
-### 4.2.1.9. Team Collaboration Insights during Sprint
+- Comunicación Persistente: Se estableció la infraestructura de notificaciones push, permitiendo una conexión directa con el usuario y mejorando los índices de retención mediante alertas del sistema optimizadas.
+
+A continuación, se presentan las evidencias gráficas de las vistas implementadas y el recurso audiovisual que detalla el flujo de navegación alcanzado:
+
+Video de Demostración y Navegación: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202417433_upc_edu_pe/IQBngnzzXajyRpPAik2w-PdQAW6q0V01RTT5qhqPQLRNLcg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=SXvFNG
+
+Screenshots de la Implementación:
+
+![img_1.png](img_1.png)
+
+###  4.2.1.7. Services Documentation Evidence for Sprint Review
+
+<a id="5-2-1-6-services-documentation-evidence-for-sprint-review"></a>
+
+Durante este sprint se llevó a cabo el desarrollo y la implementación completa del Landing Page del sistema, el cual representa el primer punto de contacto para los usuarios y funciona como acceso inicial a la plataforma.
+
+En este sprint no se desarrollaron endpoints REST tradicionales; sin embargo, se incluye la documentación correspondiente a la URL donde se encuentra desplegado el recurso, junto con evidencias del despliegue, la interacción del usuario y los commits asociados al proceso de desarrollo.
+
+**Descripción del logro:**
+
+- Desarrollo e implementación del Landing Page estático.
+- Despliegue del Landing Page en un entorno accesible.
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Recurso</th>
+    <th>Acción implementada</th>
+    <th>HTTP</th>
+    <th>URL / Endpoint</th>
+    <th>Link de repositorio</th>
+  </tr>
+  <tr>
+    <td>Landig Page</td>
+    <td>Vista inicial</td>
+    <td>GET</td>
+    <td><a href="https://mdeps-team.github.io/MDEPS-Landing-page/">https://mdeps-team.github.io/MDEPS-Landing-page/</a></td>
+    <td><a href="https://github.com/MDEPS-Team/MDEPS-Landing-page">https://github.com/MDEPS-Team/MDEPS-Landing-page</a></td>
+  </tr>
+</table>
+
+#### 4.2.1.8. Software Deployment Evidence for Sprint Review
+<a id="5-2-1-7-software-deployment-evidence-for-sprint-review"></a>
+
+En este Sprint se ejecutaron las tareas necesarias para publicar la Landing Page, haciendo uso de GitHub Pages como servicio de alojamiento web. A continuación, se presentan las actividades desarrolladas durante este proceso:
+
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
+
+
+#### 4.2.1.9. Team Collaboration Insights during Sprint
+<a id="5-2-1-8-team-collaboration-insights-during-sprint"></a>
+
+La finalización de este Sprint es el resultado de un esfuerzo coordinado para transformar los requerimientos de Vantage PMO en componentes de software funcionales. El equipo adoptó un flujo de trabajo ágil y riguroso, caracterizado por los siguientes puntos clave:
+
+- La carga de trabajo se distribuyó estratégicamente, permitiendo que cada desarrollador liderara áreas críticas según su especialidad, desde la lógica de internacionalización hasta la optimización del diseño responsivo y multimedia.
+
+- La evolución del proyecto se documentó a través de un historial de cambios continuo y granular. La unión de los módulos se realizó mediante procesos de Pull Request hacia la rama de integración, asegurando que cada nueva funcionalidad cumpliera con los estándares del proyecto antes de ser consolidada.
+
+- Mantuvimos un canal de comunicación técnica constante para gestionar la integración de APIs y estilos, logrando resolver discrepancias de diseño o lógica de manera inmediata y colaborativa.
+
+- El éxito de la entrega se fundamentó en la aplicación de buenas prácticas de desarrollo, asegurando un código limpio, mantenible y alineado con los objetivos de negocio de la plataforma.
+
+- Este enfoque metodológico no solo permitió cumplir con el Sprint Goal, sino que garantizó una contribución equilibrada y de alto impacto por parte de todos los miembros del equipo en la construcción de la Landing Page.
+
+**Métricas de Actividad en el Repositorio**
+
+Como evidencia del dinamismo y la colaboración técnica, se adjuntan los indicadores de actividad (commits, merges y contribuciones) extraídos de GitHub:
+
+### Analíticos de GitHub — Report
+
+
+#### Analíticos de GitHub — Landing Page
+
+<p align="center">
+  <img src="assets/images/chapter-5/Team-Colaboration/Committers.jpeg" alt="Top Committers — Sprint 1" width="600"/>
+</p>
+Se evidencia la participación plena de los cinco integrantes en el desarrollo de la Landing Page. La distribución de las contribuciones técnicas valida una colaboración equitativa y constante por parte de todo el equipo durante el ciclo de trabajo inicial.
+
+
+
+Se evidencia la colaboración constante y la sinergia grupal mediante la trazabilidad de los aportes individuales. Cada integrante sumó valor en áreas críticas del desarrollo, garantizando no solo el avance técnico del sistema, sino también el cumplimiento de los acuerdos establecidos durante la planificación del ciclo de trabajo.
+
+</div>
