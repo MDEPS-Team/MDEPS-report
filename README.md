@@ -69,6 +69,18 @@ Proyecto<br>
 
 <div style="page-break-after: always;"></div>
 
+## Objetivo principal y planificación de los Sprints
+
+El objetivo del trabajo hasta la entrega final es establecer el núcleo funcional y de confianza de Vantage PMO, transformando la Landing Page de un sitio informativo en una experiencia interactiva, segura y profesional. Para lograrlo, se desarrollarán tres sprints:
+
+| Sprint | Objetivo y alcance | Entregable esperado |
+| :--- | :--- | :--- |
+| **Sprint 1 — Acceso y experiencia de entrada** | Consolidar la autenticación y los controles de privacidad; incorporar internacionalización (i18n) y convertir la Landing Page en una experiencia interactiva, incluyendo una primera versión del simulador de marca. | Flujo de acceso seguro y Landing Page interactiva disponible en los idiomas definidos para el producto. |
+| **Sprint 2 — Simulador y dashboard de portafolio** | Completar la personalización de marca y desarrollar el dashboard dinámico para presentar el estado y los indicadores del portafolio. Aplicar principios de UX, recursos multimedia y microinteracciones para comunicar el valor de Vantage PMO. | Simulador de marca y dashboard de portafolio integrados y utilizables. |
+| **Sprint 3 — Integración y preparación final** | Optimizar la experiencia responsiva y el rendimiento; integrar notificaciones push y la transición desde la Landing Page al entorno de gestión de proyectos; validar los flujos de extremo a extremo y corregir problemas antes de la entrega final. | Experiencia integrada y validada en los dispositivos objetivo, lista para el Trabajo Final. 
+
+<div style="page-break-after: always;"></div>
+
 ## Project Report Collaboration Insights
 
 **Link del Repositorio de la Organizacion:** [Organización](https://github.com/MDEPS-Team) 
