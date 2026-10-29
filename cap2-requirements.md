@@ -1025,30 +1025,42 @@ Para su elaboración se definieron dos Business Goals bajo criterios SMART. Asim
 <a id="243-product-backlog"></a>
 ### 2.4.3. Product Backlog
 
-En esta sección se presenta el Product Backlog de Vantage PMO, conformado por las User Stories previamente identificadas y priorizadas de acuerdo con el valor que aportan al negocio y a los usuarios de la solución.
+El Product Backlog de Vantage PMO reúne las 17 User Stories definidas en la sección 2.4.1. Las historias se priorizaron considerando el valor para los usuarios y las dependencias funcionales necesarias para que los procesos de la solución sean coherentes. La estimación se expresa en Story Points de la escala 1, 2, 3, 5 y 8; estos puntos representan esfuerzo relativo, complejidad e incertidumbre, no horas de trabajo.
 
-Cada User Story ha sido estimada utilizando Story Points de la serie 1, 2, 3, 5 y 8, considerando de manera relativa el esfuerzo, complejidad e incertidumbre asociados a su implementación. Asimismo, las historias han sido distribuidas entre los tres Sprints considerados para el desarrollo del producto. Las User Stories correspondientes al Landing Page se incluyen desde el Sprint 1.
+Para establecer la precedencia se consideró el ciclo de gestión de proyectos: primero se registra un proyecto (US01), después se definen sus fases e hitos (US02) y posteriormente se gestionan las tareas y responsables (US04 y US05). Esta secuencia respeta la regla del dominio según la cual una tarea debe pertenecer a una fase del proyecto. La consulta del portafolio (US03) requiere información de proyectos previamente registrados, aunque no depende necesariamente de la implementación completa del módulo de tareas.
+
+En las funcionalidades posteriores, la consulta de indicadores (US11) precede a su consolidación en reportes (US12); el seguimiento de riesgos (US07) y las métricas del portafolio pueden originar las alertas (US13). Asimismo, la gestión documental (US09) sirve como base para incorporar evidencias capturadas desde dispositivos móviles (US10). La gestión avanzada de roles y permisos (US15) se planifica en el Sprint 3, sin sustituir las necesidades de autenticación y autorización básicas identificadas en la historia técnica TS04.
 
 | # Orden | User Story ID | Título | Story Points | Sprint |
 | :---: | :---: | :--- | :---: | :---: |
-| 1 | US03 | Consultar el estado de múltiples proyectos | 5 | Sprint 1 |
-| 2 | US01 | Registrar un nuevo proyecto | 3 | Sprint 1 |
-| 3 | US04 | Asignar tareas a responsables | 3 | Sprint 1 |
-| 4 | US05 | Actualizar el estado de una tarea | 3 | Sprint 1 |
-| 5 | US11 | Consultar indicadores de desempeño | 5 | Sprint 2 |
-| 6 | US12 | Generar reportes de desempeño | 8 | Sprint 2 |
-| 7 | US16 | Conocer la propuesta de valor de Vantage PMO | 3 | Sprint 1 |
-| 8 | US13 | Recibir alertas sobre eventos relevantes | 5 | Sprint 2 |
-| 9 | US07 | Registrar y realizar seguimiento de riesgos | 5 | Sprint 2 |
-| 10 | US09 | Centralizar documentos de los proyectos | 5 | Sprint 2 |
-| 11 | US02 | Definir fases e hitos del proyecto | 5 | Sprint 1 |
-| 12 | US17 | Consultar medios de contacto del producto | 2 | Sprint 1 |
-| 13 | US08 | Asignar recursos considerando su capacidad | 8 | Sprint 3 |
-| 14 | US14 | Consultar información de proyectos desde un dispositivo móvil | 5 | Sprint 3 |
+| 1 | US16 | Conocer la propuesta de valor de Vantage PMO | 3 | Sprint 1 |
+| 2 | US17 | Consultar medios de contacto del producto | 2 | Sprint 1 |
+| 3 | US01 | Registrar un nuevo proyecto | 3 | Sprint 1 |
+| 4 | US02 | Definir fases e hitos del proyecto | 5 | Sprint 1 |
+| 5 | US03 | Consultar el estado de múltiples proyectos | 5 | Sprint 1 |
+| 6 | US04 | Asignar tareas a responsables | 3 | Sprint 1 |
+| 7 | US05 | Actualizar el estado de una tarea | 3 | Sprint 1 |
+| 8 | US07 | Registrar y realizar seguimiento de riesgos | 5 | Sprint 2 |
+| 9 | US09 | Centralizar documentos de los proyectos | 5 | Sprint 2 |
+| 10 | US11 | Consultar indicadores de desempeño | 5 | Sprint 2 |
+| 11 | US13 | Recibir alertas sobre eventos relevantes | 5 | Sprint 2 |
+| 12 | US12 | Generar reportes de desempeño | 8 | Sprint 2 |
+| 13 | US15 | Gestionar roles y permisos | 5 | Sprint 3 |
+| 14 | US08 | Asignar recursos considerando su capacidad | 8 | Sprint 3 |
 | 15 | US06 | Comunicar bloqueos y observaciones de una tarea | 3 | Sprint 3 |
-| 16 | US10 | Registrar evidencia utilizando un recurso del dispositivo | 5 | Sprint 3 |
-| 17 | US15 | Gestionar roles y permisos | 5 | Sprint 3 |
+| 16 | US14 | Consultar información de proyectos desde un dispositivo móvil | 5 | Sprint 3 |
+| 17 | US10 | Registrar evidencia utilizando un recurso del dispositivo | 5 | Sprint 3 |
 
+La distribución conserva las estimaciones originales y agrupa las historias por sprint, evitando intercalar elementos de iteraciones distintas dentro de la columna de prioridad. La precedencia se utiliza para orientar la implementación; el orden no implica que las historias deban desarrollarse de manera estrictamente secuencial cuando las tareas sean independientes.
+
+| Sprint | Cantidad de User Stories | Story Points planificados | Alcance principal |
+| :---: | :---: | :---: | :--- |
+| Sprint 1 | 7 | 24 | Landing Page, registro y planificación de proyectos, consulta del portafolio y gestión básica de tareas. |
+| Sprint 2 | 5 | 28 | Riesgos, documentos, indicadores, alertas y reportes. |
+| Sprint 3 | 5 | 26 | Roles y permisos avanzados, capacidad de recursos, bloqueos, consulta móvil y captura de evidencias. |
+| **Total** | **17** | **78** | **Alcance planificado del producto.** |
+
+La asignación de una historia a un sprint representa planificación y no demuestra por sí sola que sus criterios de aceptación hayan sido completados. El avance efectivo se registra mediante las tareas de Trello y las evidencias de diseño, implementación y pruebas incluidas en el capítulo IV.
 ---
 
 <a id="25-strategic-level-domain-driven-design"></a>

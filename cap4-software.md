@@ -184,156 +184,95 @@ Para el despliegue de la API REST y la base de datos, se utilizó la plataforma 
 1. Provisión de un servicio de base de datos **MySQL** alojado en la nube.
 2. Vinculación directa con el repositorio de GitHub (`MDEPS-Back-End`) utilizando el archivo `Dockerfile` ubicado en la raíz del proyecto para la compilación del entorno en .NET 10.
 3. Configuración de variables de entorno, incluyendo la cadena de conexión a la base de datos (`ConnectionStrings__DefaultConnection`) y la habilitación de la documentación pública (`ASPNETCORE_ENVIRONMENT = Development`).
-# 4.2
-## 4.2.1. Sprint 1
-##### 4.2.1.1. Sprint Planning 1
+## 4.2. Sprint Development, Planning and Execution
 
-En esta sección, se presenta la planificación correspondiente al Sprint 1 de Vantage PMO.
+La implementación de Vantage PMO se organiza en tres sprints hasta la entrega del Trabajo Final. La planificación parte del Product Backlog definido en la sección 2.4.3 y distribuye las 17 User Stories según sus dependencias, esfuerzo relativo y entregables previstos. Los periodos se presentan por semanas académicas, conforme a la planificación consignada por el equipo.
 
-| **Sprint #** | **Sprint 1** |
-|--------------|--------------|
-| **Sprint Planning Background** | |
-| **Date** | [Fecha real del Sprint Planning] |
-| **Time** | [Hora real] |
-| **Location** | [Lugar o plataforma utilizada] |
+| Sprint | Periodo planificado | Objetivo del sprint | User Stories | Story Points | Entregables previstos |
+| :---: | :--- | :--- | :--- | :---: | :--- |
+| **Sprint 1** | Semanas 4 a 7 | Definir la experiencia de usuario y establecer la base técnica y operativa de la solución. | US16, US17, US01, US02, US03, US04, US05 | **24** | Wireframes, Mock-ups y prototipo móvil; User Flows; Landing Page desplegada; avance de servicios backend y evidencia de las pantallas core. |
+| **Sprint 2** | Semanas 8 a 12 | Ampliar las capacidades operativas de control y análisis de los proyectos. | US07, US09, US11, US13, US12 | **28** | Gestión de riesgos y documentos; indicadores y reportes; alertas; integración progresiva con los servicios backend y aplicación móvil. |
+| **Sprint 3** | Semanas 13 a 15 | Completar las funcionalidades avanzadas y validar la solución integrada para su presentación final. | US15, US08, US06, US14, US10 | **26** | Gestión avanzada de roles; asignación de recursos; comunicación de bloqueos; consulta de proyectos desde móvil; captura de evidencias y pruebas finales de integración. |
+| **Total** | Semanas 4 a 15 | Implementar y validar el alcance definido para Vantage PMO. | **17 User Stories** | **78** | **Alcance acumulado de los tres sprints.** |
+
+El Sprint 1 corresponde a la primera entrega de diseño e implementación y recoge el avance del backend indicado para la TB1. Los entregables de los sprints 2 y 3 representan objetivos planificados, no funcionalidades que se declaren concluidas anticipadamente. Para el seguimiento se utiliza Trello, donde cada historia debe estar vinculada al sprint correspondiente y a las tareas que permiten producir sus evidencias.
+
+La aceptación de una User Story requiere comprobar sus criterios de aceptación, además del registro de las tareas relacionadas. Por tanto, los Story Points planificados no deben confundirse con la velocidad real del equipo, que depende exclusivamente de las historias aceptadas al cierre de cada sprint.
+
+### 4.2.1. Sprint 1
+#### 4.2.1.1. Sprint Planning 1
+
+El Sprint Planning 1 estableció el alcance inicial de Vantage PMO para las semanas 4 a 7. Se priorizó la construcción de los artefactos de diseño, la definición de los recorridos principales de la aplicación, el despliegue de la Landing Page y el avance inicial del backend. Las historias incluidas se seleccionaron a partir del Product Backlog y de sus dependencias funcionales.
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Sprint #** | Sprint 1 |
+| **Periodo planificado** | Semanas 4 a 7 |
+| **Date** | 20 de septiembre de 2026 |
+| **Time** | 10:00 a. m. |
+| **Location** | Reunión virtual mediante Microsoft Teams |
 | **Prepared By** | Fuentes Alvarez, Angiela Stephany |
-| **Attendees** | Fuentes Alvarez, Angiela Stephany / Guillen Giraldo, Mike Dylan / Mendoza Machoa, Lionel Snayder / Pacheco Lavado, Rafael Agustin / Quiliano Motta, Kirk Douglas |
-| **Sprint n-1 Review Summary** | No aplica |
-| **Sprint n-1 Retrospective Summary** | No aplica |
-| **Sprint Goal & User Stories** | |
-| **Sprint 1** | El objetivo del Sprint 1 es transformar los requerimientos y hallazgos obtenidos durante las etapas de análisis en propuestas concretas de diseño y planificación para Vantage PMO. Durante este sprint, el equipo trabajará en la elaboración de los Wireframes y Mock-ups del Landing Page, el diseño UX/UI de la aplicación móvil, la definición de los flujos de usuario y el desarrollo del prototipo, buscando mantener coherencia con las necesidades identificadas en los segmentos objetivo y con los artefactos desarrollados previamente. |
-| **Sprint 1 Velocity** | [XX Story Points] |
-| **Sum of Story Points** | [XX Story Points] |
-##### 4.2.1.2. Aspect Leaders and Collaborators
+| **Attendees** | Fuentes Alvarez, Angiela Stephany; Guillen Giraldo, Mike Dylan; Mendoza Machoa, Lionel Snayder; Pacheco Lavado, Rafael Agustin; Quiliano Motta, Kirk Douglas |
+| **Sprint n-1 Review Summary** | No aplica: es el primer sprint. |
+| **Sprint n-1 Retrospective Summary** | No aplica: es el primer sprint. |
+| **Sprint Goal** | Establecer la propuesta visual y los flujos de interacción de Vantage PMO, junto con la infraestructura técnica necesaria para las primeras operaciones sobre proyectos y tareas. |
+| **User Stories planificadas** | US16, US17, US01, US02, US03, US04, US05. |
+| **Story Points comprometidos en la planificación** | **24 Story Points.** |
+| **Sprint 1 Velocity (real)** | Se determina según las historias que cumplieron sus criterios de aceptación al cierre del sprint; no equivale automáticamente a los 24 puntos planificados. |
+
+**Entregables asociados al Sprint 1:**
+
+- **Landing Page:** wireframes, mock-ups, implementación y evidencia del despliegue, alineados con US16 y US17.
+- **Experiencia móvil:** wireframes, mock-ups, wireflows, User Flows de los procesos principales y prototipo navegable.
+- **Gestión de proyectos y tareas:** diseño y avance técnico de las funciones de registro de proyectos, fases, consulta del portafolio y asignación/seguimiento de tareas (US01 a US05, según corresponda).
+- **Backend:** evidencia del avance presentado en TB1, repositorio y servicios desarrollados; el porcentaje declarado debe sustentarse con funcionalidades y pruebas comprobables.
+- **Control del trabajo:** backlog en Trello, asignación de responsables, registro de tareas y evidencias relacionadas con la ejecución.
+
+Esta planificación distingue el alcance funcional esperado de las actividades de diseño y de las evidencias técnicas. La existencia de un mock-up o un prototipo no se considera, por sí sola, demostración de que toda la funcionalidad de una User Story esté implementada y aceptada.
+
+#### 4.2.1.2. Aspect Leaders and Collaborators
 
 En el marco del Sprint 1, se han priorizado las actividades relacionadas con la transformación de los requerimientos y hallazgos obtenidos durante las etapas de análisis en propuestas concretas de diseño y planificación para Vantage PMO. Los esfuerzos del equipo se orientan hacia el diseño de la Landing Page, el diseño UX/UI de la aplicación móvil, la elaboración de flujos de usuario y prototipos, así como las actividades relacionadas con la implementación y documentación de la solución.
 
 A fin de garantizar una ejecución coordinada y una adecuada distribución de responsabilidades, se ha implementado la Matriz de Liderazgo y Colaboración (LACX). En esta herramienta se identifican los responsables principales (L) y los colaboradores (C) para cada aspecto del Sprint 1.
 
 | **Team Member (Last Name, First Name)** | **GitHub Username** | **Landing Page** | **Mobile App UX/UI** | **User Flows & Prototyping** | **Implementation** | **Testing** | **Documentation** |
-| ---------------------------------------- | ------------------- | ---------------- | -------------------- | ----------------------------- | ------------------ | ----------- | ---------------- |
-| Fuentes Alvarez, Angiela Stephany | [GitHub Username] | L | C | C | C | C | L |
-| Guillen Giraldo, Mike Dylan | [GitHub Username] | C | L | C | C | C | C |
-| Mendoza Machoa, Lionel Snayder | [GitHub Username] | C | C | L | C | C | C |
-| Pacheco Lavado, Rafael Agustin | [GitHub Username] | C | C | C | L | C | C |
-| Quiliano Motta, Kirk Douglas | [GitHub Username] | C | C | C | C | L | C |
-##### 4.2.1.3. Sprint Backlog 1
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Fuentes Alvarez, Angiela Stephany | angielafuentes | L | C | C | C | C | L |
+| Guillen Giraldo, Mike Dylan | mikeguillen | C | L | C | C | C | C |
+| Mendoza Machoa, Lionel Snayder | mendozalionel745-ctrl | C | C | L | L | C | C |
+| Pacheco Lavado, Rafael Agustin | RafaelAgustin21 | C | C | C | C | L | C |
+| Quiliano Motta, Kirk Douglas | Kirkelto | C | C | C | C | C | L |
 
-El Sprint Backlog 1 reúne las historias de usuario y actividades priorizadas por el equipo para el desarrollo del Sprint 1 de Vantage PMO. El trabajo se encuentra orientado a transformar los requerimientos y necesidades identificados durante las etapas anteriores en propuestas concretas de diseño y planificación para la solución.
 
-Durante este sprint se consideran actividades relacionadas con el diseño de la Landing Page, el desarrollo de la experiencia UX/UI de la aplicación móvil, la elaboración de Wireflows y User Flows, la creación de Mock-ups y el desarrollo del prototipo. Estas actividades buscan asegurar que la solución mantenga coherencia con los User Personas, User Journey Maps, Empathy Maps y demás artefactos desarrollados durante el proceso de Requirements Elicitation & Analysis.
+#### 4.2.1.3. Sprint Backlog 1
 
-**Screenshot del Board**
+El Sprint Backlog 1 detalla los work-items documentados para materializar los entregables del primer sprint. Los ítems se vinculan con las User Stories correspondientes y abarcan diseño de la Landing Page, diseño móvil, representación de flujos, prototipado y configuración inicial del backend.
 
-![Sprint-Backlog-01](assets/images/chapter-4/sprint-backlog/sprint-backlog-01.png)
+La Landing Page atiende dos historias complementarias: US16, referida a la presentación de la propuesta de valor, y US17, centrada en los medios de contacto. Por ello, ambas se relacionan con las actividades de diseño general T001 y T002; esta asociación debe mantenerse también en Trello. Los estados y estimaciones de la siguiente tabla se reproducen a partir del registro de trabajo del equipo y deben contrastarse con el tablero antes de la entrega.
 
-*Trello:* [URL DEL TABLERO DE TRELLO]
+**Evidencia del tablero de trabajo**
 
-<table border="1" cellspacing="0" cellpadding="5">
-  <tr>
-    <th>Sprint #</th>
-    <th>Sprint 01</th>
-    <th colspan="7"></th>
-  </tr>
+![Sprint Backlog 1 en Trello](assets/images/chapter-4/sprint-backlog/sprint-backlog-01.png)
 
-  <tr>
-    <th colspan="2">User Story</th>
-    <th colspan="2">Work-item / Task</th>
-    <th colspan="5"></th>
-  </tr>
+| User Story | Work-item | Tarea | Descripción | Estimación (h) | Responsable | Estado documentado |
+| :--- | :---: | :--- | :--- | ---: | :--- | :---: |
+| US16, US17 | T001 | Elaborar wireframes de la Landing Page | Organizar la propuesta de valor, las áreas de contenido y los puntos de acceso a contacto. | 3 | Angiela Fuentes | Done |
+| US16, US17 | T002 | Elaborar mock-ups de la Landing Page | Aplicar la identidad visual definida a las secciones informativas y de contacto. | 4 | Angiela Fuentes | Done |
+| US01 | T003 | Elaborar wireframes de la aplicación | Diseñar las vistas asociadas al registro de proyectos. | 4 | Mike Guillen | Done |
+| US01 | T004 | Configurar la base del backend | Establecer la estructura inicial en .NET para las capacidades de proyectos. | 6 | Lionel Mendoza | Done |
+| US02 | T005 | Elaborar mock-ups de proyectos e hitos | Representar la gestión de proyectos, fases e hitos en la interfaz móvil. | 5 | Mike Guillen | Done |
+| US03 | T006 | Elaborar Wireflow Diagrams | Describir la navegación de consulta del portafolio, vinculada con UG-03. | 4 | Lionel Mendoza | Done |
+| US03 | T007 | Elaborar User Flow Diagrams | Representar el recorrido de consulta del portafolio y sus decisiones. | 5 | Lionel Mendoza | Done |
+| US04 | T008 | Diseñar Kanban y asignación de tareas | Crear wireframes y mock-ups del tablero y de la asignación de responsables. | 4 | Mike Guillen | Done |
+| US05 | T009 | Integrar el prototipo de tareas | Incorporar las vistas de Kanban y los cambios de estado al prototipo navegable. | 3 | Lionel Mendoza | Done |
+| **Total** | **9 tareas** | | | **38 h** | | |
 
-  <tr>
-    <th>Id</th>
-    <th>Title</th>
-    <th>Id</th>
-    <th>Title</th>
-    <th>Description</th>
-    <th>Estimation (hours)</th>
-    <th>Assigned To</th>
-    <th>Status</th>
-  </tr>
+Las 38 horas corresponden a la suma de las estimaciones de tareas documentadas; no deben compararse directamente con los 24 Story Points del sprint, ya que se trata de unidades diferentes. Los nueve work-items representan actividades de avance y no necesariamente la totalidad de las tareas de implementación necesarias para aceptar las siete historias planificadas.
 
-  <!-- USER STORY 01 -->
-  <tr>
-    <td>US-XXX</td>
-    <td>Diseño de Landing Page</td>
-    <td>T001</td>
-    <td>Elaboración de Wireframes</td>
-    <td>Diseñar la estructura visual y organización de contenidos del Landing Page considerando las necesidades identificadas durante el proceso de análisis.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
-  </tr>
+**Control de consistencia:** el tablero de Trello debe mostrar explícitamente los tres sprints y mantener la correspondencia entre identificadores de User Story, responsables, tareas y estados. Asimismo, las correcciones de User Flows solicitadas en el feedback deben registrarse como trabajo de mejora, sin modificar retroactivamente el estado histórico de las actividades de diseño completadas.
 
-  <tr>
-    <td></td>
-    <td></td>
-    <td>T002</td>
-    <td>Elaboración de Mock-ups</td>
-    <td>Desarrollar los Mock-ups del Landing Page aplicando los lineamientos visuales y de experiencia de usuario definidos para Vantage PMO.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
-  </tr>
-
-  <!-- USER STORY 02 -->
-  <tr>
-    <td>US-XXX</td>
-    <td>Diseño UX/UI de la Aplicación Móvil</td>
-    <td>T003</td>
-    <td>Elaboración de Wireframes</td>
-    <td>Diseñar los Wireframes de las aplicaciones móviles considerando los User Personas y las necesidades identificadas durante el proceso de Needfinding.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
-  </tr>
-
-  <tr>
-    <td></td>
-    <td></td>
-    <td>T004</td>
-    <td>Elaboración de Wireflow Diagrams</td>
-    <td>Definir los flujos de interacción de las aplicaciones mediante Wireflows asociados a los principales objetivos de los usuarios.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
-  </tr>
-
-  <tr>
-    <td></td>
-    <td></td>
-    <td>T005</td>
-    <td>Elaboración de Mock-ups</td>
-    <td>Desarrollar los Mock-ups de la aplicación móvil incorporando los principios de diseño, arquitectura de información y lineamientos visuales definidos.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
-  </tr>
-
-  <tr>
-    <td></td>
-    <td></td>
-    <td>T006</td>
-    <td>Elaboración de User Flow Diagrams</td>
-    <td>Representar los flujos de interacción esperados para los principales objetivos de los usuarios, incluyendo los caminos principales y alternativos.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
-  </tr>
-  
-  <tr>
-    <td>US-XXX</td>
-    <td>Prototipado de la Aplicación</td>
-    <td>T007</td>
-    <td>Desarrollo del prototipo</td>
-    <td>Integrar los Mock-ups y flujos definidos para construir un prototipo navegable que permita validar la experiencia propuesta.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
-  </tr>
-
-</table>
-### 4.2.1.4. Development Evidence for Sprint Review
+#### 4.2.1.4. Development Evidence for Sprint Review
 
 Durante el Sprint 1 se realizaron avances en la implementación de los productos que conforman Vantage PMO. Como parte del desarrollo, se avanzó en la construcción de los servicios del backend, incorporando la estructura necesaria para gestionar las principales capacidades del dominio mediante servicios RESTful.
 
@@ -347,13 +286,13 @@ A continuación, se presentan los commits asociados a los avances de implementac
 
 El commit presentado corresponde a la incorporación de la implementación inicial del backend de Vantage PMO, incluyendo la estructura de los diferentes módulos del dominio y los servicios REST necesarios para exponer las funcionalidades del sistema.
 
-### 4.2.1.5. Testing Suite Evidence for Sprint Review
+#### 4.2.1.5. Testing Suite Evidence for Sprint Review
 
-Durante el Sprint 1 se implementó una suite de pruebas automatizadas para validar parte de las funcionalidades del backend de Vantage PMO. Las pruebas fueron desarrolladas utilizando **xUnit** sobre **.NET 10**, incorporando pruebas unitarias, una prueba de integración y una prueba de aceptación bajo el enfoque BDD.
+Durante el Sprint 1, el equipo documentó una suite inicial de pruebas automatizadas del backend de Vantage PMO utilizando xUnit sobre .NET 10. Esta suite comprende pruebas unitarias, una prueba de integración con Entity Framework Core InMemory y una prueba de aceptación expresada mediante Gherkin.
 
-Las pruebas realizadas se encuentran relacionadas principalmente con la **US11 - Consultar indicadores de desempeño**, debido a que validan componentes pertenecientes al bounded context de Analytics, encargado de gestionar y proporcionar información relacionada con los indicadores de desempeño del portafolio.
+Aunque el alcance funcional planificado para el Sprint 1 corresponde a US16, US17 y US01–US05, las pruebas registradas en esta sección están vinculadas a **US11 — Consultar indicadores de desempeño**, historia prevista para el Sprint 2. Esto se consigna como **trabajo técnico anticipado sobre el bounded context Analytics** y no como evidencia de que US11 haya sido completada o aceptada en el Sprint 1.
 
-La suite desarrollada permitió verificar tanto el comportamiento de objetos individuales del dominio como la interacción entre componentes de persistencia y la correcta satisfacción de un escenario de aceptación definido mediante Gherkin.
+Los resultados de estas pruebas sirven para verificar componentes iniciales del dominio y de persistencia utilizados por Analytics. La aceptación de US11 y su contabilización como Story Points completados deben revisarse dentro del sprint al que fue asignada, con evidencia de que se satisfacen sus criterios de aceptación funcional.
 
 #### Unit Tests
 
@@ -447,7 +386,7 @@ A continuación, se presenta el commit relacionado con la implementación de las
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | MDEPS-Team/MDEPS-Back-End | feature/4.2.1.5-testing | ff70649 | test: add sprint 1 backend test suite | — | 2026-10-05 |
 
-### 4.2.1.6. Execution Evidence for Sprint Review
+#### 4.2.1.6. Execution Evidence for Sprint Review
 <a id="5-2-1-5-execution-evidence-for-sprint-review"></a>
 
 Durante el presente Sprint, se ha logrado la transición de una interfaz estática a un ecosistema interactivo y funcional, cumpliendo con el objetivo de establecer el núcleo de acceso y la propuesta de valor visual de Vantage PMO. Los hitos alcanzados se centran en la implementación de un sistema de seguridad robusto, la personalización dinámica de la identidad de marca y la optimización de la experiencia de usuario a través de múltiples dispositivos y lenguajes.
@@ -482,6 +421,6 @@ Durante la validación, se ejecutaron peticiones `POST` para la creación de ent
 ![img.png](assets/img7.png)
 *Figura: Ejecución de un endpoint de la API y respuesta HTTP validando la persistencia en la base de datos.*
 
-### 4.2.1.7. Services Documentation Evidence for Sprint Review
-### 4.2.1.8. Software Deployment Evidence for Sprint Review
-### 4.2.1.9. Team Collaboration Insights during Sprint
+#### 4.2.1.7. Services Documentation Evidence for Sprint Review
+#### 4.2.1.8. Software Deployment Evidence for Sprint Review
+#### 4.2.1.9. Team Collaboration Insights during Sprint
