@@ -190,6 +190,12 @@ Para el despliegue de la API REST y la base de datos, se utilizó la plataforma 
 
 En esta sección, se presenta la planificación correspondiente al Sprint 1 de Vantage PMO.
 
+| Sprint | User Stories previstas en el Product Backlog | Story Points |
+| :--- | :--- | :---: |
+| Sprint 1 | US03, US01, US04, US05, US16, US02, US17 | 24 |
+| Sprint 2 | US11, US12, US13, US07, US09 | 28 |
+| Sprint 3 | US08, US14, US06, US10, US15 | 26 |
+
 | **Sprint #** | **Sprint 1** |
 |--------------|--------------|
 | **Sprint Planning Background** | |
@@ -203,7 +209,7 @@ En esta sección, se presenta la planificación correspondiente al Sprint 1 de V
 | **Sprint Goal & User Stories** | |
 | **Sprint 1** | El objetivo del Sprint 1 es transformar los requerimientos y hallazgos obtenidos durante las etapas de análisis en propuestas concretas de diseño y planificación para Vantage PMO. Durante este sprint, el equipo trabajará en la elaboración de los Wireframes y Mock-ups del Landing Page, el diseño UX/UI de la aplicación móvil, la definición de los flujos de usuario y el desarrollo del prototipo, buscando mantener coherencia con las necesidades identificadas en los segmentos objetivo y con los artefactos desarrollados previamente. |
 | **Sprint 1 Velocity** | [XX Story Points] |
-| **Sum of Story Points** | [XX Story Points] |
+| **Sum of Story Points** | 24 Story Points |
 ##### 4.2.1.2. Aspect Leaders and Collaborators
 
 En el marco del Sprint 1, se han priorizado las actividades relacionadas con la transformación de los requerimientos y hallazgos obtenidos durante las etapas de análisis en propuestas concretas de diseño y planificación para Vantage PMO. Los esfuerzos del equipo se orientan hacia el diseño de la Landing Page, el diseño UX/UI de la aplicación móvil, la elaboración de flujos de usuario y prototipos, así como las actividades relacionadas con la implementación y documentación de la solución.
@@ -212,34 +218,36 @@ A fin de garantizar una ejecución coordinada y una adecuada distribución de re
 
 | **Team Member (Last Name, First Name)** | **GitHub Username** | **Landing Page** | **Mobile App UX/UI** | **User Flows & Prototyping** | **Implementation** | **Testing** | **Documentation** |
 | ---------------------------------------- | ------------------- | ---------------- | -------------------- | ----------------------------- | ------------------ | ----------- | ---------------- |
-| Fuentes Alvarez, Angiela Stephany | [GitHub Username] | L | C | C | C | C | L |
-| Guillen Giraldo, Mike Dylan | [GitHub Username] | C | L | C | C | C | C |
-| Mendoza Machoa, Lionel Snayder | [GitHub Username] | C | C | L | C | C | C |
-| Pacheco Lavado, Rafael Agustin | [GitHub Username] | C | C | C | L | C | C |
-| Quiliano Motta, Kirk Douglas | [GitHub Username] | C | C | C | C | L | C |
+| Fuentes Alvarez, Angiela Stephany | angielafuentes | L | C | C | C | C | L |
+| Guillen Giraldo, Mike Dylan | FullHous | C | L | C | C | C | C |
+| Mendoza Machoa, Lionel Snayder | mendozalionel745-ctrl | C | C | L | C | C | C |
+| Pacheco Lavado, Rafael Agustin | RafaelAgustin21 | C | C | C | L | C | C |
+| Quiliano Motta, Kirk Douglas | Kirkcito | C | C | C | C | L | C |
 ##### 4.2.1.3. Sprint Backlog 1
 
 El Sprint Backlog 1 reúne las historias de usuario y actividades priorizadas por el equipo para el desarrollo del Sprint 1 de Vantage PMO. El trabajo se encuentra orientado a transformar los requerimientos y necesidades identificados durante las etapas anteriores en propuestas concretas de diseño y planificación para la solución.
 
 Durante este sprint se consideran actividades relacionadas con el diseño de la Landing Page, el desarrollo de la experiencia UX/UI de la aplicación móvil, la elaboración de Wireflows y User Flows, la creación de Mock-ups y el desarrollo del prototipo. Estas actividades buscan asegurar que la solución mantenga coherencia con los User Personas, User Journey Maps, Empathy Maps y demás artefactos desarrollados durante el proceso de Requirements Elicitation & Analysis.
 
+Las actividades de diseño UX/UI y prototipado de la aplicación figuran como tareas adicionales sin un identificador de User Story específico en el Product Backlog.
+
 **Screenshot del Board**
 
-![Sprint-Backlog-01](assets/images/chapter-4/sprint-backlog/sprint-backlog-01.png)
+![Sprint Backlog](assets/images/chapter-4/sprint_backlog/SprintBacklog.png)
 
-*Trello:* [URL DEL TABLERO DE TRELLO]
+*Trello:* [Aplicaciones Móviles](https://trello.com/b/Gzag7ZlN/aplicaciones-moviles)
 
 <table border="1" cellspacing="0" cellpadding="5">
   <tr>
     <th>Sprint #</th>
     <th>Sprint 01</th>
-    <th colspan="7"></th>
+    <th colspan="6"></th>
   </tr>
 
   <tr>
     <th colspan="2">User Story</th>
     <th colspan="2">Work-item / Task</th>
-    <th colspan="5"></th>
+    <th colspan="4"></th>
   </tr>
 
   <tr>
@@ -255,8 +263,8 @@ Durante este sprint se consideran actividades relacionadas con el diseño de la 
 
   <!-- USER STORY 01 -->
   <tr>
-    <td>US-XXX</td>
-    <td>Diseño de Landing Page</td>
+    <td>US16</td>
+    <td>Conocer la propuesta de valor de Vantage PMO</td>
     <td>T001</td>
     <td>Elaboración de Wireframes</td>
     <td>Diseñar la estructura visual y organización de contenidos del Landing Page considerando las necesidades identificadas durante el proceso de análisis.</td>
@@ -278,7 +286,7 @@ Durante este sprint se consideran actividades relacionadas con el diseño de la 
 
   <!-- USER STORY 02 -->
   <tr>
-    <td>US-XXX</td>
+    <td>—</td>
     <td>Diseño UX/UI de la Aplicación Móvil</td>
     <td>T003</td>
     <td>Elaboración de Wireframes</td>
@@ -322,7 +330,7 @@ Durante este sprint se consideran actividades relacionadas con el diseño de la 
   </tr>
   
   <tr>
-    <td>US-XXX</td>
+    <td>—</td>
     <td>Prototipado de la Aplicación</td>
     <td>T007</td>
     <td>Desarrollo del prototipo</td>
