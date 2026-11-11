@@ -1049,6 +1049,12 @@ Cada User Story ha sido estimada utilizando Story Points de la serie 1, 2, 3, 5 
 | 16 | US10 | Registrar evidencia utilizando un recurso del dispositivo | 5 | Sprint 3 |
 | 17 | US15 | Gestionar roles y permisos | 5 | Sprint 3 |
 
+**Product Backlog en Trello:** [Aplicaciones Móviles](https://trello.com/b/Gzag7ZlN/aplicaciones-moviles).
+
+**Imagen del Product Backlog:**
+
+![Product Backlog](assets/images/chapter-2/EventStorming/product_backlog/ProductBacklog.png)
+
 ---
 
 <a id="25-strategic-level-domain-driven-design"></a>
