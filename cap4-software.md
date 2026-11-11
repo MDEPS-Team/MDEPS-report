@@ -223,13 +223,14 @@ A fin de garantizar una ejecución coordinada y una adecuada distribución de re
 | Mendoza Machoa, Lionel Snayder | mendozalionel745-ctrl | C | C | L | C | C | C |
 | Pacheco Lavado, Rafael Agustin | RafaelAgustin21 | C | C | C | L | C | C |
 | Quiliano Motta, Kirk Douglas | Kirkcito | C | C | C | C | L | C |
+
 ##### 4.2.1.3. Sprint Backlog 1
 
-El Sprint Backlog 1 reúne las historias de usuario y actividades priorizadas por el equipo para el desarrollo del Sprint 1 de Vantage PMO. El trabajo se encuentra orientado a transformar los requerimientos y necesidades identificados durante las etapas anteriores en propuestas concretas de diseño y planificación para la solución.
+El Sprint Backlog 1 reúne las historias de usuario y actividades priorizadas por el equipo para el desarrollo del Sprint 1 de Vantage PMO. El trabajo está orientado a transformar los requerimientos y necesidades identificados durante las etapas anteriores en propuestas concretas de diseño, planificación y desarrollo de la solución.
 
-Durante este sprint se consideran actividades relacionadas con el diseño de la Landing Page, el desarrollo de la experiencia UX/UI de la aplicación móvil, la elaboración de Wireflows y User Flows, la creación de Mock-ups y el desarrollo del prototipo. Estas actividades buscan asegurar que la solución mantenga coherencia con los User Personas, User Journey Maps, Empathy Maps y demás artefactos desarrollados durante el proceso de Requirements Elicitation & Analysis.
+Durante este sprint se consideran actividades relacionadas con el diseño de la Landing Page, el desarrollo de la experiencia UX/UI de la aplicación móvil, la elaboración de Wireflows y User Flows, la creación de Mock-ups, el desarrollo del prototipo y las funcionalidades correspondientes a las historias de usuario seleccionadas.
 
-Las actividades de diseño UX/UI y prototipado de la aplicación figuran como tareas adicionales sin un identificador de User Story específico en el Product Backlog.
+Las actividades de diseño UX/UI y prototipado de la aplicación se consideran tareas complementarias de apoyo al desarrollo del producto, por lo que no cuentan con un identificador de User Story específico en el Product Backlog.
 
 **Screenshot del Board**
 
@@ -240,107 +241,235 @@ Las actividades de diseño UX/UI y prototipado de la aplicación figuran como ta
 <table border="1" cellspacing="0" cellpadding="5">
   <tr>
     <th>Sprint #</th>
-    <th>Sprint 01</th>
-    <th colspan="6"></th>
+    <th colspan="7">Sprint 01</th>
   </tr>
-
   <tr>
     <th colspan="2">User Story</th>
     <th colspan="2">Work-item / Task</th>
     <th colspan="4"></th>
   </tr>
-
   <tr>
-    <th>Id</th>
+    <th>ID</th>
     <th>Title</th>
-    <th>Id</th>
+    <th>ID</th>
     <th>Title</th>
     <th>Description</th>
     <th>Estimation (hours)</th>
     <th>Assigned To</th>
     <th>Status</th>
   </tr>
-
-  <!-- USER STORY 01 -->
   <tr>
     <td>US16</td>
     <td>Conocer la propuesta de valor de Vantage PMO</td>
     <td>T001</td>
     <td>Elaboración de Wireframes</td>
     <td>Diseñar la estructura visual y organización de contenidos del Landing Page considerando las necesidades identificadas durante el proceso de análisis.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
+    <td>4 h</td>
+    <td>Fuentes Alvarez, Angiela Stephany</td>
+    <td>Listo</td>
   </tr>
-
   <tr>
     <td></td>
     <td></td>
     <td>T002</td>
     <td>Elaboración de Mock-ups</td>
     <td>Desarrollar los Mock-ups del Landing Page aplicando los lineamientos visuales y de experiencia de usuario definidos para Vantage PMO.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
+    <td>5 h</td>
+    <td>Guillen Giraldo, Mike Dylan</td>
+    <td>Listo</td>
   </tr>
-
-  <!-- USER STORY 02 -->
   <tr>
     <td>—</td>
     <td>Diseño UX/UI de la Aplicación Móvil</td>
     <td>T003</td>
     <td>Elaboración de Wireframes</td>
-    <td>Diseñar los Wireframes de las aplicaciones móviles considerando los User Personas y las necesidades identificadas durante el proceso de Needfinding.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
+    <td>Diseñar los Wireframes de la aplicación móvil considerando los User Personas y las necesidades identificadas durante el proceso de Needfinding.</td>
+    <td>5 h</td>
+    <td>Mendoza Machoa, Lionel Snayder</td>
+    <td>Listo</td>
   </tr>
-
   <tr>
     <td></td>
     <td></td>
     <td>T004</td>
     <td>Elaboración de Wireflow Diagrams</td>
-    <td>Definir los flujos de interacción de las aplicaciones mediante Wireflows asociados a los principales objetivos de los usuarios.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
+    <td>Definir los flujos de interacción de la aplicación mediante Wireflows asociados a los principales objetivos de los usuarios.</td>
+    <td>4 h</td>
+    <td>Pacheco Lavado, Rafael Agustin</td>
+    <td>Listo</td>
   </tr>
-
   <tr>
     <td></td>
     <td></td>
     <td>T005</td>
     <td>Elaboración de Mock-ups</td>
     <td>Desarrollar los Mock-ups de la aplicación móvil incorporando los principios de diseño, arquitectura de información y lineamientos visuales definidos.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
+    <td>6 h</td>
+    <td>Quiliano Motta, Kirk Douglas</td>
+    <td>Listo</td>
   </tr>
-
   <tr>
     <td></td>
     <td></td>
     <td>T006</td>
     <td>Elaboración de User Flow Diagrams</td>
     <td>Representar los flujos de interacción esperados para los principales objetivos de los usuarios, incluyendo los caminos principales y alternativos.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
+    <td>4 h</td>
+    <td>Fuentes Alvarez, Angiela Stephany</td>
+    <td>Listo</td>
   </tr>
-  
   <tr>
     <td>—</td>
     <td>Prototipado de la Aplicación</td>
     <td>T007</td>
     <td>Desarrollo del prototipo</td>
     <td>Integrar los Mock-ups y flujos definidos para construir un prototipo navegable que permita validar la experiencia propuesta.</td>
-    <td>[XX h]</td>
-    <td>[Integrante]</td>
-    <td>[Status]</td>
+    <td>8 h</td>
+    <td>Mendoza Machoa, Lionel Snayder</td>
+    <td>Listo</td>
   </tr>
-
+  <tr>
+    <td>US01</td>
+    <td>Registrar un nuevo proyecto</td>
+    <td>T008</td>
+    <td>Diseño del formulario de registro</td>
+    <td>Definir los campos y elementos de interfaz necesarios para registrar un nuevo proyecto.</td>
+    <td>3 h</td>
+    <td>Quiliano Motta, Kirk Douglas</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T009</td>
+    <td>Desarrollo del registro de proyectos</td>
+    <td>Implementar la funcionalidad de registro de proyectos y las validaciones correspondientes.</td>
+    <td>5 h</td>
+    <td>Guillen Giraldo, Mike Dylan</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td>US02</td>
+    <td>Definir fases e hitos del proyecto</td>
+    <td>T010</td>
+    <td>Diseño de fases e hitos</td>
+    <td>Definir la estructura para organizar las fases y los hitos asociados a cada proyecto.</td>
+    <td>3 h</td>
+    <td>Pacheco Lavado, Rafael Agustin</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T011</td>
+    <td>Gestión de fases e hitos</td>
+    <td>Implementar las operaciones necesarias para registrar y administrar las fases e hitos de un proyecto.</td>
+    <td>5 h</td>
+    <td>Fuentes Alvarez, Angiela Stephany</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td>US03</td>
+    <td>Consultar el estado de múltiples proyectos</td>
+    <td>T012</td>
+    <td>Diseño de vista del portafolio</td>
+    <td>Diseñar una vista que permita visualizar información general y estados de los proyectos registrados.</td>
+    <td>3 h</td>
+    <td>Guillen Giraldo, Mike Dylan</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T013</td>
+    <td>Consulta de proyectos</td>
+    <td>Implementar la consulta y presentación del estado de múltiples proyectos del portafolio.</td>
+    <td>5 h</td>
+    <td>Quiliano Motta, Kirk Douglas</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td>US04</td>
+    <td>Asignar tareas a responsables</td>
+    <td>T014</td>
+    <td>Diseño de asignación de tareas</td>
+    <td>Definir los elementos necesarios para seleccionar tareas y asociarlas con sus responsables.</td>
+    <td>2 h</td>
+    <td>Mendoza Machoa, Lionel Snayder</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T015</td>
+    <td>Implementación de asignaciones</td>
+    <td>Implementar la funcionalidad para asignar tareas a los integrantes responsables del proyecto.</td>
+    <td>4 h</td>
+    <td>Pacheco Lavado, Rafael Agustin</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td>US05</td>
+    <td>Actualizar el estado de una tarea</td>
+    <td>T016</td>
+    <td>Definición de estados de tareas</td>
+    <td>Definir los estados y transiciones que podrá presentar una tarea durante su ciclo de trabajo.</td>
+    <td>2 h</td>
+    <td>Fuentes Alvarez, Angiela Stephany</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T017</td>
+    <td>Actualización del estado de tareas</td>
+    <td>Implementar la funcionalidad para actualizar y consultar el estado de las tareas.</td>
+    <td>4 h</td>
+    <td>Guillen Giraldo, Mike Dylan</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td>US16</td>
+    <td>Conocer la propuesta de valor de Vantage PMO</td>
+    <td>T018</td>
+    <td>Organización de la propuesta de valor</td>
+    <td>Organizar los contenidos que comuniquen los beneficios y principales características de Vantage PMO.</td>
+    <td>2 h</td>
+    <td>Mendoza Machoa, Lionel Snayder</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T019</td>
+    <td>Integración de contenidos en Landing Page</td>
+    <td>Incorporar la propuesta de valor y sus contenidos en la estructura de la Landing Page.</td>
+    <td>3 h</td>
+    <td>Pacheco Lavado, Rafael Agustin</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td>US17</td>
+    <td>Consultar medios de contacto del producto</td>
+    <td>T020</td>
+    <td>Diseño de sección de contacto</td>
+    <td>Definir la estructura visual de la sección destinada a presentar los medios de contacto del producto.</td>
+    <td>2 h</td>
+    <td>Quiliano Motta, Kirk Douglas</td>
+    <td>Listo</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>T021</td>
+    <td>Integración de medios de contacto</td>
+    <td>Incorporar los medios de contacto disponibles en la Landing Page de Vantage PMO.</td>
+    <td>3 h</td>
+    <td>Fuentes Alvarez, Angiela Stephany</td>
+    <td>Listo</td>
+  </tr>
 </table>
+  
 ### 4.2.1.4. Development Evidence for Sprint Review
 
 Durante el Sprint 1 se realizaron avances en la implementación de los productos que conforman Vantage PMO. Como parte del desarrollo, se avanzó en la construcción de los servicios del backend, incorporando la estructura necesaria para gestionar las principales capacidades del dominio mediante servicios RESTful.
@@ -493,3 +622,310 @@ Durante la validación, se ejecutaron peticiones `POST` para la creación de ent
 ### 4.2.1.7. Services Documentation Evidence for Sprint Review
 ### 4.2.1.8. Software Deployment Evidence for Sprint Review
 ### 4.2.1.9. Team Collaboration Insights during Sprint
+
+
+## 4.2.2. Sprint 2
+
+##### 4.2.2.1. Sprint Planning 2
+
+En esta sección se presenta la planificación correspondiente al Sprint 2 de Vantage PMO.
+
+| Sprint | User Stories previstas en el Product Backlog | Story Points |
+| :--- | :--- | :---: |
+| Sprint 1 | US03, US01, US04, US05, US16, US02, US17 | 24 |
+| Sprint 2 | US07, US09, US11, US12, US13 | 28 |
+| Sprint 3 | US08, US14, US06, US10, US15 | 26 |
+
+| **Sprint #** | **Sprint 2** |
+| :--- | :--- |
+| **Sprint Planning Background** | Continuación del desarrollo de las funcionalidades de gestión y seguimiento de Vantage PMO. |
+| **Date** | [Fecha real del Sprint Planning] |
+| **Time** | [Hora real] |
+| **Location** | [Lugar o plataforma utilizada] |
+| **Prepared By** | Fuentes Alvarez, Angiela Stephany |
+| **Attendees** | Fuentes Alvarez, Angiela Stephany / Guillen Giraldo, Mike Dylan / Mendoza Machoa, Lionel Snayder / Pacheco Lavado, Rafael Agustin / Quiliano Motta, Kirk Douglas |
+| **Sprint n-1 Review Summary** | [Resumen de la revisión del Sprint 1] |
+| **Sprint n-1 Retrospective Summary** | [Resumen de la retrospectiva del Sprint 1] |
+| **Sprint Goal & User Stories** | |
+| **Sprint 2** | El objetivo del Sprint 2 es fortalecer las capacidades de gestión, seguimiento y análisis de Vantage PMO. Durante este sprint se trabajará en el registro y seguimiento de riesgos, la centralización de documentos, la consulta de indicadores de desempeño, la generación de reportes y la recepción de alertas sobre eventos relevantes. Estas funcionalidades buscan mejorar el control de los proyectos y facilitar la toma de decisiones mediante información organizada y oportuna. |
+| **Sprint 2 Velocity** | [Por determinar] |
+| **Sum of Story Points** | 28 Story Points |
+
+##### 4.2.2.2. Sprint Backlog 2
+
+El Sprint Backlog 2 reúne las historias de usuario y actividades seleccionadas para el segundo sprint de Vantage PMO. Las tareas están orientadas al desarrollo de funcionalidades que permitan gestionar riesgos, centralizar documentos, consultar indicadores, generar reportes y recibir notificaciones relevantes.
+
+Durante este sprint se consideran actividades de diseño, desarrollo y validación de las funcionalidades relacionadas con el control y seguimiento de proyectos, así como la organización y presentación de información para apoyar la toma de decisiones.
+
+**Trello:** [Aplicaciones Móviles](https://trello.com/b/Gzag7ZlN/aplicaciones-moviles)
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Sprint #</th>
+    <th colspan="7">Sprint 02</th>
+  </tr>
+  <tr>
+    <th colspan="2">User Story</th>
+    <th colspan="2">Work-item / Task</th>
+    <th colspan="4"></th>
+  </tr>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Estimation (hours)</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>US07</td>
+    <td>Registrar y realizar seguimiento de riesgos</td>
+    <td>T022</td>
+    <td>Diseño del módulo de riesgos</td>
+    <td>Definir la estructura y los campos necesarios para registrar riesgos asociados a los proyectos.</td>
+    <td>4 h</td>
+    <td>Fuentes Alvarez, Angiela Stephany</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T023</td>
+    <td>Implementación de gestión de riesgos</td>
+    <td>Desarrollar las funcionalidades para registrar, consultar y actualizar los riesgos identificados en los proyectos.</td>
+    <td>8 h</td>
+    <td>Guillen Giraldo, Mike Dylan</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td>US09</td>
+    <td>Centralizar documentos de los proyectos</td>
+    <td>T024</td>
+    <td>Diseño del repositorio documental</td>
+    <td>Definir la estructura de organización y clasificación de los documentos asociados a cada proyecto.</td>
+    <td>4 h</td>
+    <td>Mendoza Machoa, Lionel Snayder</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T025</td>
+    <td>Implementación de gestión documental</td>
+    <td>Desarrollar las operaciones necesarias para registrar, almacenar y consultar documentos de los proyectos.</td>
+    <td>8 h</td>
+    <td>Pacheco Lavado, Rafael Agustin</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td>US11</td>
+    <td>Consultar indicadores de desempeño</td>
+    <td>T026</td>
+    <td>Diseño de indicadores de desempeño</td>
+    <td>Definir los indicadores y elementos visuales necesarios para presentar información sobre el desempeño del portafolio.</td>
+    <td>4 h</td>
+    <td>Quiliano Motta, Kirk Douglas</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T027</td>
+    <td>Implementación de consulta de indicadores</td>
+    <td>Desarrollar la consulta y presentación de indicadores de desempeño de los proyectos.</td>
+    <td>8 h</td>
+    <td>Fuentes Alvarez, Angiela Stephany</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td>US12</td>
+    <td>Generar reportes de desempeño</td>
+    <td>T028</td>
+    <td>Diseño de estructura de reportes</td>
+    <td>Definir la estructura y los datos que serán incluidos en los reportes de desempeño de los proyectos.</td>
+    <td>4 h</td>
+    <td>Guillen Giraldo, Mike Dylan</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T029</td>
+    <td>Desarrollo de generación de reportes</td>
+    <td>Implementar la generación de reportes utilizando la información disponible de los indicadores y proyectos.</td>
+    <td>10 h</td>
+    <td>Mendoza Machoa, Lionel Snayder</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td>US13</td>
+    <td>Recibir alertas sobre eventos relevantes</td>
+    <td>T030</td>
+    <td>Diseño de alertas y notificaciones</td>
+    <td>Identificar los eventos relevantes y definir los criterios para generar alertas y notificaciones a los usuarios.</td>
+    <td>4 h</td>
+    <td>Pacheco Lavado, Rafael Agustin</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T031</td>
+    <td>Implementación de notificaciones</td>
+    <td>Desarrollar la funcionalidad para generar y presentar alertas relacionadas con eventos relevantes de los proyectos.</td>
+    <td>8 h</td>
+    <td>Quiliano Motta, Kirk Douglas</td>
+    <td>Por confirmar</td>
+  </tr>
+</table>
+
+
+## 4.2.3. Sprint 3
+
+##### 4.2.3.1. Sprint Planning 3
+
+En esta sección se presenta la planificación correspondiente al Sprint 3 de Vantage PMO.
+
+| Sprint | User Stories previstas en el Product Backlog | Story Points |
+| :--- | :--- | :---: |
+| Sprint 1 | US03, US01, US04, US05, US16, US02, US17 | 24 |
+| Sprint 2 | US07, US09, US11, US12, US13 | 28 |
+| Sprint 3 | US08, US14, US06, US10, US15 | 26 |
+
+| **Sprint #** | **Sprint 3** |
+| :--- | :--- |
+| **Sprint Planning Background** | Continuación de la evolución de Vantage PMO mediante funcionalidades de colaboración, administración de recursos, acceso móvil y seguridad. |
+| **Date** | [Fecha real del Sprint Planning] |
+| **Time** | [Hora real] |
+| **Location** | [Lugar o plataforma utilizada] |
+| **Prepared By** | Fuentes Alvarez, Angiela Stephany |
+| **Attendees** | Fuentes Alvarez, Angiela Stephany / Guillen Giraldo, Mike Dylan / Mendoza Machoa, Lionel Snayder / Pacheco Lavado, Rafael Agustin / Quiliano Motta, Kirk Douglas |
+| **Sprint n-1 Review Summary** | [Resumen de la revisión del Sprint 2] |
+| **Sprint n-1 Retrospective Summary** | [Resumen de la retrospectiva del Sprint 2] |
+| **Sprint Goal & User Stories** | |
+| **Sprint 3** | El objetivo del Sprint 3 es completar y fortalecer las funcionalidades de colaboración, administración de recursos y acceso seguro a Vantage PMO. Durante este sprint se trabajará en el registro de bloqueos y observaciones de tareas, la asignación de recursos según su capacidad, el registro de evidencias desde dispositivos, el acceso móvil a los proyectos y la administración de roles y permisos. Estas funcionalidades buscan mejorar la coordinación del equipo, la disponibilidad de información y el control de acceso al sistema. |
+| **Sprint 3 Velocity** | [Por determinar] |
+| **Sum of Story Points** | 26 Story Points |
+
+##### 4.2.3.2. Sprint Backlog 3
+
+El Sprint Backlog 3 reúne las historias de usuario y actividades seleccionadas para el tercer sprint de Vantage PMO. Las tareas se orientan a completar funcionalidades relacionadas con la colaboración entre integrantes, la administración de recursos, la captura de evidencias, el acceso desde dispositivos móviles y la gestión de permisos.
+
+Durante este sprint se consideran actividades de diseño, desarrollo y validación que permitan fortalecer la experiencia de los usuarios y mejorar la administración de los proyectos.
+
+**Trello:** [Aplicaciones Móviles](https://trello.com/b/Gzag7ZlN/aplicaciones-moviles)
+
+<table border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Sprint #</th>
+    <th colspan="7">Sprint 03</th>
+  </tr>
+  <tr>
+    <th colspan="2">User Story</th>
+    <th colspan="2">Work-item / Task</th>
+    <th colspan="4"></th>
+  </tr>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Estimation (hours)</th>
+    <th>Assigned To</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>US08</td>
+    <td>Asignar recursos considerando su capacidad</td>
+    <td>T032</td>
+    <td>Diseño del módulo de recursos</td>
+    <td>Definir la estructura para registrar recursos y visualizar su disponibilidad y capacidad dentro de los proyectos.</td>
+    <td>4 h</td>
+    <td>Fuentes Alvarez, Angiela Stephany</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T033</td>
+    <td>Implementación de asignación de recursos</td>
+    <td>Desarrollar las funcionalidades para asignar recursos considerando su disponibilidad y capacidad.</td>
+    <td>10 h</td>
+    <td>Guillen Giraldo, Mike Dylan</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td>US14</td>
+    <td>Consultar información de proyectos desde un dispositivo móvil</td>
+    <td>T034</td>
+    <td>Diseño de interfaz móvil</td>
+    <td>Diseñar la interfaz que permita consultar información de los proyectos desde dispositivos móviles.</td>
+    <td>4 h</td>
+    <td>Mendoza Machoa, Lionel Snayder</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T035</td>
+    <td>Implementación de acceso móvil</td>
+    <td>Desarrollar la funcionalidad para consultar la información de los proyectos mediante dispositivos móviles.</td>
+    <td>8 h</td>
+    <td>Pacheco Lavado, Rafael Agustin</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td>US06</td>
+    <td>Comunicar bloqueos y observaciones de una tarea</td>
+    <td>T036</td>
+    <td>Diseño de registro de bloqueos</td>
+    <td>Definir los campos y componentes necesarios para registrar bloqueos y observaciones asociados a las tareas.</td>
+    <td>3 h</td>
+    <td>Quiliano Motta, Kirk Douglas</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T037</td>
+    <td>Implementación de comentarios y bloqueos</td>
+    <td>Desarrollar las funcionalidades para registrar y consultar bloqueos y observaciones relacionadas con las tareas.</td>
+    <td>6 h</td>
+    <td>Fuentes Alvarez, Angiela Stephany</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td>US10</td>
+    <td>Registrar evidencia utilizando un recurso del dispositivo</td>
+    <td>T038</td>
+    <td>Diseño de captura de evidencias</td>
+    <td>Definir el flujo de interacción para capturar y adjuntar evidencias utilizando recursos disponibles en el dispositivo.</td>
+    <td>4 h</td>
+    <td>Guillen Giraldo, Mike Dylan</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T039</td>
+    <td>Implementación de registro de evidencias</td>
+    <td>Desarrollar la funcionalidad para registrar y asociar evidencias a las actividades de los proyectos.</td>
+    <td>8 h</td>
+    <td>Mendoza Machoa, Lionel Snayder</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td>US15</td>
+    <td>Gestionar roles y permisos</td>
+    <td>T040</td>
+    <td>Diseño de roles y permisos</td>
+    <td>Definir los roles de usuario y los permisos correspondientes para controlar el acceso a las funcionalidades del sistema.</td>
+    <td>4 h</td>
+    <td>Pacheco Lavado, Rafael Agustin</td>
+    <td>Por confirmar</td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+    <td>T041</td>
+    <td>Implementación de control de acceso</td>
+    <td>Desarrollar las reglas de autorización y asignación de permisos de acuerdo con los roles definidos.</td>
+    <td>10 h</td>
+    <td>Quiliano Motta, Kirk Douglas</td>
+    <td>Por confirmar</td>
+  </tr>
+</table>
+

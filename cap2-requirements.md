@@ -1023,31 +1023,34 @@ Para su elaboración se definieron dos Business Goals bajo criterios SMART. Asim
 ![Impact-Mapping-Vantage-PMO](assets/images/chapter-2/Needfinding/Impact-Map-Vantage%20PMO.png)
 
 <a id="243-product-backlog"></a>
+
 ### 2.4.3. Product Backlog
 
 En esta sección se presenta el Product Backlog de Vantage PMO, conformado por las User Stories previamente identificadas y priorizadas de acuerdo con el valor que aportan al negocio y a los usuarios de la solución.
 
-Cada User Story ha sido estimada utilizando Story Points de la serie 1, 2, 3, 5 y 8, considerando de manera relativa el esfuerzo, complejidad e incertidumbre asociados a su implementación. Asimismo, las historias han sido distribuidas entre los tres Sprints considerados para el desarrollo del producto. Las User Stories correspondientes al Landing Page se incluyen desde el Sprint 1.
+Cada User Story ha sido estimada utilizando Story Points de la serie 1, 2, 3, 5 y 8, considerando de manera relativa el esfuerzo, la complejidad y la incertidumbre asociados a su implementación. Asimismo, las historias han sido distribuidas entre los tres Sprints considerados para el desarrollo del producto. Las User Stories correspondientes al Landing Page se incluyen desde el Sprint 1.
 
-| # Orden | User Story ID | Título | Story Points | Sprint |
-| :---: | :---: | :--- | :---: | :---: |
-| 1 | US03 | Consultar el estado de múltiples proyectos | 5 | Sprint 1 |
-| 2 | US01 | Registrar un nuevo proyecto | 3 | Sprint 1 |
-| 3 | US04 | Asignar tareas a responsables | 3 | Sprint 1 |
-| 4 | US05 | Actualizar el estado de una tarea | 3 | Sprint 1 |
-| 5 | US11 | Consultar indicadores de desempeño | 5 | Sprint 2 |
-| 6 | US12 | Generar reportes de desempeño | 8 | Sprint 2 |
-| 7 | US16 | Conocer la propuesta de valor de Vantage PMO | 3 | Sprint 1 |
-| 8 | US13 | Recibir alertas sobre eventos relevantes | 5 | Sprint 2 |
-| 9 | US07 | Registrar y realizar seguimiento de riesgos | 5 | Sprint 2 |
-| 10 | US09 | Centralizar documentos de los proyectos | 5 | Sprint 2 |
-| 11 | US02 | Definir fases e hitos del proyecto | 5 | Sprint 1 |
-| 12 | US17 | Consultar medios de contacto del producto | 2 | Sprint 1 |
-| 13 | US08 | Asignar recursos considerando su capacidad | 8 | Sprint 3 |
-| 14 | US14 | Consultar información de proyectos desde un dispositivo móvil | 5 | Sprint 3 |
-| 15 | US06 | Comunicar bloqueos y observaciones de una tarea | 3 | Sprint 3 |
-| 16 | US10 | Registrar evidencia utilizando un recurso del dispositivo | 5 | Sprint 3 |
-| 17 | US15 | Gestionar roles y permisos | 5 | Sprint 3 |
+Para establecer el orden de precedencia se consideraron las prioridades definidas en la sección 2.4.1, el valor funcional de cada historia y las dependencias entre las capacidades del producto. Se priorizaron las funcionalidades fundamentales para la gestión de proyectos y tareas, seguidas de las capacidades de seguimiento, control y análisis. Finalmente, se ubicaron las funcionalidades complementarias de colaboración, documentación, administración y comunicación.
+
+| # Orden | User Story ID | Título | Prioridad | Story Points | Sprint |
+| :---: | :---: | :--- | :---: | :---: | :---: |
+| 1 | US01 | Registrar un nuevo proyecto | Alta | 3 | Sprint 1 |
+| 2 | US02 | Definir fases e hitos del proyecto | Alta | 5 | Sprint 1 |
+| 3 | US04 | Asignar tareas a responsables | Alta | 3 | Sprint 1 |
+| 4 | US05 | Actualizar el estado de una tarea | Alta | 3 | Sprint 1 |
+| 5 | US03 | Consultar el estado de múltiples proyectos | Alta | 5 | Sprint 1 |
+| 6 | US07 | Registrar y realizar seguimiento de riesgos | Alta | 5 | Sprint 2 |
+| 7 | US08 | Asignar recursos considerando su capacidad | Alta | 8 | Sprint 3 |
+| 8 | US11 | Consultar indicadores de desempeño | Alta | 5 | Sprint 2 |
+| 9 | US12 | Generar reportes de desempeño | Alta | 8 | Sprint 2 |
+| 10 | US13 | Recibir alertas sobre eventos relevantes | Alta | 5 | Sprint 2 |
+| 11 | US14 | Consultar información de proyectos desde un dispositivo móvil | Alta | 5 | Sprint 3 |
+| 12 | US16 | Conocer la propuesta de valor de Vantage PMO | Alta | 3 | Sprint 1 |
+| 13 | US06 | Comunicar bloqueos y observaciones de una tarea | Media | 3 | Sprint 3 |
+| 14 | US09 | Centralizar documentos de los proyectos | Media | 5 | Sprint 2 |
+| 15 | US10 | Registrar evidencia utilizando un recurso del dispositivo | Media | 5 | Sprint 3 |
+| 16 | US15 | Gestionar roles y permisos | Media | 5 | Sprint 3 |
+| 17 | US17 | Consultar medios de contacto del producto | Media | 2 | Sprint 1 |
 
 **Product Backlog en Trello:** [Aplicaciones Móviles](https://trello.com/b/Gzag7ZlN/aplicaciones-moviles).
 
