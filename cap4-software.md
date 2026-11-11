@@ -190,11 +190,11 @@ Para el despliegue de la API REST y la base de datos, se utilizó la plataforma 
 
 En esta sección, se presenta la planificación correspondiente al Sprint 1 de Vantage PMO.
 
-| Sprint | User Stories previstas en el Product Backlog | Story Points |
+| Sprint | Historias previstas en el Product Backlog | Story Points |
 | :--- | :--- | :---: |
-| Sprint 1 | US03, US01, US04, US05, US16, US02, US17 | 24 |
-| Sprint 2 | US11, US12, US13, US07, US09 | 28 |
-| Sprint 3 | US08, US14, US06, US10, US15 | 26 |
+| Sprint 1 | US01, US02, US04, US05, US03, US16, US22, US17, US23, US24, TS01, TS04 | 42 |
+| Sprint 2 | US07, US11, US12, US13, US09, SP01, SP02 | 34 |
+| Sprint 3 | US08, US14, US06, US10, US19, US18, US15, US20, US21, TS02, TS03 | 43 |
 
 | **Sprint #** | **Sprint 1** |
 |--------------|--------------|
@@ -209,7 +209,7 @@ En esta sección, se presenta la planificación correspondiente al Sprint 1 de V
 | **Sprint Goal & User Stories** | |
 | **Sprint 1** | El objetivo del Sprint 1 es transformar los requerimientos y hallazgos obtenidos durante las etapas de análisis en propuestas concretas de diseño y planificación para Vantage PMO. Durante este sprint, el equipo trabajará en la elaboración de los Wireframes y Mock-ups del Landing Page, el diseño UX/UI de la aplicación móvil, la definición de los flujos de usuario y el desarrollo del prototipo, buscando mantener coherencia con las necesidades identificadas en los segmentos objetivo y con los artefactos desarrollados previamente. |
 | **Sprint 1 Velocity** | [24 Story Points] |
-| **Sum of Story Points** | 24 Story Points |
+| **Sum of Story Points** | 42 Story Points |
 ##### 4.2.1.2. Aspect Leaders and Collaborators
 
 En el marco del Sprint 1, se han priorizado las actividades relacionadas con la transformación de los requerimientos y hallazgos obtenidos durante las etapas de análisis en propuestas concretas de diseño y planificación para Vantage PMO. Los esfuerzos del equipo se orientan hacia el diseño de la Landing Page, el diseño UX/UI de la aplicación móvil, la elaboración de flujos de usuario y prototipos, así como las actividades relacionadas con la implementación y documentación de la solución.
@@ -630,11 +630,11 @@ Durante la validación, se ejecutaron peticiones `POST` para la creación de ent
 
 En esta sección se presenta la planificación correspondiente al Sprint 2 de Vantage PMO.
 
-| Sprint | User Stories previstas en el Product Backlog | Story Points |
+| Sprint | Historias previstas en el Product Backlog | Story Points |
 | :--- | :--- | :---: |
-| Sprint 1 | US03, US01, US04, US05, US16, US02, US17 | 24 |
-| Sprint 2 | US07, US09, US11, US12, US13 | 28 |
-| Sprint 3 | US08, US14, US06, US10, US15 | 26 |
+| Sprint 1 | US01, US02, US04, US05, US03, US16, US22, US17, US23, US24, TS01, TS04 | 42 |
+| Sprint 2 | US07, US11, US12, US13, US09, SP01, SP02 | 34 |
+| Sprint 3 | US08, US14, US06, US10, US19, US18, US15, US20, US21, TS02, TS03 | 43 |
 
 | **Sprint #** | **Sprint 2** |
 | :--- | :--- |
@@ -649,7 +649,7 @@ En esta sección se presenta la planificación correspondiente al Sprint 2 de Va
 | **Sprint Goal & User Stories** | |
 | **Sprint 2** | El objetivo del Sprint 2 es fortalecer las capacidades de gestión, seguimiento y análisis de Vantage PMO. Durante este sprint se trabajará en el registro y seguimiento de riesgos, la centralización de documentos, la consulta de indicadores de desempeño, la generación de reportes y la recepción de alertas sobre eventos relevantes. Estas funcionalidades buscan mejorar el control de los proyectos y facilitar la toma de decisiones mediante información organizada y oportuna. |
 | **Sprint 2 Velocity** | [Por determinar] |
-| **Sum of Story Points** | 28 Story Points |
+| **Sum of Story Points** | 34 Story Points |
 
 ##### 4.2.2.2. Sprint Backlog 2
 
@@ -783,11 +783,11 @@ Durante este sprint se consideran actividades de diseño, desarrollo y validaci�
 
 En esta sección se presenta la planificación correspondiente al Sprint 3 de Vantage PMO.
 
-| Sprint | User Stories previstas en el Product Backlog | Story Points |
+| Sprint | Historias previstas en el Product Backlog | Story Points |
 | :--- | :--- | :---: |
-| Sprint 1 | US03, US01, US04, US05, US16, US02, US17 | 24 |
-| Sprint 2 | US07, US09, US11, US12, US13 | 28 |
-| Sprint 3 | US08, US14, US06, US10, US15 | 26 |
+| Sprint 1 | US01, US02, US04, US05, US03, US16, US22, US17, US23, US24, TS01, TS04 | 42 |
+| Sprint 2 | US07, US11, US12, US13, US09, SP01, SP02 | 34 |
+| Sprint 3 | US08, US14, US06, US10, US19, US18, US15, US20, US21, TS02, TS03 | 43 |
 
 | **Sprint #** | **Sprint 3** |
 | :--- | :--- |
@@ -802,7 +802,7 @@ En esta sección se presenta la planificación correspondiente al Sprint 3 de Va
 | **Sprint Goal & User Stories** | |
 | **Sprint 3** | El objetivo del Sprint 3 es completar y fortalecer las funcionalidades de colaboración, administración de recursos y acceso seguro a Vantage PMO. Durante este sprint se trabajará en el registro de bloqueos y observaciones de tareas, la asignación de recursos según su capacidad, el registro de evidencias desde dispositivos, el acceso móvil a los proyectos y la administración de roles y permisos. Estas funcionalidades buscan mejorar la coordinación del equipo, la disponibilidad de información y el control de acceso al sistema. |
 | **Sprint 3 Velocity** | [Por determinar] |
-| **Sum of Story Points** | 26 Story Points |
+| **Sum of Story Points** | 43 Story Points |
 
 ##### 4.2.3.2. Sprint Backlog 3
 

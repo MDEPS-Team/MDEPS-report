@@ -953,6 +953,62 @@ Las User Stories representan funcionalidades que generan valor directo para los 
 | **Description** | Como Visitor, quiero conocer los medios de contacto de Vantage PMO para poder solicitar información adicional sobre la solución. |  |  |
 | **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el visitante requiere información adicional,<br>**Cuando** consulta los medios de contacto publicados,<br>**Entonces** puede identificar al menos un canal válido para comunicarse con el equipo.<br><br>**Escenario 2:**<br>**Dado que** un medio de contacto publicado se encuentra disponible,<br>**Cuando** el visitante utiliza dicho canal,<br>**Entonces** puede iniciar la comunicación fuera del Landing Page. |  |  |
 
+##### US18 - Iniciar sesión y recuperar contraseña
+
+| Story ID: US18 | User: Registered User | Priority: Media | Epic: EP08 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Acceder a la cuenta y recuperar la contraseña |  |  |
+| **Description** | Como Registered User, quiero iniciar sesión con mis credenciales y recuperar mi contraseña cuando no la recuerde para acceder de forma segura a la información de mis proyectos. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el usuario posee una cuenta registrada,<br>**Cuando** inicia sesión con credenciales válidas,<br>**Entonces** el sistema le concede acceso a las capacidades correspondientes a su rol.<br><br>**Escenario 2:**<br>**Dado que** el usuario ingresa credenciales inválidas,<br>**Cuando** intenta iniciar sesión,<br>**Entonces** el sistema rechaza el acceso e informa que las credenciales no son correctas.<br><br>**Escenario 3:**<br>**Dado que** el usuario solicitó la recuperación de su contraseña,<br>**Cuando** valida el código de verificación enviado a su correo y define una nueva contraseña,<br>**Entonces** el sistema actualiza sus credenciales y le permite iniciar sesión con la nueva contraseña. |  |  |
+
+##### US19 - Registrar cuenta de usuario
+
+| Story ID: US19 | User: Visitor | Priority: Media | Epic: EP08 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Crear una cuenta en Vantage PMO |  |  |
+| **Description** | Como Visitor, quiero crear una cuenta registrando mis datos personales, de contacto, perfil profesional y rol para comenzar a utilizar Vantage PMO de acuerdo con mis responsabilidades. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el visitante proporciona los datos requeridos y selecciona un rol,<br>**Cuando** completa el registro,<br>**Entonces** el sistema crea la cuenta y la deja disponible para iniciar sesión.<br><br>**Escenario 2:**<br>**Dado que** falta información obligatoria para el registro,<br>**Cuando** el visitante intenta completar la creación de la cuenta,<br>**Entonces** el sistema rechaza el registro e informa que existen datos requeridos pendientes. |  |  |
+
+##### US20 - Actualizar perfil de usuario
+
+| Story ID: US20 | User: Registered User | Priority: Media | Epic: EP08 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Actualizar la información del perfil |  |  |
+| **Description** | Como Registered User, quiero actualizar mis datos personales y mi fotografía de perfil para mantener vigente la información de mi cuenta. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el usuario ha iniciado sesión,<br>**Cuando** modifica sus datos personales con información válida y guarda los cambios,<br>**Entonces** el sistema actualiza la información del perfil y confirma la actualización.<br><br>**Escenario 2:**<br>**Dado que** el usuario ha iniciado sesión,<br>**Cuando** reemplaza su fotografía de perfil por una imagen válida,<br>**Entonces** el sistema conserva la nueva fotografía asociada a su cuenta. |  |  |
+
+##### US21 - Cerrar sesión
+
+| Story ID: US21 | User: Registered User | Priority: Media | Epic: EP08 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Cerrar la sesión de forma segura |  |  |
+| **Description** | Como Registered User, quiero cerrar mi sesión para proteger el acceso a mi cuenta cuando termine de utilizar la aplicación. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el usuario tiene una sesión activa,<br>**Cuando** confirma el cierre de sesión,<br>**Entonces** el sistema finaliza la sesión y requiere nuevas credenciales para volver a acceder.<br><br>**Escenario 2:**<br>**Dado que** el usuario inicia el cierre de sesión,<br>**Cuando** cancela la confirmación,<br>**Entonces** la sesión permanece activa sin cambios. |  |  |
+
+##### US22 - Acceder al registro desde el Landing Page
+
+| Story ID: US22 | User: Visitor | Priority: Alta | Epic: EP09 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Acceder al registro o inicio de sesión desde el Landing Page |  |  |
+| **Description** | Como Visitor, quiero acceder al registro o al inicio de sesión desde el Landing Page para comenzar a utilizar Vantage PMO luego de conocer su propuesta de valor. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el visitante se encuentra en el Landing Page,<br>**Cuando** elige comenzar a utilizar el producto,<br>**Entonces** es dirigido al proceso de registro de una nueva cuenta.<br><br>**Escenario 2:**<br>**Dado que** el visitante ya posee una cuenta,<br>**Cuando** elige iniciar sesión,<br>**Entonces** es dirigido al proceso de acceso de Vantage PMO. |  |  |
+
+##### US23 - Consultar testimonios desde el Landing Page
+
+| Story ID: US23 | User: Visitor | Priority: Media | Epic: EP09 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Consultar testimonios de clientes |  |  |
+| **Description** | Como Visitor, quiero conocer testimonios de clientes de Vantage PMO para evaluar la confiabilidad de la solución antes de utilizarla. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el visitante accede al Landing Page,<br>**Cuando** consulta los testimonios publicados,<br>**Entonces** puede identificar la opinión, la calificación y la identidad de al menos un cliente.<br><br>**Escenario 2:**<br>**Dado que** existen varios testimonios publicados,<br>**Cuando** el visitante avanza entre ellos,<br>**Entonces** puede consultar cada testimonio de forma individual. |  |  |
+
+##### US24 - Suscribirse al newsletter desde el Landing Page
+
+| Story ID: US24 | User: Visitor | Priority: Media | Epic: EP09 |
+| :--- | :--- | :--- | :--- |
+| **Title** | Suscribirse al boletín informativo |  |  |
+| **Description** | Como Visitor, quiero suscribirme al newsletter de Vantage PMO para recibir novedades sobre el producto. |  |  |
+| **Acceptance Criteria** | **Escenario 1:**<br>**Dado que** el visitante proporciona un correo electrónico válido,<br>**Cuando** solicita la suscripción,<br>**Entonces** el sistema registra la suscripción y confirma que se completó.<br><br>**Escenario 2:**<br>**Dado que** el visitante proporciona un correo electrónico con formato inválido,<br>**Cuando** solicita la suscripción,<br>**Entonces** la suscripción no se registra y se informa que el correo no es válido. |  |  |
+
 ---
 
 #### Technical Stories
@@ -1026,31 +1082,70 @@ Para su elaboración se definieron dos Business Goals bajo criterios SMART. Asim
 
 ### 2.4.3. Product Backlog
 
-En esta sección se presenta el Product Backlog de Vantage PMO, conformado por las User Stories previamente identificadas y priorizadas de acuerdo con el valor que aportan al negocio y a los usuarios de la solución.
+En esta sección se presenta el Product Backlog de Vantage PMO, conformado por las User Stories, Technical Stories y Spike Stories definidas en la sección 2.4.1, priorizadas de acuerdo con el valor que aportan al negocio y a los usuarios de la solución.
 
-Cada User Story ha sido estimada utilizando Story Points de la serie 1, 2, 3, 5 y 8, considerando de manera relativa el esfuerzo, la complejidad y la incertidumbre asociados a su implementación. Asimismo, las historias han sido distribuidas entre los tres Sprints considerados para el desarrollo del producto. Las User Stories correspondientes al Landing Page se incluyen desde el Sprint 1.
+Cada historia ha sido estimada utilizando Story Points de la serie 1, 2, 3, 5 y 8, considerando de manera relativa el esfuerzo, la complejidad y la incertidumbre asociados a su implementación. Asimismo, las historias han sido distribuidas entre los tres Sprints considerados para el desarrollo del producto. Las User Stories correspondientes al Landing Page se incluyen desde el Sprint 1.
 
-Para establecer el orden de precedencia se consideraron las prioridades definidas en la sección 2.4.1, el valor funcional de cada historia y las dependencias entre las capacidades del producto. Se priorizaron las funcionalidades fundamentales para la gestión de proyectos y tareas, seguidas de las capacidades de seguimiento, control y análisis. Finalmente, se ubicaron las funcionalidades complementarias de colaboración, documentación, administración y comunicación.
+Para establecer el orden de precedencia se consideraron las prioridades definidas en la sección 2.4.1, el valor funcional de cada historia y las dependencias entre las capacidades del producto. Se priorizaron las funcionalidades fundamentales para la gestión de proyectos y tareas, junto con las historias del Landing Page, seguidas de las capacidades de seguimiento, control y análisis. Finalmente, se ubicaron las funcionalidades de acceso móvil, colaboración, evidencias y administración de cuentas, roles y permisos.
 
-| # Orden | User Story ID | Título | Prioridad | Story Points | Sprint |
+Para facilitar su lectura, el Product Backlog se presenta en una tabla por Sprint. La columna **# Orden** mantiene una numeración continua, de modo que el orden de precedencia del backlog se conserva entre las tres tablas. Las Technical Stories y Spike Stories se ubican al final de cada Sprint, debido a que habilitan o reducen la incertidumbre de las funcionalidades de valor, pero no aportan valor directo al usuario final:
+
+- **TS01** y **TS04** se ubican en el Sprint 1, debido a que en dicho Sprint se implementaron los servicios RESTful del backend y los endpoints de autenticación que soportan las demás funcionalidades.
+- **SP01** y **SP02** se ubican en el Sprint 2, con el fin de investigar la persistencia, la sincronización y las notificaciones móviles antes de implementar **TS02** y **TS03** en el Sprint 3.
+- Las historias de acceso a la cuenta (**US18**–**US21**) se ubican en el Sprint 3 junto con **US15**, consolidando en dicho Sprint la gestión de identidad y acceso desde la aplicación móvil.
+
+#### Sprint 1
+
+| # Orden | User Story ID | Título | Prioridad | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
 | :---: | :---: | :--- | :---: | :---: | :---: |
 | 1 | US01 | Registrar un nuevo proyecto | Alta | 3 | Sprint 1 |
 | 2 | US02 | Definir fases e hitos del proyecto | Alta | 5 | Sprint 1 |
 | 3 | US04 | Asignar tareas a responsables | Alta | 3 | Sprint 1 |
 | 4 | US05 | Actualizar el estado de una tarea | Alta | 3 | Sprint 1 |
 | 5 | US03 | Consultar el estado de múltiples proyectos | Alta | 5 | Sprint 1 |
-| 6 | US07 | Registrar y realizar seguimiento de riesgos | Alta | 5 | Sprint 2 |
-| 7 | US08 | Asignar recursos considerando su capacidad | Alta | 8 | Sprint 3 |
-| 8 | US11 | Consultar indicadores de desempeño | Alta | 5 | Sprint 2 |
-| 9 | US12 | Generar reportes de desempeño | Alta | 8 | Sprint 2 |
-| 10 | US13 | Recibir alertas sobre eventos relevantes | Alta | 5 | Sprint 2 |
-| 11 | US14 | Consultar información de proyectos desde un dispositivo móvil | Alta | 5 | Sprint 3 |
-| 12 | US16 | Conocer la propuesta de valor de Vantage PMO | Alta | 3 | Sprint 1 |
-| 13 | US06 | Comunicar bloqueos y observaciones de una tarea | Media | 3 | Sprint 3 |
-| 14 | US09 | Centralizar documentos de los proyectos | Media | 5 | Sprint 2 |
-| 15 | US10 | Registrar evidencia utilizando un recurso del dispositivo | Media | 5 | Sprint 3 |
-| 16 | US15 | Gestionar roles y permisos | Media | 5 | Sprint 3 |
-| 17 | US17 | Consultar medios de contacto del producto | Media | 2 | Sprint 1 |
+| 6 | US16 | Conocer la propuesta de valor de Vantage PMO | Alta | 3 | Sprint 1 |
+| 7 | US22 | Acceder al registro o inicio de sesión desde el Landing Page | Alta | 1 | Sprint 1 |
+| 8 | US17 | Consultar medios de contacto del producto | Media | 2 | Sprint 1 |
+| 9 | US23 | Consultar testimonios de clientes | Media | 2 | Sprint 1 |
+| 10 | US24 | Suscribirse al boletín informativo | Media | 2 | Sprint 1 |
+| 11 | TS01 | Implementar RESTful API para las capacidades principales | Alta | 8 | Sprint 1 |
+| 12 | TS04 | Implementar autenticación y autorización para los servicios | Alta | 5 | Sprint 1 |
+
+**Total Sprint 1:** 42 Story Points.
+
+#### Sprint 2
+
+| # Orden | User Story ID | Título | Prioridad | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
+| :---: | :---: | :--- | :---: | :---: | :---: |
+| 13 | US07 | Registrar y realizar seguimiento de riesgos | Alta | 5 | Sprint 2 |
+| 14 | US11 | Consultar indicadores de desempeño | Alta | 5 | Sprint 2 |
+| 15 | US12 | Generar reportes de desempeño | Alta | 8 | Sprint 2 |
+| 16 | US13 | Recibir alertas sobre eventos relevantes | Alta | 5 | Sprint 2 |
+| 17 | US09 | Centralizar documentos de los proyectos | Media | 5 | Sprint 2 |
+| 18 | SP01 | Investigar estrategia de persistencia y sincronización de información móvil | Alta | 3 | Sprint 2 |
+| 19 | SP02 | Investigar tecnología externa para notificaciones móviles | Alta | 3 | Sprint 2 |
+
+**Total Sprint 2:** 34 Story Points.
+
+#### Sprint 3
+
+| # Orden | User Story ID | Título | Prioridad | Story Points (1 / 2 / 3 / 5 / 8) | Sprint |
+| :---: | :---: | :--- | :---: | :---: | :---: |
+| 20 | US08 | Asignar recursos considerando su capacidad | Alta | 8 | Sprint 3 |
+| 21 | US14 | Consultar información de proyectos desde un dispositivo móvil | Alta | 5 | Sprint 3 |
+| 22 | US06 | Comunicar bloqueos y observaciones de una tarea | Media | 3 | Sprint 3 |
+| 23 | US10 | Registrar evidencia utilizando un recurso del dispositivo | Media | 5 | Sprint 3 |
+| 24 | US19 | Crear una cuenta en Vantage PMO | Media | 5 | Sprint 3 |
+| 25 | US18 | Acceder a la cuenta y recuperar la contraseña | Media | 3 | Sprint 3 |
+| 26 | US15 | Gestionar roles y permisos | Media | 5 | Sprint 3 |
+| 27 | US20 | Actualizar la información del perfil | Media | 2 | Sprint 3 |
+| 28 | US21 | Cerrar la sesión de forma segura | Media | 1 | Sprint 3 |
+| 29 | TS02 | Implementar almacenamiento local en la aplicación móvil | Alta | 3 | Sprint 3 |
+| 30 | TS03 | Integrar un servicio externo de notificaciones móviles | Media | 3 | Sprint 3 |
+
+**Total Sprint 3:** 43 Story Points.
+
+**Total del Product Backlog:** 30 historias y 119 Story Points.
 
 **Product Backlog en Trello:** [Aplicaciones Móviles](https://trello.com/b/Gzag7ZlN/aplicaciones-moviles).
 
