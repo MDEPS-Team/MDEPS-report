@@ -1,6 +1,7 @@
 <div style="page-break-before: always;"></div>
 
-# IV Product Implementation, Validation & Deployment
+<a id="capitulo-iv-product-implementation-validation"></a>
+# Capítulo IV: Product Implementation & Validation
 
 ## 4.1. Software Configuration Management
 <a id="5-1-software-configuration-management"></a>
@@ -176,7 +177,9 @@ Para la Landing Page desarrollada en HTML, CSS y JavaScript, la configuración d
 
 Se debe crear un repositorio en GitHub y subir todos los archivos del proyecto (HTML, CSS, JS). Es obligatorio que el archivo index.html esté ubicado en la raíz del repositorio para poder realizar el despliegue correctamente.
 
-![img.png](img.png)
+![img.png](assets/images/img.png)
+
+**URL pública de la Landing Page:** [https://mdeps-team.github.io/MDEPS-Landing-page/](https://mdeps-team.github.io/MDEPS-Landing-page/)
 
 **Despliegue del Backend (Web Service)**
 
@@ -184,8 +187,19 @@ Para el despliegue de la API REST y la base de datos, se utilizó la plataforma 
 1. Provisión de un servicio de base de datos **MySQL** alojado en la nube.
 2. Vinculación directa con el repositorio de GitHub (`MDEPS-Back-End`) utilizando el archivo `Dockerfile` ubicado en la raíz del proyecto para la compilación del entorno en .NET 10.
 3. Configuración de variables de entorno, incluyendo la cadena de conexión a la base de datos (`ConnectionStrings__DefaultConnection`) y la habilitación de la documentación pública (`ASPNETCORE_ENVIRONMENT = Development`).
-# 4.2
+
+**URL pública de la documentación del backend (Swagger):** [https://mdeps-back-end-production-1d49.up.railway.app/swagger](https://mdeps-back-end-production-1d49.up.railway.app/swagger)
+
+**Configuración de la aplicación móvil**
+
+La aplicación Android del repositorio [MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) consume el backend desplegado mediante Retrofit. La URL base se define en la constante `BASE_URL` de `RetrofitClient.kt` (`https://mdeps-back-end-production-1d49.up.railway.app/`), de modo que cada compilación de la aplicación se conecta directamente con la API pública en Railway.
+
+<a id="42-landing-page-mobile-application-implementation"></a>
+## 4.2. Landing Page & Mobile Application Implementation
+
+<a id="421-sprint-1"></a>
 ## 4.2.1. Sprint 1
+<a id="4211-sprint-planning-1"></a>
 ##### 4.2.1.1. Sprint Planning 1
 
 En esta sección, se presenta la planificación correspondiente al Sprint 1 de Vantage PMO.
@@ -619,13 +633,122 @@ Durante la validación, se ejecutaron peticiones `POST` para la creación de ent
 ![img.png](assets/img7.png)
 *Figura: Ejecución de un endpoint de la API y respuesta HTTP validando la persistencia en la base de datos.*
 
+<a id="4217-services-documentation-evidence-for-sprint-review"></a>
 ### 4.2.1.7. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 1 se documentaron con OpenAPI los Web Services del backend de Vantage PMO. La documentación se genera con Swagger (`AddSwaggerGen`, `UseSwagger` y `UseSwaggerUI` en `Program.cs`) a partir de los controladores incorporados en el commit `062e857` del repositorio [MDEPS-Team/MDEPS-Back-End](https://github.com/MDEPS-Team/MDEPS-Back-End). La especificación publicada (`Vantage PMO API`, versión `v1`, OpenAPI 3.0.4) reúne 66 operaciones agrupadas en 33 recursos: 40 `GET`, 12 `POST`, 9 `PUT`, 3 `PATCH` y 2 `DELETE`.
+
+**Documentación desplegada:** [https://mdeps-back-end-production-1d49.up.railway.app/swagger](https://mdeps-back-end-production-1d49.up.railway.app/swagger)
+
+**Especificación OpenAPI (JSON):** [https://mdeps-back-end-production-1d49.up.railway.app/swagger/v1/swagger.json](https://mdeps-back-end-production-1d49.up.railway.app/swagger/v1/swagger.json)
+
+La siguiente tabla presenta los endpoints documentados, con el verbo HTTP, la sintaxis de llamada, los parámetros y las respuestas declaradas en la especificación. Todas las rutas se invocan sobre la URL base `https://mdeps-back-end-production-1d49.up.railway.app`.
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| AdminPolicy | Get admin policy | GET | `/api/v1/admin-policy` | — | 200 OK |
+| AdminPolicy | Update admin policy | PUT | `/api/v1/admin-policy` | Body `UpdateAdminPolicyResource` | 200 OK |
+| Analytics | Get all analytics dashboards | GET | `/api/v1/analytics` | — | 200 Analytics dashboards found. (`AnalyticsDashboardResource[]`) |
+| Authentication | Sign in | POST | `/api/v1/authentication/sign-in` | Body `SignInResource` | 200 The user was authenticated (`AuthenticatedUserResource`); 400 Invalid username or password |
+| Authentication | Sign-up | POST | `/api/v1/authentication/sign-up` | Body `SignUpResource` | 200 The user and profile were created successfully; 400 The sign-up data is invalid; 409 The username or email is already taken |
+| BoardMembers | Get board members by board | GET | `/api/v1/board-members` | `boardId` (consulta) | 200 OK |
+| Boards | Get all boards | GET | `/api/v1/boards` | — | 200 OK |
+| Branding | Get branding settings | GET | `/api/v1/branding` | — | 200 OK |
+| Branding | Update branding settings | PUT | `/api/v1/branding` | Body `UpdateBrandingResource` | 200 OK |
+| ChatInsights | Get AI insights for a chat | GET | `/api/v1/chat-insights` | `chatId` (consulta) | 200 Insights found. (`ChatInsightResource[]`) |
+| ChatMessages | Get all chat messages | GET | `/api/v1/chat-messages` | — | 200 Messages found. (`ChatMessageResource[]`) |
+| ChatMessages | Create a chat message | POST | `/api/v1/chat-messages` | Body `CreateChatMessageResource` | 201 Message created. (`ChatMessageResource`); 400 Invalid message data. |
+| ChatPinnedAssets | Get pinned assets for a chat | GET | `/api/v1/chat-pinned-assets` | `chatId` (consulta) | 200 Pinned assets found. (`ChatPinnedAssetResource[]`) |
+| Chats | Get all chats | GET | `/api/v1/chats` | — | 200 Chats found. (`ChatResource[]`) |
+| Chats | Create a chat | POST | `/api/v1/chats` | Body `CreateChatResource` | 201 Chat created. (`ChatResource`); 400 Invalid chat data. |
+| Chats | Partially update a chat | PATCH | `/api/v1/chats/{id}` | `id` (ruta), Body `PatchChatResource` | 200 Chat updated. (`ChatResource`); 404 Chat not found. |
+| ChatUsers | Get all chat users | GET | `/api/v1/chat-users` | — | 200 Chat users found. (`ChatUserResource[]`) |
+| CollaborationTasks | Get dashboard or collaboration tasks | GET | `/api/v1/tasks` | `boardId` (consulta), `scope` (consulta) | 200 OK |
+| CollaborationTasks | Create a collaboration task | POST | `/api/v1/tasks` | Body `CreateCollaborationTaskResource` | 200 OK |
+| CollaborationTasks | Update a collaboration task | PUT | `/api/v1/tasks/{id}` | `id` (ruta), Body `UpdateCollaborationTaskResource` | 200 OK |
+| CollaborationTasks | Delete a collaboration task | DELETE | `/api/v1/tasks/{id}` | `id` (ruta) | 200 OK |
+| ComplianceMetrics | Get compliance metrics | GET | `/api/v1/compliance-metrics` | — | 200 Compliance metrics found. (`ComplianceMetricsResource[]`) |
+| Departments | Get all departments | GET | `/api/v1/departments` | — | 200 Departments found. (`DepartmentResource[]`) |
+| Endorsements | Get endorsements by user id | GET | `/api/v1/endorsements` | `userId` (consulta) | 200 Endorsements found. |
+| LoginAttempts | Get recent login attempts | GET | `/api/v1/login-attempts` | — | 200 OK |
+| Meetings | Get all meetings | GET | `/api/v1/meetings` | — | 200 Meetings found. (`MeetingResource[]`) |
+| Meetings | Create a meeting | POST | `/api/v1/meetings` | Body `CreateMeetingResource` | 201 Meeting created. (`MeetingResource`); 400 Invalid meeting data. |
+| Meetings | Get meeting by id | GET | `/api/v1/meetings/{id}` | `id` (ruta) | 200 Meeting found. (`MeetingResource`); 404 Meeting not found. |
+| Meetings | Convert a meeting agreement into a collaboration task | POST | `/api/v1/meetings/{meetingId}/agreements/{agreementId}/convert-to-task` | `meetingId` (ruta), `agreementId` (ruta) | 200 Agreement converted. (`ConvertAgreementResultResource`); 404 Meeting or agreement not found. |
+| Meetings | Export meeting minutes | GET | `/api/v1/meetings/{id}/minutes/export` | `id` (ruta), `format` (consulta), `attendees` (consulta), `agenda` (consulta), `minutes` (consulta), `agreements` (consulta) | 200 Minutes exported.; 404 Meeting not found. |
+| Profiles | Get a profile by id | GET | `/api/v1/profiles/{id}` | `id` (ruta) | 200 The profile was found. (`ProfileResource`); 404 The profile does not exist. |
+| Profiles | Update a profile | PATCH | `/api/v1/profiles/{id}` | `id` (ruta), Body `UpdateProfileResource` | 200 The profile was updated. (`ProfileResource`); 400 The profile data is invalid.; 404 The profile does not exist.; 409 The email is already registered. |
+| Profiles | Get a profile by email | GET | `/api/v1/profiles` | `email` (consulta) | 200 The profile was found. (`ProfileResource`); 400 The email query parameter is missing.; 404 The profile does not exist. |
+| ProfileSkills | Get profile skills by user id | GET | `/api/v1/profile-skills` | `userId` (consulta) | 200 Skills found. |
+| Projects | Get all projects | GET | `/api/v1/projects` | — | 200 Projects found. (`ProjectResource[]`) |
+| Projects | Create a project | POST | `/api/v1/projects` | Body `CreateProjectResource` | 201 Project created. (`ProjectResource`); 400 Invalid project data. |
+| Projects | Get a project by id | GET | `/api/v1/projects/{id}` | `id` (ruta) | 200 Project found. (`ProjectResource`); 404 Project not found. |
+| Projects | Update a project | PUT | `/api/v1/projects/{id}` | `id` (ruta), Body `UpdateProjectResource` | 200 Project updated. (`ProjectResource`); 400 Invalid project data.; 404 Project not found. |
+| Reports | Get all executive project reports | GET | `/api/v1/reports` | — | 200 Reports found. (`ReportResource[]`) |
+| ResourcePlanning | Get all resource planning dashboards | GET | `/api/v1/resource-planning` | — | 200 Resource planning dashboards found. (`ResourcePlanningDashboardResource[]`) |
+| RiskMatrix | Get risk matrices | GET | `/api/v1/risk-matrix` | — | 200 Risk matrices found. (`RiskMatrixResource[]`) |
+| Risks | Get all risks | GET | `/api/v1/risks` | — | 200 Risks found. (`RiskResource[]`) |
+| Schedule | Get all schedule items | GET | `/api/v1/schedule` | — | 200 Schedule items found. (`ScheduleItemResource[]`) |
+| Stats | Get stats by user id or list all portfolio stats | GET | `/api/v1/stats` | `userId` (consulta) | 200 Stats found. |
+| Subscription | Get subscription | GET | `/api/v1/subscription` | — | 200 OK |
+| Subscription | Update subscription | PUT | `/api/v1/subscription` | Body `UpdateSubscriptionResource` | 200 OK |
+| Subscription | Renew subscription | GET | `/api/v1/subscription/{id}/renew` | `id` (ruta) | 200 OK |
+| SupportTickets | Get all support tickets | GET | `/api/v1/support-tickets` | — | 200 Support tickets found. (`SupportTicketResource[]`) |
+| SupportTickets | Create a support ticket | POST | `/api/v1/support-tickets` | Body `CreateSupportTicketResource` | 201 Support ticket created. (`SupportTicketResource`); 400 Invalid support ticket data. |
+| SupportTickets | Update a support ticket | PUT | `/api/v1/support-tickets/{id}` | `id` (ruta), Body `UpdateSupportTicketResource` | 200 Support ticket updated. (`SupportTicketResource`); 400 Invalid support ticket data.; 404 Support ticket not found. |
+| SystemSettings | Get system settings | GET | `/api/v1/system-settings` | — | 200 OK |
+| SystemSettings | Update system settings | PUT | `/api/v1/system-settings` | Body `UpdateSystemSettingsResource` | 200 OK |
+| Users | Get profile by user id | GET | `/api/v1/users/{id}` | `id` (ruta) | 200 The profile was found. (`ProfileResource`); 404 The profile does not exist. |
+| Users | Update profile or password by user id | PATCH | `/api/v1/users/{id}` | `id` (ruta), Body `FrontPatchUserResource` | 200 The profile was updated. (`ProfileResource`) |
+| Users | Sign-in, find by email, or list users | GET | `/api/v1/users` | `email` (consulta), `username` (consulta), `password` (consulta) | 200 Resources were found. |
+| Users | Register user (front-end contract) | POST | `/api/v1/users` | Body `FrontSignUpResource` | 201 User created. (`FrontSignInUserResource`) |
+| UserSchedules | Operación de UserSchedules | POST | `/api/v1/user-schedules` | Body `CreateScheduleResource` | 200 OK (`ScheduleResource`) |
+| UserSchedules | Operación de UserSchedules | GET | `/api/v1/user-schedules/{id}` | `id` (ruta) | 200 OK (`ScheduleResource`) |
+| UserSchedules | Operación de UserSchedules | PUT | `/api/v1/user-schedules/{id}` | `id` (ruta), Body `UpdateScheduleResource` | 200 OK |
+| UserSchedules | Operación de UserSchedules | DELETE | `/api/v1/user-schedules/{id}` | `id` (ruta) | 200 OK |
+| UserSchedules | Operación de UserSchedules | GET | `/api/v1/user-schedules/user/{userId}` | `userId` (ruta) | 200 OK (`ScheduleResource[]`) |
+| UserSchedules | Operación de UserSchedules | GET | `/api/v1/user-schedules/user/{userId}/range` | `userId` (ruta), `startDate` (consulta), `endDate` (consulta) | 200 OK (`ScheduleResource[]`) |
+| UserSettings | Get user settings | GET | `/api/v1/user-settings` | — | 200 User settings found. (`UserSettingsResource`); 404 User settings not found. |
+| UserSettings | Update user settings | PUT | `/api/v1/user-settings` | Body `UpdateUserSettingsResource` | 200 User settings updated. (`UserSettingsResource`); 404 User settings not found. |
+| WorkspaceSelection | Get workspace selection by user id | GET | `/api/v1/workspace-selection` | `userId` (consulta) | 200 Workspace selection found. (`WorkspaceSelectionResource`); 404 Workspace selection not found. |
+| WorkspaceSelection | Save workspace selection | POST | `/api/v1/workspace-selection` | Body `CreateWorkspaceSelectionResource` | 201 Workspace selection saved. (`WorkspaceSelectionResource`); 400 Invalid workspace selection data. |
+
+La interacción con la documentación desplegada y un ejemplo de respuesta con datos de muestra se presentan en la sección 4.2.2.7.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [MDEPS-Team/MDEPS-Back-End](https://github.com/MDEPS-Team/MDEPS-Back-End) | main | 062e857 | feat: backend migration | — | 2026-10-03 |
+
+<a id="4218-software-deployment-evidence-for-sprint-review"></a>
 ### 4.2.1.8. Software Deployment Evidence for Sprint Review
+
+En el Sprint 1 se realizaron los primeros despliegues de dos productos de la solución:
+
+- **Landing Page:** el repositorio [MDEPS-Team/MDEPS-Landing-page](https://github.com/MDEPS-Team/MDEPS-Landing-page) se publicó con GitHub Pages a partir de la rama `main`, con el archivo `index.html` en la raíz. Los archivos se subieron el 2026-10-05 (commits `7e53621`, `be5861e` y `f386787`). La captura muestra el repositorio con el despliegue `github-pages` activo. URL pública: [https://mdeps-team.github.io/MDEPS-Landing-page/](https://mdeps-team.github.io/MDEPS-Landing-page/).
+- **Web Services:** el backend se desplegó en Railway siguiendo los pasos descritos en la sección 4.1.4: base de datos MySQL en la nube, compilación con el `Dockerfile` del repositorio `MDEPS-Back-End` y variables de entorno para la cadena de conexión y la documentación pública.
+
+![Repositorio de la Landing Page con despliegue en GitHub Pages](assets/images/img.png)
+
+*Figura. Repositorio MDEPS-Landing-page con el despliegue github-pages activo.*
+
+<a id="4219-team-collaboration-insights-during-sprint"></a>
 ### 4.2.1.9. Team Collaboration Insights during Sprint
 
+Durante el Sprint 1 (hasta el 5 de octubre de 2026) los commits de implementación se distribuyeron entre los repositorios de la solución de la siguiente manera (sin contar merges):
 
+| Repositorio | Fuentes Alvarez, Angiela Stephany | Guillen Giraldo, Mike Dylan | Mendoza Machoa, Lionel Snayder | Pacheco Lavado, Rafael Agustin | Quiliano Motta, Kirk Douglas |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| MDEPS-Back-End | 0 | 0 | 1 | 1 | 1 |
+| MDEPS-Landing-page | 0 | 0 | 2 | 1 | 1 |
+| MDEPS-Front-End | 0 | 0 | 0 | 0 | 1 |
+
+Mendoza Machoa, Lionel Snayder incorporó la implementación inicial del backend (`062e857`) y la primera versión de la Landing Page (`7e53621`). Pacheco Lavado, Rafael Agustin añadió la suite de pruebas del backend (`ff70649`) y la limpieza del repositorio de la Landing Page (`e2a9e3f`). Quiliano Motta, Kirk Douglas creó los repositorios MDEPS-Back-End y MDEPS-Front-End (`Initial commit`), subió archivos de la Landing Page (`be5861e`) y resolvió el conflicto de merge de `index.html` (`f386787`). En este Sprint, Fuentes Alvarez, Angiela Stephany y Guillen Giraldo, Mike Dylan concentraron su aporte en el repositorio del informe (Sprint Planning, Sprint Backlog y Capítulo III), como se observa en el Project Report Collaboration Insights.
+
+
+<a id="422-sprint-2"></a>
 ## 4.2.2. Sprint 2
 
+<a id="4221-sprint-planning-2"></a>
 ##### 4.2.2.1. Sprint Planning 2
 
 En esta sección se presenta la planificación correspondiente al Sprint 2 de Vantage PMO.
@@ -644,14 +767,28 @@ En esta sección se presenta la planificación correspondiente al Sprint 2 de Va
 | **Location** | [Lugar o plataforma utilizada] |
 | **Prepared By** | Fuentes Alvarez, Angiela Stephany |
 | **Attendees** | Fuentes Alvarez, Angiela Stephany / Guillen Giraldo, Mike Dylan / Mendoza Machoa, Lionel Snayder / Pacheco Lavado, Rafael Agustin / Quiliano Motta, Kirk Douglas |
-| **Sprint n-1 Review Summary** | [Resumen de la revisión del Sprint 1] |
+| **Sprint n-1 Review Summary** | En el Sprint 1 se publicó la Landing Page en GitHub Pages; se implementó el backend de Vantage PMO con 66 endpoints documentados con OpenAPI y desplegados en Railway sobre una base de datos MySQL; y se incorporó una suite de 4 pruebas automatizadas (2 unitarias, 1 de integración y 1 de aceptación BDD) cuya ejecución finalizó con las 4 pruebas superadas. |
 | **Sprint n-1 Retrospective Summary** | [Resumen de la retrospectiva del Sprint 1] |
 | **Sprint Goal & User Stories** | |
 | **Sprint 2** | El objetivo del Sprint 2 es fortalecer las capacidades de gestión, seguimiento y análisis de Vantage PMO. Durante este sprint se trabajará en el registro y seguimiento de riesgos, la centralización de documentos, la consulta de indicadores de desempeño, la generación de reportes y la recepción de alertas sobre eventos relevantes. Estas funcionalidades buscan mejorar el control de los proyectos y facilitar la toma de decisiones mediante información organizada y oportuna. |
 | **Sprint 2 Velocity** | [Por determinar] |
 | **Sum of Story Points** | 34 Story Points |
 
-##### 4.2.2.2. Sprint Backlog 2
+<a id="4222-aspect-leaders-and-collaborators"></a>
+##### 4.2.2.2. Aspect Leaders and Collaborators
+
+En el Sprint 2 los principales aspectos trabajados fueron la aplicación nativa Android, la aplicación multiplataforma en Flutter, la integración de la aplicación móvil con los Web Services desplegados, la Landing Page, las pruebas automatizadas y la documentación del informe. La matriz LACX se elaboró a partir de la autoría de los commits registrados en cada repositorio durante el Sprint: el líder (L) es el integrante con más commits en el aspecto y los colaboradores (C) son quienes también registraron commits en él. Un guion (—) indica que no hay commits del integrante en ese aspecto.
+
+| **Team Member (Last Name, First Name)** | **GitHub Username** | **Android App** | **Flutter App** | **Integración con Web Services** | **Landing Page** | **Testing** | **Documentation** |
+| ---------------------------------------- | ------------------- | --------------- | --------------- | -------------------------------- | ---------------- | ----------- | ----------------- |
+| Fuentes Alvarez, Angiela Stephany | angielafuentes | — | — | — | — | — | L |
+| Guillen Giraldo, Mike Dylan | FullHous | C | L | — | L | L | C |
+| Mendoza Machoa, Lionel Snayder | mendozalionel745-ctrl | L | C | L | — | — | — |
+| Pacheco Lavado, Rafael Agustin | RafaelAgustin21 | — | — | — | — | — | C |
+| Quiliano Motta, Kirk Douglas | Kirkcito | — | — | — | — | — | C |
+
+<a id="4223-sprint-backlog-2"></a>
+##### 4.2.2.3. Sprint Backlog 2
 
 El Sprint Backlog 2 reúne las historias de usuario y actividades seleccionadas para el segundo sprint de Vantage PMO. Las tareas están orientadas al desarrollo de funcionalidades que permitan gestionar riesgos, centralizar documentos, consultar indicadores, generar reportes y recibir notificaciones relevantes.
 
@@ -777,6 +914,270 @@ Durante este sprint se consideran actividades de diseño, desarrollo y validaci�
 </table>
 
 
+<a id="4224-development-evidence-for-sprint-review"></a>
+### 4.2.2.4. Development Evidence for Sprint Review
+
+Durante el Sprint 2 el avance de implementación se concentró en las aplicaciones móviles y en la Landing Page:
+
+- **Aplicación nativa Android** ([MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End)), desarrollada en Kotlin con Jetpack Compose y organizada por bounded contexts (`iam`, `pto`, `gro`, `ass`, `pm`). Se implementaron el inicio de sesión con autenticación biométrica (`androidx.biometric`), el registro multipaso y la recuperación de contraseña, la persistencia local con Room y DataStore, el acceso a la galería para el avatar del perfil, la gestión de proyectos y tareas con tablero Kanban y Roadmap, la generación y exportación nativa de reportes en PDF mediante `FileProvider`, la matriz de riesgos y la línea de tiempo de hitos, los KPIs calculados a partir de los módulos de proyectos y gobernanza, y la selección de idioma por aplicación (i18n). Al cierre del Sprint, los flujos de Sign-In y Sign-Up se conectaron con el backend desplegado en Railway mediante Retrofit y tokens JWT.
+- **Aplicación multiplataforma en Flutter** ([MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter)), organizada con la misma división por bounded contexts. Se construyeron los flujos de splash, login, registro y recuperación de contraseña; el dashboard de inicio, el hub de proyectos, el detalle de proyecto, el tablero Kanban y el Roadmap; el hub de gobernanza con matriz de riesgos y línea de tiempo de hitos; el dashboard de analítica con exportación de reportes; y el perfil con preferencias, cambio de idioma (EN/ES) y cierre de sesión. En este Sprint, la aplicación Flutter trabaja con repositorios en memoria y datos de demostración; todavía no consume los Web Services.
+- **Landing Page** ([MDEPS-Team/MDEPS-Landing-page](https://github.com/MDEPS-Team/MDEPS-Landing-page)): rediseño de la página con una vista 3D del portafolio, tema claro y oscuro, mejoras de accesibilidad (foco visible, *skip link*, `prefers-reduced-motion`) e imágenes optimizadas en WebP, integrado en `main` el 2026-11-09.
+
+El backend no registró commits durante el Sprint 2; los Web Services implementados en el Sprint 1 se mantuvieron desplegados y fueron consumidos por la aplicación Android (ver 4.2.2.7).
+
+A continuación se presentan los commits de implementación del Sprint 2 (del 2026-10-06 al 2026-11-11, sin contar merges) en cada repositorio.
+
+#### Aplicación Android (Kotlin)
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | c3d46eb | First contribution to the Android project | — | 2026-10-09 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/iam | 6eb5773 | feat(iam): initialize DDD directory structure and core dependencies | — | 2026-11-03 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/iam | f3ec7d3 | feat(iam): implement domain models and DataStore local storage | — | 2026-11-03 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/iam | cd2432f | feat(iam): build LoginScreen UI with i18n and accessibility support | — | 2026-11-03 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/iam | 641e245 | feat(iam): integrate biometric authentication for autonomous learning requirement | — | 2026-11-03 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/iam | 2cc9ad1 | feat(iam): build ProfileScreen and implement device gallery access for avatar | — | 2026-11-03 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/iam | 4ac9f8f | feat(iam): implement ViewModels, RESTful API integration logic and restore navigation | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/pto | 00a8973 | feat(pto): initialize DDD directory structure and core dependencies for Room and CameraX | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/pto | e6511f6 | feat(pto): implement domain models and Room local database for offline persistence | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/pto | 6e1ef46 | feat(pto): build Projects and Tasks UI with strict i18n and a11y compliance | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/pto | bb976bd | feat(pto): implement native PDF generation and export via FileProvider for autonomous learning requirement | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/pto | 77bd8a6 | feat(pto): implement ViewModel, state management and navigation wiring for PTO module | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/gro | 1f3ce1d | feat(gro): initialize DDD structure and core domain models for Risks and Milestones | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/gro | 8a65627 | feat(gro): implement Room local database and offline-first repositories for risks and milestones | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/gro | 296b277 | feat(gro): build interactive Risk Matrix UI with i18n, a11y and swipe-to-resolve gestures | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/gro | df5a488 | feat(gro): build custom interactive Milestone Timeline UI with dynamic graphics, i18n and a11y | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/gro | 9d3de76 | feat(gro): implement GroViewModel, UDF state management and navigation for interactive B2B dashboards | — | 2026-11-06 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/core-integration | 25e6856 | feat(integration): wire real project data to Home and centralize cross-module navigation in ProjectDetailScreen | — | 2026-11-07 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/core-integration | eb3150b | feat(integration): persist profile avatar via DataStore and wire real metrics to Home dashboard | — | 2026-11-07 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/core-integration | a2595b0 | feat(ass): implement AnalyticsViewModel to calculate real cross-module KPIs from PTO and GRO data | — | 2026-11-07 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/core-integration | d0bd3cf | style(ui): inject fluid animations, material elevation and snackbar feedback for a premium B2B experience | — | 2026-11-07 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/core-integration | e483460 | style(ui): Interface improvements | — | 2026-11-07 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/core-integration | 97ff52e | feat(i18n): implement dynamic per-app language selection in ProfileScreen | — | 2026-11-07 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/home-project-improvements | eda5b0b | feat(ui): improve home and project screens | — | 2026-11-07 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | d5bb95a | chore: ignore Kotlin compiler cache and remove error logs from repo | — | 2026-11-07 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | fefbb98 | feat: add motion components and success animation. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 90b38e7 | feat: add roadmap screen and kanban shortcuts. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | aa1f413 | feat: revamp home dashboard and implement Kanban board UI. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 3ed7978 | feat: add registration and recovery view models. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 3a18f9a | feat: expand auth contract for registration and reset. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | eeb274d | feat: add mock registration and reset auth flows. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 3f0b42f | chore: set GRO snackbar duration to long. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 4eeebb8 | feat: add multi-step authentication flows and splash screen UI. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 3f64d2b | feat: add Kanban view model and milestone digest. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | fc8115c | feat: add Kanban task fields and Room database migration. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 99e9cbc | feat: add authentication flow and Kanban/Roadmap navigation routes. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 931534e | chore: add IAM and portfolio resource strings. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 2fad523 | chore: make gradlew executable. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | aed96eb | refactor: move profile code from IAM to PM package. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 27d0be0 | refactor: move profile preferences to PM domain repository. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 9883f1d | chore: update app branding icons and brand mark. | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | develop | 59a2dbb | feat: add IntelliJ Markdown preview settings. | Configure the project to use the experimental Compose Markdown preview panel in IntelliJ-based IDEs. | 2026-11-09 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/android-network-iam | 09ffd31 | feat(android): connect Sign-In and Sign-Up flows with Railway backend and fix JWT token settings | — | 2026-11-10 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/Connection-backend-and-frontend | b14932e | Connection-backend-and-frontend | — | 2026-11-10 |
+
+#### Aplicación multiplataforma (Flutter)
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | main | 1c28135 | chore: initialize flutter project base | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-core-arch | e29cc93 | feat(core): setup DDD folder structure and main bottom navigation | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-core-arch | 54f4bfe | feat(core): add governance tab to main navigation | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-iam-ui | c705d00 | feat(iam): build static ui for login and basic profile structure | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-pm-ui | a81a139 | feat(pm): implement modular static UI for profile management | — | 2026-11-08 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 0a668ce | build: add flutter_localizations and intl dependencies | Required for Spanish/English Material localizations and locale-aware date and number formatting. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 62d9e49 | feat(core): add Vantage design tokens and light/dark themes | VxPalette theme extension with the neutrals from the PMO mockups, brand accents and a Material 3 theme for the default and Dark Studio modes. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | eea62d8 | feat(core): add bilingual string catalog and lookup helpers | Generated EN/ES catalog mirroring the reference app resources, extra strings for Figma-only screens and context.tr/trPlural/trArray helpers. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 8e41329 | feat(core): add motion tokens and entrance animations | Shared easing curves and durations, press-scale feedback, staggered entrance and fade route honoring reduced-motion settings. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 538ac91 | feat(core): add shared card, pill and top bar widgets | VxCard, Pill, Avatar, Caption, VxProgress, IconBadge, Dot, ProfileButton, VxTopBar and snackbar helper used across bounded contexts. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 72e11c7 | feat(core): add buttons, choice chips and text fields | VxButton with loading state, VxChoiceChip, VxSegmented, VxTextField with password reveal and the shared input decoration. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 308efa9 | feat(core): add brand mark and animated success mark | Vector Vantage V logo and the ring-and-check celebration used on success screens. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 4883906 | feat(core): add derived controller base and UI message listener | ChangeNotifier base that recomputes state from repositories, one-shot UI messages and a snackbar listener with undo support. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 49b099d | feat(iam): add identity domain and in-memory auth repository | User, credentials, registration draft, password and email policies, plus a mock identity provider with simulated latency. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 58a6e13 | feat(iam): add session, registration and recovery controllers | Sign-in and biometric session handling, four-step registration validation and the email/code/new-password recovery flow with resend countdown. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | a219c15 | feat(iam): add shared auth flow components | Auth header, animated stepper, password strength meter, step intro, tiles and underlined links. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 5e8de3c | feat(iam): add splash and login screens | Animated brand splash and the login with corporate email, biometric prompt and SSO shortcuts. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | a955cb2 | feat(iam): add multi-step registration flow | Personal data, contact and access, professional profile, role selection and account-ready summary. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | a40934a | feat(iam): add password recovery flow | Email request, six-digit OTP input with shake on error, new password checklist and secure success log. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 58d5aca | feat(pto): add project and task domain with seeded repository | Project, task, status and priority models, initiative metadata helpers and an in-memory repository seeded with a demo portfolio. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | b74eb2a | feat(gro): add risk and milestone domain with seeded repositories | Risk severity/status, milestones, seed content keys and in-memory repositories aligned with the demo portfolio. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | bd6e353 | feat(pto): add portfolio and kanban controllers | Portfolio dashboard, milestone digest, project provisioning and task actions, plus the filtered kanban board with task creation. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | a47508d | feat(gro): add governance controllers and policy store | Project risk/milestone actions with undo and status sync, governance policies and the portfolio compliance hub with audit and optimization. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 4a6de8d | feat(ass): add analytics controller and report exporter | Period-scoped KPIs (efficiency, SPI/CPI, budget, health, capacity) aggregating PTO and GRO data, and the executive export builder. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | d04b324 | feat(pm): add profile domain, repository and controller | Operational preferences, in-memory profile store and portfolio-derived profile metrics with explicit save. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | e23699a | feat(core): add composition root, app settings and shell navigator | AppServices wires every bounded context, AppSettings holds language, theme and onboarding state, and ShellNavigator defines cross-context navigation. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 56c1506 | feat(gro): add GRO UI helpers and add-record dialogs | Severity colors and labels, localized seed titles, target date formatting and the register risk / schedule gate dialogs. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 355919e | feat(pto): add PTO UI helpers and kanban labels | Localized project, task and status labels, date formatting, kanban status/priority styling and priority badge. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | f8efafc | feat(pto): add home dashboard | Greeting, quick actions, priority risk alert, count-up KPI tiles, projects in focus and governance agenda. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 6cd3d40 | feat(pto): add projects hub | Portfolio KPIs, search, status filters, project cards with contextual actions and delete confirmation. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 736e43c | feat(pto): add project detail with evidence capture and report | Project summary, attention chips, task list with simulated evidence camera, quick actions sheet and shareable report preview. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 109586f | feat(pto): add create initiative screen | Provisioning form with identification, timeline, governance status, compliance switches and risk domain classification. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 05fb3c6 | feat(pto): add interactive kanban board | Swipeable status columns and compact view, sprint header and burndown, move with undo, create-task sheet and success dialog. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 4f98684 | feat(pto): add strategic roadmap | Quarter filter, roadmap velocity, task workload bar and expandable milestone arc with critical blockers. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 873f2da | feat(gro): add governance hub, risk matrix and milestone timeline | Compliance hero, frameworks, bandwidth, optimization, budget and policy toggles, swipe-to-resolve risks and toggleable gate timeline. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 9dd42dd | feat(ass): add advanced analytics dashboard | Period chips, efficiency trend and health donut charts, KPI cards, budget and capacity breakdowns, risk drill-down and export sheet. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 9494789 | feat(pm): rebuild profile screen with account and preference sheets | Profile hero, KPIs, account and security, PMO preferences, Dark Studio, language switch, access tier, avatar picker and logout confirmation. | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | 2b9ed44 | feat(core): wire auth gate and tabbed app shell | Splash/login/register/recovery gate, five-tab shell with nested navigation for full-screen flows and first-run onboarding. Removes the placeholder screens an... | 2026-11-10 |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | e89023b | test: cover auth, navigation, profile and layout overflow | Registration validation, five-tab tour, language switch, profile modals and logout, project hub to kanban, and phone-width overflow smoke tests in light and... | 2026-11-10 |
+
+#### Landing Page
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [MDEPS-Team/MDEPS-Landing-page](https://github.com/MDEPS-Team/MDEPS-Landing-page) | feat/landing-3d-redesign | a58b55f | feat: rediseño "Observatorio" de la landing con orrery 3D | - Hero con vista 3D del portafolio en canvas (sin librerías): órbitas = avance, luz = salud; arrastre, teclado, inclinación con scroll, chips y lectura. - Or... | 2026-11-05 |
+| [MDEPS-Team/MDEPS-Landing-page](https://github.com/MDEPS-Team/MDEPS-Landing-page) | feat/landing-3d-redesign | 11cdae6 | chore: excluir artefactos locales de Playwright | — | 2026-11-05 |
+| [MDEPS-Team/MDEPS-Landing-page](https://github.com/MDEPS-Team/MDEPS-Landing-page) | feat/landing-3d-redesign | 1079637 | chore: limpiar archivos de herramientas y ampliar README | - Elimina .idea, .impeccable, DESIGN.md y PRODUCT.md del repositorio. - README: añade tecnologías, sistema visual y flujo de trabajo. | 2026-11-05 |
+
+<a id="4225-testing-suite-evidence-for-sprint-review"></a>
+### 4.2.2.5. Testing Suite Evidence for Sprint Review
+
+En el Sprint 2 se incorporó una suite de pruebas de widgets para la aplicación Flutter, desarrollada con `flutter_test` en el archivo `test/widget_test.dart` del repositorio [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter). Las pruebas levantan la aplicación completa (`VantagePmoApp`) y recorren los flujos de autenticación, navegación, cambio de idioma, perfil y gestión de proyectos, verificando los textos esperados del catálogo de traducciones. En este Sprint no se añadieron pruebas nuevas al backend; su suite corresponde a la presentada en la sección 4.2.1.5.
+
+| Test ID | Test Type | Related User Story | Test | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| WT01 | Widget Test | US18 | `Muestra el splash y luego la pantalla de login` | Verifica que la aplicación muestre el splash con la versión y luego la pantalla de inicio de sesión. |
+| WT02 | Widget Test | US19 | `El registro valida los campos obligatorios` | Verifica que el registro muestre los errores de campos obligatorios y de fecha de nacimiento al intentar avanzar sin datos. |
+| WT03 | Widget Test | US03, US14 | `Login → onboarding → recorre las 5 pestañas` | Verifica el inicio de sesión, el onboarding y la navegación por las pestañas de inicio, proyectos, analítica, gobernanza y perfil. |
+| WT04 | Widget Test | — (requisito de i18n) | `El perfil cambia el idioma de toda la app a inglés` | Verifica que al seleccionar inglés en el perfil la interfaz cambie de idioma. |
+| WT05 | Widget Test | US05, US07 | `Recorre las pantallas secundarias sin desbordes (dark: false / true)` | Se ejecuta en tema claro y oscuro; abre Roadmap, riesgos, hitos, creación de proyecto, Kanban y la hoja de nueva tarea, y verifica que se muestren sin desbordes. |
+| WT06 | Widget Test | US20, US21 | `Perfil: foto, editar cuenta y cerrar sesión con confirmación` | Verifica la actualización del avatar, la apertura de la edición de cuenta y el cierre de sesión con confirmación. |
+| WT07 | Widget Test | US03, US05 | `Abre el detalle de un proyecto y el kanban desde Proyectos` | Verifica la navegación desde el hub de proyectos hacia el detalle de proyecto y el tablero Kanban. |
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [MDEPS-Team/MDEPS-flutter](https://github.com/MDEPS-Team/MDEPS-flutter) | feature/flutter-figma-ui | e89023b | test: cover auth, navigation, profile and layout overflow | Registration validation, five-tab tour, language switch, profile modals and logout, project hub to kanban, and phone-width overflow smoke tests in light and dark themes. | 2026-11-10 |
+
+<a id="4226-execution-evidence-for-sprint-review"></a>
+### 4.2.2.6. Execution Evidence for Sprint Review
+
+Al cierre del Sprint 2, Vantage PMO cuenta con dos aplicaciones móviles con las vistas core del producto: autenticación (login, registro y recuperación de contraseña), dashboard de inicio, hub y detalle de proyectos, tablero Kanban, Roadmap, matriz de riesgos e hitos, analítica de KPIs con exportación de reportes y perfil con preferencias e idioma. En la aplicación Android, el inicio de sesión y el registro ya se ejecutan contra el backend desplegado; además, la aplicación define servicios Retrofit para proyectos, tareas, agenda, riesgos, analítica, perfil y soporte (sección 4.2.2.7) y utiliza persistencia local con Room y DataStore. La Landing Page rediseñada se encuentra publicada en GitHub Pages.
+
+<a id="4227-services-documentation-evidence-for-sprint-review"></a>
+### 4.2.2.7. Services Documentation Evidence for Sprint Review
+
+En el Sprint 2 no se agregaron endpoints nuevos: la documentación OpenAPI de los 66 endpoints implementados en el Sprint 1 (sección 4.2.1.7) se mantuvo publicada en Railway, y el avance consistió en que la aplicación Android consumiera esos servicios. La siguiente tabla presenta los 37 endpoints que la aplicación Android invoca desde sus servicios Retrofit (`IamApiService`, `PtoApiService`, `AgendaApiService`, `GroApiService`, `AssApiService`, `PmApiService` y `SupportApiService`), con su documentación según la especificación desplegada.
+
+**Documentación desplegada:** [https://mdeps-back-end-production-1d49.up.railway.app/swagger](https://mdeps-back-end-production-1d49.up.railway.app/swagger)
+
+**Repositorio de Web Services:** [MDEPS-Team/MDEPS-Back-End](https://github.com/MDEPS-Team/MDEPS-Back-End)
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| Analytics | Get all analytics dashboards | GET | `/api/v1/analytics` | — | 200 Analytics dashboards found. (`AnalyticsDashboardResource[]`) |
+| Authentication | Sign in | POST | `/api/v1/authentication/sign-in` | Body `SignInResource` | 200 The user was authenticated (`AuthenticatedUserResource`); 400 Invalid username or password |
+| Authentication | Sign-up | POST | `/api/v1/authentication/sign-up` | Body `SignUpResource` | 200 The user and profile were created successfully; 400 The sign-up data is invalid; 409 The username or email is already taken |
+| Boards | Get all boards | GET | `/api/v1/boards` | — | 200 OK |
+| ChatMessages | Get all chat messages | GET | `/api/v1/chat-messages` | — | 200 Messages found. (`ChatMessageResource[]`) |
+| ChatMessages | Create a chat message | POST | `/api/v1/chat-messages` | Body `CreateChatMessageResource` | 201 Message created. (`ChatMessageResource`); 400 Invalid message data. |
+| Chats | Get all chats | GET | `/api/v1/chats` | — | 200 Chats found. (`ChatResource[]`) |
+| Chats | Create a chat | POST | `/api/v1/chats` | Body `CreateChatResource` | 201 Chat created. (`ChatResource`); 400 Invalid chat data. |
+| CollaborationTasks | Get dashboard or collaboration tasks | GET | `/api/v1/tasks` | `boardId` (consulta), `scope` (consulta) | 200 OK |
+| CollaborationTasks | Create a collaboration task | POST | `/api/v1/tasks` | Body `CreateCollaborationTaskResource` | 200 OK |
+| CollaborationTasks | Update a collaboration task | PUT | `/api/v1/tasks/{id}` | `id` (ruta), Body `UpdateCollaborationTaskResource` | 200 OK |
+| CollaborationTasks | Delete a collaboration task | DELETE | `/api/v1/tasks/{id}` | `id` (ruta) | 200 OK |
+| ComplianceMetrics | Get compliance metrics | GET | `/api/v1/compliance-metrics` | — | 200 Compliance metrics found. (`ComplianceMetricsResource[]`) |
+| Meetings | Get all meetings | GET | `/api/v1/meetings` | — | 200 Meetings found. (`MeetingResource[]`) |
+| Meetings | Create a meeting | POST | `/api/v1/meetings` | Body `CreateMeetingResource` | 201 Meeting created. (`MeetingResource`); 400 Invalid meeting data. |
+| Profiles | Get a profile by id | GET | `/api/v1/profiles/{id}` | `id` (ruta) | 200 The profile was found. (`ProfileResource`); 404 The profile does not exist. |
+| Profiles | Update a profile | PATCH | `/api/v1/profiles/{id}` | `id` (ruta), Body `UpdateProfileResource` | 200 The profile was updated. (`ProfileResource`); 400 The profile data is invalid.; 404 The profile does not exist.; 409 The email is already registered. |
+| Profiles | Get a profile by email | GET | `/api/v1/profiles` | `email` (consulta) | 200 The profile was found. (`ProfileResource`); 400 The email query parameter is missing.; 404 The profile does not exist. |
+| Projects | Get all projects | GET | `/api/v1/projects` | — | 200 Projects found. (`ProjectResource[]`) |
+| Projects | Create a project | POST | `/api/v1/projects` | Body `CreateProjectResource` | 201 Project created. (`ProjectResource`); 400 Invalid project data. |
+| Projects | Get a project by id | GET | `/api/v1/projects/{id}` | `id` (ruta) | 200 Project found. (`ProjectResource`); 404 Project not found. |
+| Projects | Update a project | PUT | `/api/v1/projects/{id}` | `id` (ruta), Body `UpdateProjectResource` | 200 Project updated. (`ProjectResource`); 400 Invalid project data.; 404 Project not found. |
+| Reports | Get all executive project reports | GET | `/api/v1/reports` | — | 200 Reports found. (`ReportResource[]`) |
+| ResourcePlanning | Get all resource planning dashboards | GET | `/api/v1/resource-planning` | — | 200 Resource planning dashboards found. (`ResourcePlanningDashboardResource[]`) |
+| RiskMatrix | Get risk matrices | GET | `/api/v1/risk-matrix` | — | 200 Risk matrices found. (`RiskMatrixResource[]`) |
+| Risks | Get all risks | GET | `/api/v1/risks` | — | 200 Risks found. (`RiskResource[]`) |
+| Stats | Get stats by user id or list all portfolio stats | GET | `/api/v1/stats` | `userId` (consulta) | 200 Stats found. |
+| SupportTickets | Get all support tickets | GET | `/api/v1/support-tickets` | — | 200 Support tickets found. (`SupportTicketResource[]`) |
+| SupportTickets | Create a support ticket | POST | `/api/v1/support-tickets` | Body `CreateSupportTicketResource` | 201 Support ticket created. (`SupportTicketResource`); 400 Invalid support ticket data. |
+| SupportTickets | Update a support ticket | PUT | `/api/v1/support-tickets/{id}` | `id` (ruta), Body `UpdateSupportTicketResource` | 200 Support ticket updated. (`SupportTicketResource`); 400 Invalid support ticket data.; 404 Support ticket not found. |
+| Users | Get profile by user id | GET | `/api/v1/users/{id}` | `id` (ruta) | 200 The profile was found. (`ProfileResource`); 404 The profile does not exist. |
+| Users | Update profile or password by user id | PATCH | `/api/v1/users/{id}` | `id` (ruta), Body `FrontPatchUserResource` | 200 The profile was updated. (`ProfileResource`) |
+| UserSchedules | Operación de UserSchedules | POST | `/api/v1/user-schedules` | Body `CreateScheduleResource` | 200 OK (`ScheduleResource`) |
+| UserSchedules | Operación de UserSchedules | GET | `/api/v1/user-schedules/user/{userId}` | `userId` (ruta) | 200 OK (`ScheduleResource[]`) |
+| UserSchedules | Operación de UserSchedules | GET | `/api/v1/user-schedules/user/{userId}/range` | `userId` (ruta), `startDate` (consulta), `endDate` (consulta) | 200 OK (`ScheduleResource[]`) |
+| UserSettings | Get user settings | GET | `/api/v1/user-settings` | — | 200 User settings found. (`UserSettingsResource`); 404 User settings not found. |
+| UserSettings | Update user settings | PUT | `/api/v1/user-settings` | Body `UpdateUserSettingsResource` | 200 User settings updated. (`UserSettingsResource`); 404 User settings not found. |
+
+**Ejemplo de interacción con datos de muestra:** `GET /api/v1/risks` (US07 - Registrar y realizar seguimiento de riesgos), ejecutado desde la documentación desplegada el 2026-11-11, retorna `200 OK` con la lista de riesgos registrados. Cada elemento incluye su identificador, descripción, severidad, probabilidad, impacto, estado y segmento:
+
+```json
+{
+  "id": 1,
+  "riskId": "R-01",
+  "description": "Cloud API Vulnerability detected in Segment B staging environments. Unauthorized access potential via deprecated OAuth endpoint.",
+  "severity": "CRITICAL",
+  "likelihood": "POSSIBLE",
+  "impact": "HIGH",
+  "status": "open",
+  "daysOpen": 12,
+  "hasActionPlan": true,
+  "segment": "Segment B"
+}
+```
+
+![Documentación Swagger desplegada en Railway](assets/images/chapter-4/sprint-2/swagger-overview.png)
+
+*Figura. Documentación OpenAPI de Vantage PMO API desplegada en Railway.*
+
+![Ejecución de GET /api/v1/risks desde Swagger](assets/images/chapter-4/sprint-2/swagger-get-risks.png)
+
+*Figura. Ejecución de `GET /api/v1/risks` desde Swagger con respuesta 200 y datos de muestra.*
+
+Los commits del Sprint 2 relacionados con el consumo de los servicios documentados son:
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/iam | 4ac9f8f | feat(iam): implement ViewModels, RESTful API integration logic and restore navigation | — | 2026-11-04 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/android-network-iam | 09ffd31 | feat(android): connect Sign-In and Sign-Up flows with Railway backend and fix JWT token settings | — | 2026-11-10 |
+| [MDEPS-Team/MDEPS-Front-End](https://github.com/MDEPS-Team/MDEPS-Front-End) | feature/Connection-backend-and-frontend | b14932e | Connection-backend-and-frontend | — | 2026-11-10 |
+
+<a id="4228-software-deployment-evidence-for-sprint-review"></a>
+### 4.2.2.8. Software Deployment Evidence for Sprint Review
+
+En el Sprint 2 se realizaron las siguientes actividades de despliegue:
+
+- **Landing Page:** el rediseño de la rama `feat/landing-3d-redesign` se integró en `develop` (Pull Request #2, 2026-11-06) y luego en `main` (Pull Request #3, 2026-11-09), con lo que GitHub Pages publicó la nueva versión en [https://mdeps-team.github.io/MDEPS-Landing-page/](https://mdeps-team.github.io/MDEPS-Landing-page/).
+- **Web Services:** el backend continúa desplegado en Railway y su documentación es accesible públicamente en [https://mdeps-back-end-production-1d49.up.railway.app/swagger](https://mdeps-back-end-production-1d49.up.railway.app/swagger). El 2026-11-11 se comprobó que la documentación y los endpoints de consulta responden con código 200.
+- **Aplicación Android:** se configuró la URL base del backend en Railway (`RetrofitClient.kt`) y se conectaron los flujos de Sign-In y Sign-Up, junto con el ajuste de la configuración del token JWT (commit `09ffd31`). La distribución de la aplicación mediante Firebase App Distribution corresponde a la entrega TB2.
+
+![Landing Page desplegada en GitHub Pages](assets/images/chapter-4/sprint-2/landing-deployed.png)
+
+*Figura. Landing Page de Vantage PMO publicada en GitHub Pages tras el rediseño del Sprint 2.*
+
+<a id="4229-team-collaboration-insights-during-sprint"></a>
+### 4.2.2.9. Team Collaboration Insights during Sprint
+
+La siguiente tabla resume los commits registrados por cada integrante durante el Sprint 2 (del 2026-10-06 al 2026-11-11, sin contar merges):
+
+| Repositorio | Fuentes Alvarez, Angiela Stephany | Guillen Giraldo, Mike Dylan | Mendoza Machoa, Lionel Snayder | Pacheco Lavado, Rafael Agustin | Quiliano Motta, Kirk Douglas |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| MDEPS-Front-End (Android) | 0 | 17 | 27 | 0 | 0 |
+| MDEPS-flutter | 0 | 34 | 5 | 0 | 0 |
+| MDEPS-Landing-page | 0 | 3 | 0 | 0 | 0 |
+| MDEPS-Back-End | 0 | 0 | 0 | 0 | 0 |
+| MDEPS-report | 9 | 9 | 0 | 1 | 2 |
+
+La implementación del Sprint 2 se concentró en dos integrantes: Mendoza Machoa, Lionel Snayder lideró la aplicación Android y su integración con el backend, y Guillen Giraldo, Mike Dylan lideró la aplicación Flutter y el rediseño de la Landing Page, además de colaborar en la aplicación Android. Fuentes Alvarez, Angiela Stephany, Pacheco Lavado, Rafael Agustin y Quiliano Motta, Kirk Douglas aportaron en el informe (Product Backlog, planificación de sprints, diagramas de flujo y capturas). Para el Sprint 3, el equipo debe distribuir la implementación entre todos los integrantes, de modo que cada uno participe en los productos de software, como exige el proyecto.
+
+![Contribuciones en el repositorio del informe](assets/images/insights/av2-report-contributors.png)
+
+*Figura. Contribuciones por integrante en el repositorio del informe (GitHub Insights).*
+
+Como referencia acumulada, la siguiente tabla resume los commits registrados por cada integrante desde el inicio del proyecto (primer commit del 2026-09-02) hasta el 2026-11-11, considerando todas las ramas y sin contar merges:
+
+| Repositorio | Fuentes Alvarez, Angiela Stephany | Guillen Giraldo, Mike Dylan | Mendoza Machoa, Lionel Snayder | Pacheco Lavado, Rafael Agustin | Quiliano Motta, Kirk Douglas |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| MDEPS-Front-End (Android) | 0 | 17 | 27 | 0 | 1 |
+| MDEPS-flutter | 0 | 34 | 5 | 0 | 0 |
+| MDEPS-Landing-page | 0 | 3 | 2 | 1 | 1 |
+| MDEPS-Back-End | 0 | 0 | 1 | 1 | 1 |
+| MDEPS-report | 28 | 99 | 29 | 3 | 10 |
+| **Total** | **28** | **153** | **64** | **5** | **13** |
+
+<a id="423-sprint-3"></a>
 ## 4.2.3. Sprint 3
 
 ##### 4.2.3.1. Sprint Planning 3
@@ -804,7 +1205,7 @@ En esta sección se presenta la planificación correspondiente al Sprint 3 de Va
 | **Sprint 3 Velocity** | [Por determinar] |
 | **Sum of Story Points** | 43 Story Points |
 
-##### 4.2.3.2. Sprint Backlog 3
+##### 4.2.3.3. Sprint Backlog 3
 
 El Sprint Backlog 3 reúne las historias de usuario y actividades seleccionadas para el tercer sprint de Vantage PMO. Las tareas se orientan a completar funcionalidades relacionadas con la colaboración entre integrantes, la administración de recursos, la captura de evidencias, el acceso desde dispositivos móviles y la gestión de permisos.
 
