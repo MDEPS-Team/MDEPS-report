@@ -214,11 +214,31 @@ Este apartado define la identidad visual y estética de la página de inicio. En
 <a id="3131-landing-page-wireframe"></a>
 #### 3.1.3.1. Landing Page Wireframe.
 
-**LADING PAGE WEB**
+**LANDING PAGE WEB**
 
 <div style="text-align:center;">
-  <img src="assets/images/chapter-3/application-ux-ui-design/landing-page-wireframes/landing-page-wireframe-desktop.png"
-       alt="Wireframe de la landing page para escritorio">
+  <img src="assets/images/chapter-4/Landing%20Page.jpeg"
+       alt="Landing Page - Vista 1">
+</div>
+
+<div style="text-align:center;">
+  <img src="assets/images/chapter-4/Landing%20Page%202.jpeg"
+       alt="Landing Page - Vista 2">
+</div>
+
+<div style="text-align:center;">
+  <img src="assets/images/chapter-4/Landing%20Page%203.jpeg"
+       alt="Landing Page - Vista 3">
+</div>
+
+<div style="text-align:center;">
+  <img src="assets/images/chapter-4/Landing%20Page%204.jpeg"
+       alt="Landing Page - Vista 4">
+</div>
+
+<div style="text-align:center;">
+  <img src="assets/images/chapter-4/Landing%20Page%205.jpeg"
+       alt="Landing Page - Vista 5">
 </div>
 
 **Barra de Navegación**: Ubicada en la parte superior, incluye el logotipo y enlaces de navegación, junto con botones de "Login" y "start".
@@ -248,7 +268,7 @@ Este apartado define la identidad visual y estética de la página de inicio. En
 
 **Pie de Página**: Contiene el logotipo, descripción de la misión, redes sociales y columnas de enlaces rápidos (Product, Company, Resources, Legal).
 
-**LADING PAGE MOBILE**
+**LANDING PAGE MOBILE**
 
 <div style="text-align:center;">
   <img src="assets/images/chapter-3/application-ux-ui-design/landing-page-wireframes/landing-page-wireframe-mobile.png"
