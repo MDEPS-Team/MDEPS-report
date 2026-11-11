@@ -199,16 +199,16 @@ En esta sección, se presenta la planificación correspondiente al Sprint 1 de V
 | **Sprint #** | **Sprint 1** |
 |--------------|--------------|
 | **Sprint Planning Background** | |
-| **Date** | [Fecha real del Sprint Planning] |
-| **Time** | [Hora real] |
-| **Location** | [Lugar o plataforma utilizada] |
+| **Date** | [08/10/2026] |
+| **Time** | [13:00] |
+| **Location** | [zoom] |
 | **Prepared By** | Fuentes Alvarez, Angiela Stephany |
 | **Attendees** | Fuentes Alvarez, Angiela Stephany / Guillen Giraldo, Mike Dylan / Mendoza Machoa, Lionel Snayder / Pacheco Lavado, Rafael Agustin / Quiliano Motta, Kirk Douglas |
 | **Sprint n-1 Review Summary** | No aplica |
 | **Sprint n-1 Retrospective Summary** | No aplica |
 | **Sprint Goal & User Stories** | |
 | **Sprint 1** | El objetivo del Sprint 1 es transformar los requerimientos y hallazgos obtenidos durante las etapas de análisis en propuestas concretas de diseño y planificación para Vantage PMO. Durante este sprint, el equipo trabajará en la elaboración de los Wireframes y Mock-ups del Landing Page, el diseño UX/UI de la aplicación móvil, la definición de los flujos de usuario y el desarrollo del prototipo, buscando mantener coherencia con las necesidades identificadas en los segmentos objetivo y con los artefactos desarrollados previamente. |
-| **Sprint 1 Velocity** | [XX Story Points] |
+| **Sprint 1 Velocity** | [24 Story Points] |
 | **Sum of Story Points** | 24 Story Points |
 ##### 4.2.1.2. Aspect Leaders and Collaborators
 
